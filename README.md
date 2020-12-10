@@ -1,5 +1,9 @@
 [![Travis](https://travis-ci.org/elastic/ecs.svg?branch=master)](https://travis-ci.org/elastic/ecs)
 
+# ISO Fork
+This is a fork of the ECS schema repo, but has ISO cusomizations applied.  It's primary used to generate mapping configurations for elasticsearch templates
+
+
 # Elastic Common Schema (ECS)
 
 The Elastic Common Schema (ECS) defines a common set of fields for
