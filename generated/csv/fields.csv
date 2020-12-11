@@ -5,10 +5,41 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,base,tags,keyword,core,array,"[""production"", ""env2""]",List of keywords used to tag each event.
 1.7.0,true,agent,agent.build.original,keyword,core,,"metricbeat version 7.6.0 (amd64), libbeat 7.6.0 [6a23e8f8f30f5001ba344e4e54d8d9cb82cb107c built 2020-02-05 23:10:10 +0000 UTC]",Extended build information for the agent.
 1.7.0,true,agent,agent.ephemeral_id,keyword,extended,,8a4f500f,Ephemeral identifier of this agent.
+1.7.0,true,agent,agent.hostname,keyword,extended,,,Agent's hostname.
 1.7.0,true,agent,agent.id,keyword,core,,8a4f500d,Unique identifier of this agent.
 1.7.0,true,agent,agent.name,keyword,core,,foo,Custom name of the agent.
 1.7.0,true,agent,agent.type,keyword,core,,filebeat,Type of the agent.
 1.7.0,true,agent,agent.version,keyword,core,,6.0.0-rc2,Version of the agent.
+1.7.0,true,arcsight,arcsight.category.behavior,keyword,extended,,,Behavior category
+1.7.0,true,arcsight,arcsight.category.classid,keyword,extended,,,Event's Classification ID
+1.7.0,true,arcsight,arcsight.category.device.group,keyword,extended,,,Event's device group
+1.7.0,true,arcsight,arcsight.category.device.type,keyword,extended,,,Event's device type
+1.7.0,true,arcsight,arcsight.category.object,keyword,extended,,,Event's object category
+1.7.0,true,arcsight,arcsight.category.outcome,keyword,extended,,,Event's outcome
+1.7.0,true,arcsight,arcsight.category.significance,keyword,extended,,,Event's significance
+1.7.0,true,arcsight,arcsight.category.technique,keyword,extended,,,Event's technique
+1.7.0,true,bpr,bpr.calnet_id,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.description,keyword,extended,,,description
+1.7.0,true,bpr,bpr.for_uid,keyword,extended,,,for_uid
+1.7.0,true,bpr,bpr.for_username,keyword,extended,,,for_username
+1.7.0,true,bpr,bpr.found_and_deleted,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.identifier,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.identifier_type,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.logged_in_uid,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.logged_in_username,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.new_calnet_id,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.new_email_address,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.new_recovery_email_address,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.old_calnet_id,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.old_recovery_email_address,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.recovery_email_address,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.registration_source,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.send_upstream_message,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.send_user_message,keyword,extended,,,Calnet ID
+1.7.0,true,bpr,bpr.track_status_type,keyword,extended,,,Calnet ID
+1.7.0,true,cas,cas.application,keyword,extended,,,Application requesting CAS authentication
+1.7.0,true,cas,cas.id,keyword,extended,,,Applicaion's CAS ID
+1.7.0,true,cas,cas.provider,keyword,extended,,,Application's CAS provider
 1.7.0,true,client,client.address,keyword,extended,,,Client network address.
 1.7.0,true,client,client.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
 1.7.0,true,client,client.as.organization.name,keyword,extended,,Google LLC,Organization name.
@@ -43,6 +74,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,client,client.user.id,keyword,core,,,Unique identifier of the user.
 1.7.0,true,client,client.user.name,keyword,core,,albert,Short name or login of the user.
 1.7.0,true,client,client.user.name.text,text,core,,albert,Short name or login of the user.
+1.7.0,true,client,client.user.password,keyword,extended,,,User password from a honeypot
 1.7.0,true,client,client.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 1.7.0,true,cloud,cloud.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 1.7.0,true,cloud,cloud.account.name,keyword,extended,,elastic-dev,The cloud account name.
@@ -66,6 +98,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,destination,destination.as.organization.name.text,text,extended,,Google LLC,Organization name.
 1.7.0,true,destination,destination.bytes,long,core,,184,Bytes sent from the destination to the source.
 1.7.0,true,destination,destination.domain,keyword,core,,,Destination domain.
+1.7.0,true,destination,destination.domain.text,text,core,,,Destination domain.
 1.7.0,true,destination,destination.geo.city_name,keyword,core,,Montreal,City name.
 1.7.0,true,destination,destination.geo.continent_name,keyword,core,,North America,Name of the continent.
 1.7.0,true,destination,destination.geo.country_iso_code,keyword,core,,CA,Country ISO code.
@@ -78,7 +111,11 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,destination,destination.mac,keyword,core,,,MAC address of the destination.
 1.7.0,true,destination,destination.nat.ip,ip,extended,,,Destination NAT ip
 1.7.0,true,destination,destination.nat.port,long,extended,,,Destination NAT Port
+1.7.0,true,destination,destination.original.domain,keyword,extended,,,Original destination domain
+1.7.0,true,destination,destination.original.domain.text,text,extended,,,Original destination domain
+1.7.0,true,destination,destination.original.ip,ip,extended,,,Original destination IP address
 1.7.0,true,destination,destination.packets,long,core,,12,Packets sent from the destination to the source.
+1.7.0,true,destination,destination.pl,integer,extended,,,Destination UCB Protection Level
 1.7.0,true,destination,destination.port,long,core,,,Port of the destination.
 1.7.0,true,destination,destination.registered_domain,keyword,extended,,example.com,"The highest registered destination domain, stripped of the subdomain."
 1.7.0,true,destination,destination.subdomain,keyword,extended,,east,The subdomain of the domain.
@@ -94,6 +131,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,destination,destination.user.id,keyword,core,,,Unique identifier of the user.
 1.7.0,true,destination,destination.user.name,keyword,core,,albert,Short name or login of the user.
 1.7.0,true,destination,destination.user.name.text,text,core,,albert,Short name or login of the user.
+1.7.0,true,destination,destination.user.password,keyword,extended,,,User password from a honeypot
 1.7.0,true,destination,destination.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 1.7.0,true,dll,dll.code_signature.exists,boolean,core,,true,Boolean to capture if a signature is present.
 1.7.0,true,dll,dll.code_signature.status,keyword,extended,,ERROR_UNTRUSTED_ROOT,Additional information about the certificate status.
@@ -131,6 +169,20 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,dns,dns.resolved_ip,ip,extended,array,"[""10.10.10.10"", ""10.10.10.11""]",Array containing all IPs seen in answers.data
 1.7.0,true,dns,dns.response_code,keyword,extended,,NOERROR,The DNS response code.
 1.7.0,true,dns,dns.type,keyword,extended,,answer,"The type of DNS event captured, query or answer."
+1.7.0,true,duo,duo.alias,keyword,extended,,,Duo User Alias
+1.7.0,true,duo,duo.device.geo.city_name,keyword,core,,Montreal,City name.
+1.7.0,true,duo,duo.device.geo.continent_name,keyword,core,,North America,Name of the continent.
+1.7.0,true,duo,duo.device.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+1.7.0,true,duo,duo.device.geo.country_name,keyword,core,,Canada,Country name.
+1.7.0,true,duo,duo.device.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+1.7.0,true,duo,duo.device.geo.name,keyword,extended,,boston-dc,User-defined description of a location.
+1.7.0,true,duo,duo.device.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+1.7.0,true,duo,duo.device.geo.region_name,keyword,core,,Quebec,Region name.
+1.7.0,true,duo,duo.device.ip,ip,extended,,,IP address of Duo device
+1.7.0,true,duo,duo.device.name,keyword,extended,,,Name of Duo device
+1.7.0,true,duo,duo.factor,keyword,extended,,,Type of second factor
+1.7.0,true,duo,duo.itegration,keyword,extended,,,Name of Duo application integration
+1.7.0,true,duo,duo.reason,keyword,extended,,,reason for the 2FA outcome
 1.7.0,true,ecs,ecs.version,keyword,core,,1.0.0,ECS version this event conforms to.
 1.7.0,true,error,error.code,keyword,core,,,Error code describing the error.
 1.7.0,true,error,error.id,keyword,core,,,Unique identifier for the error.
@@ -139,6 +191,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,false,error,error.stack_trace.text,text,extended,,,The stack trace of this error in plain text.
 1.7.0,true,error,error.type,keyword,extended,,java.lang.NullPointerException,"The type of the error, for example the class name of the exception."
 1.7.0,true,event,event.action,keyword,core,,user-password-change,The action captured by the event.
+1.7.0,true,event,event.application,keyword,extended,,,The application generating the event
 1.7.0,true,event,event.category,keyword,core,array,authentication,Event category. The second categorization field in the hierarchy.
 1.7.0,true,event,event.code,keyword,extended,,4648,Identification code for this event.
 1.7.0,true,event,event.created,date,core,,2016-05-23T08:05:34.857Z,Time when the event was first read by an agent or by your pipeline.
@@ -187,6 +240,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,file,file.mode,keyword,extended,,0640,Mode of the file in octal representation.
 1.7.0,true,file,file.mtime,date,extended,,,Last time the file content was modified.
 1.7.0,true,file,file.name,keyword,extended,,example.png,"Name of the file including the extension, without the directory."
+1.7.0,true,file,file.offset,long,extended,,,The file offset
 1.7.0,true,file,file.owner,keyword,extended,,alice,File owner's username.
 1.7.0,true,file,file.path,keyword,extended,,/home/alice/example.png,"Full path to the file, including the file name."
 1.7.0,true,file,file.path.text,text,extended,,/home/alice/example.png,"Full path to the file, including the file name."
@@ -231,6 +285,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,group,group.name,keyword,extended,,,Name of the group.
 1.7.0,true,host,host.architecture,keyword,core,,x86_64,Operating system architecture.
 1.7.0,true,host,host.domain,keyword,extended,,CONTOSO,Name of the directory the group is a member of.
+1.7.0,true,host,host.environment,keyword,extended,,,Host's environment.
 1.7.0,true,host,host.geo.city_name,keyword,core,,Montreal,City name.
 1.7.0,true,host,host.geo.continent_name,keyword,core,,North America,Name of the continent.
 1.7.0,true,host,host.geo.country_iso_code,keyword,core,,CA,Country ISO code.
@@ -265,6 +320,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,host,host.user.id,keyword,core,,,Unique identifier of the user.
 1.7.0,true,host,host.user.name,keyword,core,,albert,Short name or login of the user.
 1.7.0,true,host,host.user.name.text,text,core,,albert,Short name or login of the user.
+1.7.0,true,host,host.user.password,keyword,extended,,,User password from a honeypot
 1.7.0,true,host,host.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 1.7.0,true,http,http.request.body.bytes,long,extended,,887,Size in bytes of the request body.
 1.7.0,true,http,http.request.body.content,keyword,extended,,Hello world,The full HTTP request body.
@@ -280,6 +336,19 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,http,http.response.mime_type,keyword,extended,,image/gif,Mime type of the body of the response.
 1.7.0,true,http,http.response.status_code,long,extended,,404,HTTP response status code.
 1.7.0,true,http,http.version,keyword,extended,,1.1,HTTP version.
+1.7.0,true,ldap,ldap.attributes,keyword,extended,,,LDAP properties
+1.7.0,true,ldap,ldap.base,keyword,extended,,,LDAP Search Base
+1.7.0,true,ldap,ldap.category,keyword,extended,,,LDAP DN
+1.7.0,true,ldap,ldap.filter,keyword,extended,,,LDAP search filter
+1.7.0,true,ldap,ldap.message,keyword,extended,,,LDAP message
+1.7.0,true,ldap,ldap.oid,keyword,extended,,,LDAP OID
+1.7.0,true,ldap,ldap.operation,keyword,extended,,,LDAP operation
+1.7.0,true,ldap,ldap.request_controls,keyword,extended,,,LDAP request controls
+1.7.0,true,ldap,ldap.result.code,integer,extended,,,LDAP result code
+1.7.0,true,ldap,ldap.result.count,long,extended,,,Count of records returned by LDAP query
+1.7.0,true,ldap,ldap.scope,keyword,extended,,,LDAP query scope
+1.7.0,true,ldap,ldap.type,keyword,extended,,,LDAP query type
+1.7.0,true,ldap,ldap.version,keyword,extended,,,LDAP version
 1.7.0,true,log,log.file.path,keyword,extended,,/var/log/fun-times.log,Full path to the log file this event came from.
 1.7.0,true,log,log.level,keyword,core,,error,Log level of the log event.
 1.7.0,true,log,log.logger,keyword,core,,org.elasticsearch.bootstrap.Bootstrap,Name of the logger.
@@ -293,6 +362,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,log,log.syslog.priority,long,extended,,135,Syslog priority of the event.
 1.7.0,true,log,log.syslog.severity.code,long,extended,,3,Syslog numeric severity of the event.
 1.7.0,true,log,log.syslog.severity.name,keyword,extended,,Error,Syslog text-based severity of the event.
+1.7.0,true,malware,malware.malicious,boolean,extended,,,Whether the malware is malicious
+1.7.0,true,malware,malware.name,keyword,extended,,,Name of malware
 1.7.0,true,network,network.application,keyword,extended,,aim,Application level protocol name.
 1.7.0,true,network,network.bytes,long,core,,368,Total bytes transferred in both directions.
 1.7.0,true,network,network.community_id,keyword,extended,,1:hO+sN4H+MG5MY/8hIrXPqc4ZQz0=,A hash of source and destination IPs and ports.
@@ -348,6 +419,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,observer,observer.type,keyword,core,,firewall,The type of the observer the data is coming from.
 1.7.0,true,observer,observer.vendor,keyword,core,,Symantec,Vendor name of the observer.
 1.7.0,true,observer,observer.version,keyword,core,,,Observer version.
+1.7.0,true,observer,observer.vsys,keyword,extended,,,VSYS geneating firewall log
 1.7.0,true,organization,organization.id,keyword,extended,,,Unique identifier for the organization.
 1.7.0,true,organization,organization.name,keyword,extended,,,Organization name.
 1.7.0,true,organization,organization.name.text,text,extended,,,Organization name.
@@ -364,6 +436,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,package,package.size,long,extended,,62231,Package size in bytes.
 1.7.0,true,package,package.type,keyword,extended,,rpm,Package type
 1.7.0,true,package,package.version,keyword,extended,,1.12.9,Package version
+1.7.0,false,packet,packet.data.base64,text,extended,,,packet payload encoded as base64
+1.7.0,false,packet,packet.data.hex,text,extended,,,packet payload encoded as hex
+1.7.0,false,packet,packet.data.tcpdump,text,extended,,,packet payload displayed in a tcpdump format
+1.7.0,true,packet,packet.data.text,text,extended,,,Printable part of the packet payload as text
 1.7.0,true,process,process.args,keyword,extended,array,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]",Array of process arguments.
 1.7.0,true,process,process.args_count,long,extended,,4,Length of the process.args array.
 1.7.0,true,process,process.code_signature.exists,boolean,core,,true,Boolean to capture if a signature is present.
@@ -445,9 +521,14 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,registry,registry.key,keyword,core,,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe,Hive-relative path of keys.
 1.7.0,true,registry,registry.path,keyword,core,,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger,"Full path, including hive, key and value"
 1.7.0,true,registry,registry.value,keyword,core,,Debugger,Name of the value written.
+1.7.0,true,related,related.email,keyword,extended,array,,All the email identifiers seen on your event.
+1.7.0,true,related,related.email.text,text,extended,,,All the email identifiers seen on your event.
 1.7.0,true,related,related.hash,keyword,extended,array,,All the hashes seen on your event.
-1.7.0,true,related,related.hosts,keyword,extended,array,,All the host identifiers seen on your event.
+1.7.0,true,related,related.hosts,keyword,extended,"array, array",,All the host identifiers seen on your event.
+1.7.0,true,related,related.hosts.text,text,extended,,,All the host identifiers seen on your event.
 1.7.0,true,related,related.ip,ip,extended,array,,All of the IPs seen on your event.
+1.7.0,true,related,related.pl,integer,extended,array,,All the PL levels seen in your event
+1.7.0,true,related,related.port,long,extended,array,,All the network ports seen in your event
 1.7.0,true,related,related.user,keyword,extended,array,,All the user names seen on your event.
 1.7.0,true,rule,rule.author,keyword,extended,array,"[""Star-Lord""]",Rule author
 1.7.0,true,rule,rule.category,keyword,extended,,Attempted Information Leak,Rule category
@@ -493,6 +574,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,server,server.user.id,keyword,core,,,Unique identifier of the user.
 1.7.0,true,server,server.user.name,keyword,core,,albert,Short name or login of the user.
 1.7.0,true,server,server.user.name.text,text,core,,albert,Short name or login of the user.
+1.7.0,true,server,server.user.password,keyword,extended,,,User password from a honeypot
 1.7.0,true,server,server.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 1.7.0,true,service,service.ephemeral_id,keyword,extended,,8a4f500f,Ephemeral identifier of this service.
 1.7.0,true,service,service.id,keyword,core,,d37e5ebfe0ae6c4972dbe9f0174a1637bb8247f6,Unique identifier of the running service.
@@ -501,12 +583,23 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,service,service.state,keyword,core,,,Current state of the service.
 1.7.0,true,service,service.type,keyword,core,,elasticsearch,The type of the service.
 1.7.0,true,service,service.version,keyword,core,,3.2.4,Version of the service.
+1.7.0,true,shibboleth,shibboleth.asserting.id,keyword,extended,,,The asserting ID
+1.7.0,true,shibboleth,shibboleth.asserting.party,keyword,extended,,,The asserting party
+1.7.0,true,shibboleth,shibboleth.attributes,keyword,extended,,,attributes
+1.7.0,true,shibboleth,shibboleth.authentication,keyword,extended,,,authentication
+1.7.0,true,shibboleth,shibboleth.binding.id,keyword,extended,,,response binding
+1.7.0,true,shibboleth,shibboleth.profile,keyword,extended,,,profile
+1.7.0,true,shibboleth,shibboleth.relying.party,keyword,extended,,,relying party
+1.7.0,true,shibboleth,shibboleth.request.binding,keyword,extended,,,request binding
+1.7.0,true,shibboleth,shibboleth.request.id,keyword,extended,,,request id
+1.7.0,true,shibboleth,shibboleth.response.binding,keyword,extended,,,response binding
 1.7.0,true,source,source.address,keyword,extended,,,Source network address.
 1.7.0,true,source,source.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
 1.7.0,true,source,source.as.organization.name,keyword,extended,,Google LLC,Organization name.
 1.7.0,true,source,source.as.organization.name.text,text,extended,,Google LLC,Organization name.
 1.7.0,true,source,source.bytes,long,core,,184,Bytes sent from the source to the destination.
-1.7.0,true,source,source.domain,keyword,core,,,Source domain.
+1.7.0,true,source,source.domain,keyword,core,,,source domain.
+1.7.0,true,source,source.domain.text,text,core,,,source domain.
 1.7.0,true,source,source.geo.city_name,keyword,core,,Montreal,City name.
 1.7.0,true,source,source.geo.continent_name,keyword,core,,North America,Name of the continent.
 1.7.0,true,source,source.geo.country_iso_code,keyword,core,,CA,Country ISO code.
@@ -520,6 +613,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,source,source.nat.ip,ip,extended,,,Source NAT ip
 1.7.0,true,source,source.nat.port,long,extended,,,Source NAT port
 1.7.0,true,source,source.packets,long,core,,12,Packets sent from the source to the destination.
+1.7.0,true,source,source.pl,integer,extended,,,Destination UCB Protection Level
 1.7.0,true,source,source.port,long,core,,,Port of the source.
 1.7.0,true,source,source.registered_domain,keyword,extended,,example.com,"The highest registered source domain, stripped of the subdomain."
 1.7.0,true,source,source.subdomain,keyword,extended,,east,The subdomain of the domain.
@@ -535,6 +629,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,source,source.user.id,keyword,core,,,Unique identifier of the user.
 1.7.0,true,source,source.user.name,keyword,core,,albert,Short name or login of the user.
 1.7.0,true,source,source.user.name.text,text,core,,albert,Short name or login of the user.
+1.7.0,true,source,source.user.password,keyword,extended,,,User password from a honeypot
 1.7.0,true,source,source.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 1.7.0,true,span,span.id,keyword,extended,,3ff9a8981b7ccd5a,Unique identifier of the span within the scope of its trace.
 1.7.0,true,threat,threat.framework,keyword,extended,,MITRE ATT&CK,Threat classification framework.
@@ -549,6 +644,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,threat,threat.technique.subtechnique.name,keyword,extended,array,PowerShell,Threat subtechnique name.
 1.7.0,true,threat,threat.technique.subtechnique.name.text,text,extended,,PowerShell,Threat subtechnique name.
 1.7.0,true,threat,threat.technique.subtechnique.reference,keyword,extended,array,https://attack.mitre.org/techniques/T1059/001/,Threat subtechnique URL reference.
+1.7.0,true,ticket,ticket.st,keyword,extended,,,Service Ticket
+1.7.0,true,ticket,ticket.tgt,keyword,extended,,,Ticket Granting Ticket
 1.7.0,true,tls,tls.cipher,keyword,extended,,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,String indicating the cipher used during the current connection.
 1.7.0,true,tls,tls.client.certificate,keyword,extended,,MII...,PEM-encoded stand-alone certificate offered by the client.
 1.7.0,true,tls,tls.client.certificate_chain,keyword,extended,array,"[""MII..."", ""MII...""]",Array of PEM-encoded certificates that make up the certificate chain offered by the client.
@@ -637,6 +734,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,url,url.original.text,text,extended,,https://www.elastic.co:443/search?q=elasticsearch#top or /search?q=elasticsearch,Unmodified original url as seen in the event source.
 1.7.0,true,url,url.password,keyword,extended,,,Password of the request.
 1.7.0,true,url,url.path,keyword,extended,,,"Path of the request, such as ""/search""."
+1.7.0,true,url,url.pl,integer,extended,,,Protect Level of URL
 1.7.0,true,url,url.port,long,extended,,443,"Port of the request, such as 443."
 1.7.0,true,url,url.query,keyword,extended,,,Query string of the request.
 1.7.0,true,url,url.registered_domain,keyword,extended,,example.com,"The highest registered url domain, stripped of the subdomain."
@@ -655,6 +753,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 1.7.0,true,user,user.id,keyword,core,,,Unique identifier of the user.
 1.7.0,true,user,user.name,keyword,core,,albert,Short name or login of the user.
 1.7.0,true,user,user.name.text,text,core,,albert,Short name or login of the user.
+1.7.0,true,user,user.password,keyword,extended,,,User password from a honeypot
 1.7.0,true,user,user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 1.7.0,true,user_agent,user_agent.device.name,keyword,extended,,iPhone,Name of the device.
 1.7.0,true,user_agent,user_agent.name,keyword,extended,,Safari,Name of the user agent.

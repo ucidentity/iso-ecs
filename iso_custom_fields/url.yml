@@ -1,0 +1,9 @@
+---
+
+- name: url
+  fields:
+
+    - name: pl
+      level: extended
+      type: integer
+      description: Protect Level of URL
