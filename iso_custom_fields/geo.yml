@@ -1,0 +1,6 @@
+---
+- name: geo
+  reusable:
+    top_level: false
+    expected:
+      - duo.device

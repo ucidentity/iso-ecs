@@ -1,0 +1,41 @@
+---
+- name: duo
+  title: Duo
+  group: 2
+  short: Duo provides 2FA 
+  description: >
+    These fields are used by Duo Authtentication Logs
+  type: group
+
+  fields:
+
+    - name: alias
+      level: extended
+      type: keyword
+      description: Duo User Alias
+  
+    - name: device.ip
+      level: extended
+      type: ip
+      description: IP address of Duo device
+
+    - name: device.name
+      level: extended
+      type: keyword
+      description: Name of Duo device 
+    
+    - name: factor
+      level: extended
+      type: keyword
+      description: Type of second factor
+    
+    - name: itegration
+      level: extended
+      type: keyword
+      description: Name of Duo application integration
+    
+    - name: reason
+      level: extended
+      type: keyword
+      description: reason for the 2FA outcome
+

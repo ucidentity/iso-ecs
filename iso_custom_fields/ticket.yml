@@ -1,0 +1,21 @@
+---
+
+- name: ticket
+  title: Kerberos tickets
+  group: 2
+  short: Fields for Kerberos tickets
+  description: >
+    Fields for Kerberos tickets
+  type: group
+  fields:
+
+    - name: st
+      level: extended
+      type: keyword
+      description: Service Ticket
+  
+    - name: tgt
+      level: extended
+      type: keyword
+      description: Ticket Granting Ticket
+  

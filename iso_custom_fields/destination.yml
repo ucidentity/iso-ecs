@@ -1,0 +1,33 @@
+---
+
+- name: destination
+  fields:
+
+    - name: domain
+      level: core
+      type: keyword
+      description: >
+        Destination domain.
+      multi_fields:
+        - type: text
+          name: text
+    
+    - name: original.domain
+      level: extended
+      type: keyword
+      description: Original destination domain
+      multi_fields:
+        - type: text
+          name: text
+    
+    - name: original.ip
+      level: extended
+      type: ip
+      description: Original destination IP address
+  
+    - name: pl
+      level: extended
+      type: integer
+      description: Destination UCB Protection Level
+    
+ 

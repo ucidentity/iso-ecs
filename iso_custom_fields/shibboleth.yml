@@ -1,0 +1,61 @@
+---
+
+- name: shibboleth
+  title: Shibboleth 
+  group: 2
+  short: Fields for shibboleth logs
+  description: >
+    Fields for shibboleth logs
+  type: group
+  fields:
+    
+
+    - name: asserting.id
+      level: extended
+      type: keyword
+      description: The asserting ID
+
+    - name: asserting.party
+      level: extended
+      type: keyword
+      description: The asserting party
+
+    - name: attributes
+      level: extended
+      type: keyword
+      description: attributes
+      
+    - name: authentication
+      level: extended
+      type: keyword
+      description: authentication
+
+    - name: profile
+      level: extended
+      type: keyword
+      description: profile
+
+    - name: relying.party
+      level: extended
+      type: keyword
+      description: relying party
+
+    - name: request.binding
+      level: extended
+      type: keyword
+      description: request binding
+
+    - name: request.id
+      level: extended
+      type: keyword
+      description: request id
+
+    - name: response.binding
+      level: extended
+      type: keyword
+      description: response binding
+
+    - name: binding.id
+      level: extended
+      type: keyword
+      description: response binding

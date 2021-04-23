@@ -1,0 +1,13 @@
+---
+- name: host
+  fields:
+
+    - name: environment
+      level: extended
+      type: keyword
+      short: Host's environment.
+      description: >
+        The environemnt of the Host.
+
+        This should be a full lowercase word with "_" instead of spaces 
+        i.e. production, quality_assurance, development

@@ -1,0 +1,9 @@
+---
+
+- name: file
+  fields:
+
+    - name: offset
+      level: extended
+      type: long
+      description: The file offset 
