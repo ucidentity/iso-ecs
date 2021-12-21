@@ -1,0 +1,8 @@
+---
+
+- name: user
+  fields:
+    - name: password
+      level: extended
+      type: keyword
+      description: User password from a honeypot
