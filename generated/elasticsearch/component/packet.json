@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-packet.html",
+    "ecs_version": "1.12.1"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "packet": {
+          "properties": {
+            "data": {
+              "properties": {
+                "base64": {
+                  "doc_values": false,
+                  "index": false,
+                  "norms": false,
+                  "type": "text"
+                },
+                "hex": {
+                  "doc_values": false,
+                  "index": false,
+                  "norms": false,
+                  "type": "text"
+                },
+                "tcpdump": {
+                  "doc_values": false,
+                  "index": false,
+                  "norms": false,
+                  "type": "text"
+                },
+                "text": {
+                  "norms": false,
+                  "type": "text"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
