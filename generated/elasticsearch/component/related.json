@@ -8,16 +8,38 @@
       "properties": {
         "related": {
           "properties": {
+            "email": {
+              "fields": {
+                "text": {
+                  "norms": false,
+                  "type": "text"
+                }
+              },
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
             "hash": {
               "ignore_above": 1024,
               "type": "keyword"
             },
             "hosts": {
+              "fields": {
+                "text": {
+                  "norms": false,
+                  "type": "text"
+                }
+              },
               "ignore_above": 1024,
               "type": "keyword"
             },
             "ip": {
               "type": "ip"
+            },
+            "pl": {
+              "type": "integer"
+            },
+            "port": {
+              "type": "long"
             },
             "user": {
               "ignore_above": 1024,

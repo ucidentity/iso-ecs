@@ -287,6 +287,9 @@
                           "ignore_above": 1024,
                           "type": "keyword"
                         },
+                        "offset": {
+                          "type": "long"
+                        },
                         "owner": {
                           "ignore_above": 1024,
                           "type": "keyword"
@@ -619,6 +622,9 @@
                         },
                         "path": {
                           "type": "wildcard"
+                        },
+                        "pl": {
+                          "type": "integer"
                         },
                         "port": {
                           "type": "long"
@@ -1086,6 +1092,9 @@
                       "ignore_above": 1024,
                       "type": "keyword"
                     },
+                    "offset": {
+                      "type": "long"
+                    },
                     "owner": {
                       "ignore_above": 1024,
                       "type": "keyword"
@@ -1418,6 +1427,9 @@
                     },
                     "path": {
                       "type": "wildcard"
+                    },
+                    "pl": {
+                      "type": "integer"
                     },
                     "port": {
                       "type": "long"

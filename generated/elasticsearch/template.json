@@ -39,7 +39,16 @@
     "ecs_1.12.2_url",
     "ecs_1.12.2_user",
     "ecs_1.12.2_user_agent",
-    "ecs_1.12.2_vulnerability"
+    "ecs_1.12.2_vulnerability",
+    "ecs_1.12.2_arcsight",
+    "ecs_1.12.2_bpr",
+    "ecs_1.12.2_cas",
+    "ecs_1.12.2_duo",
+    "ecs_1.12.2_ldap",
+    "ecs_1.12.2_malware",
+    "ecs_1.12.2_packet",
+    "ecs_1.12.2_shibboleth",
+    "ecs_1.12.2_ticket"
   ],
   "index_patterns": [
     "try-ecs-*"
