@@ -113,7 +113,7 @@
         Is an event talking about a denial of service, a brute force attack, IDS evasions, 
         exploits of vulnerabilities, and so on.
 
-    - name: category.classid
+    - name: classid
       level: extended
       type: keyword
       short: Event's Classification ID
