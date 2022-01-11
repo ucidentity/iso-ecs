@@ -8,6 +8,6 @@ do
   component_name="ecs_${version}_${fieldset}"
   api="_component_template/${component_name}"
 
-  # echo "$file => $api"
   curl  -XPUT "$1:9200/$api" --header "Content-Type: application/json" -d @"$file"
+  echo ""
 done
