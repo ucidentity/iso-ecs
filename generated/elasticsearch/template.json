@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "description": "Sample composable template that includes all ECS fields",
+    "ecs_version": "1.12.2"
+  },
+  "composed_of": [
+    "ecs_1.12.2_agent",
+    "ecs_1.12.2_base",
+    "ecs_1.12.2_client",
+    "ecs_1.12.2_cloud",
+    "ecs_1.12.2_container",
+    "ecs_1.12.2_data_stream",
+    "ecs_1.12.2_destination",
+    "ecs_1.12.2_dll",
+    "ecs_1.12.2_dns",
+    "ecs_1.12.2_ecs",
+    "ecs_1.12.2_error",
+    "ecs_1.12.2_event",
+    "ecs_1.12.2_file",
+    "ecs_1.12.2_group",
+    "ecs_1.12.2_host",
+    "ecs_1.12.2_http",
+    "ecs_1.12.2_log",
+    "ecs_1.12.2_network",
+    "ecs_1.12.2_observer",
+    "ecs_1.12.2_orchestrator",
+    "ecs_1.12.2_organization",
+    "ecs_1.12.2_package",
+    "ecs_1.12.2_process",
+    "ecs_1.12.2_registry",
+    "ecs_1.12.2_related",
+    "ecs_1.12.2_rule",
+    "ecs_1.12.2_server",
+    "ecs_1.12.2_service",
+    "ecs_1.12.2_source",
+    "ecs_1.12.2_threat",
+    "ecs_1.12.2_tls",
+    "ecs_1.12.2_tracing",
+    "ecs_1.12.2_url",
+    "ecs_1.12.2_user",
+    "ecs_1.12.2_user_agent",
+    "ecs_1.12.2_vulnerability",
+    "ecs_1.12.2_arcsight",
+    "ecs_1.12.2_bpr",
+    "ecs_1.12.2_cas",
+    "ecs_1.12.2_duo",
+    "ecs_1.12.2_ldap",
+    "ecs_1.12.2_malware",
+    "ecs_1.12.2_packet",
+    "ecs_1.12.2_shibboleth",
+    "ecs_1.12.2_ticket"
+  ],
+  "index_patterns": [
+    "try-ecs-*"
+  ],
+  "priority": 1,
+  "template": {
+    "mappings": {
+      "date_detection": false,
+      "dynamic_templates": [
+        {
+          "strings_as_keyword": {
+            "mapping": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "match_mapping_type": "string"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "index": {
+        "mapping": {
+          "total_fields": {
+            "limit": 2000
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,75 +1,64 @@
 {
   "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-url.html",
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-ldap.html",
     "ecs_version": "8.0.1"
   },
   "template": {
     "mappings": {
       "properties": {
-        "url": {
+        "ldap": {
           "properties": {
-            "domain": {
+            "attributes": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "extension": {
+            "base": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "fragment": {
+            "category": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "full": {
-              "fields": {
-                "text": {
-                  "type": "match_only_text"
+            "filter": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "message": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "oid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "operation": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "request_controls": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "result": {
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "count": {
+                  "type": "long"
                 }
-              },
-              "type": "wildcard"
+              }
             },
-            "original": {
-              "fields": {
-                "text": {
-                  "type": "match_only_text"
-                }
-              },
-              "type": "wildcard"
-            },
-            "password": {
+            "scope": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "path": {
-              "type": "wildcard"
-            },
-            "pl": {
-              "type": "integer"
-            },
-            "port": {
-              "type": "long"
-            },
-            "query": {
+            "type": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "registered_domain": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            },
-            "scheme": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            },
-            "subdomain": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            },
-            "top_level_domain": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            },
-            "username": {
+            "version": {
               "ignore_above": 1024,
               "type": "keyword"
             }
