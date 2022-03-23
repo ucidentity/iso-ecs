@@ -1,0 +1,10 @@
+---
+- name: agent
+  fields:
+
+    - name: hostname
+      level: extended
+      type: keyword
+      short: Agent's hostname.
+      description: >
+        The hostname of the systems running the agent.

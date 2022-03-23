@@ -1,0 +1,41 @@
+---
+
+- name: related
+  fields:
+
+    - name: hosts
+      level: extended
+      type: keyword
+      short: All the host identifiers seen on your event.
+      description: >
+        All hostnames or other host identifiers seen on your event. Example
+        identifiers include FQDNs, domain names, workstation names, or aliases.
+      normalize:
+        - array
+      multi_fields:
+        - type: text
+          name: text
+    
+    - name: email
+      level: extended
+      type: keyword
+      description: All the email identifiers seen on your event.
+      normalize:
+        - array
+      multi_fields:
+        - type: text
+          name: text
+    
+    - name: pl
+      level: extended
+      type: integer
+      description: All the PL levels seen in your event
+      normalize:
+        - array
+
+    - name: port
+      level: extended
+      type: long
+      description: All the network ports seen in your event
+      normalize:
+        - array
