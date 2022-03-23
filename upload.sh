@@ -19,6 +19,7 @@ do
 
 
 
-# echo "$file => $api"
+printf "uploading %s => %s:      " $file $api
 curl  -k -u $USERNAME:$PASSWORD -XPUT "$1:9200/$api" --header "Content-Type: application/json" -d @"$file"
+echo ""
 done
