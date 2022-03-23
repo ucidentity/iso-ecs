@@ -1,0 +1,76 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-shibboleth.html",
+    "ecs_version": "8.1.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "shibboleth": {
+          "properties": {
+            "asserting": {
+              "properties": {
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "party": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "attributes": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "authentication": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "binding": {
+              "properties": {
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "profile": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "relying": {
+              "properties": {
+                "party": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "request": {
+              "properties": {
+                "binding": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "response": {
+              "properties": {
+                "binding": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
