@@ -44,6 +44,8 @@
     "ecs_8.0.1_arcsight",
     "ecs_8.0.1_bpr",
     "ecs_8.0.1_cas",
+    "ecs_8.0.1_cisco_duo.admin",
+    "ecs_8.0.1_cisco_duo.auth",
     "ecs_8.0.1_duo",
     "ecs_8.0.1_ldap",
     "ecs_8.0.1_malware",

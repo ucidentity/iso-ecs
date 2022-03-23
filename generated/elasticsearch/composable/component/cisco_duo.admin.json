@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-cisco_duo.admin.html",
+    "ecs_version": "8.0.1"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "cisco_duo": {
+          "properties": {
+            "admin": {
+              "properties": {
+                "action": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "action_performed_on": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "flattened": {
+                  "type": "flattened"
+                },
+                "user": {
+                  "properties": {
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

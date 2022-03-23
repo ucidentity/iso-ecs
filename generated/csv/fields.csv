@@ -40,6 +40,46 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.0.1,true,cas,cas.application,keyword,extended,,,Application requesting CAS authentication
 8.0.1,true,cas,cas.id,keyword,extended,,,Applicaion's CAS ID
 8.0.1,true,cas,cas.provider,keyword,extended,,,Application's CAS provider
+8.0.1,true,cisco_duo,cisco_duo.admin.action,keyword,extended,,,The type of change that was performed
+8.0.1,true,cisco_duo,cisco_duo.admin.action_performed_on,keyword,extended,,,The object that was acted on.
+8.0.1,true,cisco_duo,cisco_duo.admin.flattened,flattened,extended,,,ES flattened datatype for objects where the subfields aren't known in advance.
+8.0.1,true,cisco_duo,cisco_duo.admin.user.name,keyword,extended,,,The full name of the administrator who performed the action in the Duo Admin Panel.
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.flash_version,keyword,extended,,,"The Flash plugin version used, if present."
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.hostname,keyword,extended,,,"The hostname, if present."
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.ip,ip,extended,,,The access device's IP address.
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.is_encryption_enabled,keyword,extended,,,Reports the disk encryption state as detected by the Duo Device Health app.
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.is_firewall_enabled,keyword,extended,,,Reports the firewall state as detected by the Duo Device Health app.
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.is_password_set,keyword,extended,,,Reports the system password state as detected by the Duo Device Health app
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.java_version,keyword,extended,,,The Java plugin version used.
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.location.city,keyword,extended,,,The city name of the access device using geoip location.
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.location.country,keyword,extended,,,The country of the access device using geoip location.
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.location.state,keyword,extended,,,The state name of the access device using geoip location.
+8.0.1,true,cisco_duo,cisco_duo.auth.access_device.security_agents,keyword,extended,,,Reports the security agents present on the endpoint as detected by the Duo Device Health app.
+8.0.1,true,cisco_duo,cisco_duo.auth.alias,keyword,extended,,,The username alias used to log in.
+8.0.1,true,cisco_duo,cisco_duo.auth.application.key,keyword,extended,,,The application's integration_key.
+8.0.1,true,cisco_duo,cisco_duo.auth.application.name,keyword,extended,,,The application's name.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.as.number,long,extended,,,auth_device AS Number
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.as.organization.name,keyword,extended,,,Organization name.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.geo.city_name,keyword,extended,,,City name.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.geo.continent_name,keyword,extended,,,Name of the continent.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.geo.country_iso_code,keyword,extended,,,Country ISO code.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.geo.country_name,keyword,extended,,,Country name.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.geo.location,geo_point,core,,,Longitude and latitude.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.geo.region_iso_code,keyword,extended,,,Region ISO code.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.geo.region_name,keyword,extended,,,Region name.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.ip,ip,extended,,,The IP address of the authentication device.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.location.city,keyword,extended,,,The city name of the authentication device using geoip location.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.location.country,keyword,extended,,,The country of the authentication device using geoip location.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.location.state,keyword,extended,,,The state name of the authentication device using geoip location.
+8.0.1,true,cisco_duo,cisco_duo.auth.auth_device.name,keyword,extended,,,The name of the authentication device.
+8.0.1,true,cisco_duo,cisco_duo.auth.email,keyword,extended,,,"The email address of the user, if known to Duo, otherwise none."
+8.0.1,true,cisco_duo,cisco_duo.auth.event_type,keyword,extended,,,The type of activity logged.
+8.0.1,true,cisco_duo,cisco_duo.auth.factor,keyword,extended,,,The authentication factor.
+8.0.1,true,cisco_duo,cisco_duo.auth.ood_software,keyword,extended,,,"If authentication was denied due to out-of-date software, shows the name of the software."
+8.0.1,true,cisco_duo,cisco_duo.auth.reason,keyword,extended,,,Provide the reason for the authentication attempt result.
+8.0.1,true,cisco_duo,cisco_duo.auth.result,keyword,extended,,,The result of the authentication attempt.
+8.0.1,true,cisco_duo,cisco_duo.auth.trusted_endpoint_status,keyword,extended,,,Status of Trusted Endpoint.
+8.0.1,true,cisco_duo,cisco_duo.auth.txid,keyword,extended,,,The transaction ID of the event.
 8.0.1,true,client,client.address,keyword,extended,,,Client network address.
 8.0.1,true,client,client.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
 8.0.1,true,client,client.as.organization.name,keyword,extended,,Google LLC,Organization name.
