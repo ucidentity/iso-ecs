@@ -463,41 +463,41 @@ cas.provider:
   normalize: []
   short: Application's CAS provider
   type: keyword
-cisco_duo.admin.action:
+cisco_duo_admin.action:
   dashed_name: cisco-duo-admin-action
   description: The type of change that was performed
-  flat_name: cisco_duo.admin.action
+  flat_name: cisco_duo_admin.action
   ignore_above: 1024
   level: extended
   name: action
   normalize: []
   short: The type of change that was performed
   type: keyword
-cisco_duo.admin.action_performed_on:
+cisco_duo_admin.action_performed_on:
   dashed_name: cisco-duo-admin-action-performed-on
   description: The object that was acted on.
-  flat_name: cisco_duo.admin.action_performed_on
+  flat_name: cisco_duo_admin.action_performed_on
   ignore_above: 1024
   level: extended
   name: action_performed_on
   normalize: []
   short: The object that was acted on.
   type: keyword
-cisco_duo.admin.flattened:
+cisco_duo_admin.flattened:
   dashed_name: cisco-duo-admin-flattened
   description: ES flattened datatype for objects where the subfields aren't known
     in advance.
-  flat_name: cisco_duo.admin.flattened
+  flat_name: cisco_duo_admin.flattened
   level: extended
   name: flattened
   normalize: []
   short: ES flattened datatype for objects where the subfields aren't known in advance.
   type: flattened
-cisco_duo.admin.user.name:
+cisco_duo_admin.user.name:
   dashed_name: cisco-duo-admin-user-name
   description: The full name of the administrator who performed the action in the
     Duo Admin Panel.
-  flat_name: cisco_duo.admin.user.name
+  flat_name: cisco_duo_admin.user.name
   ignore_above: 1024
   level: extended
   name: user.name
@@ -505,112 +505,112 @@ cisco_duo.admin.user.name:
   short: The full name of the administrator who performed the action in the Duo Admin
     Panel.
   type: keyword
-cisco_duo.auth.access_device.flash_version:
+cisco_duo_auth.access_device.flash_version:
   dashed_name: cisco-duo-auth-access-device-flash-version
   description: The Flash plugin version used, if present.
-  flat_name: cisco_duo.auth.access_device.flash_version
+  flat_name: cisco_duo_auth.access_device.flash_version
   ignore_above: 1024
   level: extended
   name: access_device.flash_version
   normalize: []
   short: The Flash plugin version used, if present.
   type: keyword
-cisco_duo.auth.access_device.hostname:
+cisco_duo_auth.access_device.hostname:
   dashed_name: cisco-duo-auth-access-device-hostname
   description: The hostname, if present.
-  flat_name: cisco_duo.auth.access_device.hostname
+  flat_name: cisco_duo_auth.access_device.hostname
   ignore_above: 1024
   level: extended
   name: access_device.hostname
   normalize: []
   short: The hostname, if present.
   type: keyword
-cisco_duo.auth.access_device.ip:
+cisco_duo_auth.access_device.ip:
   dashed_name: cisco-duo-auth-access-device-ip
   description: The access device's IP address.
-  flat_name: cisco_duo.auth.access_device.ip
+  flat_name: cisco_duo_auth.access_device.ip
   level: extended
   name: access_device.ip
   normalize: []
   short: The access device's IP address.
   type: ip
-cisco_duo.auth.access_device.is_encryption_enabled:
+cisco_duo_auth.access_device.is_encryption_enabled:
   dashed_name: cisco-duo-auth-access-device-is-encryption-enabled
   description: Reports the disk encryption state as detected by the Duo Device Health
     app.
-  flat_name: cisco_duo.auth.access_device.is_encryption_enabled
+  flat_name: cisco_duo_auth.access_device.is_encryption_enabled
   ignore_above: 1024
   level: extended
   name: access_device.is_encryption_enabled
   normalize: []
   short: Reports the disk encryption state as detected by the Duo Device Health app.
   type: keyword
-cisco_duo.auth.access_device.is_firewall_enabled:
+cisco_duo_auth.access_device.is_firewall_enabled:
   dashed_name: cisco-duo-auth-access-device-is-firewall-enabled
   description: Reports the firewall state as detected by the Duo Device Health app.
-  flat_name: cisco_duo.auth.access_device.is_firewall_enabled
+  flat_name: cisco_duo_auth.access_device.is_firewall_enabled
   ignore_above: 1024
   level: extended
   name: access_device.is_firewall_enabled
   normalize: []
   short: Reports the firewall state as detected by the Duo Device Health app.
   type: keyword
-cisco_duo.auth.access_device.is_password_set:
+cisco_duo_auth.access_device.is_password_set:
   dashed_name: cisco-duo-auth-access-device-is-password-set
   description: Reports the system password state as detected by the Duo Device Health
     app
-  flat_name: cisco_duo.auth.access_device.is_password_set
+  flat_name: cisco_duo_auth.access_device.is_password_set
   ignore_above: 1024
   level: extended
   name: access_device.is_password_set
   normalize: []
   short: Reports the system password state as detected by the Duo Device Health app
   type: keyword
-cisco_duo.auth.access_device.java_version:
+cisco_duo_auth.access_device.java_version:
   dashed_name: cisco-duo-auth-access-device-java-version
   description: The Java plugin version used.
-  flat_name: cisco_duo.auth.access_device.java_version
+  flat_name: cisco_duo_auth.access_device.java_version
   ignore_above: 1024
   level: extended
   name: access_device.java_version
   normalize: []
   short: The Java plugin version used.
   type: keyword
-cisco_duo.auth.access_device.location.city:
+cisco_duo_auth.access_device.location.city:
   dashed_name: cisco-duo-auth-access-device-location-city
   description: The city name of the access device using geoip location.
-  flat_name: cisco_duo.auth.access_device.location.city
+  flat_name: cisco_duo_auth.access_device.location.city
   ignore_above: 1024
   level: extended
   name: access_device.location.city
   normalize: []
   short: The city name of the access device using geoip location.
   type: keyword
-cisco_duo.auth.access_device.location.country:
+cisco_duo_auth.access_device.location.country:
   dashed_name: cisco-duo-auth-access-device-location-country
   description: The country of the access device using geoip location.
-  flat_name: cisco_duo.auth.access_device.location.country
+  flat_name: cisco_duo_auth.access_device.location.country
   ignore_above: 1024
   level: extended
   name: access_device.location.country
   normalize: []
   short: The country of the access device using geoip location.
   type: keyword
-cisco_duo.auth.access_device.location.state:
+cisco_duo_auth.access_device.location.state:
   dashed_name: cisco-duo-auth-access-device-location-state
   description: The state name of the access device using geoip location.
-  flat_name: cisco_duo.auth.access_device.location.state
+  flat_name: cisco_duo_auth.access_device.location.state
   ignore_above: 1024
   level: extended
   name: access_device.location.state
   normalize: []
   short: The state name of the access device using geoip location.
   type: keyword
-cisco_duo.auth.access_device.security_agents:
+cisco_duo_auth.access_device.security_agents:
   dashed_name: cisco-duo-auth-access-device-security-agents
   description: Reports the security agents present on the endpoint as detected by
     the Duo Device Health app.
-  flat_name: cisco_duo.auth.access_device.security_agents
+  flat_name: cisco_duo_auth.access_device.security_agents
   ignore_above: 1024
   level: extended
   name: access_device.security_agents
@@ -618,209 +618,209 @@ cisco_duo.auth.access_device.security_agents:
   short: Reports the security agents present on the endpoint as detected by the Duo
     Device Health app.
   type: keyword
-cisco_duo.auth.alias:
+cisco_duo_auth.alias:
   dashed_name: cisco-duo-auth-alias
   description: The username alias used to log in.
-  flat_name: cisco_duo.auth.alias
+  flat_name: cisco_duo_auth.alias
   ignore_above: 1024
   level: extended
   name: alias
   normalize: []
   short: The username alias used to log in.
   type: keyword
-cisco_duo.auth.application.key:
+cisco_duo_auth.application.key:
   dashed_name: cisco-duo-auth-application-key
   description: The application's integration_key.
-  flat_name: cisco_duo.auth.application.key
+  flat_name: cisco_duo_auth.application.key
   ignore_above: 1024
   level: extended
   name: application.key
   normalize: []
   short: The application's integration_key.
   type: keyword
-cisco_duo.auth.application.name:
+cisco_duo_auth.application.name:
   dashed_name: cisco-duo-auth-application-name
   description: The application's name.
-  flat_name: cisco_duo.auth.application.name
+  flat_name: cisco_duo_auth.application.name
   ignore_above: 1024
   level: extended
   name: application.name
   normalize: []
   short: The application's name.
   type: keyword
-cisco_duo.auth.auth_device.as.number:
+cisco_duo_auth.auth_device.as.number:
   dashed_name: cisco-duo-auth-auth-device-as-number
   description: Unique number allocated to the autonomous system. The autonomous system
     number (ASN) uniquely identifies each network on the Internet.
-  flat_name: cisco_duo.auth.auth_device.as.number
+  flat_name: cisco_duo_auth.auth_device.as.number
   level: extended
   name: auth_device.as.number
   normalize: []
   short: auth_device AS Number
   type: long
-cisco_duo.auth.auth_device.as.organization.name:
+cisco_duo_auth.auth_device.as.organization.name:
   dashed_name: cisco-duo-auth-auth-device-as-organization-name
   description: Organization name.
-  flat_name: cisco_duo.auth.auth_device.as.organization.name
+  flat_name: cisco_duo_auth.auth_device.as.organization.name
   ignore_above: 1024
   level: extended
   name: auth_device.as.organization.name
   normalize: []
   short: Organization name.
   type: keyword
-cisco_duo.auth.auth_device.geo.city_name:
+cisco_duo_auth.auth_device.geo.city_name:
   dashed_name: cisco-duo-auth-auth-device-geo-city-name
   description: City name.
-  flat_name: cisco_duo.auth.auth_device.geo.city_name
+  flat_name: cisco_duo_auth.auth_device.geo.city_name
   ignore_above: 1024
   level: extended
   name: auth_device.geo.city_name
   normalize: []
   short: City name.
   type: keyword
-cisco_duo.auth.auth_device.geo.continent_name:
+cisco_duo_auth.auth_device.geo.continent_name:
   dashed_name: cisco-duo-auth-auth-device-geo-continent-name
   description: Name of the continent.
-  flat_name: cisco_duo.auth.auth_device.geo.continent_name
+  flat_name: cisco_duo_auth.auth_device.geo.continent_name
   ignore_above: 1024
   level: extended
   name: auth_device.geo.continent_name
   normalize: []
   short: Name of the continent.
   type: keyword
-cisco_duo.auth.auth_device.geo.country_iso_code:
+cisco_duo_auth.auth_device.geo.country_iso_code:
   dashed_name: cisco-duo-auth-auth-device-geo-country-iso-code
   description: Country ISO code.
-  flat_name: cisco_duo.auth.auth_device.geo.country_iso_code
+  flat_name: cisco_duo_auth.auth_device.geo.country_iso_code
   ignore_above: 1024
   level: extended
   name: auth_device.geo.country_iso_code
   normalize: []
   short: Country ISO code.
   type: keyword
-cisco_duo.auth.auth_device.geo.country_name:
+cisco_duo_auth.auth_device.geo.country_name:
   dashed_name: cisco-duo-auth-auth-device-geo-country-name
   description: Country name.
-  flat_name: cisco_duo.auth.auth_device.geo.country_name
+  flat_name: cisco_duo_auth.auth_device.geo.country_name
   ignore_above: 1024
   level: extended
   name: auth_device.geo.country_name
   normalize: []
   short: Country name.
   type: keyword
-cisco_duo.auth.auth_device.geo.location:
+cisco_duo_auth.auth_device.geo.location:
   dashed_name: cisco-duo-auth-auth-device-geo-location
   description: Longitude and latitude.
-  flat_name: cisco_duo.auth.auth_device.geo.location
+  flat_name: cisco_duo_auth.auth_device.geo.location
   level: core
   name: auth_device.geo.location
   normalize: []
   short: Longitude and latitude.
   type: geo_point
-cisco_duo.auth.auth_device.geo.region_iso_code:
+cisco_duo_auth.auth_device.geo.region_iso_code:
   dashed_name: cisco-duo-auth-auth-device-geo-region-iso-code
   description: Region ISO code.
-  flat_name: cisco_duo.auth.auth_device.geo.region_iso_code
+  flat_name: cisco_duo_auth.auth_device.geo.region_iso_code
   ignore_above: 1024
   level: extended
   name: auth_device.geo.region_iso_code
   normalize: []
   short: Region ISO code.
   type: keyword
-cisco_duo.auth.auth_device.geo.region_name:
+cisco_duo_auth.auth_device.geo.region_name:
   dashed_name: cisco-duo-auth-auth-device-geo-region-name
   description: Region name.
-  flat_name: cisco_duo.auth.auth_device.geo.region_name
+  flat_name: cisco_duo_auth.auth_device.geo.region_name
   ignore_above: 1024
   level: extended
   name: auth_device.geo.region_name
   normalize: []
   short: Region name.
   type: keyword
-cisco_duo.auth.auth_device.ip:
+cisco_duo_auth.auth_device.ip:
   dashed_name: cisco-duo-auth-auth-device-ip
   description: The IP address of the authentication device.
-  flat_name: cisco_duo.auth.auth_device.ip
+  flat_name: cisco_duo_auth.auth_device.ip
   level: extended
   name: auth_device.ip
   normalize: []
   short: The IP address of the authentication device.
   type: ip
-cisco_duo.auth.auth_device.location.city:
+cisco_duo_auth.auth_device.location.city:
   dashed_name: cisco-duo-auth-auth-device-location-city
   description: The city name of the authentication device using geoip location.
-  flat_name: cisco_duo.auth.auth_device.location.city
+  flat_name: cisco_duo_auth.auth_device.location.city
   ignore_above: 1024
   level: extended
   name: auth_device.location.city
   normalize: []
   short: The city name of the authentication device using geoip location.
   type: keyword
-cisco_duo.auth.auth_device.location.country:
+cisco_duo_auth.auth_device.location.country:
   dashed_name: cisco-duo-auth-auth-device-location-country
   description: The country of the authentication device using geoip location.
-  flat_name: cisco_duo.auth.auth_device.location.country
+  flat_name: cisco_duo_auth.auth_device.location.country
   ignore_above: 1024
   level: extended
   name: auth_device.location.country
   normalize: []
   short: The country of the authentication device using geoip location.
   type: keyword
-cisco_duo.auth.auth_device.location.state:
+cisco_duo_auth.auth_device.location.state:
   dashed_name: cisco-duo-auth-auth-device-location-state
   description: The state name of the authentication device using geoip location.
-  flat_name: cisco_duo.auth.auth_device.location.state
+  flat_name: cisco_duo_auth.auth_device.location.state
   ignore_above: 1024
   level: extended
   name: auth_device.location.state
   normalize: []
   short: The state name of the authentication device using geoip location.
   type: keyword
-cisco_duo.auth.auth_device.name:
+cisco_duo_auth.auth_device.name:
   dashed_name: cisco-duo-auth-auth-device-name
   description: The name of the authentication device.
-  flat_name: cisco_duo.auth.auth_device.name
+  flat_name: cisco_duo_auth.auth_device.name
   ignore_above: 1024
   level: extended
   name: auth_device.name
   normalize: []
   short: The name of the authentication device.
   type: keyword
-cisco_duo.auth.email:
+cisco_duo_auth.email:
   dashed_name: cisco-duo-auth-email
   description: The email address of the user, if known to Duo, otherwise none.
-  flat_name: cisco_duo.auth.email
+  flat_name: cisco_duo_auth.email
   ignore_above: 1024
   level: extended
   name: email
   normalize: []
   short: The email address of the user, if known to Duo, otherwise none.
   type: keyword
-cisco_duo.auth.event_type:
+cisco_duo_auth.event_type:
   dashed_name: cisco-duo-auth-event-type
   description: The type of activity logged.
-  flat_name: cisco_duo.auth.event_type
+  flat_name: cisco_duo_auth.event_type
   ignore_above: 1024
   level: extended
   name: event_type
   normalize: []
   short: The type of activity logged.
   type: keyword
-cisco_duo.auth.factor:
+cisco_duo_auth.factor:
   dashed_name: cisco-duo-auth-factor
   description: The authentication factor.
-  flat_name: cisco_duo.auth.factor
+  flat_name: cisco_duo_auth.factor
   ignore_above: 1024
   level: extended
   name: factor
   normalize: []
   short: The authentication factor.
   type: keyword
-cisco_duo.auth.ood_software:
+cisco_duo_auth.ood_software:
   dashed_name: cisco-duo-auth-ood-software
   description: If authentication was denied due to out-of-date software, shows the
     name of the software.
-  flat_name: cisco_duo.auth.ood_software
+  flat_name: cisco_duo_auth.ood_software
   ignore_above: 1024
   level: extended
   name: ood_software
@@ -828,40 +828,40 @@ cisco_duo.auth.ood_software:
   short: If authentication was denied due to out-of-date software, shows the name
     of the software.
   type: keyword
-cisco_duo.auth.reason:
+cisco_duo_auth.reason:
   dashed_name: cisco-duo-auth-reason
   description: Provide the reason for the authentication attempt result.
-  flat_name: cisco_duo.auth.reason
+  flat_name: cisco_duo_auth.reason
   ignore_above: 1024
   level: extended
   name: reason
   normalize: []
   short: Provide the reason for the authentication attempt result.
   type: keyword
-cisco_duo.auth.result:
+cisco_duo_auth.result:
   dashed_name: cisco-duo-auth-result
   description: The result of the authentication attempt.
-  flat_name: cisco_duo.auth.result
+  flat_name: cisco_duo_auth.result
   ignore_above: 1024
   level: extended
   name: result
   normalize: []
   short: The result of the authentication attempt.
   type: keyword
-cisco_duo.auth.trusted_endpoint_status:
+cisco_duo_auth.trusted_endpoint_status:
   dashed_name: cisco-duo-auth-trusted-endpoint-status
   description: Status of Trusted Endpoint.
-  flat_name: cisco_duo.auth.trusted_endpoint_status
+  flat_name: cisco_duo_auth.trusted_endpoint_status
   ignore_above: 1024
   level: extended
   name: trusted_endpoint_status
   normalize: []
   short: Status of Trusted Endpoint.
   type: keyword
-cisco_duo.auth.txid:
+cisco_duo_auth.txid:
   dashed_name: cisco-duo-auth-txid
   description: The transaction ID of the event.
-  flat_name: cisco_duo.auth.txid
+  flat_name: cisco_duo_auth.txid
   ignore_above: 1024
   level: extended
   name: txid

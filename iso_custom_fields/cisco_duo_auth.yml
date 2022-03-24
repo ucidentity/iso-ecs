@@ -1,7 +1,7 @@
 ---
 # Copied from https://raw.githubusercontent.com/elastic/integrations/main/packages/cisco_duo/data_stream/auth/fields/fields.yml
 
-- name: cisco_duo.auth
+- name: cisco_duo_auth
   title: cisco_duo_auth
   group: 2
   description: |
