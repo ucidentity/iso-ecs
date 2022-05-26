@@ -1,0 +1,9 @@
+---
+
+- name: observer
+  fields:
+
+    - name: vsys
+      level: extended
+      type: keyword
+      description: VSYS geneating firewall log

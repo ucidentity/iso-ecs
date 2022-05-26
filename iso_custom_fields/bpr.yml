@@ -1,0 +1,104 @@
+---
+- name: bpr
+  title: Berkeley People Registry
+  group: 2
+  short: Fields for the Berkeley People Registry Application
+  description: >
+    Fields used by the Berkeley People Registry Application
+  type: group
+  fields:
+
+    - name: calnet_id
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: description
+      level: extended
+      type: keyword
+      description: description
+
+    - name: for_uid
+      level: extended
+      type: keyword
+      description: for_uid
+
+    - name: for_username
+      level: extended
+      type: keyword
+      description: for_username
+
+    - name: found_and_deleted
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: identifier
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: identifier_type
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: logged_in_uid
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: logged_in_username
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: new_calnet_id
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: new_email_address
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: new_recovery_email_address
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: old_calnet_id
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: old_recovery_email_address
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: recovery_email_address
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: registration_source
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: send_upstream_message
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: send_user_message
+      level: extended
+      type: keyword
+      description: Calnet ID
+
+    - name: track_status_type
+      level: extended
+      type: keyword
+      description: Calnet ID

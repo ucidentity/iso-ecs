@@ -1,0 +1,220 @@
+---
+# Copied from https://raw.githubusercontent.com/elastic/integrations/main/packages/cisco_duo/data_stream/auth/fields/fields.yml
+
+- name: cisco_duo_auth
+  title: cisco_duo_auth
+  group: 2
+  description: |
+    Fields for Cisco Duo Authentication logs
+  type: group
+  fields:
+
+    - name: email
+      level: extended
+      level: extended
+      type: keyword
+      description: |
+        The email address of the user, if known to Duo, otherwise none.
+
+    - name: event_type
+      level: extended
+      type: keyword
+      description: |
+        The type of activity logged.
+
+    - name: factor
+      level: extended
+      type: keyword
+      description: |
+        The authentication factor.
+
+    - name: ood_software
+      level: extended
+      type: keyword
+      description: |
+        If authentication was denied due to out-of-date software, shows the name of the software.
+
+    - name: reason
+      level: extended
+      type: keyword
+      description: |
+        Provide the reason for the authentication attempt result.
+
+    - name: result
+      level: extended
+      type: keyword
+      description: |
+        The result of the authentication attempt.
+
+    - name: trusted_endpoint_status
+      level: extended
+      type: keyword
+      description: |
+        Status of Trusted Endpoint.
+
+    - name: txid
+      level: extended
+      type: keyword
+      description: |
+        The transaction ID of the event.
+
+    - name: alias
+      level: extended
+      type: keyword
+      description: |
+        The username alias used to log in.
+
+    - name: access_device.flash_version
+      level: extended
+      type: keyword
+      description: |
+        The Flash plugin version used, if present.
+
+    - name: access_device.hostname
+      level: extended
+      type: keyword
+      description: |
+        The hostname, if present.
+
+    - name: access_device.ip
+      level: extended
+      type: ip
+      description: |
+        The access device's IP address.
+
+    - name: access_device.is_encryption_enabled
+      level: extended
+      type: keyword
+      description: |
+        Reports the disk encryption state as detected by the Duo Device Health app.
+
+    - name: access_device.is_firewall_enabled
+      level: extended
+      type: keyword
+      description: |
+        Reports the firewall state as detected by the Duo Device Health app.
+
+    - name: access_device.is_password_set
+      level: extended
+      type: keyword
+      description: |
+        Reports the system password state as detected by the Duo Device Health app
+
+    - name: access_device.java_version
+      level: extended
+      type: keyword
+      description: |
+        The Java plugin version used.
+
+    - name: access_device.location.city
+      level: extended
+      type: keyword
+      description: |
+        The city name of the access device using geoip location.
+
+    - name:  access_device.location.country
+      level: extended
+      type: keyword
+      description: |
+        The country of the access device using geoip location.
+
+    - name:  access_device.location.state
+      level: extended
+      type: keyword
+      description: |
+        The state name of the access device using geoip location.
+
+    - name: access_device.security_agents
+      level: extended
+      type: keyword
+      description: |
+        Reports the security agents present on the endpoint as detected by the Duo Device Health app.
+
+    - name: application.key
+      level: extended
+      type: keyword
+      description: |
+        The application's integration_key.
+
+    - name: application.name
+      level: extended
+      type: keyword
+      description: |
+        The application's name.
+
+    - name: auth_device.ip
+      level: extended
+      type: ip
+      description: |
+        The IP address of the authentication device.
+
+    - name: auth_device.location.city
+      level: extended
+      type: keyword
+      description: |
+        The city name of the authentication device using geoip location.
+
+    - name: auth_device.location.country
+      level: extended
+      type: keyword
+      description: |
+        The country of the authentication device using geoip location.
+
+    - name: auth_device.location.state
+      level: extended
+      type: keyword
+      description: |
+        The state name of the authentication device using geoip location.
+
+    - name: auth_device.as.number
+      level: extended
+      type: long
+      short: auth_device AS Number
+      description: |
+        Unique number allocated to the autonomous system. The autonomous system number (ASN) uniquely identifies each network on the Internet.
+
+    - name: auth_device.as.organization.name
+      level: extended
+      type: keyword
+      description: Organization name.
+
+    - name: auth_device.geo.city_name
+      level: extended
+      type: keyword
+      description: City name.
+
+    - name: auth_device.geo.continent_name
+      level: extended
+      type: keyword
+      description: Name of the continent.
+
+    - name: auth_device.geo.country_iso_code
+      level: extended
+      type: keyword
+      description: Country ISO code.
+
+    - name: auth_device.geo.country_name
+      level: extended
+      type: keyword
+      description: Country name.
+
+    - name: auth_device.geo.location
+      type: geo_point
+      level: core
+      description: Longitude and latitude.
+
+    - name: auth_device.geo.region_iso_code
+      level: extended
+      type: keyword
+      description: Region ISO code.
+
+    - name: auth_device.geo.region_name
+      level: extended
+      type: keyword
+      description: Region name.
+
+    - name: auth_device.name
+      level: extended
+      type: keyword
+      description: |
+        The name of the authentication device.

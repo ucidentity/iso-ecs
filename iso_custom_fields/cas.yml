@@ -1,0 +1,27 @@
+---
+- name: cas
+  title: Berkeley CAS 
+  group: 2
+  short: Fields for the Berkeley's CAS logs
+  description: >
+    Fields used by the Berkeley's CAS instance
+  type: group
+  fields:
+
+
+    - name: application
+      level: extended
+      type: keyword
+      description: Application requesting CAS authentication
+
+    - name: id
+      level: extended
+      type: keyword
+      description: Applicaion's CAS ID
+
+    - name: provider
+      level: extended
+      type: keyword
+      description: Application's CAS provider
+
+      

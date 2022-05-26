@@ -1,0 +1,9 @@
+---
+
+- name: event
+  fields:
+
+    - name: application
+      level: extended
+      type: keyword
+      description: The application generating the event
