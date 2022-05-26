@@ -2546,6 +2546,15 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,source,source.user.password,keyword,extended,,,User password from a honeypot
 8.2.1,true,source,source.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 8.2.1,true,span,span.id,keyword,extended,,3ff9a8981b7ccd5a,Unique identifier of the span within the scope of its trace.
+8.2.1,true,system,system.auth.ssh.dropped_ip,ip,extended,,,The client IP from SSH connections that are open and immediately dropped.
+8.2.1,true,system,system.auth.ssh.event,keyword,extended,,,"The SSH event as found in the logs (Accepted, Invalid, Failed, etc.)"
+8.2.1,true,system,system.auth.ssh.method,keyword,extended,,,"The SSH authentication method. Can be one of ""password"" or ""publickey""."
+8.2.1,true,system,system.auth.ssh.signature,keyword,extended,,,The signature of the client public key.
+8.2.1,true,system,system.auth.sudo.command,keyword,extended,,,The command executed via sudo.
+8.2.1,true,system,system.auth.sudo.error,keyword,extended,,,The error message in case the sudo command failed.
+8.2.1,true,system,system.auth.sudo.pwd,keyword,extended,,,The current directory where the sudo command is executed.
+8.2.1,true,system,system.auth.sudo.tty,keyword,extended,,,The TTY where the sudo command is executed.
+8.2.1,true,system,system.auth.sudo.user,keyword,extended,,,The target user to which the sudo command is switching.
 8.2.1,true,threat,threat.enrichments,nested,extended,array,,List of objects containing indicators enriching the event.
 8.2.1,true,threat,threat.enrichments.indicator,object,extended,,,Object containing indicators enriching the event.
 8.2.1,true,threat,threat.enrichments.indicator.as.number,long,extended,,15169,Unique number allocated to the autonomous system.

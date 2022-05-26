@@ -1,0 +1,54 @@
+# Copied from https://github.com/elastic/integrations/blob/main/packages/system/data_stream/auth/fields/fields.yml
+
+- name: system.auth
+  type: group
+  group: 2
+  title: System Auth
+  description: Fields for system auth logs, like sshd, sudo
+  fields:
+    - name: ssh.method
+      type: keyword
+      level: extended
+      description: |
+        The SSH authentication method. Can be one of "password" or "publickey".
+    - name: ssh.signature
+      type: keyword
+      level: extended
+      description: |
+        The signature of the client public key.
+    - name: ssh.dropped_ip
+      type: ip
+      level: extended
+      description: |
+        The client IP from SSH connections that are open and immediately dropped.
+    - name: ssh.event
+      type: keyword
+      level: extended
+      description: |
+        The SSH event as found in the logs (Accepted, Invalid, Failed, etc.)
+
+    - name: sudo.error
+      type: keyword
+      level: extended
+      description: |
+        The error message in case the sudo command failed.
+    - name: sudo.tty
+      type: keyword
+      level: extended
+      description: |
+        The TTY where the sudo command is executed.
+    - name: sudo.pwd
+      type: keyword
+      level: extended
+      description: |
+        The current directory where the sudo command is executed.
+    - name: sudo.user
+      type: keyword
+      level: extended
+      description: |
+        The target user to which the sudo command is switching.
+    - name: sudo.command
+      type: keyword
+      level: extended
+      description: |
+        The command executed via sudo.

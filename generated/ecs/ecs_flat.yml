@@ -30846,6 +30846,95 @@ span.id:
   normalize: []
   short: Unique identifier of the span within the scope of its trace.
   type: keyword
+system.auth.ssh.dropped_ip:
+  dashed_name: system-auth-ssh-dropped-ip
+  description: The client IP from SSH connections that are open and immediately dropped.
+  flat_name: system.auth.ssh.dropped_ip
+  level: extended
+  name: ssh.dropped_ip
+  normalize: []
+  short: The client IP from SSH connections that are open and immediately dropped.
+  type: ip
+system.auth.ssh.event:
+  dashed_name: system-auth-ssh-event
+  description: The SSH event as found in the logs (Accepted, Invalid, Failed, etc.)
+  flat_name: system.auth.ssh.event
+  ignore_above: 1024
+  level: extended
+  name: ssh.event
+  normalize: []
+  short: The SSH event as found in the logs (Accepted, Invalid, Failed, etc.)
+  type: keyword
+system.auth.ssh.method:
+  dashed_name: system-auth-ssh-method
+  description: The SSH authentication method. Can be one of "password" or "publickey".
+  flat_name: system.auth.ssh.method
+  ignore_above: 1024
+  level: extended
+  name: ssh.method
+  normalize: []
+  short: The SSH authentication method. Can be one of "password" or "publickey".
+  type: keyword
+system.auth.ssh.signature:
+  dashed_name: system-auth-ssh-signature
+  description: The signature of the client public key.
+  flat_name: system.auth.ssh.signature
+  ignore_above: 1024
+  level: extended
+  name: ssh.signature
+  normalize: []
+  short: The signature of the client public key.
+  type: keyword
+system.auth.sudo.command:
+  dashed_name: system-auth-sudo-command
+  description: The command executed via sudo.
+  flat_name: system.auth.sudo.command
+  ignore_above: 1024
+  level: extended
+  name: sudo.command
+  normalize: []
+  short: The command executed via sudo.
+  type: keyword
+system.auth.sudo.error:
+  dashed_name: system-auth-sudo-error
+  description: The error message in case the sudo command failed.
+  flat_name: system.auth.sudo.error
+  ignore_above: 1024
+  level: extended
+  name: sudo.error
+  normalize: []
+  short: The error message in case the sudo command failed.
+  type: keyword
+system.auth.sudo.pwd:
+  dashed_name: system-auth-sudo-pwd
+  description: The current directory where the sudo command is executed.
+  flat_name: system.auth.sudo.pwd
+  ignore_above: 1024
+  level: extended
+  name: sudo.pwd
+  normalize: []
+  short: The current directory where the sudo command is executed.
+  type: keyword
+system.auth.sudo.tty:
+  dashed_name: system-auth-sudo-tty
+  description: The TTY where the sudo command is executed.
+  flat_name: system.auth.sudo.tty
+  ignore_above: 1024
+  level: extended
+  name: sudo.tty
+  normalize: []
+  short: The TTY where the sudo command is executed.
+  type: keyword
+system.auth.sudo.user:
+  dashed_name: system-auth-sudo-user
+  description: The target user to which the sudo command is switching.
+  flat_name: system.auth.sudo.user
+  ignore_above: 1024
+  level: extended
+  name: sudo.user
+  normalize: []
+  short: The target user to which the sudo command is switching.
+  type: keyword
 tags:
   dashed_name: tags
   description: List of keywords used to tag each event.

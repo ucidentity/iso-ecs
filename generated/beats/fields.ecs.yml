@@ -19486,6 +19486,68 @@
       description: Array of user roles at the time of the event.
       example: '["kibana_admin", "reporting_user"]'
       default_field: false
+  - name: system.auth
+    title: System Auth
+    group: 2
+    description: Fields for system auth logs, like sshd, sudo
+    type: group
+    default_field: true
+    fields:
+    - name: auth.ssh.dropped_ip
+      level: extended
+      type: ip
+      description: The client IP from SSH connections that are open and immediately
+        dropped.
+      default_field: false
+    - name: auth.ssh.event
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The SSH event as found in the logs (Accepted, Invalid, Failed,
+        etc.)
+      default_field: false
+    - name: auth.ssh.method
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The SSH authentication method. Can be one of "password" or "publickey".
+      default_field: false
+    - name: auth.ssh.signature
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The signature of the client public key.
+      default_field: false
+    - name: auth.sudo.command
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The command executed via sudo.
+      default_field: false
+    - name: auth.sudo.error
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The error message in case the sudo command failed.
+      default_field: false
+    - name: auth.sudo.pwd
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The current directory where the sudo command is executed.
+      default_field: false
+    - name: auth.sudo.tty
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The TTY where the sudo command is executed.
+      default_field: false
+    - name: auth.sudo.user
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The target user to which the sudo command is switching.
+      default_field: false
   - name: threat
     title: Threat
     group: 2
