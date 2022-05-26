@@ -4,8 +4,8 @@
     "ecs_version": "8.2.1"
   },
   "composed_of": [
-    "ecs_8.2.1_base",
     "ecs_8.2.1_agent",
+    "ecs_8.2.1_base",
     "ecs_8.2.1_client",
     "ecs_8.2.1_cloud",
     "ecs_8.2.1_container",
@@ -39,9 +39,19 @@
     "ecs_8.2.1_tls",
     "ecs_8.2.1_tracing",
     "ecs_8.2.1_url",
-    "ecs_8.2.1_user_agent",
     "ecs_8.2.1_user",
-    "ecs_8.2.1_vulnerability"
+    "ecs_8.2.1_user_agent",
+    "ecs_8.2.1_vulnerability",
+    "ecs_8.2.1_arcsight",
+    "ecs_8.2.1_bpr",
+    "ecs_8.2.1_cas",
+    "ecs_8.2.1_cisco_duo_admin",
+    "ecs_8.2.1_cisco_duo_auth",
+    "ecs_8.2.1_ldap",
+    "ecs_8.2.1_malware",
+    "ecs_8.2.1_packet",
+    "ecs_8.2.1_shibboleth",
+    "ecs_8.2.1_ticket"
   ],
   "index_patterns": [
     "try-ecs-*"
