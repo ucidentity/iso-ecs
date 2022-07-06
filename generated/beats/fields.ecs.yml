@@ -4378,15 +4378,201 @@
       ignore_above: 1024
       description: LDAP operation
       default_field: false
+    - name: replication.message.category
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Message category from server's operational logs
+      default_field: false
+    - name: replication.message.id
+      level: extended
+      type: long
+      description: Message ID from server's operational logs
+      default_field: false
+    - name: replication.message.severity
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Message severity from server's operational logs
+      default_field: false
+    - name: request.attrs
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: LDAP attributes requested by client
+      default_field: false
+    - name: request.authType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: LDAP auth type (e.g. simple, anonymous)
+      default_field: false
+    - name: request.connection_id
+      level: extended
+      type: long
+      description: Unique connection ID per server/request/day
+      default_field: false
+    - name: request.controls
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: OID of the extended request from the client
+      default_field: false
+    - name: request.delete_old_rdn
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Controls retention of old RDN for a modify DN operation (rename)
+      default_field: false
+    - name: request.dn
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Bind DN
+      default_field: false
+    - name: request.filter
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: LDAP search filter
+      default_field: false
+    - name: request.id_to_abandon
+      level: extended
+      type: long
+      description: Message ID of the request to abandon from a specific client session
+      default_field: false
+    - name: request.message
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Localized request message
+      default_field: false
+    - name: request.msg_id
+      level: extended
+      type: long
+      description: Unique message ID per client session
+      default_field: false
+    - name: request.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name that corresponds to the request.oid
+      default_field: false
+    - name: request.new_rdn
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: New value of the RDN for a modify DN operation (rename)
+      default_field: false
+    - name: request.new_sup
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: New value of the parent for a modify DN operation (move)
+      default_field: false
+    - name: request.oid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Request control OID
+      default_field: false
+    - name: request.op_type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Replication operation (sync)
+      default_field: false
+    - name: request.operation
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: LDAP operation requested by client
+      default_field: false
+    - name: request.run_as
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Authorization ID
+      default_field: false
+    - name: request.scope
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Search scope (e.g. sub)
+      default_field: false
+    - name: request.version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Version 2 or 3
+      default_field: false
     - name: request_controls
       level: extended
       type: keyword
       ignore_above: 1024
       description: LDAP request controls
       default_field: false
+    - name: response.additional_items
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Additional information
+      default_field: false
+    - name: response.controls
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: OID of the extended response from the server
+      default_field: false
+    - name: response.detail
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Additional response details
+      default_field: false
+    - name: response.elapsed_time_ms
+      level: extended
+      type: long
+      description: Total elapsed time for the operation in milliseconds
+      default_field: false
+    - name: response.failure_reason
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Human-readable failure reason
+      default_field: false
+    - name: response.masked_message
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Real, masked result message
+      default_field: false
+    - name: response.masked_result
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Real, masked result code
+      default_field: false
+    - name: response.nentries
+      level: extended
+      type: long
+      description: Number of entries returned
+      default_field: false
+    - name: response.reason
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Reason for disconnect
+      default_field: false
+    - name: response.status_code
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: either successful or failed
+      default_field: false
     - name: result.code
       level: extended
-      type: integer
+      type: long
       description: LDAP result code
       default_field: false
     - name: result.count
@@ -4400,11 +4586,40 @@
       ignore_above: 1024
       description: LDAP query scope
       default_field: false
+    - name: server.message.category
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Message category from server's operational logs
+      default_field: false
+    - name: server.message.id
+      level: extended
+      type: long
+      description: Message ID from server's operational logs
+      default_field: false
+    - name: server.message.severity
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Message severity from server's operational logs
+      default_field: false
+    - name: transaction_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique ID for the transaction
+      default_field: false
     - name: type
       level: extended
       type: keyword
       ignore_above: 1024
       description: LDAP query type
+      default_field: false
+    - name: user_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User who requested the operation
       default_field: false
     - name: version
       level: extended

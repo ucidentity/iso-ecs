@@ -7668,6 +7668,222 @@ ldap:
       normalize: []
       short: LDAP operation
       type: keyword
+    ldap.replication.message.category:
+      dashed_name: ldap-replication-message-category
+      description: Message category from server's operational logs
+      flat_name: ldap.replication.message.category
+      ignore_above: 1024
+      level: extended
+      name: replication.message.category
+      normalize: []
+      short: Message category from server's operational logs
+      type: keyword
+    ldap.replication.message.id:
+      dashed_name: ldap-replication-message-id
+      description: Message ID from server's operational logs
+      flat_name: ldap.replication.message.id
+      level: extended
+      name: replication.message.id
+      normalize: []
+      short: Message ID from server's operational logs
+      type: long
+    ldap.replication.message.severity:
+      dashed_name: ldap-replication-message-severity
+      description: Message severity from server's operational logs
+      flat_name: ldap.replication.message.severity
+      ignore_above: 1024
+      level: extended
+      name: replication.message.severity
+      normalize: []
+      short: Message severity from server's operational logs
+      type: keyword
+    ldap.request.attrs:
+      dashed_name: ldap-request-attrs
+      description: LDAP attributes requested by client
+      flat_name: ldap.request.attrs
+      ignore_above: 1024
+      level: extended
+      name: request.attrs
+      normalize: []
+      short: LDAP attributes requested by client
+      type: keyword
+    ldap.request.authType:
+      dashed_name: ldap-request-authType
+      description: LDAP auth type (e.g. simple, anonymous)
+      flat_name: ldap.request.authType
+      ignore_above: 1024
+      level: extended
+      name: request.authType
+      normalize: []
+      short: LDAP auth type (e.g. simple, anonymous)
+      type: keyword
+    ldap.request.connection_id:
+      dashed_name: ldap-request-connection-id
+      description: Unique connection ID per server/request/day
+      flat_name: ldap.request.connection_id
+      level: extended
+      name: request.connection_id
+      normalize: []
+      short: Unique connection ID per server/request/day
+      type: long
+    ldap.request.controls:
+      dashed_name: ldap-request-controls
+      description: OID of the extended request from the client
+      flat_name: ldap.request.controls
+      ignore_above: 1024
+      level: extended
+      name: request.controls
+      normalize: []
+      short: OID of the extended request from the client
+      type: keyword
+    ldap.request.delete_old_rdn:
+      dashed_name: ldap-request-delete-old-rdn
+      description: Controls retention of old RDN for a modify DN operation (rename)
+      flat_name: ldap.request.delete_old_rdn
+      ignore_above: 1024
+      level: extended
+      name: request.delete_old_rdn
+      normalize: []
+      short: Controls retention of old RDN for a modify DN operation (rename)
+      type: keyword
+    ldap.request.dn:
+      dashed_name: ldap-request-dn
+      description: Bind DN
+      flat_name: ldap.request.dn
+      ignore_above: 1024
+      level: extended
+      name: request.dn
+      normalize: []
+      short: Bind DN
+      type: keyword
+    ldap.request.filter:
+      dashed_name: ldap-request-filter
+      description: LDAP search filter
+      flat_name: ldap.request.filter
+      ignore_above: 1024
+      level: extended
+      name: request.filter
+      normalize: []
+      short: LDAP search filter
+      type: keyword
+    ldap.request.id_to_abandon:
+      dashed_name: ldap-request-id-to-abandon
+      description: Message ID of the request to abandon from a specific client session
+      flat_name: ldap.request.id_to_abandon
+      level: extended
+      name: request.id_to_abandon
+      normalize: []
+      short: Message ID of the request to abandon from a specific client session
+      type: long
+    ldap.request.message:
+      dashed_name: ldap-request-message
+      description: Localized request message
+      flat_name: ldap.request.message
+      ignore_above: 1024
+      level: extended
+      name: request.message
+      normalize: []
+      short: Localized request message
+      type: keyword
+    ldap.request.msg_id:
+      dashed_name: ldap-request-msg-id
+      description: Unique message ID per client session
+      flat_name: ldap.request.msg_id
+      level: extended
+      name: request.msg_id
+      normalize: []
+      short: Unique message ID per client session
+      type: long
+    ldap.request.name:
+      dashed_name: ldap-request-name
+      description: Name that corresponds to the request.oid
+      flat_name: ldap.request.name
+      ignore_above: 1024
+      level: extended
+      name: request.name
+      normalize: []
+      short: Name that corresponds to the request.oid
+      type: keyword
+    ldap.request.new_rdn:
+      dashed_name: ldap-request-new-rdn
+      description: New value of the RDN for a modify DN operation (rename)
+      flat_name: ldap.request.new_rdn
+      ignore_above: 1024
+      level: extended
+      name: request.new_rdn
+      normalize: []
+      short: New value of the RDN for a modify DN operation (rename)
+      type: keyword
+    ldap.request.new_sup:
+      dashed_name: ldap-request-new-sup
+      description: New value of the parent for a modify DN operation (move)
+      flat_name: ldap.request.new_sup
+      ignore_above: 1024
+      level: extended
+      name: request.new_sup
+      normalize: []
+      short: New value of the parent for a modify DN operation (move)
+      type: keyword
+    ldap.request.oid:
+      dashed_name: ldap-request-oid
+      description: Request control OID
+      flat_name: ldap.request.oid
+      ignore_above: 1024
+      level: extended
+      name: request.oid
+      normalize: []
+      short: Request control OID
+      type: keyword
+    ldap.request.op_type:
+      dashed_name: ldap-request-op-type
+      description: Replication operation (sync)
+      flat_name: ldap.request.op_type
+      ignore_above: 1024
+      level: extended
+      name: request.op_type
+      normalize: []
+      short: Replication operation (sync)
+      type: keyword
+    ldap.request.operation:
+      dashed_name: ldap-request-operation
+      description: LDAP operation requested by client
+      flat_name: ldap.request.operation
+      ignore_above: 1024
+      level: extended
+      name: request.operation
+      normalize: []
+      short: LDAP operation requested by client
+      type: keyword
+    ldap.request.run_as:
+      dashed_name: ldap-request-run-as
+      description: Authorization ID
+      flat_name: ldap.request.run_as
+      ignore_above: 1024
+      level: extended
+      name: request.run_as
+      normalize: []
+      short: Authorization ID
+      type: keyword
+    ldap.request.scope:
+      dashed_name: ldap-request-scope
+      description: Search scope (e.g. sub)
+      flat_name: ldap.request.scope
+      ignore_above: 1024
+      level: extended
+      name: request.scope
+      normalize: []
+      short: Search scope (e.g. sub)
+      type: keyword
+    ldap.request.version:
+      dashed_name: ldap-request-version
+      description: Version 2 or 3
+      flat_name: ldap.request.version
+      ignore_above: 1024
+      level: extended
+      name: request.version
+      normalize: []
+      short: Version 2 or 3
+      type: keyword
     ldap.request_controls:
       dashed_name: ldap-request-controls
       description: LDAP request controls
@@ -7678,6 +7894,104 @@ ldap:
       normalize: []
       short: LDAP request controls
       type: keyword
+    ldap.response.additional_items:
+      dashed_name: ldap-response-additional-items
+      description: Additional information
+      flat_name: ldap.response.additional_items
+      ignore_above: 1024
+      level: extended
+      name: response.additional_items
+      normalize: []
+      short: Additional information
+      type: keyword
+    ldap.response.controls:
+      dashed_name: ldap-response-controls
+      description: OID of the extended response from the server
+      flat_name: ldap.response.controls
+      ignore_above: 1024
+      level: extended
+      name: response.controls
+      normalize: []
+      short: OID of the extended response from the server
+      type: keyword
+    ldap.response.detail:
+      dashed_name: ldap-response-detail
+      description: Additional response details
+      flat_name: ldap.response.detail
+      ignore_above: 1024
+      level: extended
+      name: response.detail
+      normalize: []
+      short: Additional response details
+      type: keyword
+    ldap.response.elapsed_time_ms:
+      dashed_name: ldap-response-elapsed-time-ms
+      description: Total elapsed time for the operation in milliseconds
+      flat_name: ldap.response.elapsed_time_ms
+      level: extended
+      name: response.elapsed_time_ms
+      normalize: []
+      short: Total elapsed time for the operation in milliseconds
+      type: long
+    ldap.response.failure_reason:
+      dashed_name: ldap-response-failure-reason
+      description: Human-readable failure reason
+      flat_name: ldap.response.failure_reason
+      ignore_above: 1024
+      level: extended
+      name: response.failure_reason
+      normalize: []
+      short: Human-readable failure reason
+      type: keyword
+    ldap.response.masked_message:
+      dashed_name: ldap-response-masked-message
+      description: Real, masked result message
+      flat_name: ldap.response.masked_message
+      ignore_above: 1024
+      level: extended
+      name: response.masked_message
+      normalize: []
+      short: Real, masked result message
+      type: keyword
+    ldap.response.masked_result:
+      dashed_name: ldap-response-masked-result
+      description: Real, masked result code
+      flat_name: ldap.response.masked_result
+      ignore_above: 1024
+      level: extended
+      name: response.masked_result
+      normalize: []
+      short: Real, masked result code
+      type: keyword
+    ldap.response.nentries:
+      dashed_name: ldap-response-nentries
+      description: Number of entries returned
+      flat_name: ldap.response.nentries
+      level: extended
+      name: response.nentries
+      normalize: []
+      short: Number of entries returned
+      type: long
+    ldap.response.reason:
+      dashed_name: ldap-response-reason
+      description: Reason for disconnect
+      flat_name: ldap.response.reason
+      ignore_above: 1024
+      level: extended
+      name: response.reason
+      normalize: []
+      short: Reason for disconnect
+      type: keyword
+    ldap.response.status_code:
+      dashed_name: ldap-response-status-code
+      description: either successful or failed
+      flat_name: ldap.response.status_code
+      ignore_above: 1024
+      level: extended
+      name: response.status_code
+      normalize: []
+      short: either successful or failed
+      type: keyword
     ldap.result.code:
       dashed_name: ldap-result-code
       description: LDAP result code
@@ -7686,7 +8000,7 @@ ldap:
       name: result.code
       normalize: []
       short: LDAP result code
-      type: integer
+      type: long
     ldap.result.count:
       dashed_name: ldap-result-count
       description: Count of records returned by LDAP query
@@ -7706,6 +8020,45 @@ ldap:
       normalize: []
       short: LDAP query scope
       type: keyword
+    ldap.server.message.category:
+      dashed_name: ldap-server-message-category
+      description: Message category from server's operational logs
+      flat_name: ldap.server.message.category
+      ignore_above: 1024
+      level: extended
+      name: server.message.category
+      normalize: []
+      short: Message category from server's operational logs
+      type: keyword
+    ldap.server.message.id:
+      dashed_name: ldap-server-message-id
+      description: Message ID from server's operational logs
+      flat_name: ldap.server.message.id
+      level: extended
+      name: server.message.id
+      normalize: []
+      short: Message ID from server's operational logs
+      type: long
+    ldap.server.message.severity:
+      dashed_name: ldap-server-message-severity
+      description: Message severity from server's operational logs
+      flat_name: ldap.server.message.severity
+      ignore_above: 1024
+      level: extended
+      name: server.message.severity
+      normalize: []
+      short: Message severity from server's operational logs
+      type: keyword
+    ldap.transaction_id:
+      dashed_name: ldap-transaction-id
+      description: Unique ID for the transaction
+      flat_name: ldap.transaction_id
+      ignore_above: 1024
+      level: extended
+      name: transaction_id
+      normalize: []
+      short: Unique ID for the transaction
+      type: keyword
     ldap.type:
       dashed_name: ldap-type
       description: LDAP query type
@@ -7715,6 +8068,16 @@ ldap:
       name: type
       normalize: []
       short: LDAP query type
+      type: keyword
+    ldap.user_id:
+      dashed_name: ldap-user-id
+      description: User who requested the operation
+      flat_name: ldap.user_id
+      ignore_above: 1024
+      level: extended
+      name: user_id
+      normalize: []
+      short: User who requested the operation
       type: keyword
     ldap.version:
       dashed_name: ldap-version
