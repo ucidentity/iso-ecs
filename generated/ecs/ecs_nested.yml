@@ -7638,6 +7638,15 @@ ldap:
       normalize: []
       short: LDAP search filter
       type: keyword
+    ldap.indexed_search:
+      dashed_name: ldap-indexed-search
+      description: If the search is indexed
+      flat_name: ldap.indexed_search
+      level: extended
+      name: indexed_search
+      normalize: []
+      short: If the search is indexed
+      type: boolean
     ldap.message:
       dashed_name: ldap-message
       description: LDAP message
@@ -7893,16 +7902,6 @@ ldap:
       name: request_controls
       normalize: []
       short: LDAP request controls
-      type: keyword
-    ldap.response.additional_items:
-      dashed_name: ldap-response-additional-items
-      description: Additional information
-      flat_name: ldap.response.additional_items
-      ignore_above: 1024
-      level: extended
-      name: response.additional_items
-      normalize: []
-      short: Additional information
       type: keyword
     ldap.response.controls:
       dashed_name: ldap-response-controls

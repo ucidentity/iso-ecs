@@ -4360,6 +4360,11 @@
       ignore_above: 1024
       description: LDAP search filter
       default_field: false
+    - name: indexed_search
+      level: extended
+      type: boolean
+      description: If the search is indexed
+      default_field: false
     - name: message
       level: extended
       type: keyword
@@ -4511,12 +4516,6 @@
       type: keyword
       ignore_above: 1024
       description: LDAP request controls
-      default_field: false
-    - name: response.additional_items
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: Additional information
       default_field: false
     - name: response.controls
       level: extended

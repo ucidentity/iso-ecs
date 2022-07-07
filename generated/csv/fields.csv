@@ -487,6 +487,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,ldap,ldap.base,keyword,extended,,,LDAP Search Base
 8.2.1,true,ldap,ldap.category,keyword,extended,,,LDAP DN
 8.2.1,true,ldap,ldap.filter,keyword,extended,,,LDAP search filter
+8.2.1,true,ldap,ldap.indexed_search,boolean,extended,,,If the search is indexed
 8.2.1,true,ldap,ldap.message,keyword,extended,,,LDAP message
 8.2.1,true,ldap,ldap.oid,keyword,extended,,,LDAP OID
 8.2.1,true,ldap,ldap.operation,keyword,extended,,,LDAP operation
@@ -513,7 +514,6 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,ldap,ldap.request.scope,keyword,extended,,,Search scope (e.g. sub)
 8.2.1,true,ldap,ldap.request.version,keyword,extended,,,Version 2 or 3
 8.2.1,true,ldap,ldap.request_controls,keyword,extended,,,LDAP request controls
-8.2.1,true,ldap,ldap.response.additional_items,keyword,extended,,,Additional information
 8.2.1,true,ldap,ldap.response.controls,keyword,extended,,,OID of the extended response from the server
 8.2.1,true,ldap,ldap.response.detail,keyword,extended,,,Additional response details
 8.2.1,true,ldap,ldap.response.elapsed_time_ms,long,extended,,,Total elapsed time for the operation in milliseconds

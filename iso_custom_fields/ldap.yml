@@ -177,11 +177,6 @@
       type: keyword
       description: Version 2 or 3
 
-    - name: response.additional_items
-      level: extended
-      type: keyword
-      description: Additional information
-
     - name: response.controls
       level: extended
       type: keyword
@@ -237,6 +232,11 @@
       type: keyword
       description: User who requested the operation
 
+    - name: indexed_search
+      level: extended
+      type: boolean
+      description: If the search is indexed
+
     - name: server.message
       level: extended
       type: keyword
@@ -276,4 +276,3 @@
       level: extended
       type: keyword
       description: Message severity from server's operational logs
-
