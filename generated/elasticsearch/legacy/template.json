@@ -2325,6 +2325,9 @@
             "ignore_above": 1024,
             "type": "keyword"
           },
+          "indexed_search": {
+            "type": "boolean"
+          },
           "message": {
             "ignore_above": 1024,
             "type": "keyword"
@@ -2337,14 +2340,148 @@
             "ignore_above": 1024,
             "type": "keyword"
           },
+          "replication": {
+            "properties": {
+              "message": {
+                "properties": {
+                  "category": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "type": "long"
+                  },
+                  "severity": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "request": {
+            "properties": {
+              "attrs": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "authType": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "connection_id": {
+                "type": "long"
+              },
+              "controls": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "delete_old_rdn": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "dn": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "filter": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "id_to_abandon": {
+                "type": "long"
+              },
+              "message": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "msg_id": {
+                "type": "long"
+              },
+              "name": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "new_rdn": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "new_sup": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "oid": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "op_type": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "operation": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "run_as": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "scope": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "version": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
           "request_controls": {
             "ignore_above": 1024,
             "type": "keyword"
           },
+          "response": {
+            "properties": {
+              "controls": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "detail": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "elapsed_time_ms": {
+                "type": "long"
+              },
+              "failure_reason": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "masked_message": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "masked_result": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "nentries": {
+                "type": "long"
+              },
+              "reason": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "status_code": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
           "result": {
             "properties": {
               "code": {
-                "type": "integer"
+                "type": "long"
               },
               "count": {
                 "type": "long"
@@ -2355,7 +2492,34 @@
             "ignore_above": 1024,
             "type": "keyword"
           },
+          "server": {
+            "properties": {
+              "message": {
+                "properties": {
+                  "category": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "type": "long"
+                  },
+                  "severity": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "transaction_id": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
           "type": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "user_id": {
             "ignore_above": 1024,
             "type": "keyword"
           },

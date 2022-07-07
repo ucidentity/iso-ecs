@@ -487,14 +487,51 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,ldap,ldap.base,keyword,extended,,,LDAP Search Base
 8.2.1,true,ldap,ldap.category,keyword,extended,,,LDAP DN
 8.2.1,true,ldap,ldap.filter,keyword,extended,,,LDAP search filter
+8.2.1,true,ldap,ldap.indexed_search,boolean,extended,,,If the search is indexed
 8.2.1,true,ldap,ldap.message,keyword,extended,,,LDAP message
 8.2.1,true,ldap,ldap.oid,keyword,extended,,,LDAP OID
 8.2.1,true,ldap,ldap.operation,keyword,extended,,,LDAP operation
+8.2.1,true,ldap,ldap.replication.message.category,keyword,extended,,,Message category from server's operational logs
+8.2.1,true,ldap,ldap.replication.message.id,long,extended,,,Message ID from server's operational logs
+8.2.1,true,ldap,ldap.replication.message.severity,keyword,extended,,,Message severity from server's operational logs
+8.2.1,true,ldap,ldap.request.attrs,keyword,extended,,,LDAP attributes requested by client
+8.2.1,true,ldap,ldap.request.authType,keyword,extended,,,"LDAP auth type (e.g. simple, anonymous)"
+8.2.1,true,ldap,ldap.request.connection_id,long,extended,,,Unique connection ID per server/request/day
+8.2.1,true,ldap,ldap.request.controls,keyword,extended,,,OID of the extended request from the client
+8.2.1,true,ldap,ldap.request.delete_old_rdn,keyword,extended,,,Controls retention of old RDN for a modify DN operation (rename)
+8.2.1,true,ldap,ldap.request.dn,keyword,extended,,,Bind DN
+8.2.1,true,ldap,ldap.request.filter,keyword,extended,,,LDAP search filter
+8.2.1,true,ldap,ldap.request.id_to_abandon,long,extended,,,Message ID of the request to abandon from a specific client session
+8.2.1,true,ldap,ldap.request.message,keyword,extended,,,Localized request message
+8.2.1,true,ldap,ldap.request.msg_id,long,extended,,,Unique message ID per client session
+8.2.1,true,ldap,ldap.request.name,keyword,extended,,,Name that corresponds to the request.oid
+8.2.1,true,ldap,ldap.request.new_rdn,keyword,extended,,,New value of the RDN for a modify DN operation (rename)
+8.2.1,true,ldap,ldap.request.new_sup,keyword,extended,,,New value of the parent for a modify DN operation (move)
+8.2.1,true,ldap,ldap.request.oid,keyword,extended,,,Request control OID
+8.2.1,true,ldap,ldap.request.op_type,keyword,extended,,,Replication operation (sync)
+8.2.1,true,ldap,ldap.request.operation,keyword,extended,,,LDAP operation requested by client
+8.2.1,true,ldap,ldap.request.run_as,keyword,extended,,,Authorization ID
+8.2.1,true,ldap,ldap.request.scope,keyword,extended,,,Search scope (e.g. sub)
+8.2.1,true,ldap,ldap.request.version,keyword,extended,,,Version 2 or 3
 8.2.1,true,ldap,ldap.request_controls,keyword,extended,,,LDAP request controls
-8.2.1,true,ldap,ldap.result.code,integer,extended,,,LDAP result code
+8.2.1,true,ldap,ldap.response.controls,keyword,extended,,,OID of the extended response from the server
+8.2.1,true,ldap,ldap.response.detail,keyword,extended,,,Additional response details
+8.2.1,true,ldap,ldap.response.elapsed_time_ms,long,extended,,,Total elapsed time for the operation in milliseconds
+8.2.1,true,ldap,ldap.response.failure_reason,keyword,extended,,,Human-readable failure reason
+8.2.1,true,ldap,ldap.response.masked_message,keyword,extended,,,"Real, masked result message"
+8.2.1,true,ldap,ldap.response.masked_result,keyword,extended,,,"Real, masked result code"
+8.2.1,true,ldap,ldap.response.nentries,long,extended,,,Number of entries returned
+8.2.1,true,ldap,ldap.response.reason,keyword,extended,,,Reason for disconnect
+8.2.1,true,ldap,ldap.response.status_code,keyword,extended,,,either successful or failed
+8.2.1,true,ldap,ldap.result.code,long,extended,,,LDAP result code
 8.2.1,true,ldap,ldap.result.count,long,extended,,,Count of records returned by LDAP query
 8.2.1,true,ldap,ldap.scope,keyword,extended,,,LDAP query scope
+8.2.1,true,ldap,ldap.server.message.category,keyword,extended,,,Message category from server's operational logs
+8.2.1,true,ldap,ldap.server.message.id,long,extended,,,Message ID from server's operational logs
+8.2.1,true,ldap,ldap.server.message.severity,keyword,extended,,,Message severity from server's operational logs
+8.2.1,true,ldap,ldap.transaction_id,keyword,extended,,,Unique ID for the transaction
 8.2.1,true,ldap,ldap.type,keyword,extended,,,LDAP query type
+8.2.1,true,ldap,ldap.user_id,keyword,extended,,,User who requested the operation
 8.2.1,true,ldap,ldap.version,keyword,extended,,,LDAP version
 8.2.1,true,log,log.file.path,keyword,extended,,/var/log/fun-times.log,Full path to the log file this event came from.
 8.2.1,true,log,log.level,keyword,core,,error,Log level of the log event.

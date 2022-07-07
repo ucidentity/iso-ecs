@@ -33,12 +33,12 @@
       level: extended
       type: keyword
       description: LDAP search filter
-    
+
     - name: message
       level: extended
       type: keyword
       description: LDAP message
-    
+
     - name: oid
       level: extended
       type: keyword
@@ -56,7 +56,7 @@
     
     - name: result.code
       level: extended
-      type: integer
+      type: long
       description: LDAP result code
     
     - name: result.count
@@ -78,3 +78,201 @@
       level: extended
       type: keyword
       description: LDAP version
+
+
+    # new log format (or to keep)
+
+    - name: request.attrs
+      level: extended
+      type: keyword
+      description: LDAP attributes requested by client
+
+    - name: request.authType
+      level: extended
+      type: keyword
+      description: LDAP auth type (e.g. simple, anonymous)
+
+    - name: request.connection_id
+      level: extended
+      type: long
+      description: Unique connection ID per server/request/day
+
+    - name: request.controls
+      level: extended
+      type: keyword
+      description: OID of the extended request from the client
+
+    - name: request.delete_old_rdn
+      level: extended
+      type: keyword
+      description: Controls retention of old RDN for a modify DN operation (rename)
+
+    - name: request.dn
+      level: extended
+      type: keyword
+      description: Bind DN
+
+    - name: request.filter
+      level: extended
+      type: keyword
+      description: LDAP search filter
+
+    - name: request.id_to_abandon
+      level: extended
+      type: long
+      description: Message ID of the request to abandon from a specific client session
+
+    - name: request.message
+      level: extended
+      type: keyword
+      description: Localized request message
+
+    - name: request.msg_id
+      level: extended
+      type: long
+      description: Unique message ID per client session
+
+    - name: request.name
+      level: extended
+      type: keyword
+      description: Name that corresponds to the request.oid
+
+    - name: request.new_rdn
+      level: extended
+      type: keyword
+      description: New value of the RDN for a modify DN operation (rename)
+
+    - name: request.new_sup
+      level: extended
+      type: keyword
+      description: New value of the parent for a modify DN operation (move)
+
+    - name: request.oid
+      level: extended
+      type: keyword
+      description: Request control OID
+
+    - name: request.operation
+      level: extended
+      type: keyword
+      description: LDAP operation requested by client
+
+    - name: request.op_type
+      level: extended
+      type: keyword
+      description: Replication operation (sync)
+
+    - name: request.run_as
+      level: extended
+      type: keyword
+      description: Authorization ID
+
+    - name: request.scope
+      level: extended
+      type: keyword
+      description: Search scope (e.g. sub)
+
+    - name: request.version
+      level: extended
+      type: keyword
+      description: Version 2 or 3
+
+    - name: response.controls
+      level: extended
+      type: keyword
+      description: OID of the extended response from the server
+
+    - name: response.detail
+      level: extended
+      type: keyword
+      description: Additional response details
+
+    - name: response.elapsed_time_ms
+      level: extended
+      type: long
+      description: Total elapsed time for the operation in milliseconds
+
+    - name: response.failure_reason
+      level: extended
+      type: keyword
+      description: Human-readable failure reason
+
+    - name: response.masked_message
+      level: extended
+      type: keyword
+      description: Real, masked result message
+
+    - name: response.masked_result
+      level: extended
+      type: keyword
+      description: Real, masked result code
+
+    - name: response.nentries
+      level: extended
+      type: long
+      description: Number of entries returned
+
+    - name: response.reason
+      level: extended
+      type: keyword
+      description: Reason for disconnect
+
+    - name: response.status_code
+      level: extended
+      type: keyword
+      description: either successful or failed
+
+    - name: transaction_id
+      level: extended
+      type: keyword
+      description: Unique ID for the transaction
+
+    - name: user_id
+      level: extended
+      type: keyword
+      description: User who requested the operation
+
+    - name: indexed_search
+      level: extended
+      type: boolean
+      description: If the search is indexed
+
+    - name: server.message
+      level: extended
+      type: keyword
+      description: Message from server's operational logs
+
+    - name: server.message.id
+      level: extended
+      type: long
+      description: Message ID from server's operational logs
+
+    - name: server.message.category
+      level: extended
+      type: keyword
+      description: Message category from server's operational logs
+
+    - name: server.message.severity
+      level: extended
+      type: keyword
+      description: Message severity from server's operational logs
+
+    - name: replication.message
+      level: extended
+      type: keyword
+      description: Message from server's operational logs
+
+    - name: replication.message.id
+      level: extended
+      type: long
+      description: Message ID from server's operational logs
+
+    - name: replication.message.category
+      level: extended
+      type: keyword
+      description: Message category from server's operational logs
+
+    - name: replication.message.severity
+      level: extended
+      type: keyword
+      description: Message severity from server's operational logs
