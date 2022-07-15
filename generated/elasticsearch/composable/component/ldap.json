@@ -191,6 +191,9 @@
               "ignore_above": 1024,
               "type": "keyword"
             },
+            "secure_bind": {
+              "type": "boolean"
+            },
             "server": {
               "properties": {
                 "message": {

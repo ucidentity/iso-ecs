@@ -526,6 +526,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,ldap,ldap.result.code,long,extended,,,LDAP result code
 8.2.1,true,ldap,ldap.result.count,long,extended,,,Count of records returned by LDAP query
 8.2.1,true,ldap,ldap.scope,keyword,extended,,,LDAP query scope
+8.2.1,true,ldap,ldap.secure_bind,boolean,extended,,,Indicates a BIND operation uses a security strength factor (e.g. SSL/TLS)
 8.2.1,true,ldap,ldap.server.message.category,keyword,extended,,,Message category from server's operational logs
 8.2.1,true,ldap,ldap.server.message.id,long,extended,,,Message ID from server's operational logs
 8.2.1,true,ldap,ldap.server.message.severity,keyword,extended,,,Message severity from server's operational logs

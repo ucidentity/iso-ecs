@@ -276,3 +276,8 @@
       level: extended
       type: keyword
       description: Message severity from server's operational logs
+
+    - name: secure_bind
+      level: extended
+      type: boolean
+      description: Indicates a BIND operation uses a security strength factor (e.g. SSL/TLS)

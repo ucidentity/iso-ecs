@@ -6633,6 +6633,15 @@ ldap.scope:
   normalize: []
   short: LDAP query scope
   type: keyword
+ldap.secure_bind:
+  dashed_name: ldap-secure-bind
+  description: Indicates a BIND operation uses a security strength factor (e.g. SSL/TLS)
+  flat_name: ldap.secure_bind
+  level: extended
+  name: secure_bind
+  normalize: []
+  short: Indicates a BIND operation uses a security strength factor (e.g. SSL/TLS)
+  type: boolean
 ldap.server.message.category:
   dashed_name: ldap-server-message-category
   description: Message category from server's operational logs

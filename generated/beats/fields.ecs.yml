@@ -4585,6 +4585,12 @@
       ignore_above: 1024
       description: LDAP query scope
       default_field: false
+    - name: secure_bind
+      level: extended
+      type: boolean
+      description: Indicates a BIND operation uses a security strength factor (e.g.
+        SSL/TLS)
+      default_field: false
     - name: server.message.category
       level: extended
       type: keyword
