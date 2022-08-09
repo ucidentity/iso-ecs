@@ -1,0 +1,26 @@
+---
+name: iso_custom_fields
+fields:
+  arcsight:
+    fields: "*"
+  bpr:
+    fields: "*"
+  cas:
+    fields: "*"
+  cisco_duo_admin:
+    fields: "*"
+  cisco_duo_auth:
+    fields: "*"
+  ldap:
+    fields: "*"
+  malware:
+    fields: "*"
+  packet:
+    fields: "*"
+  shibboleth:
+    fields: "*"
+  system:
+    fields: "*"
+  ticket:
+    fields: "*"
+   

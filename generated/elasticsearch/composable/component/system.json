@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-system.auth.html",
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-system.html",
     "ecs_version": "8.2.1"
   },
   "template": {
