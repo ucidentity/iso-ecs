@@ -18,6 +18,13 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,arcsight,arcsight.category.significance,keyword,extended,,,Event's significance
 8.2.1,true,arcsight,arcsight.category.technique,keyword,extended,,,Event's technique
 8.2.1,true,arcsight,arcsight.classid,keyword,extended,,,Event's Classification ID
+8.2.1,true,aws,aws.cloudwatch.log.group,keyword,extended,,,The CloudWatch LogGroup
+8.2.1,true,aws,aws.cloudwatch.log.message_type,keyword,extended,,,CloudWatch MessageType
+8.2.1,true,aws,aws.cloudwatch.log.stream,keyword,extended,,,The CloudWatch LogStream
+8.2.1,true,aws,aws.cloudwatch.log.subscription_filters,keyword,extended,,,The name of the Subscription Filter used to send CloudWatch Logs to Security
+8.2.1,true,aws,aws.s3.bucket.arn,keyword,extended,,,The ARN of the S3 Bucket
+8.2.1,true,aws,aws.s3.bucket.name,keyword,extended,,,The S3 Bucket Name
+8.2.1,true,aws,aws.s3.object.key,keyword,extended,,,The S3 Object Key
 8.2.1,true,bpr,bpr.calnet_id,keyword,extended,,,Calnet ID
 8.2.1,true,bpr,bpr.description,keyword,extended,,,description
 8.2.1,true,bpr,bpr.for_uid,keyword,extended,,,for_uid

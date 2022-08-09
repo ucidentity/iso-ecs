@@ -241,6 +241,77 @@ arcsight.classid:
   normalize: []
   short: Event's Classification ID
   type: keyword
+aws.cloudwatch.log.group:
+  dashed_name: aws-cloudwatch-log-group
+  description: The CloudWatch LogGroup
+  flat_name: aws.cloudwatch.log.group
+  ignore_above: 1024
+  level: extended
+  name: cloudwatch.log.group
+  normalize: []
+  short: The CloudWatch LogGroup
+  type: keyword
+aws.cloudwatch.log.message_type:
+  dashed_name: aws-cloudwatch-log-message-type
+  description: CloudWatch MessageType
+  flat_name: aws.cloudwatch.log.message_type
+  ignore_above: 1024
+  level: extended
+  name: cloudwatch.log.message_type
+  normalize: []
+  short: CloudWatch MessageType
+  type: keyword
+aws.cloudwatch.log.stream:
+  dashed_name: aws-cloudwatch-log-stream
+  description: The CloudWatch LogStream
+  flat_name: aws.cloudwatch.log.stream
+  ignore_above: 1024
+  level: extended
+  name: cloudwatch.log.stream
+  normalize: []
+  short: The CloudWatch LogStream
+  type: keyword
+aws.cloudwatch.log.subscription_filters:
+  dashed_name: aws-cloudwatch-log-subscription-filters
+  description: The name of the Subscription Filter used to send CloudWatch Logs to
+    Security
+  flat_name: aws.cloudwatch.log.subscription_filters
+  ignore_above: 1024
+  level: extended
+  name: cloudwatch.log.subscription_filters
+  normalize: []
+  short: The name of the Subscription Filter used to send CloudWatch Logs to Security
+  type: keyword
+aws.s3.bucket.arn:
+  dashed_name: aws-s3-bucket-arn
+  description: The ARN of the S3 Bucket
+  flat_name: aws.s3.bucket.arn
+  ignore_above: 1024
+  level: extended
+  name: s3.bucket.arn
+  normalize: []
+  short: The ARN of the S3 Bucket
+  type: keyword
+aws.s3.bucket.name:
+  dashed_name: aws-s3-bucket-name
+  description: The S3 Bucket Name
+  flat_name: aws.s3.bucket.name
+  ignore_above: 1024
+  level: extended
+  name: s3.bucket.name
+  normalize: []
+  short: The S3 Bucket Name
+  type: keyword
+aws.s3.object.key:
+  dashed_name: aws-s3-object-key
+  description: The S3 Object Key
+  flat_name: aws.s3.object.key
+  ignore_above: 1024
+  level: extended
+  name: s3.object.key
+  normalize: []
+  short: The S3 Object Key
+  type: keyword
 bpr.calnet_id:
   dashed_name: bpr-calnet-id
   description: Calnet ID

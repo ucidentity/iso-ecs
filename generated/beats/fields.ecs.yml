@@ -264,6 +264,56 @@
         default_field: false
       description: Organization name.
       example: Google LLC
+  - name: aws
+    title: aws
+    group: 2
+    description: Fields for logs from aws
+    type: group
+    default_field: true
+    fields:
+    - name: cloudwatch.log.group
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The CloudWatch LogGroup
+      default_field: false
+    - name: cloudwatch.log.message_type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: CloudWatch MessageType
+      default_field: false
+    - name: cloudwatch.log.stream
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The CloudWatch LogStream
+      default_field: false
+    - name: cloudwatch.log.subscription_filters
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The name of the Subscription Filter used to send CloudWatch Logs
+        to Security
+      default_field: false
+    - name: s3.bucket.arn
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The ARN of the S3 Bucket
+      default_field: false
+    - name: s3.bucket.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The S3 Bucket Name
+      default_field: false
+    - name: s3.object.key
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The S3 Object Key
+      default_field: false
   - name: bpr
     title: Berkeley People Registry
     group: 2

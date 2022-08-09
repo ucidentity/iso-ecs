@@ -3,6 +3,8 @@ name: iso_custom_fields
 fields:
   arcsight:
     fields: "*"
+  aws:
+    fields: "*"
   bpr:
     fields: "*"
   cas:

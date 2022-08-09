@@ -474,6 +474,135 @@ The `as` fields are expected to be nested at:
 
 
 Note also that the `as` fields are not expected to be used directly at the root of the events.
+[[ecs-aws]]
+=== aws Fields
+
+Fields for logs from aws
+
+[discrete]
+==== aws Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-aws-cloudwatch-log-group]]
+<<field-aws-cloudwatch-log-group, aws.cloudwatch.log.group>>
+
+| The CloudWatch LogGroup
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-cloudwatch-log-message-type]]
+<<field-aws-cloudwatch-log-message-type, aws.cloudwatch.log.message_type>>
+
+| CloudWatch MessageType
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-cloudwatch-log-stream]]
+<<field-aws-cloudwatch-log-stream, aws.cloudwatch.log.stream>>
+
+| The CloudWatch LogStream
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-cloudwatch-log-subscription-filters]]
+<<field-aws-cloudwatch-log-subscription-filters, aws.cloudwatch.log.subscription_filters>>
+
+| The name of the Subscription Filter used to send CloudWatch Logs to Security
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-s3-bucket-arn]]
+<<field-aws-s3-bucket-arn, aws.s3.bucket.arn>>
+
+| The ARN of the S3 Bucket
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-s3-bucket-name]]
+<<field-aws-s3-bucket-name, aws.s3.bucket.name>>
+
+| The S3 Bucket Name
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-s3-object-key]]
+<<field-aws-s3-object-key, aws.s3.object.key>>
+
+| The S3 Object Key
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-bpr]]
 === Berkeley People Registry Fields
 

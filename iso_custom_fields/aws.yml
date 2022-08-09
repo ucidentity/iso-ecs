@@ -1,0 +1,50 @@
+
+- name: aws
+  title: aws
+  group: 2
+  description: |
+    Fields for logs from aws
+  type: group
+  fields:
+
+    - name: cloudwatch.log.group
+      level: extended
+      type: keyword
+      description: |
+        The CloudWatch LogGroup
+
+    - name: cloudwatch.log.message_type
+      level: extended
+      type: keyword
+      description: |
+        CloudWatch MessageType
+
+    - name: cloudwatch.log.stream
+      level: extended
+      type: keyword
+      description: |
+        The CloudWatch LogStream
+
+    - name: cloudwatch.log.subscription_filters
+      level: extended
+      type: keyword
+      description: |
+        The name of the Subscription Filter used to send CloudWatch Logs to Security
+
+    - name: s3.bucket.arn
+      level: extended
+      type: keyword
+      description: |
+        The ARN of the S3 Bucket
+
+    - name: s3.bucket.name
+      level: extended
+      type: keyword
+      description: |
+        The S3 Bucket Name
+
+    - name: s3.object.key
+      level: extended
+      type: keyword
+      description: |
+        The S3 Object Key

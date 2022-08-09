@@ -407,6 +407,152 @@ as:
       top_level: false
     root: false
     title: Autonomous System
+aws:
+  field_details:
+    dashed_name: aws
+    description: Fields for logs from aws
+    flat_name: aws
+    name: aws
+    node_name: aws
+    short: Fields for logs from aws
+    type: group
+  fields:
+    cloudwatch:
+      field_details:
+        dashed_name: aws-cloudwatch
+        flat_name: aws.cloudwatch
+        intermediate: true
+        name: cloudwatch
+        node_name: cloudwatch
+        type: object
+      fields:
+        log:
+          field_details:
+            dashed_name: aws-cloudwatch-log
+            flat_name: aws.cloudwatch.log
+            intermediate: true
+            name: cloudwatch.log
+            node_name: log
+            type: object
+          fields:
+            group:
+              field_details:
+                dashed_name: aws-cloudwatch-log-group
+                description: The CloudWatch LogGroup
+                flat_name: aws.cloudwatch.log.group
+                ignore_above: 1024
+                level: extended
+                name: cloudwatch.log.group
+                node_name: group
+                normalize: []
+                short: The CloudWatch LogGroup
+                type: keyword
+            message_type:
+              field_details:
+                dashed_name: aws-cloudwatch-log-message-type
+                description: CloudWatch MessageType
+                flat_name: aws.cloudwatch.log.message_type
+                ignore_above: 1024
+                level: extended
+                name: cloudwatch.log.message_type
+                node_name: message_type
+                normalize: []
+                short: CloudWatch MessageType
+                type: keyword
+            stream:
+              field_details:
+                dashed_name: aws-cloudwatch-log-stream
+                description: The CloudWatch LogStream
+                flat_name: aws.cloudwatch.log.stream
+                ignore_above: 1024
+                level: extended
+                name: cloudwatch.log.stream
+                node_name: stream
+                normalize: []
+                short: The CloudWatch LogStream
+                type: keyword
+            subscription_filters:
+              field_details:
+                dashed_name: aws-cloudwatch-log-subscription-filters
+                description: The name of the Subscription Filter used to send CloudWatch
+                  Logs to Security
+                flat_name: aws.cloudwatch.log.subscription_filters
+                ignore_above: 1024
+                level: extended
+                name: cloudwatch.log.subscription_filters
+                node_name: subscription_filters
+                normalize: []
+                short: The name of the Subscription Filter used to send CloudWatch
+                  Logs to Security
+                type: keyword
+    s3:
+      field_details:
+        dashed_name: aws-s3
+        flat_name: aws.s3
+        intermediate: true
+        name: s3
+        node_name: s3
+        type: object
+      fields:
+        bucket:
+          field_details:
+            dashed_name: aws-s3-bucket
+            flat_name: aws.s3.bucket
+            intermediate: true
+            name: s3.bucket
+            node_name: bucket
+            type: object
+          fields:
+            arn:
+              field_details:
+                dashed_name: aws-s3-bucket-arn
+                description: The ARN of the S3 Bucket
+                flat_name: aws.s3.bucket.arn
+                ignore_above: 1024
+                level: extended
+                name: s3.bucket.arn
+                node_name: arn
+                normalize: []
+                short: The ARN of the S3 Bucket
+                type: keyword
+            name:
+              field_details:
+                dashed_name: aws-s3-bucket-name
+                description: The S3 Bucket Name
+                flat_name: aws.s3.bucket.name
+                ignore_above: 1024
+                level: extended
+                name: s3.bucket.name
+                node_name: name
+                normalize: []
+                short: The S3 Bucket Name
+                type: keyword
+        object:
+          field_details:
+            dashed_name: aws-s3-object
+            flat_name: aws.s3.object
+            intermediate: true
+            name: s3.object
+            node_name: object
+            type: object
+          fields:
+            key:
+              field_details:
+                dashed_name: aws-s3-object-key
+                description: The S3 Object Key
+                flat_name: aws.s3.object.key
+                ignore_above: 1024
+                level: extended
+                name: s3.object.key
+                node_name: key
+                normalize: []
+                short: The S3 Object Key
+                type: keyword
+  schema_details:
+    group: 2
+    prefix: aws.
+    root: false
+    title: aws
 base:
   field_details:
     dashed_name: base

@@ -102,6 +102,58 @@
           }
         }
       },
+      "aws": {
+        "properties": {
+          "cloudwatch": {
+            "properties": {
+              "log": {
+                "properties": {
+                  "group": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "message_type": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "stream": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "subscription_filters": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "s3": {
+            "properties": {
+              "bucket": {
+                "properties": {
+                  "arn": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
+              "object": {
+                "properties": {
+                  "key": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "bpr": {
         "properties": {
           "calnet_id": {
