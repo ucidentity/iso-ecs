@@ -8450,11 +8450,12 @@ logstash:
       dashed_name: logstash-log-pipeline-action-id
       description: ID of specific aciton within a pipeline that generated the log
       flat_name: logstash.log.pipeline_action_id
+      ignore_above: 1024
       level: extended
       name: log.pipeline_action_id
       normalize: []
       short: ID of specific aciton within a pipeline that generated the log
-      type: object
+      type: keyword
     logstash.log.pipeline_id:
       dashed_name: logstash-log-pipeline-id
       description: ID of logstash pipeline that generated the log

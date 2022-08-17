@@ -8039,7 +8039,7 @@ type: keyword
 
 | ID of specific aciton within a pipeline that generated the log
 
-type: object
+type: keyword
 
 
 

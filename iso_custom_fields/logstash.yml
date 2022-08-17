@@ -21,7 +21,7 @@
 
     - name: log.pipeline_action_id
       level: extended
-      type: object
+      type: keyword
       description: >
         ID of specific aciton within a pipeline that generated the log
   

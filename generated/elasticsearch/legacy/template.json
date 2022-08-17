@@ -2685,7 +2685,8 @@
                 "type": "keyword"
               },
               "pipeline_action_id": {
-                "type": "object"
+                "ignore_above": 1024,
+                "type": "keyword"
               },
               "pipeline_id": {
                 "ignore_above": 1024,
