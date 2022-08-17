@@ -2676,6 +2676,25 @@
           }
         }
       },
+      "logstash": {
+        "properties": {
+          "log": {
+            "properties": {
+              "module": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "pipeline_action_id": {
+                "type": "object"
+              },
+              "pipeline_id": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      },
       "malware": {
         "properties": {
           "malicious": {

@@ -11,6 +11,7 @@
     "ecs_8.2.1_cisco_duo_admin",
     "ecs_8.2.1_cisco_duo_auth",
     "ecs_8.2.1_ldap",
+    "ecs_8.2.1_logstash",
     "ecs_8.2.1_malware",
     "ecs_8.2.1_packet",
     "ecs_8.2.1_shibboleth",

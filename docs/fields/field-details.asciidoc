@@ -8003,6 +8003,71 @@ example: `1`
 |=====
 
 
+[[ecs-logstash]]
+=== Logstash Fields
+
+Fields from Logstash logs
+
+[discrete]
+==== Logstash Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-logstash-log-module]]
+<<field-logstash-log-module, logstash.log.module>>
+
+| The module or class where the event originate.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-logstash-log-pipeline-action-id]]
+<<field-logstash-log-pipeline-action-id, logstash.log.pipeline_action_id>>
+
+| ID of specific aciton within a pipeline that generated the log
+
+type: object
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-logstash-log-pipeline-id]]
+<<field-logstash-log-pipeline-id, logstash.log.pipeline_id>>
+
+| ID of logstash pipeline that generated the log
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-malware]]
 === malware Fields
 

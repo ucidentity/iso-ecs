@@ -8433,6 +8433,44 @@ log:
   short: Details about the event's logging mechanism.
   title: Log
   type: group
+logstash:
+  description: Fields from Logstash logs
+  fields:
+    logstash.log.module:
+      dashed_name: logstash-log-module
+      description: The module or class where the event originate.
+      flat_name: logstash.log.module
+      ignore_above: 1024
+      level: extended
+      name: log.module
+      normalize: []
+      short: The module or class where the event originate.
+      type: keyword
+    logstash.log.pipeline_action_id:
+      dashed_name: logstash-log-pipeline-action-id
+      description: ID of specific aciton within a pipeline that generated the log
+      flat_name: logstash.log.pipeline_action_id
+      level: extended
+      name: log.pipeline_action_id
+      normalize: []
+      short: ID of specific aciton within a pipeline that generated the log
+      type: object
+    logstash.log.pipeline_id:
+      dashed_name: logstash-log-pipeline-id
+      description: ID of logstash pipeline that generated the log
+      flat_name: logstash.log.pipeline_id
+      ignore_above: 1024
+      level: extended
+      name: log.pipeline_id
+      normalize: []
+      short: ID of logstash pipeline that generated the log
+      type: keyword
+  group: 2
+  name: logstash
+  prefix: logstash.
+  short: Logstash Logs
+  title: Logstash
+  type: group
 malware:
   description: 'Used when a sensor detect malware
 

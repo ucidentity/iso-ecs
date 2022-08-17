@@ -84,6 +84,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-log,Log>> | Details about the event's logging mechanism.
 
+| <<ecs-logstash,Logstash>> | Logstash Logs
+
 | <<ecs-malware,malware>> | Detected Malware Fields
 
 | <<ecs-network,Network>> | Fields describing the communication path over which the event happened.

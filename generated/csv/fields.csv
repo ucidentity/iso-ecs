@@ -559,6 +559,9 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,log,log.syslog.severity.name,keyword,extended,,Error,Syslog text-based severity of the event.
 8.2.1,true,log,log.syslog.structured_data,flattened,extended,,,Structured data expressed in RFC 5424 messages.
 8.2.1,true,log,log.syslog.version,keyword,extended,,1,Syslog protocol version.
+8.2.1,true,logstash,logstash.log.module,keyword,extended,,,The module or class where the event originate.
+8.2.1,true,logstash,logstash.log.pipeline_action_id,object,extended,,,ID of specific aciton within a pipeline that generated the log
+8.2.1,true,logstash,logstash.log.pipeline_id,keyword,extended,,,ID of logstash pipeline that generated the log
 8.2.1,true,malware,malware.malicious,boolean,extended,,,Whether the malware is malicious
 8.2.1,true,malware,malware.name,keyword,extended,,,Name of malware
 8.2.1,true,network,network.application,keyword,extended,,aim,Application level protocol name.

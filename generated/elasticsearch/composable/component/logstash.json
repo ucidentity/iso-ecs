@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-logstash.html",
+    "ecs_version": "8.2.1"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "logstash": {
+          "properties": {
+            "log": {
+              "properties": {
+                "module": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "pipeline_action_id": {
+                  "type": "object"
+                },
+                "pipeline_id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
