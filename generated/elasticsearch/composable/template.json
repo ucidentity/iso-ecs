@@ -15,6 +15,7 @@
     "ecs_8.2.1_malware",
     "ecs_8.2.1_packet",
     "ecs_8.2.1_shibboleth",
+    "ecs_8.2.1_suricata",
     "ecs_8.2.1_system",
     "ecs_8.2.1_ticket",
     "ecs_8.2.1_base",

@@ -11729,6 +11729,1223 @@ Note also that the `source` fields may be used directly at the root of the event
 |=====
 
 
+[[ecs-suricata]]
+=== suricata Fields
+
+Fields for logs from suricata
+
+[discrete]
+==== suricata Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-affected-product]]
+<<field-suricata-eve-alert-affected-product, suricata.eve.alert.affected_product>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-attack-target]]
+<<field-suricata-eve-alert-attack-target, suricata.eve.alert.attack_target>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-category]]
+<<field-suricata-eve-alert-category, suricata.eve.alert.category>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-created-at]]
+<<field-suricata-eve-alert-created-at, suricata.eve.alert.created_at>>
+
+| 
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-cve]]
+<<field-suricata-eve-alert-cve, suricata.eve.alert.cve>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-deployment]]
+<<field-suricata-eve-alert-deployment, suricata.eve.alert.deployment>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-former-category]]
+<<field-suricata-eve-alert-former-category, suricata.eve.alert.former_category>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-gid]]
+<<field-suricata-eve-alert-gid, suricata.eve.alert.gid>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-impact-flag]]
+<<field-suricata-eve-alert-impact-flag, suricata.eve.alert.impact_flag>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-malware-family]]
+<<field-suricata-eve-alert-malware-family, suricata.eve.alert.malware_family>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-performance-impact]]
+<<field-suricata-eve-alert-performance-impact, suricata.eve.alert.performance_impact>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-policy]]
+<<field-suricata-eve-alert-policy, suricata.eve.alert.policy>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-rev]]
+<<field-suricata-eve-alert-rev, suricata.eve.alert.rev>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-service]]
+<<field-suricata-eve-alert-service, suricata.eve.alert.service>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-signature]]
+<<field-suricata-eve-alert-signature, suricata.eve.alert.signature>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-signature-id]]
+<<field-suricata-eve-alert-signature-id, suricata.eve.alert.signature_id>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-signature-severity]]
+<<field-suricata-eve-alert-signature-severity, suricata.eve.alert.signature_severity>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-tag]]
+<<field-suricata-eve-alert-tag, suricata.eve.alert.tag>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-alert-updated-at]]
+<<field-suricata-eve-alert-updated-at, suricata.eve.alert.updated_at>>
+
+| 
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-app-proto-tc]]
+<<field-suricata-eve-app-proto-tc, suricata.eve.app_proto_tc>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-app-proto-ts]]
+<<field-suricata-eve-app-proto-ts, suricata.eve.app_proto_ts>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-content-range-raw]]
+<<field-suricata-eve-content-range-raw, suricata.eve.content_range.raw>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-content-range-size]]
+<<field-suricata-eve-content-range-size, suricata.eve.content_range.size>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-dns-query-id]]
+<<field-suricata-eve-dns-query-id, suricata.eve.dns.query.id>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-dns-query-rrname]]
+<<field-suricata-eve-dns-query-rrname, suricata.eve.dns.query.rrname>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-dns-query-rrtype]]
+<<field-suricata-eve-dns-query-rrtype, suricata.eve.dns.query.rrtype>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-dns-query-tx-id]]
+<<field-suricata-eve-dns-query-tx-id, suricata.eve.dns.query.tx_id>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-dns-query-type]]
+<<field-suricata-eve-dns-query-type, suricata.eve.dns.query.type>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-email-from]]
+<<field-suricata-eve-email-from, suricata.eve.email.from>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-email-status]]
+<<field-suricata-eve-email-status, suricata.eve.email.status>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-email-to]]
+<<field-suricata-eve-email-to, suricata.eve.email.to>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-event-type]]
+<<field-suricata-eve-event-type, suricata.eve.event_type>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-flow-id]]
+<<field-suricata-eve-flow-id, suricata.eve.flow_id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-flowbits]]
+<<field-suricata-eve-flowbits, suricata.eve.flowbits>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-host]]
+<<field-suricata-eve-host, suricata.eve.host>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-content-range-end]]
+<<field-suricata-eve-http-content-range-end, suricata.eve.http.content_range.end>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-protocol]]
+<<field-suricata-eve-http-protocol, suricata.eve.http.protocol>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-redirect]]
+<<field-suricata-eve-http-redirect, suricata.eve.http.redirect>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-xff]]
+<<field-suricata-eve-http-xff, suricata.eve.http.xff>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-content-type]]
+<<field-suricata-eve-http-content-type, suricata.eve.http_content_type>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-request-body]]
+<<field-suricata-eve-http-request-body, suricata.eve.http_request_body>>
+
+| 
+
+type: text
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-request-body-printable]]
+<<field-suricata-eve-http-request-body-printable, suricata.eve.http_request_body_printable>>
+
+| 
+
+type: text
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-response-body]]
+<<field-suricata-eve-http-response-body, suricata.eve.http_response_body>>
+
+| 
+
+type: text
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-http-response-body-printable]]
+<<field-suricata-eve-http-response-body-printable, suricata.eve.http_response_body_printable>>
+
+| 
+
+type: text
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-in-iface]]
+<<field-suricata-eve-in-iface, suricata.eve.in_iface>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-packet-info-linktype]]
+<<field-suricata-eve-packet-info-linktype, suricata.eve.packet_info.linktype>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-payload]]
+<<field-suricata-eve-payload, suricata.eve.payload>>
+
+| 
+
+type: text
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-payload-printable]]
+<<field-suricata-eve-payload-printable, suricata.eve.payload_printable>>
+
+| 
+
+type: text
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smb-client-dialects]]
+<<field-suricata-eve-smb-client-dialects, suricata.eve.smb.client_dialects>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smb-command]]
+<<field-suricata-eve-smb-command, suricata.eve.smb.command>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smb-dialect]]
+<<field-suricata-eve-smb-dialect, suricata.eve.smb.dialect>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smb-id]]
+<<field-suricata-eve-smb-id, suricata.eve.smb.id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smb-server-guid]]
+<<field-suricata-eve-smb-server-guid, suricata.eve.smb.server_guid>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smb-session-id]]
+<<field-suricata-eve-smb-session-id, suricata.eve.smb.session_id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smb-tree-id]]
+<<field-suricata-eve-smb-tree-id, suricata.eve.smb.tree_id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smtp-helo]]
+<<field-suricata-eve-smtp-helo, suricata.eve.smtp.helo>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smtp-mail-from]]
+<<field-suricata-eve-smtp-mail-from, suricata.eve.smtp.mail_from>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-smtp-rcpt-to]]
+<<field-suricata-eve-smtp-rcpt-to, suricata.eve.smtp.rcpt_to>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-ssh-server-proto-version]]
+<<field-suricata-eve-ssh-server-proto-version, suricata.eve.ssh.server.proto_version>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-ssh-server-software-version]]
+<<field-suricata-eve-ssh-server-software-version, suricata.eve.ssh.server.software_version>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-stream]]
+<<field-suricata-eve-stream, suricata.eve.stream>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-fingerprint]]
+<<field-suricata-eve-tls-fingerprint, suricata.eve.tls.fingerprint>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-issuerdn]]
+<<field-suricata-eve-tls-issuerdn, suricata.eve.tls.issuerdn>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-ja3-hash]]
+<<field-suricata-eve-tls-ja3-hash, suricata.eve.tls.ja3.hash>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-ja3-string]]
+<<field-suricata-eve-tls-ja3-string, suricata.eve.tls.ja3.string>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-ja3s-hash]]
+<<field-suricata-eve-tls-ja3s-hash, suricata.eve.tls.ja3s.hash>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-ja3s-string]]
+<<field-suricata-eve-tls-ja3s-string, suricata.eve.tls.ja3s.string>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-notafter]]
+<<field-suricata-eve-tls-notafter, suricata.eve.tls.notafter>>
+
+| 
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-notbefore]]
+<<field-suricata-eve-tls-notbefore, suricata.eve.tls.notbefore>>
+
+| 
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-serial]]
+<<field-suricata-eve-tls-serial, suricata.eve.tls.serial>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-session-resumed]]
+<<field-suricata-eve-tls-session-resumed, suricata.eve.tls.session_resumed>>
+
+| 
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-sni]]
+<<field-suricata-eve-tls-sni, suricata.eve.tls.sni>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-subject]]
+<<field-suricata-eve-tls-subject, suricata.eve.tls.subject>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tls-version]]
+<<field-suricata-eve-tls-version, suricata.eve.tls.version>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-suricata-eve-tx-id]]
+<<field-suricata-eve-tx-id, suricata.eve.tx_id>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-system]]
 === System fields, often from syslog Fields
 

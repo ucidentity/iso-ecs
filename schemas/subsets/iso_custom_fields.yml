@@ -23,6 +23,8 @@ fields:
     fields: "*"
   shibboleth:
     fields: "*"
+  suricata:
+    fields: "*"
   system:
     fields: "*"
   ticket:

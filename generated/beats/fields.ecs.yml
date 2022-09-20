@@ -9196,6 +9196,452 @@
       description: Array of user roles at the time of the event.
       example: '["kibana_admin", "reporting_user"]'
       default_field: false
+  - name: suricata
+    title: suricata
+    group: 2
+    description: Fields for logs from suricata
+    type: group
+    default_field: true
+    fields:
+    - name: eve.alert.affected_product
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.attack_target
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.category
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.created_at
+      level: extended
+      type: date
+      description: ''
+      default_field: false
+    - name: eve.alert.cve
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.deployment
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.former_category
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.gid
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: eve.alert.impact_flag
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.malware_family
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.performance_impact
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.policy
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.rev
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: eve.alert.service
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.signature
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.signature_id
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: eve.alert.signature_severity
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.tag
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.alert.updated_at
+      level: extended
+      type: date
+      description: ''
+      default_field: false
+    - name: eve.app_proto_tc
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.app_proto_ts
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.content_range.raw
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.content_range.size
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: eve.dns.query.id
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: eve.dns.query.rrname
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.dns.query.rrtype
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.dns.query.tx_id
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: eve.dns.query.type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.email.from
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.email.status
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.email.to
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.event_type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.flow_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.flowbits
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.host
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.http.content_range.end
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: eve.http.protocol
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.http.redirect
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.http.xff
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.http_content_type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.http_request_body
+      level: extended
+      type: text
+      description: ''
+      index: false
+      doc_values: false
+      default_field: false
+    - name: eve.http_request_body_printable
+      level: extended
+      type: text
+      description: ''
+      default_field: false
+    - name: eve.http_response_body
+      level: extended
+      type: text
+      description: ''
+      index: false
+      doc_values: false
+      default_field: false
+    - name: eve.http_response_body_printable
+      level: extended
+      type: text
+      description: ''
+      default_field: false
+    - name: eve.in_iface
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.packet_info.linktype
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.payload
+      level: extended
+      type: text
+      description: ''
+      index: false
+      doc_values: false
+      default_field: false
+    - name: eve.payload_printable
+      level: extended
+      type: text
+      description: ''
+      index: false
+      doc_values: false
+      default_field: false
+    - name: eve.smb.client_dialects
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smb.command
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smb.dialect
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smb.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smb.server_guid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smb.session_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smb.tree_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smtp.helo
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smtp.mail_from
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.smtp.rcpt_to
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.ssh.server.proto_version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.ssh.server.software_version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.stream
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.fingerprint
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.issuerdn
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.ja3.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.ja3.string
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.ja3s.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.ja3s.string
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.notafter
+      level: extended
+      type: date
+      description: ''
+      default_field: false
+    - name: eve.tls.notbefore
+      level: extended
+      type: date
+      description: ''
+      default_field: false
+    - name: eve.tls.serial
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.session_resumed
+      level: extended
+      type: boolean
+      description: ''
+      default_field: false
+    - name: eve.tls.sni
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.subject
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tls.version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: eve.tx_id
+      level: extended
+      type: long
+      description: ''
+      default_field: false
   - name: system
     title: System fields, often from syslog
     group: 2

@@ -21030,6 +21030,1060 @@ source:
       short: Fields to describe the user relevant to the event.
     root: false
     title: Source
+suricata:
+  field_details:
+    dashed_name: suricata
+    description: Fields for logs from suricata
+    flat_name: suricata
+    name: suricata
+    node_name: suricata
+    short: Fields for logs from suricata
+    type: group
+  fields:
+    eve:
+      field_details:
+        dashed_name: suricata-eve
+        flat_name: suricata.eve
+        intermediate: true
+        name: eve
+        node_name: eve
+        type: object
+      fields:
+        alert:
+          field_details:
+            dashed_name: suricata-eve-alert
+            flat_name: suricata.eve.alert
+            intermediate: true
+            name: eve.alert
+            node_name: alert
+            type: object
+          fields:
+            affected_product:
+              field_details:
+                dashed_name: suricata-eve-alert-affected-product
+                description: ''
+                flat_name: suricata.eve.alert.affected_product
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.affected_product
+                node_name: affected_product
+                normalize: []
+                short: ''
+                type: keyword
+            attack_target:
+              field_details:
+                dashed_name: suricata-eve-alert-attack-target
+                description: ''
+                flat_name: suricata.eve.alert.attack_target
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.attack_target
+                node_name: attack_target
+                normalize: []
+                short: ''
+                type: keyword
+            category:
+              field_details:
+                dashed_name: suricata-eve-alert-category
+                description: ''
+                flat_name: suricata.eve.alert.category
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.category
+                node_name: category
+                normalize: []
+                short: ''
+                type: keyword
+            created_at:
+              field_details:
+                dashed_name: suricata-eve-alert-created-at
+                description: ''
+                flat_name: suricata.eve.alert.created_at
+                level: extended
+                name: eve.alert.created_at
+                node_name: created_at
+                normalize: []
+                short: ''
+                type: date
+            cve:
+              field_details:
+                dashed_name: suricata-eve-alert-cve
+                description: ''
+                flat_name: suricata.eve.alert.cve
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.cve
+                node_name: cve
+                normalize: []
+                short: ''
+                type: keyword
+            deployment:
+              field_details:
+                dashed_name: suricata-eve-alert-deployment
+                description: ''
+                flat_name: suricata.eve.alert.deployment
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.deployment
+                node_name: deployment
+                normalize: []
+                short: ''
+                type: keyword
+            former_category:
+              field_details:
+                dashed_name: suricata-eve-alert-former-category
+                description: ''
+                flat_name: suricata.eve.alert.former_category
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.former_category
+                node_name: former_category
+                normalize: []
+                short: ''
+                type: keyword
+            gid:
+              field_details:
+                dashed_name: suricata-eve-alert-gid
+                description: ''
+                flat_name: suricata.eve.alert.gid
+                level: extended
+                name: eve.alert.gid
+                node_name: gid
+                normalize: []
+                short: ''
+                type: long
+            impact_flag:
+              field_details:
+                dashed_name: suricata-eve-alert-impact-flag
+                description: ''
+                flat_name: suricata.eve.alert.impact_flag
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.impact_flag
+                node_name: impact_flag
+                normalize: []
+                short: ''
+                type: keyword
+            malware_family:
+              field_details:
+                dashed_name: suricata-eve-alert-malware-family
+                description: ''
+                flat_name: suricata.eve.alert.malware_family
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.malware_family
+                node_name: malware_family
+                normalize: []
+                short: ''
+                type: keyword
+            performance_impact:
+              field_details:
+                dashed_name: suricata-eve-alert-performance-impact
+                description: ''
+                flat_name: suricata.eve.alert.performance_impact
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.performance_impact
+                node_name: performance_impact
+                normalize: []
+                short: ''
+                type: keyword
+            policy:
+              field_details:
+                dashed_name: suricata-eve-alert-policy
+                description: ''
+                flat_name: suricata.eve.alert.policy
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.policy
+                node_name: policy
+                normalize: []
+                short: ''
+                type: keyword
+            rev:
+              field_details:
+                dashed_name: suricata-eve-alert-rev
+                description: ''
+                flat_name: suricata.eve.alert.rev
+                level: extended
+                name: eve.alert.rev
+                node_name: rev
+                normalize: []
+                short: ''
+                type: long
+            service:
+              field_details:
+                dashed_name: suricata-eve-alert-service
+                description: ''
+                flat_name: suricata.eve.alert.service
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.service
+                node_name: service
+                normalize: []
+                short: ''
+                type: keyword
+            signature:
+              field_details:
+                dashed_name: suricata-eve-alert-signature
+                description: ''
+                flat_name: suricata.eve.alert.signature
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.signature
+                node_name: signature
+                normalize: []
+                short: ''
+                type: keyword
+            signature_id:
+              field_details:
+                dashed_name: suricata-eve-alert-signature-id
+                description: ''
+                flat_name: suricata.eve.alert.signature_id
+                level: extended
+                name: eve.alert.signature_id
+                node_name: signature_id
+                normalize: []
+                short: ''
+                type: long
+            signature_severity:
+              field_details:
+                dashed_name: suricata-eve-alert-signature-severity
+                description: ''
+                flat_name: suricata.eve.alert.signature_severity
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.signature_severity
+                node_name: signature_severity
+                normalize: []
+                short: ''
+                type: keyword
+            tag:
+              field_details:
+                dashed_name: suricata-eve-alert-tag
+                description: ''
+                flat_name: suricata.eve.alert.tag
+                ignore_above: 1024
+                level: extended
+                name: eve.alert.tag
+                node_name: tag
+                normalize: []
+                short: ''
+                type: keyword
+            updated_at:
+              field_details:
+                dashed_name: suricata-eve-alert-updated-at
+                description: ''
+                flat_name: suricata.eve.alert.updated_at
+                level: extended
+                name: eve.alert.updated_at
+                node_name: updated_at
+                normalize: []
+                short: ''
+                type: date
+        app_proto_tc:
+          field_details:
+            dashed_name: suricata-eve-app-proto-tc
+            description: ''
+            flat_name: suricata.eve.app_proto_tc
+            ignore_above: 1024
+            level: extended
+            name: eve.app_proto_tc
+            node_name: app_proto_tc
+            normalize: []
+            short: ''
+            type: keyword
+        app_proto_ts:
+          field_details:
+            dashed_name: suricata-eve-app-proto-ts
+            description: ''
+            flat_name: suricata.eve.app_proto_ts
+            ignore_above: 1024
+            level: extended
+            name: eve.app_proto_ts
+            node_name: app_proto_ts
+            normalize: []
+            short: ''
+            type: keyword
+        content_range:
+          field_details:
+            dashed_name: suricata-eve-content-range
+            flat_name: suricata.eve.content_range
+            intermediate: true
+            name: eve.content_range
+            node_name: content_range
+            type: object
+          fields:
+            raw:
+              field_details:
+                dashed_name: suricata-eve-content-range-raw
+                description: ''
+                flat_name: suricata.eve.content_range.raw
+                ignore_above: 1024
+                level: extended
+                name: eve.content_range.raw
+                node_name: raw
+                normalize: []
+                short: ''
+                type: keyword
+            size:
+              field_details:
+                dashed_name: suricata-eve-content-range-size
+                description: ''
+                flat_name: suricata.eve.content_range.size
+                level: extended
+                name: eve.content_range.size
+                node_name: size
+                normalize: []
+                short: ''
+                type: long
+        dns:
+          field_details:
+            dashed_name: suricata-eve-dns
+            flat_name: suricata.eve.dns
+            intermediate: true
+            name: eve.dns
+            node_name: dns
+            type: object
+          fields:
+            query:
+              field_details:
+                dashed_name: suricata-eve-dns-query
+                flat_name: suricata.eve.dns.query
+                intermediate: true
+                name: eve.dns.query
+                node_name: query
+                type: object
+              fields:
+                id:
+                  field_details:
+                    dashed_name: suricata-eve-dns-query-id
+                    description: ''
+                    flat_name: suricata.eve.dns.query.id
+                    level: extended
+                    name: eve.dns.query.id
+                    node_name: id
+                    normalize: []
+                    short: ''
+                    type: long
+                rrname:
+                  field_details:
+                    dashed_name: suricata-eve-dns-query-rrname
+                    description: ''
+                    flat_name: suricata.eve.dns.query.rrname
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.dns.query.rrname
+                    node_name: rrname
+                    normalize: []
+                    short: ''
+                    type: keyword
+                rrtype:
+                  field_details:
+                    dashed_name: suricata-eve-dns-query-rrtype
+                    description: ''
+                    flat_name: suricata.eve.dns.query.rrtype
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.dns.query.rrtype
+                    node_name: rrtype
+                    normalize: []
+                    short: ''
+                    type: keyword
+                tx_id:
+                  field_details:
+                    dashed_name: suricata-eve-dns-query-tx-id
+                    description: ''
+                    flat_name: suricata.eve.dns.query.tx_id
+                    level: extended
+                    name: eve.dns.query.tx_id
+                    node_name: tx_id
+                    normalize: []
+                    short: ''
+                    type: long
+                type:
+                  field_details:
+                    dashed_name: suricata-eve-dns-query-type
+                    description: ''
+                    flat_name: suricata.eve.dns.query.type
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.dns.query.type
+                    node_name: type
+                    normalize: []
+                    short: ''
+                    type: keyword
+        email:
+          field_details:
+            dashed_name: suricata-eve-email
+            flat_name: suricata.eve.email
+            intermediate: true
+            name: eve.email
+            node_name: email
+            type: object
+          fields:
+            from:
+              field_details:
+                dashed_name: suricata-eve-email-from
+                description: ''
+                flat_name: suricata.eve.email.from
+                ignore_above: 1024
+                level: extended
+                name: eve.email.from
+                node_name: from
+                normalize: []
+                short: ''
+                type: keyword
+            status:
+              field_details:
+                dashed_name: suricata-eve-email-status
+                description: ''
+                flat_name: suricata.eve.email.status
+                ignore_above: 1024
+                level: extended
+                name: eve.email.status
+                node_name: status
+                normalize: []
+                short: ''
+                type: keyword
+            to:
+              field_details:
+                dashed_name: suricata-eve-email-to
+                description: ''
+                flat_name: suricata.eve.email.to
+                ignore_above: 1024
+                level: extended
+                name: eve.email.to
+                node_name: to
+                normalize: []
+                short: ''
+                type: keyword
+        event_type:
+          field_details:
+            dashed_name: suricata-eve-event-type
+            description: ''
+            flat_name: suricata.eve.event_type
+            ignore_above: 1024
+            level: extended
+            name: eve.event_type
+            node_name: event_type
+            normalize: []
+            short: ''
+            type: keyword
+        flow_id:
+          field_details:
+            dashed_name: suricata-eve-flow-id
+            description: ''
+            flat_name: suricata.eve.flow_id
+            ignore_above: 1024
+            level: extended
+            name: eve.flow_id
+            node_name: flow_id
+            normalize: []
+            short: ''
+            type: keyword
+        flowbits:
+          field_details:
+            dashed_name: suricata-eve-flowbits
+            description: ''
+            flat_name: suricata.eve.flowbits
+            ignore_above: 1024
+            level: extended
+            name: eve.flowbits
+            node_name: flowbits
+            normalize: []
+            short: ''
+            type: keyword
+        host:
+          field_details:
+            dashed_name: suricata-eve-host
+            description: ''
+            flat_name: suricata.eve.host
+            ignore_above: 1024
+            level: extended
+            name: eve.host
+            node_name: host
+            normalize: []
+            short: ''
+            type: keyword
+        http:
+          field_details:
+            dashed_name: suricata-eve-http
+            flat_name: suricata.eve.http
+            intermediate: true
+            name: eve.http
+            node_name: http
+            type: object
+          fields:
+            content_range:
+              field_details:
+                dashed_name: suricata-eve-http-content-range
+                flat_name: suricata.eve.http.content_range
+                intermediate: true
+                name: eve.http.content_range
+                node_name: content_range
+                type: object
+              fields:
+                end:
+                  field_details:
+                    dashed_name: suricata-eve-http-content-range-end
+                    description: ''
+                    flat_name: suricata.eve.http.content_range.end
+                    level: extended
+                    name: eve.http.content_range.end
+                    node_name: end
+                    normalize: []
+                    short: ''
+                    type: long
+            protocol:
+              field_details:
+                dashed_name: suricata-eve-http-protocol
+                description: ''
+                flat_name: suricata.eve.http.protocol
+                ignore_above: 1024
+                level: extended
+                name: eve.http.protocol
+                node_name: protocol
+                normalize: []
+                short: ''
+                type: keyword
+            redirect:
+              field_details:
+                dashed_name: suricata-eve-http-redirect
+                description: ''
+                flat_name: suricata.eve.http.redirect
+                ignore_above: 1024
+                level: extended
+                name: eve.http.redirect
+                node_name: redirect
+                normalize: []
+                short: ''
+                type: keyword
+            xff:
+              field_details:
+                dashed_name: suricata-eve-http-xff
+                description: ''
+                flat_name: suricata.eve.http.xff
+                ignore_above: 1024
+                level: extended
+                name: eve.http.xff
+                node_name: xff
+                normalize: []
+                short: ''
+                type: keyword
+        http_content_type:
+          field_details:
+            dashed_name: suricata-eve-http-content-type
+            description: ''
+            flat_name: suricata.eve.http_content_type
+            ignore_above: 1024
+            level: extended
+            name: eve.http_content_type
+            node_name: http_content_type
+            normalize: []
+            short: ''
+            type: keyword
+        http_request_body:
+          field_details:
+            dashed_name: suricata-eve-http-request-body
+            description: ''
+            doc_values: false
+            flat_name: suricata.eve.http_request_body
+            index: false
+            level: extended
+            name: eve.http_request_body
+            node_name: http_request_body
+            normalize: []
+            norms: false
+            short: ''
+            type: text
+        http_request_body_printable:
+          field_details:
+            dashed_name: suricata-eve-http-request-body-printable
+            description: ''
+            flat_name: suricata.eve.http_request_body_printable
+            level: extended
+            name: eve.http_request_body_printable
+            node_name: http_request_body_printable
+            normalize: []
+            norms: false
+            short: ''
+            type: text
+        http_response_body:
+          field_details:
+            dashed_name: suricata-eve-http-response-body
+            description: ''
+            doc_values: false
+            flat_name: suricata.eve.http_response_body
+            index: false
+            level: extended
+            name: eve.http_response_body
+            node_name: http_response_body
+            normalize: []
+            norms: false
+            short: ''
+            type: text
+        http_response_body_printable:
+          field_details:
+            dashed_name: suricata-eve-http-response-body-printable
+            description: ''
+            flat_name: suricata.eve.http_response_body_printable
+            level: extended
+            name: eve.http_response_body_printable
+            node_name: http_response_body_printable
+            normalize: []
+            norms: false
+            short: ''
+            type: text
+        in_iface:
+          field_details:
+            dashed_name: suricata-eve-in-iface
+            description: ''
+            flat_name: suricata.eve.in_iface
+            ignore_above: 1024
+            level: extended
+            name: eve.in_iface
+            node_name: in_iface
+            normalize: []
+            short: ''
+            type: keyword
+        packet_info:
+          field_details:
+            dashed_name: suricata-eve-packet-info
+            flat_name: suricata.eve.packet_info
+            intermediate: true
+            name: eve.packet_info
+            node_name: packet_info
+            type: object
+          fields:
+            linktype:
+              field_details:
+                dashed_name: suricata-eve-packet-info-linktype
+                description: ''
+                flat_name: suricata.eve.packet_info.linktype
+                ignore_above: 1024
+                level: extended
+                name: eve.packet_info.linktype
+                node_name: linktype
+                normalize: []
+                short: ''
+                type: keyword
+        payload:
+          field_details:
+            dashed_name: suricata-eve-payload
+            description: ''
+            doc_values: false
+            flat_name: suricata.eve.payload
+            index: false
+            level: extended
+            name: eve.payload
+            node_name: payload
+            normalize: []
+            norms: false
+            short: ''
+            type: text
+        payload_printable:
+          field_details:
+            dashed_name: suricata-eve-payload-printable
+            description: ''
+            doc_values: false
+            flat_name: suricata.eve.payload_printable
+            index: false
+            level: extended
+            name: eve.payload_printable
+            node_name: payload_printable
+            normalize: []
+            norms: false
+            short: ''
+            type: text
+        smb:
+          field_details:
+            dashed_name: suricata-eve-smb
+            flat_name: suricata.eve.smb
+            intermediate: true
+            name: eve.smb
+            node_name: smb
+            type: object
+          fields:
+            client_dialects:
+              field_details:
+                dashed_name: suricata-eve-smb-client-dialects
+                description: ''
+                flat_name: suricata.eve.smb.client_dialects
+                ignore_above: 1024
+                level: extended
+                name: eve.smb.client_dialects
+                node_name: client_dialects
+                normalize: []
+                short: ''
+                type: keyword
+            command:
+              field_details:
+                dashed_name: suricata-eve-smb-command
+                description: ''
+                flat_name: suricata.eve.smb.command
+                ignore_above: 1024
+                level: extended
+                name: eve.smb.command
+                node_name: command
+                normalize: []
+                short: ''
+                type: keyword
+            dialect:
+              field_details:
+                dashed_name: suricata-eve-smb-dialect
+                description: ''
+                flat_name: suricata.eve.smb.dialect
+                ignore_above: 1024
+                level: extended
+                name: eve.smb.dialect
+                node_name: dialect
+                normalize: []
+                short: ''
+                type: keyword
+            id:
+              field_details:
+                dashed_name: suricata-eve-smb-id
+                description: ''
+                flat_name: suricata.eve.smb.id
+                ignore_above: 1024
+                level: extended
+                name: eve.smb.id
+                node_name: id
+                normalize: []
+                short: ''
+                type: keyword
+            server_guid:
+              field_details:
+                dashed_name: suricata-eve-smb-server-guid
+                description: ''
+                flat_name: suricata.eve.smb.server_guid
+                ignore_above: 1024
+                level: extended
+                name: eve.smb.server_guid
+                node_name: server_guid
+                normalize: []
+                short: ''
+                type: keyword
+            session_id:
+              field_details:
+                dashed_name: suricata-eve-smb-session-id
+                description: ''
+                flat_name: suricata.eve.smb.session_id
+                ignore_above: 1024
+                level: extended
+                name: eve.smb.session_id
+                node_name: session_id
+                normalize: []
+                short: ''
+                type: keyword
+            tree_id:
+              field_details:
+                dashed_name: suricata-eve-smb-tree-id
+                description: ''
+                flat_name: suricata.eve.smb.tree_id
+                ignore_above: 1024
+                level: extended
+                name: eve.smb.tree_id
+                node_name: tree_id
+                normalize: []
+                short: ''
+                type: keyword
+        smtp:
+          field_details:
+            dashed_name: suricata-eve-smtp
+            flat_name: suricata.eve.smtp
+            intermediate: true
+            name: eve.smtp
+            node_name: smtp
+            type: object
+          fields:
+            helo:
+              field_details:
+                dashed_name: suricata-eve-smtp-helo
+                description: ''
+                flat_name: suricata.eve.smtp.helo
+                ignore_above: 1024
+                level: extended
+                name: eve.smtp.helo
+                node_name: helo
+                normalize: []
+                short: ''
+                type: keyword
+            mail_from:
+              field_details:
+                dashed_name: suricata-eve-smtp-mail-from
+                description: ''
+                flat_name: suricata.eve.smtp.mail_from
+                ignore_above: 1024
+                level: extended
+                name: eve.smtp.mail_from
+                node_name: mail_from
+                normalize: []
+                short: ''
+                type: keyword
+            rcpt_to:
+              field_details:
+                dashed_name: suricata-eve-smtp-rcpt-to
+                description: ''
+                flat_name: suricata.eve.smtp.rcpt_to
+                ignore_above: 1024
+                level: extended
+                name: eve.smtp.rcpt_to
+                node_name: rcpt_to
+                normalize: []
+                short: ''
+                type: keyword
+        ssh:
+          field_details:
+            dashed_name: suricata-eve-ssh
+            flat_name: suricata.eve.ssh
+            intermediate: true
+            name: eve.ssh
+            node_name: ssh
+            type: object
+          fields:
+            server:
+              field_details:
+                dashed_name: suricata-eve-ssh-server
+                flat_name: suricata.eve.ssh.server
+                intermediate: true
+                name: eve.ssh.server
+                node_name: server
+                type: object
+              fields:
+                proto_version:
+                  field_details:
+                    dashed_name: suricata-eve-ssh-server-proto-version
+                    description: ''
+                    flat_name: suricata.eve.ssh.server.proto_version
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.ssh.server.proto_version
+                    node_name: proto_version
+                    normalize: []
+                    short: ''
+                    type: keyword
+                software_version:
+                  field_details:
+                    dashed_name: suricata-eve-ssh-server-software-version
+                    description: ''
+                    flat_name: suricata.eve.ssh.server.software_version
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.ssh.server.software_version
+                    node_name: software_version
+                    normalize: []
+                    short: ''
+                    type: keyword
+        stream:
+          field_details:
+            dashed_name: suricata-eve-stream
+            description: ''
+            flat_name: suricata.eve.stream
+            ignore_above: 1024
+            level: extended
+            name: eve.stream
+            node_name: stream
+            normalize: []
+            short: ''
+            type: keyword
+        tls:
+          field_details:
+            dashed_name: suricata-eve-tls
+            flat_name: suricata.eve.tls
+            intermediate: true
+            name: eve.tls
+            node_name: tls
+            type: object
+          fields:
+            fingerprint:
+              field_details:
+                dashed_name: suricata-eve-tls-fingerprint
+                description: ''
+                flat_name: suricata.eve.tls.fingerprint
+                ignore_above: 1024
+                level: extended
+                name: eve.tls.fingerprint
+                node_name: fingerprint
+                normalize: []
+                short: ''
+                type: keyword
+            issuerdn:
+              field_details:
+                dashed_name: suricata-eve-tls-issuerdn
+                description: ''
+                flat_name: suricata.eve.tls.issuerdn
+                ignore_above: 1024
+                level: extended
+                name: eve.tls.issuerdn
+                node_name: issuerdn
+                normalize: []
+                short: ''
+                type: keyword
+            ja3:
+              field_details:
+                dashed_name: suricata-eve-tls-ja3
+                flat_name: suricata.eve.tls.ja3
+                intermediate: true
+                name: eve.tls.ja3
+                node_name: ja3
+                type: object
+              fields:
+                hash:
+                  field_details:
+                    dashed_name: suricata-eve-tls-ja3-hash
+                    description: ''
+                    flat_name: suricata.eve.tls.ja3.hash
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.tls.ja3.hash
+                    node_name: hash
+                    normalize: []
+                    short: ''
+                    type: keyword
+                string:
+                  field_details:
+                    dashed_name: suricata-eve-tls-ja3-string
+                    description: ''
+                    flat_name: suricata.eve.tls.ja3.string
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.tls.ja3.string
+                    node_name: string
+                    normalize: []
+                    short: ''
+                    type: keyword
+            ja3s:
+              field_details:
+                dashed_name: suricata-eve-tls-ja3s
+                flat_name: suricata.eve.tls.ja3s
+                intermediate: true
+                name: eve.tls.ja3s
+                node_name: ja3s
+                type: object
+              fields:
+                hash:
+                  field_details:
+                    dashed_name: suricata-eve-tls-ja3s-hash
+                    description: ''
+                    flat_name: suricata.eve.tls.ja3s.hash
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.tls.ja3s.hash
+                    node_name: hash
+                    normalize: []
+                    short: ''
+                    type: keyword
+                string:
+                  field_details:
+                    dashed_name: suricata-eve-tls-ja3s-string
+                    description: ''
+                    flat_name: suricata.eve.tls.ja3s.string
+                    ignore_above: 1024
+                    level: extended
+                    name: eve.tls.ja3s.string
+                    node_name: string
+                    normalize: []
+                    short: ''
+                    type: keyword
+            notafter:
+              field_details:
+                dashed_name: suricata-eve-tls-notafter
+                description: ''
+                flat_name: suricata.eve.tls.notafter
+                level: extended
+                name: eve.tls.notafter
+                node_name: notafter
+                normalize: []
+                short: ''
+                type: date
+            notbefore:
+              field_details:
+                dashed_name: suricata-eve-tls-notbefore
+                description: ''
+                flat_name: suricata.eve.tls.notbefore
+                level: extended
+                name: eve.tls.notbefore
+                node_name: notbefore
+                normalize: []
+                short: ''
+                type: date
+            serial:
+              field_details:
+                dashed_name: suricata-eve-tls-serial
+                description: ''
+                flat_name: suricata.eve.tls.serial
+                ignore_above: 1024
+                level: extended
+                name: eve.tls.serial
+                node_name: serial
+                normalize: []
+                short: ''
+                type: keyword
+            session_resumed:
+              field_details:
+                dashed_name: suricata-eve-tls-session-resumed
+                description: ''
+                flat_name: suricata.eve.tls.session_resumed
+                level: extended
+                name: eve.tls.session_resumed
+                node_name: session_resumed
+                normalize: []
+                short: ''
+                type: boolean
+            sni:
+              field_details:
+                dashed_name: suricata-eve-tls-sni
+                description: ''
+                flat_name: suricata.eve.tls.sni
+                ignore_above: 1024
+                level: extended
+                name: eve.tls.sni
+                node_name: sni
+                normalize: []
+                short: ''
+                type: keyword
+            subject:
+              field_details:
+                dashed_name: suricata-eve-tls-subject
+                description: ''
+                flat_name: suricata.eve.tls.subject
+                ignore_above: 1024
+                level: extended
+                name: eve.tls.subject
+                node_name: subject
+                normalize: []
+                short: ''
+                type: keyword
+            version:
+              field_details:
+                dashed_name: suricata-eve-tls-version
+                description: ''
+                flat_name: suricata.eve.tls.version
+                ignore_above: 1024
+                level: extended
+                name: eve.tls.version
+                node_name: version
+                normalize: []
+                short: ''
+                type: keyword
+        tx_id:
+          field_details:
+            dashed_name: suricata-eve-tx-id
+            description: ''
+            flat_name: suricata.eve.tx_id
+            level: extended
+            name: eve.tx_id
+            node_name: tx_id
+            normalize: []
+            short: ''
+            type: long
+  schema_details:
+    group: 2
+    prefix: suricata.
+    root: false
+    title: suricata
 system:
   field_details:
     dashed_name: system
