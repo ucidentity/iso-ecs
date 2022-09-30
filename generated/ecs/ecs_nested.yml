@@ -467,6 +467,481 @@ base:
   short: All fields defined directly at the root of the events.
   title: Base
   type: group
+beyondtrust:
+  description: Fields for logs from beyondtrust
+  fields:
+    beyondtrust.api:
+      dashed_name: beyondtrust-api
+      description: ''
+      flat_name: beyondtrust.api
+      ignore_above: 1024
+      level: extended
+      name: api
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.auth_method:
+      dashed_name: beyondtrust-auth-method
+      description: ''
+      flat_name: beyondtrust.auth_method
+      ignore_above: 1024
+      level: extended
+      name: auth_method
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.beyondtrust.old_permissions.jump_item_role.teams.id:
+      dashed_name: beyondtrust-beyondtrust-old-permissions-jump-item-role-teams-id
+      description: ''
+      flat_name: beyondtrust.beyondtrust.old_permissions.jump_item_role.teams.id
+      ignore_above: 1024
+      level: extended
+      name: beyondtrust.old_permissions.jump_item_role.teams.id
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.end_time:
+      dashed_name: beyondtrust-end-time
+      description: ''
+      flat_name: beyondtrust.end_time
+      ignore_above: 1024
+      level: extended
+      name: end_time
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.end_timestamp:
+      dashed_name: beyondtrust-end-timestamp
+      description: ''
+      flat_name: beyondtrust.end_timestamp
+      ignore_above: 1024
+      level: extended
+      name: end_timestamp
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.event:
+      dashed_name: beyondtrust-event
+      description: ''
+      flat_name: beyondtrust.event
+      ignore_above: 1024
+      level: extended
+      name: event
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.group_by:
+      dashed_name: beyondtrust-group-by
+      description: ''
+      flat_name: beyondtrust.group_by
+      ignore_above: 1024
+      level: extended
+      name: group_by
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.new_account.disabled:
+      dashed_name: beyondtrust-new-account-disabled
+      description: ''
+      flat_name: beyondtrust.new_account.disabled
+      ignore_above: 1024
+      level: extended
+      name: new_account.disabled
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.new_account.email.address:
+      dashed_name: beyondtrust-new-account-email-address
+      description: ''
+      flat_name: beyondtrust.new_account.email.address
+      ignore_above: 1024
+      level: extended
+      name: new_account.email.address
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_account.created:
+      dashed_name: beyondtrust-old-account-created
+      description: ''
+      flat_name: beyondtrust.old_account.created
+      ignore_above: 1024
+      level: extended
+      name: old_account.created
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_account.disabled:
+      dashed_name: beyondtrust-old-account-disabled
+      description: ''
+      flat_name: beyondtrust.old_account.disabled
+      ignore_above: 1024
+      level: extended
+      name: old_account.disabled
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_account.email.locale:
+      dashed_name: beyondtrust-old-account-email-locale
+      description: ''
+      flat_name: beyondtrust.old_account.email.locale
+      ignore_above: 1024
+      level: extended
+      name: old_account.email.locale
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_account.expiration:
+      dashed_name: beyondtrust-old-account-expiration
+      description: ''
+      flat_name: beyondtrust.old_account.expiration
+      ignore_above: 1024
+      level: extended
+      name: old_account.expiration
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_account.failed_logins:
+      dashed_name: beyondtrust-old-account-failed-logins
+      description: ''
+      flat_name: beyondtrust.old_account.failed_logins
+      level: extended
+      name: old_account.failed_logins
+      normalize: []
+      short: ''
+      type: long
+    beyondtrust.old_account.will_expire:
+      dashed_name: beyondtrust-old-account-will-expire
+      description: ''
+      flat_name: beyondtrust.old_account.will_expire
+      ignore_above: 1024
+      level: extended
+      name: old_account.will_expire
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_display_number:
+      dashed_name: beyondtrust-old-display-number
+      description: ''
+      flat_name: beyondtrust.old_display_number
+      ignore_above: 1024
+      level: extended
+      name: old_display_number
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_id:
+      dashed_name: beyondtrust-old-id
+      description: ''
+      flat_name: beyondtrust.old_id
+      ignore_above: 1024
+      level: extended
+      name: old_id
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_license_pool.id:
+      dashed_name: beyondtrust-old-license-pool-id
+      description: ''
+      flat_name: beyondtrust.old_license_pool.id
+      ignore_above: 1024
+      level: extended
+      name: old_license_pool.id
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_license_pool.name:
+      dashed_name: beyondtrust-old-license-pool-name
+      description: ''
+      flat_name: beyondtrust.old_license_pool.name
+      ignore_above: 1024
+      level: extended
+      name: old_license_pool.name
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_login_code.enabled:
+      dashed_name: beyondtrust-old-login-code-enabled
+      description: ''
+      flat_name: beyondtrust.old_login_code.enabled
+      ignore_above: 1024
+      level: extended
+      name: old_login_code.enabled
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_login_schedule.enabled:
+      dashed_name: beyondtrust-old-login-schedule-enabled
+      description: ''
+      flat_name: beyondtrust.old_login_schedule.enabled
+      ignore_above: 1024
+      level: extended
+      name: old_login_schedule.enabled
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_login_schedule.force_logout:
+      dashed_name: beyondtrust-old-login-schedule-force-logout
+      description: ''
+      flat_name: beyondtrust.old_login_schedule.force_logout
+      ignore_above: 1024
+      level: extended
+      name: old_login_schedule.force_logout
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_login_schedule.timezone:
+      dashed_name: beyondtrust-old-login-schedule-timezone
+      description: ''
+      flat_name: beyondtrust.old_login_schedule.timezone
+      ignore_above: 1024
+      level: extended
+      name: old_login_schedule.timezone
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_permissions.jump_item_role.default.id:
+      dashed_name: beyondtrust-old-permissions-jump-item-role-default-id
+      description: ''
+      flat_name: beyondtrust.old_permissions.jump_item_role.default.id
+      ignore_above: 1024
+      level: extended
+      name: old_permissions.jump_item_role.default.id
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_permissions.jump_item_role.default.name:
+      dashed_name: beyondtrust-old-permissions-jump-item-role-default-name
+      description: ''
+      flat_name: beyondtrust.old_permissions.jump_item_role.default.name
+      ignore_above: 1024
+      level: extended
+      name: old_permissions.jump_item_role.default.name
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_permissions.jump_item_role.teams.name:
+      dashed_name: beyondtrust-old-permissions-jump-item-role-teams-name
+      description: ''
+      flat_name: beyondtrust.old_permissions.jump_item_role.teams.name
+      ignore_above: 1024
+      level: extended
+      name: old_permissions.jump_item_role.teams.name
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_provider.id:
+      dashed_name: beyondtrust-old-provider-id
+      description: ''
+      flat_name: beyondtrust.old_provider.id
+      ignore_above: 1024
+      level: extended
+      name: old_provider.id
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_provider.name:
+      dashed_name: beyondtrust-old-provider-name
+      description: ''
+      flat_name: beyondtrust.old_provider.name
+      ignore_above: 1024
+      level: extended
+      name: old_provider.name
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_two_factor_auth.required:
+      dashed_name: beyondtrust-old-two-factor-auth-required
+      description: ''
+      flat_name: beyondtrust.old_two_factor_auth.required
+      ignore_above: 1024
+      level: extended
+      name: old_two_factor_auth.required
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.old_username:
+      dashed_name: beyondtrust-old-username
+      description: ''
+      flat_name: beyondtrust.old_username
+      ignore_above: 1024
+      level: extended
+      name: old_username
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.only_completed:
+      dashed_name: beyondtrust-only-completed
+      description: ''
+      flat_name: beyondtrust.only_completed
+      ignore_above: 1024
+      level: extended
+      name: only_completed
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.outcome:
+      dashed_name: beyondtrust-outcome
+      description: ''
+      flat_name: beyondtrust.outcome
+      ignore_above: 1024
+      level: extended
+      name: outcome
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.reason:
+      dashed_name: beyondtrust-reason
+      description: ''
+      flat_name: beyondtrust.reason
+      ignore_above: 1024
+      level: extended
+      name: reason
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.row_count:
+      dashed_name: beyondtrust-row-count
+      description: ''
+      flat_name: beyondtrust.row_count
+      level: extended
+      name: row_count
+      normalize: []
+      short: ''
+      type: long
+    beyondtrust.row_start:
+      dashed_name: beyondtrust-row-start
+      description: ''
+      flat_name: beyondtrust.row_start
+      level: extended
+      name: row_start
+      normalize: []
+      short: ''
+      type: long
+    beyondtrust.segment.id:
+      dashed_name: beyondtrust-segment-id
+      description: ''
+      flat_name: beyondtrust.segment.id
+      ignore_above: 1024
+      level: extended
+      name: segment.id
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.segment.total:
+      dashed_name: beyondtrust-segment-total
+      description: ''
+      flat_name: beyondtrust.segment.total
+      ignore_above: 1024
+      level: extended
+      name: segment.total
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.site:
+      dashed_name: beyondtrust-site
+      description: ''
+      flat_name: beyondtrust.site
+      ignore_above: 1024
+      level: extended
+      name: site
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.site_id:
+      dashed_name: beyondtrust-site-id
+      description: ''
+      flat_name: beyondtrust.site_id
+      ignore_above: 1024
+      level: extended
+      name: site_id
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.site_name:
+      dashed_name: beyondtrust-site-name
+      description: ''
+      flat_name: beyondtrust.site_name
+      ignore_above: 1024
+      level: extended
+      name: site_name
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.start_time:
+      dashed_name: beyondtrust-start-time
+      description: ''
+      flat_name: beyondtrust.start_time
+      ignore_above: 1024
+      level: extended
+      name: start_time
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.start_timestamp:
+      dashed_name: beyondtrust-start-timestamp
+      description: ''
+      flat_name: beyondtrust.start_timestamp
+      ignore_above: 1024
+      level: extended
+      name: start_timestamp
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.status:
+      dashed_name: beyondtrust-status
+      description: ''
+      flat_name: beyondtrust.status
+      ignore_above: 1024
+      level: extended
+      name: status
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.target:
+      dashed_name: beyondtrust-target
+      description: ''
+      flat_name: beyondtrust.target
+      ignore_above: 1024
+      level: extended
+      name: target
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.when:
+      dashed_name: beyondtrust-when
+      description: ''
+      flat_name: beyondtrust.when
+      level: extended
+      name: when
+      normalize: []
+      short: ''
+      type: long
+    beyondtrust.who:
+      dashed_name: beyondtrust-who
+      description: ''
+      flat_name: beyondtrust.who
+      ignore_above: 1024
+      level: extended
+      name: who
+      normalize: []
+      short: ''
+      type: keyword
+    beyondtrust.who_ip:
+      dashed_name: beyondtrust-who-ip
+      description: ''
+      flat_name: beyondtrust.who_ip
+      ignore_above: 1024
+      level: extended
+      name: who_ip
+      normalize: []
+      short: ''
+      type: keyword
+  group: 2
+  name: beyondtrust
+  prefix: beyondtrust.
+  short: Fields for logs from beyondtrust
+  title: beyondtrust
+  type: group
 bpr:
   description: Fields used by the Berkeley People Registry Application
   fields:

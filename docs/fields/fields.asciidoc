@@ -30,6 +30,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-aws,aws>> | Fields for logs from aws
 
+| <<ecs-beyondtrust,beyondtrust>> | Fields for logs from beyondtrust
+
 | <<ecs-bpr,Berkeley People Registry>> | Fields for the Berkeley People Registry Application
 
 | <<ecs-cas,Berkeley CAS>> | Fields for the Berkeley's CAS logs

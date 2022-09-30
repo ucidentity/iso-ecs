@@ -314,6 +314,291 @@
       ignore_above: 1024
       description: The S3 Object Key
       default_field: false
+  - name: beyondtrust
+    title: beyondtrust
+    group: 2
+    description: Fields for logs from beyondtrust
+    type: group
+    default_field: true
+    fields:
+    - name: api
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: auth_method
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: beyondtrust.old_permissions.jump_item_role.teams.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: end_time
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: end_timestamp
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: event
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: group_by
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: new_account.disabled
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: new_account.email.address
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_account.created
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_account.disabled
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_account.email.locale
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_account.expiration
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_account.failed_logins
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: old_account.will_expire
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_display_number
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_license_pool.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_license_pool.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_login_code.enabled
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_login_schedule.enabled
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_login_schedule.force_logout
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_login_schedule.timezone
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_permissions.jump_item_role.default.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_permissions.jump_item_role.default.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_permissions.jump_item_role.teams.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_provider.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_provider.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_two_factor_auth.required
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: old_username
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: only_completed
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: outcome
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: reason
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: row_count
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: row_start
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: segment.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: segment.total
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: site
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: site_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: site_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: start_time
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: start_timestamp
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: status
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: target
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: when
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: who
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: who_ip
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
   - name: bpr
     title: Berkeley People Registry
     group: 2

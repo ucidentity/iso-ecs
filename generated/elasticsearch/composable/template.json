@@ -6,6 +6,7 @@
   "composed_of": [
     "ecs_8.2.1_arcsight",
     "ecs_8.2.1_aws",
+    "ecs_8.2.1_beyondtrust",
     "ecs_8.2.1_bpr",
     "ecs_8.2.1_cas",
     "ecs_8.2.1_cisco_duo_admin",

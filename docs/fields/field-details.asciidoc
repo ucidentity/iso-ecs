@@ -603,6 +603,775 @@ type: keyword
 |=====
 
 
+[[ecs-beyondtrust]]
+=== beyondtrust Fields
+
+Fields for logs from beyondtrust
+
+[discrete]
+==== beyondtrust Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-beyondtrust-api]]
+<<field-beyondtrust-api, beyondtrust.api>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-auth-method]]
+<<field-beyondtrust-auth-method, beyondtrust.auth_method>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-beyondtrust-old-permissions-jump-item-role-teams-id]]
+<<field-beyondtrust-beyondtrust-old-permissions-jump-item-role-teams-id, beyondtrust.beyondtrust.old_permissions.jump_item_role.teams.id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-end-time]]
+<<field-beyondtrust-end-time, beyondtrust.end_time>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-end-timestamp]]
+<<field-beyondtrust-end-timestamp, beyondtrust.end_timestamp>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-event]]
+<<field-beyondtrust-event, beyondtrust.event>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-group-by]]
+<<field-beyondtrust-group-by, beyondtrust.group_by>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-new-account-disabled]]
+<<field-beyondtrust-new-account-disabled, beyondtrust.new_account.disabled>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-new-account-email-address]]
+<<field-beyondtrust-new-account-email-address, beyondtrust.new_account.email.address>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-account-created]]
+<<field-beyondtrust-old-account-created, beyondtrust.old_account.created>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-account-disabled]]
+<<field-beyondtrust-old-account-disabled, beyondtrust.old_account.disabled>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-account-email-locale]]
+<<field-beyondtrust-old-account-email-locale, beyondtrust.old_account.email.locale>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-account-expiration]]
+<<field-beyondtrust-old-account-expiration, beyondtrust.old_account.expiration>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-account-failed-logins]]
+<<field-beyondtrust-old-account-failed-logins, beyondtrust.old_account.failed_logins>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-account-will-expire]]
+<<field-beyondtrust-old-account-will-expire, beyondtrust.old_account.will_expire>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-display-number]]
+<<field-beyondtrust-old-display-number, beyondtrust.old_display_number>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-id]]
+<<field-beyondtrust-old-id, beyondtrust.old_id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-license-pool-id]]
+<<field-beyondtrust-old-license-pool-id, beyondtrust.old_license_pool.id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-license-pool-name]]
+<<field-beyondtrust-old-license-pool-name, beyondtrust.old_license_pool.name>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-login-code-enabled]]
+<<field-beyondtrust-old-login-code-enabled, beyondtrust.old_login_code.enabled>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-login-schedule-enabled]]
+<<field-beyondtrust-old-login-schedule-enabled, beyondtrust.old_login_schedule.enabled>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-login-schedule-force-logout]]
+<<field-beyondtrust-old-login-schedule-force-logout, beyondtrust.old_login_schedule.force_logout>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-login-schedule-timezone]]
+<<field-beyondtrust-old-login-schedule-timezone, beyondtrust.old_login_schedule.timezone>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-permissions-jump-item-role-default-id]]
+<<field-beyondtrust-old-permissions-jump-item-role-default-id, beyondtrust.old_permissions.jump_item_role.default.id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-permissions-jump-item-role-default-name]]
+<<field-beyondtrust-old-permissions-jump-item-role-default-name, beyondtrust.old_permissions.jump_item_role.default.name>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-permissions-jump-item-role-teams-name]]
+<<field-beyondtrust-old-permissions-jump-item-role-teams-name, beyondtrust.old_permissions.jump_item_role.teams.name>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-provider-id]]
+<<field-beyondtrust-old-provider-id, beyondtrust.old_provider.id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-provider-name]]
+<<field-beyondtrust-old-provider-name, beyondtrust.old_provider.name>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-two-factor-auth-required]]
+<<field-beyondtrust-old-two-factor-auth-required, beyondtrust.old_two_factor_auth.required>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-old-username]]
+<<field-beyondtrust-old-username, beyondtrust.old_username>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-only-completed]]
+<<field-beyondtrust-only-completed, beyondtrust.only_completed>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-outcome]]
+<<field-beyondtrust-outcome, beyondtrust.outcome>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-reason]]
+<<field-beyondtrust-reason, beyondtrust.reason>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-row-count]]
+<<field-beyondtrust-row-count, beyondtrust.row_count>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-row-start]]
+<<field-beyondtrust-row-start, beyondtrust.row_start>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-segment-id]]
+<<field-beyondtrust-segment-id, beyondtrust.segment.id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-segment-total]]
+<<field-beyondtrust-segment-total, beyondtrust.segment.total>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-site]]
+<<field-beyondtrust-site, beyondtrust.site>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-site-id]]
+<<field-beyondtrust-site-id, beyondtrust.site_id>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-site-name]]
+<<field-beyondtrust-site-name, beyondtrust.site_name>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-start-time]]
+<<field-beyondtrust-start-time, beyondtrust.start_time>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-start-timestamp]]
+<<field-beyondtrust-start-timestamp, beyondtrust.start_timestamp>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-status]]
+<<field-beyondtrust-status, beyondtrust.status>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-target]]
+<<field-beyondtrust-target, beyondtrust.target>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-when]]
+<<field-beyondtrust-when, beyondtrust.when>>
+
+| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-who]]
+<<field-beyondtrust-who, beyondtrust.who>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-beyondtrust-who-ip]]
+<<field-beyondtrust-who-ip, beyondtrust.who_ip>>
+
+| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-bpr]]
 === Berkeley People Registry Fields
 

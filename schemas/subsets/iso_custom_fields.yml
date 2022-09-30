@@ -5,6 +5,8 @@ fields:
     fields: "*"
   aws:
     fields: "*"
+  beyondtrust:
+    fields: "*"
   bpr:
     fields: "*"
   cas:
