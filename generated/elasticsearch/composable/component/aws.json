@@ -55,6 +55,49 @@
                   }
                 }
               }
+            },
+            "waf": {
+              "properties": {
+                "arn": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "non_terminating_matching_rules": {
+                  "type": "nested"
+                },
+                "rate_based_rule_list": {
+                  "type": "nested"
+                },
+                "request": {
+                  "properties": {
+                    "headers": {
+                      "type": "flattened"
+                    }
+                  }
+                },
+                "rule_group_list": {
+                  "type": "nested"
+                },
+                "source": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "terminating_rule_match_details": {
+                  "type": "nested"
+                }
+              }
             }
           }
         }

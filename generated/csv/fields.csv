@@ -25,6 +25,15 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,aws,aws.s3.bucket.arn,keyword,extended,,,The ARN of the S3 Bucket
 8.2.1,true,aws,aws.s3.bucket.name,keyword,extended,,,The S3 Bucket Name
 8.2.1,true,aws,aws.s3.object.key,keyword,extended,,,The S3 Object Key
+8.2.1,true,aws,aws.waf.arn,keyword,extended,,,AWS ARN of ACL
+8.2.1,true,aws,aws.waf.id,keyword,extended,,,ID of ACL
+8.2.1,true,aws,aws.waf.non_terminating_matching_rules,nested,extended,,,The list of non-terminating rules in the rule group that match the request
+8.2.1,true,aws,aws.waf.rate_based_rule_list,nested,extended,,,The list of rate-based rules that acted on the request.
+8.2.1,true,aws,aws.waf.request.headers,flattened,extended,,,List of request headers
+8.2.1,true,aws,aws.waf.rule_group_list,nested,extended,,,The list of rule groups that acted on this request.
+8.2.1,true,aws,aws.waf.source.id,keyword,extended,,,The source ID. This field shows the ID of the associated resource.
+8.2.1,true,aws,aws.waf.source.name,keyword,extended,,,The source of the request
+8.2.1,true,aws,aws.waf.terminating_rule_match_details,nested,extended,,,Detailed information about the terminating rule that matched the request
 8.2.1,true,beyondtrust,beyondtrust.api,keyword,extended,,,
 8.2.1,true,beyondtrust,beyondtrust.auth_method,keyword,extended,,,
 8.2.1,true,beyondtrust,beyondtrust.beyondtrust.old_permissions.jump_item_role.teams.id,keyword,extended,,,

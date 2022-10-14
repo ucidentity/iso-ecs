@@ -600,6 +600,150 @@ type: keyword
 
 // ===============================================================
 
+|
+[[field-aws-waf-arn]]
+<<field-aws-waf-arn, aws.waf.arn>>
+
+| AWS ARN of ACL
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-waf-id]]
+<<field-aws-waf-id, aws.waf.id>>
+
+| ID of ACL
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-waf-non-terminating-matching-rules]]
+<<field-aws-waf-non-terminating-matching-rules, aws.waf.non_terminating_matching_rules>>
+
+| The list of non-terminating rules in the rule group that match the request. These are always COUNT rules (non-terminating rules that match)
+
+type: nested
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-waf-rate-based-rule-list]]
+<<field-aws-waf-rate-based-rule-list, aws.waf.rate_based_rule_list>>
+
+| The list of rate-based rules that acted on the request.
+
+type: nested
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-waf-request-headers]]
+<<field-aws-waf-request-headers, aws.waf.request.headers>>
+
+| List of request headers
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-waf-rule-group-list]]
+<<field-aws-waf-rule-group-list, aws.waf.rule_group_list>>
+
+| The list of rule groups that acted on this request.
+
+type: nested
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-waf-source-id]]
+<<field-aws-waf-source-id, aws.waf.source.id>>
+
+| The source ID. This field shows the ID of the associated resource.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-waf-source-name]]
+<<field-aws-waf-source-name, aws.waf.source.name>>
+
+| The source of the request. Possible values: CF for Amazon CloudFront, APIGW for Amazon API Gateway, ALB for Application Load Balancer, and APPSYNC for AWS AppSync.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-waf-terminating-rule-match-details]]
+<<field-aws-waf-terminating-rule-match-details, aws.waf.terminating_rule_match_details>>
+
+| Detailed information about the terminating rule that matched the request. A terminating rule has an action that ends the inspection process against a web request. Possible actions for a terminating rule are ALLOW and BLOCK. This is only populated for SQL injection and cross-site scripting (XSS) match rule statements. As with all rule statements that inspect for more than one thing, AWS WAF applies the action on the first match and stops inspecting the web request. A web request with a terminating action could contain other threats, in addition to the one reported in the log.
+
+type: nested
+
+
+
+
+
+| extended
+
+// ===============================================================
+
 |=====
 
 

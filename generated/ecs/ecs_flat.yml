@@ -312,6 +312,101 @@ aws.s3.object.key:
   normalize: []
   short: The S3 Object Key
   type: keyword
+aws.waf.arn:
+  dashed_name: aws-waf-arn
+  description: AWS ARN of ACL
+  flat_name: aws.waf.arn
+  ignore_above: 1024
+  level: extended
+  name: waf.arn
+  normalize: []
+  short: AWS ARN of ACL
+  type: keyword
+aws.waf.id:
+  dashed_name: aws-waf-id
+  description: ID of ACL
+  flat_name: aws.waf.id
+  ignore_above: 1024
+  level: extended
+  name: waf.id
+  normalize: []
+  short: ID of ACL
+  type: keyword
+aws.waf.non_terminating_matching_rules:
+  dashed_name: aws-waf-non-terminating-matching-rules
+  description: The list of non-terminating rules in the rule group that match the
+    request. These are always COUNT rules (non-terminating rules that match)
+  flat_name: aws.waf.non_terminating_matching_rules
+  level: extended
+  name: waf.non_terminating_matching_rules
+  normalize: []
+  short: The list of non-terminating rules in the rule group that match the request
+  type: nested
+aws.waf.rate_based_rule_list:
+  dashed_name: aws-waf-rate-based-rule-list
+  description: The list of rate-based rules that acted on the request.
+  flat_name: aws.waf.rate_based_rule_list
+  level: extended
+  name: waf.rate_based_rule_list
+  normalize: []
+  short: The list of rate-based rules that acted on the request.
+  type: nested
+aws.waf.request.headers:
+  dashed_name: aws-waf-request-headers
+  description: List of request headers
+  flat_name: aws.waf.request.headers
+  level: extended
+  name: waf.request.headers
+  normalize: []
+  short: List of request headers
+  type: flattened
+aws.waf.rule_group_list:
+  dashed_name: aws-waf-rule-group-list
+  description: The list of rule groups that acted on this request.
+  flat_name: aws.waf.rule_group_list
+  level: extended
+  name: waf.rule_group_list
+  normalize: []
+  short: The list of rule groups that acted on this request.
+  type: nested
+aws.waf.source.id:
+  dashed_name: aws-waf-source-id
+  description: The source ID. This field shows the ID of the associated resource.
+  flat_name: aws.waf.source.id
+  ignore_above: 1024
+  level: extended
+  name: waf.source.id
+  normalize: []
+  short: The source ID. This field shows the ID of the associated resource.
+  type: keyword
+aws.waf.source.name:
+  dashed_name: aws-waf-source-name
+  description: 'The source of the request. Possible values: CF for Amazon CloudFront,
+    APIGW for Amazon API Gateway, ALB for Application Load Balancer, and APPSYNC for
+    AWS AppSync.'
+  flat_name: aws.waf.source.name
+  ignore_above: 1024
+  level: extended
+  name: waf.source.name
+  normalize: []
+  short: The source of the request
+  type: keyword
+aws.waf.terminating_rule_match_details:
+  dashed_name: aws-waf-terminating-rule-match-details
+  description: Detailed information about the terminating rule that matched the request.
+    A terminating rule has an action that ends the inspection process against a web
+    request. Possible actions for a terminating rule are ALLOW and BLOCK. This is
+    only populated for SQL injection and cross-site scripting (XSS) match rule statements.
+    As with all rule statements that inspect for more than one thing, AWS WAF applies
+    the action on the first match and stops inspecting the web request. A web request
+    with a terminating action could contain other threats, in addition to the one
+    reported in the log.
+  flat_name: aws.waf.terminating_rule_match_details
+  level: extended
+  name: waf.terminating_rule_match_details
+  normalize: []
+  short: Detailed information about the terminating rule that matched the request
+  type: nested
 beyondtrust.api:
   dashed_name: beyondtrust-api
   description: ''
