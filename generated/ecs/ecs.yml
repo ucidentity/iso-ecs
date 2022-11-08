@@ -3157,6 +3157,17 @@ cloud:
             normalize: []
             short: The cloud account name.
             type: keyword
+        pl:
+          field_details:
+            dashed_name: cloud-account-pl
+            description: Cloud Account Protection Level
+            flat_name: cloud.account.pl
+            level: extended
+            name: account.pl
+            node_name: pl
+            normalize: []
+            short: Cloud Account Protection Level
+            type: integer
     availability_zone:
       field_details:
         dashed_name: cloud-availability-zone
@@ -3299,6 +3310,18 @@ cloud:
                 original_fieldset: cloud
                 short: The cloud account name.
                 type: keyword
+            pl:
+              field_details:
+                dashed_name: cloud-origin-account-pl
+                description: Cloud Account Protection Level
+                flat_name: cloud.origin.account.pl
+                level: extended
+                name: account.pl
+                node_name: pl
+                normalize: []
+                original_fieldset: cloud
+                short: Cloud Account Protection Level
+                type: integer
         availability_zone:
           field_details:
             dashed_name: cloud-origin-availability-zone
@@ -3638,6 +3661,18 @@ cloud:
                 original_fieldset: cloud
                 short: The cloud account name.
                 type: keyword
+            pl:
+              field_details:
+                dashed_name: cloud-target-account-pl
+                description: Cloud Account Protection Level
+                flat_name: cloud.target.account.pl
+                level: extended
+                name: account.pl
+                node_name: pl
+                normalize: []
+                original_fieldset: cloud
+                short: Cloud Account Protection Level
+                type: integer
         availability_zone:
           field_details:
             dashed_name: cloud-target-availability-zone

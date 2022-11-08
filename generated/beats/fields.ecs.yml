@@ -1398,6 +1398,11 @@
         Examples: AWS account name, Google Cloud ORG display name.'
       example: elastic-dev
       default_field: false
+    - name: account.pl
+      level: extended
+      type: integer
+      description: Cloud Account Protection Level
+      default_field: false
     - name: availability_zone
       level: extended
       type: keyword
@@ -1440,6 +1445,11 @@
 
         Examples: AWS account name, Google Cloud ORG display name.'
       example: elastic-dev
+      default_field: false
+    - name: origin.account.pl
+      level: extended
+      type: integer
+      description: Cloud Account Protection Level
       default_field: false
     - name: origin.availability_zone
       level: extended
@@ -1573,6 +1583,11 @@
 
         Examples: AWS account name, Google Cloud ORG display name.'
       example: elastic-dev
+      default_field: false
+    - name: target.account.pl
+      level: extended
+      type: integer
+      description: Cloud Account Protection Level
       default_field: false
     - name: target.availability_zone
       level: extended

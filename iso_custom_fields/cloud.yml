@@ -1,0 +1,9 @@
+---
+
+- name: cloud
+  fields:
+
+    - name: account.pl
+      level: extended
+      type: integer
+      description: Cloud Account Protection Level

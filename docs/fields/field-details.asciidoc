@@ -2895,6 +2895,22 @@ example: `elastic-dev`
 // ===============================================================
 
 |
+[[field-cloud-account-pl]]
+<<field-cloud-account-pl, cloud.account.pl>>
+
+| Cloud Account Protection Level
+
+type: integer
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-cloud-availability-zone]]
 <<field-cloud-availability-zone, cloud.availability_zone>>
 

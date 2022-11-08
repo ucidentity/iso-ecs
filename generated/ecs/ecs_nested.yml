@@ -2244,6 +2244,15 @@ cloud:
       normalize: []
       short: The cloud account name.
       type: keyword
+    cloud.account.pl:
+      dashed_name: cloud-account-pl
+      description: Cloud Account Protection Level
+      flat_name: cloud.account.pl
+      level: extended
+      name: account.pl
+      normalize: []
+      short: Cloud Account Protection Level
+      type: integer
     cloud.availability_zone:
       dashed_name: cloud-availability-zone
       description: Availability zone in which this host, resource, or service is located.
@@ -2317,6 +2326,16 @@ cloud:
       original_fieldset: cloud
       short: The cloud account name.
       type: keyword
+    cloud.origin.account.pl:
+      dashed_name: cloud-origin-account-pl
+      description: Cloud Account Protection Level
+      flat_name: cloud.origin.account.pl
+      level: extended
+      name: account.pl
+      normalize: []
+      original_fieldset: cloud
+      short: Cloud Account Protection Level
+      type: integer
     cloud.origin.availability_zone:
       dashed_name: cloud-origin-availability-zone
       description: Availability zone in which this host, resource, or service is located.
@@ -2527,6 +2546,16 @@ cloud:
       original_fieldset: cloud
       short: The cloud account name.
       type: keyword
+    cloud.target.account.pl:
+      dashed_name: cloud-target-account-pl
+      description: Cloud Account Protection Level
+      flat_name: cloud.target.account.pl
+      level: extended
+      name: account.pl
+      normalize: []
+      original_fieldset: cloud
+      short: Cloud Account Protection Level
+      type: integer
     cloud.target.availability_zone:
       dashed_name: cloud-target-availability-zone
       description: Availability zone in which this host, resource, or service is located.

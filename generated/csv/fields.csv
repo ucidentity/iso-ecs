@@ -184,12 +184,14 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,client,client.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 8.2.1,true,cloud,cloud.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.2.1,true,cloud,cloud.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.2.1,true,cloud,cloud.account.pl,integer,extended,,,Cloud Account Protection Level
 8.2.1,true,cloud,cloud.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.2.1,true,cloud,cloud.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.2.1,true,cloud,cloud.instance.name,keyword,extended,,,Instance name of the host machine.
 8.2.1,true,cloud,cloud.machine.type,keyword,extended,,t2.medium,Machine type of the host machine.
 8.2.1,true,cloud,cloud.origin.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.2.1,true,cloud,cloud.origin.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.2.1,true,cloud,cloud.origin.account.pl,integer,extended,,,Cloud Account Protection Level
 8.2.1,true,cloud,cloud.origin.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.2.1,true,cloud,cloud.origin.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.2.1,true,cloud,cloud.origin.instance.name,keyword,extended,,,Instance name of the host machine.
@@ -206,6 +208,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,cloud,cloud.service.name,keyword,extended,,lambda,The cloud service name.
 8.2.1,true,cloud,cloud.target.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.2.1,true,cloud,cloud.target.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.2.1,true,cloud,cloud.target.account.pl,integer,extended,,,Cloud Account Protection Level
 8.2.1,true,cloud,cloud.target.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.2.1,true,cloud,cloud.target.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.2.1,true,cloud,cloud.target.instance.name,keyword,extended,,,Instance name of the host machine.
