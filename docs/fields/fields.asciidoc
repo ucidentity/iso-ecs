@@ -106,6 +106,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-pe,PE Header>> | These fields contain Windows Portable Executable (PE) metadata.
 
+| <<ecs-prisma,Prisma Alerts>> | Prisma Alerts
+
 | <<ecs-process,Process>> | These fields contain information about a process.
 
 | <<ecs-registry,Registry>> | Fields related to Windows Registry operations.

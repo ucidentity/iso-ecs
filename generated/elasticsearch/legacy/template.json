@@ -3442,6 +3442,39 @@
           }
         }
       },
+      "prisma": {
+        "properties": {
+          "alert": {
+            "properties": {
+              "policy": {
+                "properties": {
+                  "labels": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "type": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
+              "status": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
+          "compliance": {
+            "type": "flattened"
+          },
+          "resource": {
+            "type": "flattened"
+          },
+          "tags": {
+            "type": "flattened"
+          }
+        }
+      },
       "process": {
         "properties": {
           "args": {

@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-prisma.html",
+    "ecs_version": "8.2.1"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "prisma": {
+          "properties": {
+            "alert": {
+              "properties": {
+                "policy": {
+                  "properties": {
+                    "labels": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "status": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "compliance": {
+              "type": "flattened"
+            },
+            "resource": {
+              "type": "flattened"
+            },
+            "tags": {
+              "type": "flattened"
+            }
+          }
+        }
+      }
+    }
+  }
+}

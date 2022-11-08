@@ -8699,6 +8699,64 @@ packet.data.text:
   norms: false
   short: Printable part of the packet payload as text
   type: text
+prisma.alert.policy.labels:
+  dashed_name: prisma-alert-policy-labels
+  description: Labels for policy that generated the alert
+  flat_name: prisma.alert.policy.labels
+  ignore_above: 1024
+  level: extended
+  name: alert.policy.labels
+  normalize: []
+  short: Labels for policy that generated the alert
+  type: keyword
+prisma.alert.policy.type:
+  dashed_name: prisma-alert-policy-type
+  description: policy type that generated the alert
+  flat_name: prisma.alert.policy.type
+  ignore_above: 1024
+  level: extended
+  name: alert.policy.type
+  normalize: []
+  short: policy type that generated the alert
+  type: keyword
+prisma.alert.status:
+  dashed_name: prisma-alert-status
+  description: current status of the alert
+  flat_name: prisma.alert.status
+  ignore_above: 1024
+  level: extended
+  name: alert.status
+  normalize: []
+  short: current status of the alert
+  type: keyword
+prisma.compliance:
+  dashed_name: prisma-compliance
+  description: Key Value metadata detailing what compliance standards contain the
+    alert
+  flat_name: prisma.compliance
+  level: extended
+  name: compliance
+  normalize: []
+  short: Key Value metadata detailing what compliance standards contain the alert
+  type: flattened
+prisma.resource:
+  dashed_name: prisma-resource
+  description: Detailed information about the resource that generated the alert
+  flat_name: prisma.resource
+  level: extended
+  name: resource
+  normalize: []
+  short: Detailed information about the resource that generated the alert
+  type: flattened
+prisma.tags:
+  dashed_name: prisma-tags
+  description: Tags from prisma
+  flat_name: prisma.tags
+  level: extended
+  name: tags
+  normalize: []
+  short: Tags from prisma
+  type: flattened
 process.args:
   dashed_name: process-args
   description: 'Array of process arguments, starting with the absolute path to the

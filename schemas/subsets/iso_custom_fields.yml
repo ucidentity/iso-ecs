@@ -23,6 +23,8 @@ fields:
     fields: "*"
   packet:
     fields: "*"
+  prisma:
+    fields: "*"
   shibboleth:
     fields: "*"
   suricata:

@@ -709,6 +709,12 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,false,packet,packet.data.hex,text,extended,,,packet payload encoded as hex
 8.2.1,false,packet,packet.data.tcpdump,text,extended,,,packet payload displayed in a tcpdump format
 8.2.1,true,packet,packet.data.text,text,extended,,,Printable part of the packet payload as text
+8.2.1,true,prisma,prisma.alert.policy.labels,keyword,extended,,,Labels for policy that generated the alert
+8.2.1,true,prisma,prisma.alert.policy.type,keyword,extended,,,policy type that generated the alert
+8.2.1,true,prisma,prisma.alert.status,keyword,extended,,,current status of the alert
+8.2.1,true,prisma,prisma.compliance,flattened,extended,,,Key Value metadata detailing what compliance standards contain the alert
+8.2.1,true,prisma,prisma.resource,flattened,extended,,,Detailed information about the resource that generated the alert
+8.2.1,true,prisma,prisma.tags,flattened,extended,,,Tags from prisma
 8.2.1,true,process,process.args,keyword,extended,array,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]",Array of process arguments.
 8.2.1,true,process,process.args_count,long,extended,,4,Length of the process.args array.
 8.2.1,true,process,process.code_signature.digest_algorithm,keyword,extended,,sha256,Hashing algorithm used to sign the process.
