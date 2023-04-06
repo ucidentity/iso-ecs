@@ -4245,6 +4245,43 @@
       type: keyword
       ignore_above: 1024
       description: Name of the group.
+  - name: grouper
+    title: grouper
+    group: 2
+    description: Fields for grouper logs
+    type: group
+    default_field: true
+    fields:
+    - name: group
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: group
+      default_field: false
+    - name: list
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: group list
+      default_field: false
+    - name: priv
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: privleges
+      default_field: false
+    - name: stem
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: stem
+      default_field: false
+    - name: subject
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: subject
+      default_field: false
   - name: hash
     title: Hash
     group: 2

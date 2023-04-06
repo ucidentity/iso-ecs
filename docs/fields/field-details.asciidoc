@@ -6922,6 +6922,103 @@ The `group` fields are expected to be nested at:
 Note also that the `group` fields may be used directly at the root of the events.
 
 
+[[ecs-grouper]]
+=== grouper Fields
+
+Fields for grouper logs
+
+[discrete]
+==== grouper Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-grouper-group]]
+<<field-grouper-group, grouper.group>>
+
+| group
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-grouper-list]]
+<<field-grouper-list, grouper.list>>
+
+| group list
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-grouper-priv]]
+<<field-grouper-priv, grouper.priv>>
+
+| privleges
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-grouper-stem]]
+<<field-grouper-stem, grouper.stem>>
+
+| stem
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-grouper-subject]]
+<<field-grouper-subject, grouper.subject>>
+
+| subject
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-hash]]
 === Hash Fields
 

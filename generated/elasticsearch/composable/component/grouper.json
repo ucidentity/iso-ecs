@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-grouper.html",
+    "ecs_version": "8.2.1"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "grouper": {
+          "properties": {
+            "group": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "list": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "priv": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "stem": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "subject": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}

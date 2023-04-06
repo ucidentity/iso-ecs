@@ -9802,6 +9802,81 @@ group:
       top_level: true
     root: false
     title: Group
+grouper:
+  field_details:
+    dashed_name: grouper
+    description: Fields for grouper logs
+    flat_name: grouper
+    name: grouper
+    node_name: grouper
+    short: Grouper group management
+    type: group
+  fields:
+    group:
+      field_details:
+        dashed_name: grouper-group
+        description: group
+        flat_name: grouper.group
+        ignore_above: 1024
+        level: extended
+        name: group
+        node_name: group
+        normalize: []
+        short: group
+        type: keyword
+    list:
+      field_details:
+        dashed_name: grouper-list
+        description: group list
+        flat_name: grouper.list
+        ignore_above: 1024
+        level: extended
+        name: list
+        node_name: list
+        normalize: []
+        short: group list
+        type: keyword
+    priv:
+      field_details:
+        dashed_name: grouper-priv
+        description: privleges
+        flat_name: grouper.priv
+        ignore_above: 1024
+        level: extended
+        name: priv
+        node_name: priv
+        normalize: []
+        short: privleges
+        type: keyword
+    stem:
+      field_details:
+        dashed_name: grouper-stem
+        description: stem
+        flat_name: grouper.stem
+        ignore_above: 1024
+        level: extended
+        name: stem
+        node_name: stem
+        normalize: []
+        short: stem
+        type: keyword
+    subject:
+      field_details:
+        dashed_name: grouper-subject
+        description: subject
+        flat_name: grouper.subject
+        ignore_above: 1024
+        level: extended
+        name: subject
+        node_name: subject
+        normalize: []
+        short: subject
+        type: keyword
+  schema_details:
+    group: 2
+    prefix: grouper.
+    root: false
+    title: grouper
 hash:
   field_details:
     dashed_name: hash

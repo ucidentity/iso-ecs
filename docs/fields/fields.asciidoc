@@ -74,6 +74,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-group,Group>> | User's group relevant to the event.
 
+| <<ecs-grouper,grouper>> | Grouper group management
+
 | <<ecs-hash,Hash>> | Hashes, usually file hashes.
 
 | <<ecs-host,Host>> | Fields describing the relevant computing instance.

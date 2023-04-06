@@ -1,0 +1,35 @@
+---
+
+- name: grouper
+  title: grouper
+  group: 2
+  short: Grouper group management
+  description: >
+    Fields for grouper logs
+  type: group
+  fields:
+
+    - name: group
+      level: extended
+      type: keyword
+      description: group
+    
+    - name: list
+      level: extended
+      type: keyword
+      description: group list
+
+    - name: priv
+      level: extended
+      type: keyword
+      description: privleges
+    
+    - name: subject
+      level: extended
+      type: keyword
+      description: subject
+    
+    - name: stem
+      level: extended
+      type: keyword
+      description: stem

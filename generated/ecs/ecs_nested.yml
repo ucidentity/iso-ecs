@@ -7441,6 +7441,65 @@ group:
   short: User's group relevant to the event.
   title: Group
   type: group
+grouper:
+  description: Fields for grouper logs
+  fields:
+    grouper.group:
+      dashed_name: grouper-group
+      description: group
+      flat_name: grouper.group
+      ignore_above: 1024
+      level: extended
+      name: group
+      normalize: []
+      short: group
+      type: keyword
+    grouper.list:
+      dashed_name: grouper-list
+      description: group list
+      flat_name: grouper.list
+      ignore_above: 1024
+      level: extended
+      name: list
+      normalize: []
+      short: group list
+      type: keyword
+    grouper.priv:
+      dashed_name: grouper-priv
+      description: privleges
+      flat_name: grouper.priv
+      ignore_above: 1024
+      level: extended
+      name: priv
+      normalize: []
+      short: privleges
+      type: keyword
+    grouper.stem:
+      dashed_name: grouper-stem
+      description: stem
+      flat_name: grouper.stem
+      ignore_above: 1024
+      level: extended
+      name: stem
+      normalize: []
+      short: stem
+      type: keyword
+    grouper.subject:
+      dashed_name: grouper-subject
+      description: subject
+      flat_name: grouper.subject
+      ignore_above: 1024
+      level: extended
+      name: subject
+      normalize: []
+      short: subject
+      type: keyword
+  group: 2
+  name: grouper
+  prefix: grouper.
+  short: Grouper group management
+  title: grouper
+  type: group
 hash:
   description: 'The hash fields represent different bitwise hash algorithms and their
     values.
