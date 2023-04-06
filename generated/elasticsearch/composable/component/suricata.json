@@ -190,8 +190,6 @@
                   "type": "keyword"
                 },
                 "http_request_body": {
-                  "doc_values": false,
-                  "index": false,
                   "norms": false,
                   "type": "text"
                 },
@@ -200,8 +198,6 @@
                   "type": "text"
                 },
                 "http_response_body": {
-                  "doc_values": false,
-                  "index": false,
                   "norms": false,
                   "type": "text"
                 },
@@ -222,14 +218,10 @@
                   }
                 },
                 "payload": {
-                  "doc_values": false,
-                  "index": false,
                   "norms": false,
                   "type": "text"
                 },
                 "payload_printable": {
-                  "doc_values": false,
-                  "index": false,
                   "norms": false,
                   "type": "text"
                 },

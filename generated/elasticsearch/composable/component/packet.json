@@ -11,20 +11,14 @@
             "data": {
               "properties": {
                 "base64": {
-                  "doc_values": false,
-                  "index": false,
                   "norms": false,
                   "type": "text"
                 },
                 "hex": {
-                  "doc_values": false,
-                  "index": false,
                   "norms": false,
                   "type": "text"
                 },
                 "tcpdump": {
-                  "doc_values": false,
-                  "index": false,
                   "norms": false,
                   "type": "text"
                 },

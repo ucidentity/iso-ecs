@@ -200,8 +200,7 @@
      
     - name: eve.http_request_body
       level: extended
-      index: false
-      doc_values: false
+      enabled: false
       type: text
       description: |
      
@@ -212,8 +211,7 @@
      
     - name: eve.http_response_body
       level: extended
-      index: false
-      doc_values: false
+      enabled: false
       type: text
       description: |
      
@@ -250,15 +248,12 @@
     - name: eve.payload
       level: extended
       type: text
-      index: false
-      doc_values: false
+      enabled: false
       description: |
      
     - name: eve.payload_printable
       level: extended
       type: text
-      index: false
-      doc_values: false
       description: |
 
     - name: eve.smb.client_dialects 

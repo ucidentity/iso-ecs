@@ -708,9 +708,9 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,package,package.size,long,extended,,62231,Package size in bytes.
 8.2.1,true,package,package.type,keyword,extended,,rpm,Package type
 8.2.1,true,package,package.version,keyword,extended,,1.12.9,Package version
-8.2.1,false,packet,packet.data.base64,text,extended,,,packet payload encoded as base64
-8.2.1,false,packet,packet.data.hex,text,extended,,,packet payload encoded as hex
-8.2.1,false,packet,packet.data.tcpdump,text,extended,,,packet payload displayed in a tcpdump format
+8.2.1,true,packet,packet.data.base64,text,extended,,,packet payload encoded as base64
+8.2.1,true,packet,packet.data.hex,text,extended,,,packet payload encoded as hex
+8.2.1,true,packet,packet.data.tcpdump,text,extended,,,packet payload displayed in a tcpdump format
 8.2.1,true,packet,packet.data.text,text,extended,,,Printable part of the packet payload as text
 8.2.1,true,prisma,prisma.alert.policy.labels,keyword,extended,,,Labels for policy that generated the alert
 8.2.1,true,prisma,prisma.alert.policy.type,keyword,extended,,,policy type that generated the alert
@@ -1217,14 +1217,14 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.2.1,true,suricata,suricata.eve.http.redirect,keyword,extended,,,
 8.2.1,true,suricata,suricata.eve.http.xff,keyword,extended,,,
 8.2.1,true,suricata,suricata.eve.http_content_type,keyword,extended,,,
-8.2.1,false,suricata,suricata.eve.http_request_body,text,extended,,,
+8.2.1,true,suricata,suricata.eve.http_request_body,text,extended,,,
 8.2.1,true,suricata,suricata.eve.http_request_body_printable,text,extended,,,
-8.2.1,false,suricata,suricata.eve.http_response_body,text,extended,,,
+8.2.1,true,suricata,suricata.eve.http_response_body,text,extended,,,
 8.2.1,true,suricata,suricata.eve.http_response_body_printable,text,extended,,,
 8.2.1,true,suricata,suricata.eve.in_iface,keyword,extended,,,
 8.2.1,true,suricata,suricata.eve.packet_info.linktype,keyword,extended,,,
-8.2.1,false,suricata,suricata.eve.payload,text,extended,,,
-8.2.1,false,suricata,suricata.eve.payload_printable,text,extended,,,
+8.2.1,true,suricata,suricata.eve.payload,text,extended,,,
+8.2.1,true,suricata,suricata.eve.payload_printable,text,extended,,,
 8.2.1,true,suricata,suricata.eve.smb.client_dialects,keyword,extended,,,
 8.2.1,true,suricata,suricata.eve.smb.command,keyword,extended,,,
 8.2.1,true,suricata,suricata.eve.smb.dialect,keyword,extended,,,

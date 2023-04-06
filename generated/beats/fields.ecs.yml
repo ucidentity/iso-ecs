@@ -6002,22 +6002,19 @@
       level: extended
       type: text
       description: packet payload encoded as base64
-      index: false
-      doc_values: false
+      enabled: false
       default_field: false
     - name: data.hex
       level: extended
       type: text
       description: packet payload encoded as hex
-      index: false
-      doc_values: false
+      enabled: false
       default_field: false
     - name: data.tcpdump
       level: extended
       type: text
       description: packet payload displayed in a tcpdump format
-      index: false
-      doc_values: false
+      enabled: false
       default_field: false
     - name: data.text
       level: extended
@@ -9838,8 +9835,7 @@
       level: extended
       type: text
       description: ''
-      index: false
-      doc_values: false
+      enabled: false
       default_field: false
     - name: eve.http_request_body_printable
       level: extended
@@ -9850,8 +9846,7 @@
       level: extended
       type: text
       description: ''
-      index: false
-      doc_values: false
+      enabled: false
       default_field: false
     - name: eve.http_response_body_printable
       level: extended
@@ -9874,15 +9869,12 @@
       level: extended
       type: text
       description: ''
-      index: false
-      doc_values: false
+      enabled: false
       default_field: false
     - name: eve.payload_printable
       level: extended
       type: text
       description: ''
-      index: false
-      doc_values: false
       default_field: false
     - name: eve.smb.client_dialects
       level: extended

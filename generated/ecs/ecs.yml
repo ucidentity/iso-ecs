@@ -13732,9 +13732,8 @@ packet:
           field_details:
             dashed_name: packet-data-base64
             description: packet payload encoded as base64
-            doc_values: false
+            enabled: false
             flat_name: packet.data.base64
-            index: false
             level: extended
             name: data.base64
             node_name: base64
@@ -13746,9 +13745,8 @@ packet:
           field_details:
             dashed_name: packet-data-hex
             description: packet payload encoded as hex
-            doc_values: false
+            enabled: false
             flat_name: packet.data.hex
-            index: false
             level: extended
             name: data.hex
             node_name: hex
@@ -13760,9 +13758,8 @@ packet:
           field_details:
             dashed_name: packet-data-tcpdump
             description: packet payload displayed in a tcpdump format
-            doc_values: false
+            enabled: false
             flat_name: packet.data.tcpdump
-            index: false
             level: extended
             name: data.tcpdump
             node_name: tcpdump
@@ -22608,9 +22605,8 @@ suricata:
           field_details:
             dashed_name: suricata-eve-http-request-body
             description: ''
-            doc_values: false
+            enabled: false
             flat_name: suricata.eve.http_request_body
-            index: false
             level: extended
             name: eve.http_request_body
             node_name: http_request_body
@@ -22634,9 +22630,8 @@ suricata:
           field_details:
             dashed_name: suricata-eve-http-response-body
             description: ''
-            doc_values: false
+            enabled: false
             flat_name: suricata.eve.http_response_body
-            index: false
             level: extended
             name: eve.http_response_body
             node_name: http_response_body
@@ -22693,9 +22688,8 @@ suricata:
           field_details:
             dashed_name: suricata-eve-payload
             description: ''
-            doc_values: false
+            enabled: false
             flat_name: suricata.eve.payload
-            index: false
             level: extended
             name: eve.payload
             node_name: payload
@@ -22707,9 +22701,7 @@ suricata:
           field_details:
             dashed_name: suricata-eve-payload-printable
             description: ''
-            doc_values: false
             flat_name: suricata.eve.payload_printable
-            index: false
             level: extended
             name: eve.payload_printable
             node_name: payload_printable

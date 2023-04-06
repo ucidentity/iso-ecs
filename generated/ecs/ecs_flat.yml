@@ -8685,9 +8685,8 @@ package.version:
 packet.data.base64:
   dashed_name: packet-data-base64
   description: packet payload encoded as base64
-  doc_values: false
+  enabled: false
   flat_name: packet.data.base64
-  index: false
   level: extended
   name: data.base64
   normalize: []
@@ -8697,9 +8696,8 @@ packet.data.base64:
 packet.data.hex:
   dashed_name: packet-data-hex
   description: packet payload encoded as hex
-  doc_values: false
+  enabled: false
   flat_name: packet.data.hex
-  index: false
   level: extended
   name: data.hex
   normalize: []
@@ -8709,9 +8707,8 @@ packet.data.hex:
 packet.data.tcpdump:
   dashed_name: packet-data-tcpdump
   description: packet payload displayed in a tcpdump format
-  doc_values: false
+  enabled: false
   flat_name: packet.data.tcpdump
-  index: false
   level: extended
   name: data.tcpdump
   normalize: []
@@ -14683,9 +14680,8 @@ suricata.eve.http_content_type:
 suricata.eve.http_request_body:
   dashed_name: suricata-eve-http-request-body
   description: ''
-  doc_values: false
+  enabled: false
   flat_name: suricata.eve.http_request_body
-  index: false
   level: extended
   name: eve.http_request_body
   normalize: []
@@ -14705,9 +14701,8 @@ suricata.eve.http_request_body_printable:
 suricata.eve.http_response_body:
   dashed_name: suricata-eve-http-response-body
   description: ''
-  doc_values: false
+  enabled: false
   flat_name: suricata.eve.http_response_body
-  index: false
   level: extended
   name: eve.http_response_body
   normalize: []
@@ -14747,9 +14742,8 @@ suricata.eve.packet_info.linktype:
 suricata.eve.payload:
   dashed_name: suricata-eve-payload
   description: ''
-  doc_values: false
+  enabled: false
   flat_name: suricata.eve.payload
-  index: false
   level: extended
   name: eve.payload
   normalize: []
@@ -14759,9 +14753,7 @@ suricata.eve.payload:
 suricata.eve.payload_printable:
   dashed_name: suricata-eve-payload-printable
   description: ''
-  doc_values: false
   flat_name: suricata.eve.payload_printable
-  index: false
   level: extended
   name: eve.payload_printable
   normalize: []

@@ -12,22 +12,19 @@
     - name: data.base64
       level: extended
       type: text
-      index: false
-      doc_values: false
+      enabled: false
       description: packet payload encoded as base64
 
     - name: data.hex
       level: extended
       type: text
-      index: false
-      doc_values: false
+      enabled: false
       description: packet payload encoded as hex
 
     - name: data.tcpdump
       level: extended
       type: text
-      index: false
-      doc_values: false
+      enabled: false
       description: packet payload displayed in a tcpdump format
     
     - name: data.text
