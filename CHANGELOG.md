@@ -3,6 +3,138 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file based on the [Keep a Changelog](http://keepachangelog.com/) Standard. This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [8.7.0](https://github.com/elastic/ecs/compare/v8.6.1...v8.7.0)
+
+### Schema Changes
+
+#### Bugfixes
+
+* remove duplicated `client.domain` definition #2120
+
+#### Added
+
+* adding `name` field to `threat.indicator` #2121
+* adding `api` option to `event.category` #2147
+* adding `library` option to `event.category` #2154
+
+#### Improvements
+
+* description for `host.name` definition updated to encourage use of FDQN #2122
+
+### Tooling and Artifact Changes
+
+#### Improvements
+
+* Updated usage docs to include `threat.indicator.url.domain` and changed `indicator.marking.tlp` and `indicator.enrichments.marking.tlp` from "WHITE" to "CLEAR" to align with TLP 2.0. #2124
+* Bump `gitpython` from `3.1.27` to `3.1.30` in `/scripts`. #2139
+
+## [8.6.1](https://github.com/elastic/ecs/compare/v8.6.0...v8.6.1)
+
+### Schema Changes
+
+#### Bugfixes
+
+* Fixing `tlp_version` and `tlp` field for threat. #2156
+
+## [8.6.0](https://github.com/elastic/ecs/compare/v8.5.2...v8.6.0)
+
+### Schema Changes
+
+#### Added
+
+* Adding `vulnerability` option for `event.category`. #2029
+* Added `device.*` field set as beta. #2030
+* Added `tlp.version` to threat #2074
+* Added fields for executable object format metadata for ELF, Mach-O and PE #2083
+
+#### Improvements
+
+* Added `CLEAR` and `AMBER+STRICT` as valid values for `threat.indicator.marking.tlp` and `enrichments.indicator.marking.tlp` to accept new [TLP 2.0](https://www.first.org/tlp/) markings #2022, #2074
+
+## [8.5.2](https://github.com/elastic/ecs/compare/v8.5.1...v8.5.2)
+
+### Schema Changes
+
+#### Bugfixes
+
+* Fixes invalid `number` type on 4 `process.io` subfields. #2105
+
+## [8.5.1](https://github.com/elastic/ecs/compare/v8.5.0...v8.5.1)
+
+### Tooling and Artifact Changes
+
+#### Bugfixes
+
+* Fix type of `normalize` in `process.io.bytes_skipped`. #2094
+
+## [8.5.0](https://github.com/elastic/ecs/compare/v8.4.0...v8.5.0)
+
+### Schema Changes
+
+#### Added
+
+* Adding `risk.*` fields as experimental. #1994, #2010
+* Adding `process.io.*` as beta fields. #1956, #2031
+* Adding `process.tty.rows` and `process.tty.columns` as beta fields. #2031
+* Changed `process.env_vars` field type to be an array of keywords. #2038
+* `process.attested_user` and `process.attested_groups` as beta fields. #2050
+* Added `risk.*` fieldset to beta. #2051, #2058
+* Moved Linux event model fields to GA. #2082
+
+#### Improvements
+
+* Advances `threat.enrichments.indicator` to GA. #1928
+* Added `ios` and `android` as valid values for `os.type` #1999
+
+### Tooling and Artifact Changes
+
+#### Bugfixes
+
+* Added Deprecation Warning for `misspell` task #1993
+* Fix typo in client schema #2014
+
+## [8.4.0](https://github.com/elastic/ecs/compare/v8.3.1...v8.4.0)
+
+### Schema Changes
+
+#### Added
+
+* Initial set of `expected_values`. #1962
+* Adding `service.node.roles`. #1981
+
+### Tooling and Artifact Changes
+
+#### Added
+
+* Introduce `expected_values` attribute. #1952
+
+#### Improvements
+
+* Additional type annotations. #1950
+
+## [8.3.1](https://github.com/elastic/ecs/compare/v8.3.0...v8.3.1)
+
+### Schema Changes
+
+#### Deprecated
+
+* Deprecate `service.node.role` in favor of upcoming `service.node.roles`. #1976
+
+## [8.3.0](https://github.com/elastic/ecs/compare/v8.2.1...v8.3.0)
+
+### Schema Changes
+
+#### Added
+
+* Added `pattern` attribute to `.mac` fields. #1871
+* Add `orchestrator.cluster.id` #1875
+* Add `orchestrator.resource.id` #1878
+* Add `orchestrator.resource.parent.type` #1889
+* Add `orchestrator.resource.ip` #1889
+* Add `container.image.hash.all` #1889
+* Add `service.node.role` #1916
+* Advanced `container.*` metric fields to GA. #1927
+
 ## [8.2.1](https://github.com/elastic/ecs/compare/v8.2.0...v8.2.1)
 
 ### Schema Changes

@@ -38,7 +38,6 @@
         as: x509
       - at: threat.enrichments.indicator
         as: x509
-        beta: Reusing the `x509` fields in this location is currently considered beta.
       - tls.client
       - tls.server
   fields:
@@ -108,7 +107,7 @@
       type: keyword
       normalize:
         - array
-      description: List of country (C) codes
+      description: List of country \(C) codes
       example: US
 
     - name: signature_algorithm
@@ -125,13 +124,13 @@
       level: extended
       type: date
       description: Time at which the certificate is first considered valid.
-      example: 2019-08-16T01:40:25Z
+      example: "2019-08-16T01:40:25Z"
 
     - name: not_after
       level: extended
       type: date
       description: Time at which the certificate is no longer considered valid.
-      example: 2020-07-16T03:15:39Z
+      example: "2020-07-16T03:15:39Z"
 
     - name: subject.distinguished_name
       level: extended
@@ -183,7 +182,7 @@
       type: keyword
       normalize:
         - array
-      description: List of country (C) code
+      description: List of country \(C) code
       example: US
 
     - name: public_key_algorithm

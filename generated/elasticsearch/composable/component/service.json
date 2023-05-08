@@ -1,7 +1,7 @@
 {
   "_meta": {
     "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-service.html",
-    "ecs_version": "8.2.1"
+    "ecs_version": "8.7.0"
   },
   "template": {
     "mappings": {
@@ -33,6 +33,14 @@
                 "name": {
                   "ignore_above": 1024,
                   "type": "keyword"
+                },
+                "role": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "roles": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
                 }
               }
             },
@@ -61,6 +69,14 @@
                 "node": {
                   "properties": {
                     "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "role": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "roles": {
                       "ignore_above": 1024,
                       "type": "keyword"
                     }
@@ -109,6 +125,14 @@
                 "node": {
                   "properties": {
                     "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "role": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "roles": {
                       "ignore_above": 1024,
                       "type": "keyword"
                     }

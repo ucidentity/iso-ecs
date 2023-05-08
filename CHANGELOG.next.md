@@ -20,8 +20,6 @@ Thanks, you're awesome :-) -->
 
 #### Deprecated
 
-#### Removed
-
 ### Tooling and Artifact Changes
 
 #### Breaking changes

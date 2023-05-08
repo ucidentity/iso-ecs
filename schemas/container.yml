@@ -32,7 +32,6 @@
       scaling_factor: 1000
       level: extended
       short: Percent CPU used, between 0 and 1.
-      beta: This field is beta and subject to change.
       description: >
         Percent CPU used which is normalized by the number of CPU cores and it
         ranges from 0 to 1. Scaling factor: 1000.
@@ -41,7 +40,6 @@
       type: long
       level: extended
       short: The number of bytes read by all disks.
-      beta: This field is beta and subject to change.
       description: >
         The total number of bytes (gauge) read successfully (aggregated from all
         disks) since the last metric collection.
@@ -50,7 +48,6 @@
       type: long
       level: extended
       short: The number of bytes written on all disks.
-      beta: This field is beta and subject to change.
       description: >
         The total number of bytes (gauge) written successfully (aggregated from
         all disks) since the last metric collection.
@@ -75,6 +72,18 @@
       normalize:
         - array
 
+    - name: image.hash.all
+      level: extended
+      type: keyword
+      short: An array of digests of the image the container was built on.
+      description: >
+        An array of digests of the image the container was built on.
+        Each digest consists of the hash algorithm and value in this format: `algorithm:value`.
+        Algorithm names should align with the field names in the ECS hash field set.
+      example: '[sha256:f8fefc80e3273dc756f288a63945820d6476ad64883892c771b5e2ece6bf1b26]'
+      normalize:
+        - array
+
     - name: labels
       level: extended
       type: object
@@ -87,7 +96,6 @@
       scaling_factor: 1000
       level: extended
       short: Percent memory used, between 0 and 1.
-      beta: This field is beta and subject to change.
       description: >
         Memory usage percentage and it ranges from 0 to 1. Scaling factor: 1000.
 
@@ -101,7 +109,6 @@
       type: long
       level: extended
       short: The number of bytes received on all network interfaces.
-      beta: This field is beta and subject to change.
       description: >
         The number of bytes received (gauge) on all network interfaces by the
         container since the last metric collection.
@@ -110,7 +117,6 @@
       type: long
       level: extended
       short: The number of bytes sent on all network interfaces.
-      beta: This field is beta and subject to change.
       description: >
         The number of bytes (gauge) sent out on all network interfaces by the
         container since the last metric collection.

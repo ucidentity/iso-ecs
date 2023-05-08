@@ -152,6 +152,7 @@ Supported keys to describe fields
 - level (required, one of: core, extended): ECS Level of maturity of the field
 - type (required): Type of the field. Must be set explicitly, no default.
 - description (required): Description of the field
+- required (optional): Fields expected in any ECS-compliant event. Currently, only `@timestamp` and `ecs.version`.
 - short (optional): Short version of the description to display in small spaces.
   Short descriptions must not have newlines.
   Defaults to the main description when absent.
@@ -165,6 +166,7 @@ Supported keys to describe fields
   on a `wildcard` field.
 - format: Field format that can be used in a Kibana index template.
 - pattern (optional): A regular expression that expresses the expected constraints of the field's string values.
+- expected_values (optional): An array of expected values for the field. Schema consumers can validate integrations and mapped data against the listed values. These values are the recommended convention, but users may also use other values.
 - normalize: Normalization steps that should be applied at ingestion time. Supported values:
   - array: the content of the field should be an array (even when there's only one value).
 - beta (optional): Adds a beta marker for the field to the description. The text provided in this attribute is used as content of the beta marker in the documentation. Note that when a whole field set is marked as beta, it is not necessary nor recommended to mark all fields in the field set as beta. Beta notices should not have newlines.

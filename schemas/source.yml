@@ -34,7 +34,6 @@
       - at: process.entry_meta
         as: source
         short_override: Remote client information such as ip, port and geo location.
-        beta: Reusing the `source` fields in this location is currently considered beta.
 
   fields:
 
@@ -68,6 +67,7 @@
       level: core
       type: keyword
       short: MAC address of the source.
+      pattern: ^[A-F0-9]{2}(-[A-F0-9]{2}){5,}$
       example: 00-00-5E-00-53-23
       description: >
         MAC address of the source.
