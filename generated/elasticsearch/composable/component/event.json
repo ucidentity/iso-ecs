@@ -16,6 +16,10 @@
               "ignore_above": 1024,
               "type": "keyword"
             },
+            "application": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
             "category": {
               "ignore_above": 1024,
               "type": "keyword"

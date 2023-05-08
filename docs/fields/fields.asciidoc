@@ -24,7 +24,21 @@ For a single page representation of all fields, please see the
 
 | <<ecs-agent,Agent>> | Fields about the monitoring agent.
 
+| <<ecs-arcsight,Arcsight>> | Fields for working with Arcsight.
+
 | <<ecs-as,Autonomous System>> | Fields describing an Autonomous System (Internet routing prefix).
+
+| <<ecs-aws,aws>> | Fields for logs from aws
+
+| <<ecs-beyondtrust,beyondtrust>> | Fields for logs from beyondtrust
+
+| <<ecs-bpr,Berkeley People Registry>> | Fields for the Berkeley People Registry Application
+
+| <<ecs-cas,Berkeley CAS>> | Fields for the Berkeley's CAS logs
+
+| <<ecs-cisco_duo_admin,Cisco DUO Admin>> | Fields specific to DUO Admin Logs
+
+| <<ecs-cisco_duo_auth,cisco_duo_auth>> | Fields for Cisco Duo Authentication logs
 
 | <<ecs-client,Client>> | Fields about the client side of a network connection, used with server.
 
@@ -62,6 +76,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-group,Group>> | User's group relevant to the event.
 
+| <<ecs-grouper,grouper>> | Grouper group management
+
 | <<ecs-hash,Hash>> | Hashes, usually file hashes.
 
 | <<ecs-host,Host>> | Fields describing the relevant computing instance.
@@ -70,9 +86,15 @@ For a single page representation of all fields, please see the
 
 | <<ecs-interface,Interface>> | Fields to describe observer interface information.
 
+| <<ecs-ldap,LDAP>> | Lightweight Directory Access Protocol
+
 | <<ecs-log,Log>> | Details about the event's logging mechanism.
 
+| <<ecs-logstash,Logstash>> | Logstash Logs
+
 | <<ecs-macho,Mach-O Header>> | These fields contain Mac OS Mach Object file format (Mach-O) metadata.
+
+| <<ecs-malware,malware>> | Detected Malware Fields
 
 | <<ecs-network,Network>> | Fields describing the communication path over which the event happened.
 
@@ -86,7 +108,11 @@ For a single page representation of all fields, please see the
 
 | <<ecs-package,Package>> | These fields contain information about an installed software package.
 
+| <<ecs-packet,Packet data>> | Packet payload from IDS alerts
+
 | <<ecs-pe,PE Header>> | These fields contain Windows Portable Executable (PE) metadata.
+
+| <<ecs-prisma,Prisma Alerts>> | Prisma Alerts
 
 | <<ecs-process,Process>> | These fields contain information about a process.
 
@@ -102,9 +128,17 @@ For a single page representation of all fields, please see the
 
 | <<ecs-service,Service>> | Fields describing the service for or from which the data was collected.
 
+| <<ecs-shibboleth,Shibboleth>> | Fields for shibboleth logs
+
 | <<ecs-source,Source>> | Fields about the source side of a network connection, used with destination.
 
+| <<ecs-suricata,suricata>> | Fields for logs from suricata
+
+| <<ecs-system,System fields, often from syslog>> | Fields for system logs, like sshd, sudo
+
 | <<ecs-threat,Threat>> | Fields to classify events and alerts according to a threat taxonomy.
+
+| <<ecs-ticket,Kerberos tickets>> | Fields for Kerberos tickets
 
 | <<ecs-tls,TLS>> | Fields describing a TLS connection.
 

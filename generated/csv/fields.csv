@@ -5,10 +5,144 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,base,tags,keyword,core,array,"[""production"", ""env2""]",List of keywords used to tag each event.
 8.7.0,true,agent,agent.build.original,keyword,core,,"metricbeat version 7.6.0 (amd64), libbeat 7.6.0 [6a23e8f8f30f5001ba344e4e54d8d9cb82cb107c built 2020-02-05 23:10:10 +0000 UTC]",Extended build information for the agent.
 8.7.0,true,agent,agent.ephemeral_id,keyword,extended,,8a4f500f,Ephemeral identifier of this agent.
+8.7.0,true,agent,agent.hostname,keyword,extended,,,Agent's hostname.
 8.7.0,true,agent,agent.id,keyword,core,,8a4f500d,Unique identifier of this agent.
 8.7.0,true,agent,agent.name,keyword,core,,foo,Custom name of the agent.
 8.7.0,true,agent,agent.type,keyword,core,,filebeat,Type of the agent.
 8.7.0,true,agent,agent.version,keyword,core,,6.0.0-rc2,Version of the agent.
+8.7.0,true,arcsight,arcsight.category.behavior,keyword,extended,,,Behavior category
+8.7.0,true,arcsight,arcsight.category.device.group,keyword,extended,,,Event's device group
+8.7.0,true,arcsight,arcsight.category.device.type,keyword,extended,,,Event's device type
+8.7.0,true,arcsight,arcsight.category.object,keyword,extended,,,Event's object category
+8.7.0,true,arcsight,arcsight.category.outcome,keyword,extended,,,Event's outcome
+8.7.0,true,arcsight,arcsight.category.significance,keyword,extended,,,Event's significance
+8.7.0,true,arcsight,arcsight.category.technique,keyword,extended,,,Event's technique
+8.7.0,true,arcsight,arcsight.classid,keyword,extended,,,Event's Classification ID
+8.7.0,true,aws,aws.cloudwatch.log.group,keyword,extended,,,The CloudWatch LogGroup
+8.7.0,true,aws,aws.cloudwatch.log.message_type,keyword,extended,,,CloudWatch MessageType
+8.7.0,true,aws,aws.cloudwatch.log.stream,keyword,extended,,,The CloudWatch LogStream
+8.7.0,true,aws,aws.cloudwatch.log.subscription_filters,keyword,extended,,,The name of the Subscription Filter used to send CloudWatch Logs to Security
+8.7.0,true,aws,aws.s3.bucket.arn,keyword,extended,,,The ARN of the S3 Bucket
+8.7.0,true,aws,aws.s3.bucket.name,keyword,extended,,,The S3 Bucket Name
+8.7.0,true,aws,aws.s3.object.key,keyword,extended,,,The S3 Object Key
+8.7.0,true,aws,aws.waf.arn,keyword,extended,,,AWS ARN of ACL
+8.7.0,true,aws,aws.waf.id,keyword,extended,,,ID of ACL
+8.7.0,true,aws,aws.waf.non_terminating_matching_rules,nested,extended,,,The list of non-terminating rules in the rule group that match the request
+8.7.0,true,aws,aws.waf.rate_based_rule_list,nested,extended,,,The list of rate-based rules that acted on the request.
+8.7.0,true,aws,aws.waf.request.headers,flattened,extended,,,List of request headers
+8.7.0,true,aws,aws.waf.rule_group_list,nested,extended,,,The list of rule groups that acted on this request.
+8.7.0,true,aws,aws.waf.source.id,keyword,extended,,,The source ID. This field shows the ID of the associated resource.
+8.7.0,true,aws,aws.waf.source.name,keyword,extended,,,The source of the request
+8.7.0,true,aws,aws.waf.terminating_rule_match_details,nested,extended,,,Detailed information about the terminating rule that matched the request
+8.7.0,true,beyondtrust,beyondtrust.api,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.auth_method,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.beyondtrust.old_permissions.jump_item_role.teams.id,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.end_time,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.end_timestamp,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.event,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.group_by,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.new_account.disabled,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.new_account.email.address,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_account.created,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_account.disabled,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_account.email.locale,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_account.expiration,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_account.failed_logins,long,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_account.will_expire,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_display_number,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_id,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_license_pool.id,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_license_pool.name,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_login_code.enabled,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_login_schedule.enabled,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_login_schedule.force_logout,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_login_schedule.timezone,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_permissions.jump_item_role.default.id,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_permissions.jump_item_role.default.name,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_permissions.jump_item_role.teams.name,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_provider.id,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_provider.name,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_two_factor_auth.required,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.old_username,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.only_completed,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.outcome,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.reason,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.row_count,long,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.row_start,long,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.segment.id,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.segment.total,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.site,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.site_id,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.site_name,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.start_time,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.start_timestamp,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.status,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.target,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.when,long,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.who,keyword,extended,,,
+8.7.0,true,beyondtrust,beyondtrust.who_ip,keyword,extended,,,
+8.7.0,true,bpr,bpr.calnet_id,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.description,keyword,extended,,,description
+8.7.0,true,bpr,bpr.for_uid,keyword,extended,,,for_uid
+8.7.0,true,bpr,bpr.for_username,keyword,extended,,,for_username
+8.7.0,true,bpr,bpr.found_and_deleted,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.identifier,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.identifier_type,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.logged_in_uid,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.logged_in_username,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.new_calnet_id,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.new_email_address,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.new_recovery_email_address,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.old_calnet_id,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.old_recovery_email_address,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.recovery_email_address,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.registration_source,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.send_upstream_message,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.send_user_message,keyword,extended,,,Calnet ID
+8.7.0,true,bpr,bpr.track_status_type,keyword,extended,,,Calnet ID
+8.7.0,true,cas,cas.application,keyword,extended,,,Application requesting CAS authentication
+8.7.0,true,cas,cas.id,keyword,extended,,,Applicaion's CAS ID
+8.7.0,true,cas,cas.provider,keyword,extended,,,Application's CAS provider
+8.7.0,true,cisco_duo_admin,cisco_duo_admin.action,keyword,extended,,,The type of change that was performed
+8.7.0,true,cisco_duo_admin,cisco_duo_admin.action_performed_on,keyword,extended,,,The object that was acted on.
+8.7.0,true,cisco_duo_admin,cisco_duo_admin.flattened,flattened,extended,,,ES flattened datatype for objects where the subfields aren't known in advance.
+8.7.0,true,cisco_duo_admin,cisco_duo_admin.user.name,keyword,extended,,,The full name of the administrator who performed the action in the Duo Admin Panel.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.flash_version,keyword,extended,,,"The Flash plugin version used, if present."
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.hostname,keyword,extended,,,"The hostname, if present."
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.ip,ip,extended,,,The access device's IP address.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.is_encryption_enabled,keyword,extended,,,Reports the disk encryption state as detected by the Duo Device Health app.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.is_firewall_enabled,keyword,extended,,,Reports the firewall state as detected by the Duo Device Health app.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.is_password_set,keyword,extended,,,Reports the system password state as detected by the Duo Device Health app
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.java_version,keyword,extended,,,The Java plugin version used.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.location.city,keyword,extended,,,The city name of the access device using geoip location.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.location.country,keyword,extended,,,The country of the access device using geoip location.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.location.state,keyword,extended,,,The state name of the access device using geoip location.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.access_device.security_agents,keyword,extended,,,Reports the security agents present on the endpoint as detected by the Duo Device Health app.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.alias,keyword,extended,,,The username alias used to log in.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.application.key,keyword,extended,,,The application's integration_key.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.application.name,keyword,extended,,,The application's name.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.as.number,long,extended,,,auth_device AS Number
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.as.organization.name,keyword,extended,,,Organization name.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.geo.city_name,keyword,extended,,,City name.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.geo.continent_name,keyword,extended,,,Name of the continent.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.geo.country_iso_code,keyword,extended,,,Country ISO code.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.geo.country_name,keyword,extended,,,Country name.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.geo.location,geo_point,core,,,Longitude and latitude.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.geo.region_iso_code,keyword,extended,,,Region ISO code.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.geo.region_name,keyword,extended,,,Region name.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.ip,ip,extended,,,The IP address of the authentication device.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.location.city,keyword,extended,,,The city name of the authentication device using geoip location.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.location.country,keyword,extended,,,The country of the authentication device using geoip location.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.location.state,keyword,extended,,,The state name of the authentication device using geoip location.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.auth_device.name,keyword,extended,,,The name of the authentication device.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.email,keyword,extended,,,"The email address of the user, if known to Duo, otherwise none."
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.event_type,keyword,extended,,,The type of activity logged.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.factor,keyword,extended,,,The authentication factor.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.ood_software,keyword,extended,,,"If authentication was denied due to out-of-date software, shows the name of the software."
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.reason,keyword,extended,,,Provide the reason for the authentication attempt result.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.result,keyword,extended,,,The result of the authentication attempt.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.trusted_endpoint_status,keyword,extended,,,Status of Trusted Endpoint.
+8.7.0,true,cisco_duo_auth,cisco_duo_auth.txid,keyword,extended,,,The transaction ID of the event.
 8.7.0,true,client,client.address,keyword,extended,,,Client network address.
 8.7.0,true,client,client.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
 8.7.0,true,client,client.as.organization.name,keyword,extended,,Google LLC,Organization name.
@@ -49,12 +183,14 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,client,client.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 8.7.0,true,cloud,cloud.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.7.0,true,cloud,cloud.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.7.0,true,cloud,cloud.account.pl,integer,extended,,,Cloud Account Protection Level
 8.7.0,true,cloud,cloud.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.7.0,true,cloud,cloud.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.7.0,true,cloud,cloud.instance.name,keyword,extended,,,Instance name of the host machine.
 8.7.0,true,cloud,cloud.machine.type,keyword,extended,,t2.medium,Machine type of the host machine.
 8.7.0,true,cloud,cloud.origin.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.7.0,true,cloud,cloud.origin.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.7.0,true,cloud,cloud.origin.account.pl,integer,extended,,,Cloud Account Protection Level
 8.7.0,true,cloud,cloud.origin.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.7.0,true,cloud,cloud.origin.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.7.0,true,cloud,cloud.origin.instance.name,keyword,extended,,,Instance name of the host machine.
@@ -71,6 +207,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,cloud,cloud.service.name,keyword,extended,,lambda,The cloud service name.
 8.7.0,true,cloud,cloud.target.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.7.0,true,cloud,cloud.target.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.7.0,true,cloud,cloud.target.account.pl,integer,extended,,,Cloud Account Protection Level
 8.7.0,true,cloud,cloud.target.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.7.0,true,cloud,cloud.target.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.7.0,true,cloud,cloud.target.instance.name,keyword,extended,,,Instance name of the host machine.
@@ -102,6 +239,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,destination,destination.as.organization.name.text,match_only_text,extended,,Google LLC,Organization name.
 8.7.0,true,destination,destination.bytes,long,core,,184,Bytes sent from the destination to the source.
 8.7.0,true,destination,destination.domain,keyword,core,,foo.example.com,The domain name of the destination.
+8.7.0,true,destination,destination.domain.text,text,core,,foo.example.com,The domain name of the destination.
 8.7.0,true,destination,destination.geo.city_name,keyword,core,,Montreal,City name.
 8.7.0,true,destination,destination.geo.continent_code,keyword,core,,NA,Continent code.
 8.7.0,true,destination,destination.geo.continent_name,keyword,core,,North America,Name of the continent.
@@ -233,6 +371,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,error,error.type,keyword,extended,,java.lang.NullPointerException,"The type of the error, for example the class name of the exception."
 8.7.0,true,event,event.action,keyword,core,,user-password-change,The action captured by the event.
 8.7.0,true,event,event.agent_id_status,keyword,extended,,verified,Validation status of the event's agent.id field.
+8.7.0,true,event,event.application,keyword,extended,,,The application generating the event
 8.7.0,true,event,event.category,keyword,core,array,authentication,Event category. The second categorization field in the hierarchy.
 8.7.0,true,event,event.code,keyword,extended,,4648,Identification code for this event.
 8.7.0,true,event,event.created,date,core,,2016-05-23T08:05:34.857Z,Time when the event was first read by an agent or by your pipeline.
@@ -351,6 +490,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,file,file.mode,keyword,extended,,0640,Mode of the file in octal representation.
 8.7.0,true,file,file.mtime,date,extended,,,Last time the file content was modified.
 8.7.0,true,file,file.name,keyword,extended,,example.png,"Name of the file including the extension, without the directory."
+8.7.0,true,file,file.offset,long,extended,,,The file offset
 8.7.0,true,file,file.owner,keyword,extended,,alice,File owner's username.
 8.7.0,true,file,file.path,keyword,extended,,/home/alice/example.png,"Full path to the file, including the file name."
 8.7.0,true,file,file.path.text,match_only_text,extended,,/home/alice/example.png,"Full path to the file, including the file name."
@@ -409,12 +549,18 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,group,group.domain,keyword,extended,,,Name of the directory the group is a member of.
 8.7.0,true,group,group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
 8.7.0,true,group,group.name,keyword,extended,,,Name of the group.
+8.7.0,true,grouper,grouper.group,keyword,extended,,,group
+8.7.0,true,grouper,grouper.list,keyword,extended,,,group list
+8.7.0,true,grouper,grouper.priv,keyword,extended,,,privleges
+8.7.0,true,grouper,grouper.stem,keyword,extended,,,stem
+8.7.0,true,grouper,grouper.subject,keyword,extended,,,subject
 8.7.0,true,host,host.architecture,keyword,core,,x86_64,Operating system architecture.
 8.7.0,true,host,host.boot.id,keyword,extended,,88a1f0ed-5ae5-41ee-af6b-41921c311872,Linux boot uuid taken from /proc/sys/kernel/random/boot_id
 8.7.0,true,host,host.cpu.usage,scaled_float,extended,,,"Percent CPU used, between 0 and 1."
 8.7.0,true,host,host.disk.read.bytes,long,extended,,,The number of bytes read by all disks.
 8.7.0,true,host,host.disk.write.bytes,long,extended,,,The number of bytes written on all disks.
 8.7.0,true,host,host.domain,keyword,extended,,CONTOSO,Name of the directory the group is a member of.
+8.7.0,true,host,host.environment,keyword,extended,,,Host's environment.
 8.7.0,true,host,host.geo.city_name,keyword,core,,Montreal,City name.
 8.7.0,true,host,host.geo.continent_code,keyword,core,,NA,Continent code.
 8.7.0,true,host,host.geo.continent_name,keyword,core,,North America,Name of the continent.
@@ -468,6 +614,57 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,http,http.response.mime_type,keyword,extended,,image/gif,Mime type of the body of the response.
 8.7.0,true,http,http.response.status_code,long,extended,,404,HTTP response status code.
 8.7.0,true,http,http.version,keyword,extended,,1.1,HTTP version.
+8.7.0,true,ldap,ldap.attributes,keyword,extended,,,LDAP properties
+8.7.0,true,ldap,ldap.base,keyword,extended,,,LDAP Search Base
+8.7.0,true,ldap,ldap.category,keyword,extended,,,LDAP DN
+8.7.0,true,ldap,ldap.filter,keyword,extended,,,LDAP search filter
+8.7.0,true,ldap,ldap.indexed_search,boolean,extended,,,If the search is indexed
+8.7.0,true,ldap,ldap.message,keyword,extended,,,LDAP message
+8.7.0,true,ldap,ldap.oid,keyword,extended,,,LDAP OID
+8.7.0,true,ldap,ldap.operation,keyword,extended,,,LDAP operation
+8.7.0,true,ldap,ldap.replication.message.category,keyword,extended,,,Message category from server's operational logs
+8.7.0,true,ldap,ldap.replication.message.id,long,extended,,,Message ID from server's operational logs
+8.7.0,true,ldap,ldap.replication.message.severity,keyword,extended,,,Message severity from server's operational logs
+8.7.0,true,ldap,ldap.request.attrs,keyword,extended,,,LDAP attributes requested by client
+8.7.0,true,ldap,ldap.request.authType,keyword,extended,,,"LDAP auth type (e.g. simple, anonymous)"
+8.7.0,true,ldap,ldap.request.connection_id,long,extended,,,Unique connection ID per server/request/day
+8.7.0,true,ldap,ldap.request.controls,keyword,extended,,,OID of the extended request from the client
+8.7.0,true,ldap,ldap.request.delete_old_rdn,keyword,extended,,,Controls retention of old RDN for a modify DN operation (rename)
+8.7.0,true,ldap,ldap.request.dn,keyword,extended,,,Bind DN
+8.7.0,true,ldap,ldap.request.filter,keyword,extended,,,LDAP search filter
+8.7.0,true,ldap,ldap.request.id_to_abandon,long,extended,,,Message ID of the request to abandon from a specific client session
+8.7.0,true,ldap,ldap.request.message,keyword,extended,,,Localized request message
+8.7.0,true,ldap,ldap.request.msg_id,long,extended,,,Unique message ID per client session
+8.7.0,true,ldap,ldap.request.name,keyword,extended,,,Name that corresponds to the request.oid
+8.7.0,true,ldap,ldap.request.new_rdn,keyword,extended,,,New value of the RDN for a modify DN operation (rename)
+8.7.0,true,ldap,ldap.request.new_sup,keyword,extended,,,New value of the parent for a modify DN operation (move)
+8.7.0,true,ldap,ldap.request.oid,keyword,extended,,,Request control OID
+8.7.0,true,ldap,ldap.request.op_type,keyword,extended,,,Replication operation (sync)
+8.7.0,true,ldap,ldap.request.operation,keyword,extended,,,LDAP operation requested by client
+8.7.0,true,ldap,ldap.request.run_as,keyword,extended,,,Authorization ID
+8.7.0,true,ldap,ldap.request.scope,keyword,extended,,,Search scope (e.g. sub)
+8.7.0,true,ldap,ldap.request.version,keyword,extended,,,Version 2 or 3
+8.7.0,true,ldap,ldap.request_controls,keyword,extended,,,LDAP request controls
+8.7.0,true,ldap,ldap.response.controls,keyword,extended,,,OID of the extended response from the server
+8.7.0,true,ldap,ldap.response.detail,keyword,extended,,,Additional response details
+8.7.0,true,ldap,ldap.response.elapsed_time_ms,long,extended,,,Total elapsed time for the operation in milliseconds
+8.7.0,true,ldap,ldap.response.failure_reason,keyword,extended,,,Human-readable failure reason
+8.7.0,true,ldap,ldap.response.masked_message,keyword,extended,,,"Real, masked result message"
+8.7.0,true,ldap,ldap.response.masked_result,keyword,extended,,,"Real, masked result code"
+8.7.0,true,ldap,ldap.response.nentries,long,extended,,,Number of entries returned
+8.7.0,true,ldap,ldap.response.reason,keyword,extended,,,Reason for disconnect
+8.7.0,true,ldap,ldap.response.status_code,keyword,extended,,,either successful or failed
+8.7.0,true,ldap,ldap.result.code,long,extended,,,LDAP result code
+8.7.0,true,ldap,ldap.result.count,long,extended,,,Count of records returned by LDAP query
+8.7.0,true,ldap,ldap.scope,keyword,extended,,,LDAP query scope
+8.7.0,true,ldap,ldap.secure_bind,boolean,extended,,,Indicates a BIND operation uses a security strength factor (e.g. SSL/TLS)
+8.7.0,true,ldap,ldap.server.message.category,keyword,extended,,,Message category from server's operational logs
+8.7.0,true,ldap,ldap.server.message.id,long,extended,,,Message ID from server's operational logs
+8.7.0,true,ldap,ldap.server.message.severity,keyword,extended,,,Message severity from server's operational logs
+8.7.0,true,ldap,ldap.transaction_id,keyword,extended,,,Unique ID for the transaction
+8.7.0,true,ldap,ldap.type,keyword,extended,,,LDAP query type
+8.7.0,true,ldap,ldap.user_id,keyword,extended,,,User who requested the operation
+8.7.0,true,ldap,ldap.version,keyword,extended,,,LDAP version
 8.7.0,true,log,log.file.path,keyword,extended,,/var/log/fun-times.log,Full path to the log file this event came from.
 8.7.0,true,log,log.level,keyword,core,,error,Log level of the log event.
 8.7.0,true,log,log.logger,keyword,core,,org.elasticsearch.bootstrap.Bootstrap,Name of the logger.
@@ -486,6 +683,11 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,log,log.syslog.severity.name,keyword,extended,,Error,Syslog text-based severity of the event.
 8.7.0,true,log,log.syslog.structured_data,flattened,extended,,,Structured data expressed in RFC 5424 messages.
 8.7.0,true,log,log.syslog.version,keyword,extended,,1,Syslog protocol version.
+8.7.0,true,logstash,logstash.log.module,keyword,extended,,,The module or class where the event originate.
+8.7.0,true,logstash,logstash.log.pipeline_action_id,keyword,extended,,,ID of specific aciton within a pipeline that generated the log
+8.7.0,true,logstash,logstash.log.pipeline_id,keyword,extended,,,ID of logstash pipeline that generated the log
+8.7.0,true,malware,malware.malicious,boolean,extended,,,Whether the malware is malicious
+8.7.0,true,malware,malware.name,keyword,extended,,,Name of malware
 8.7.0,true,network,network.application,keyword,extended,,aim,Application level protocol name.
 8.7.0,true,network,network.bytes,long,core,,368,Total bytes transferred in both directions.
 8.7.0,true,network,network.community_id,keyword,extended,,1:hO+sN4H+MG5MY/8hIrXPqc4ZQz0=,A hash of source and destination IPs and ports.
@@ -545,6 +747,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,observer,observer.type,keyword,core,,firewall,The type of the observer the data is coming from.
 8.7.0,true,observer,observer.vendor,keyword,core,,Symantec,Vendor name of the observer.
 8.7.0,true,observer,observer.version,keyword,core,,,Observer version.
+8.7.0,true,observer,observer.vsys,keyword,extended,,,VSYS geneating firewall log
 8.7.0,true,orchestrator,orchestrator.api_version,keyword,extended,,v1beta1,API version being used to carry out the action
 8.7.0,true,orchestrator,orchestrator.cluster.id,keyword,extended,,,Unique ID of the cluster.
 8.7.0,true,orchestrator,orchestrator.cluster.name,keyword,extended,,,Name of the cluster.
@@ -574,6 +777,16 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,package,package.size,long,extended,,62231,Package size in bytes.
 8.7.0,true,package,package.type,keyword,extended,,rpm,Package type
 8.7.0,true,package,package.version,keyword,extended,,1.12.9,Package version
+8.7.0,true,packet,packet.data.base64,text,extended,,,packet payload encoded as base64
+8.7.0,true,packet,packet.data.hex,text,extended,,,packet payload encoded as hex
+8.7.0,true,packet,packet.data.tcpdump,text,extended,,,packet payload displayed in a tcpdump format
+8.7.0,true,packet,packet.data.text,text,extended,,,Printable part of the packet payload as text
+8.7.0,true,prisma,prisma.alert.policy.labels,keyword,extended,,,Labels for policy that generated the alert
+8.7.0,true,prisma,prisma.alert.policy.type,keyword,extended,,,policy type that generated the alert
+8.7.0,true,prisma,prisma.alert.status,keyword,extended,,,current status of the alert
+8.7.0,true,prisma,prisma.compliance,flattened,extended,,,Key Value metadata detailing what compliance standards contain the alert
+8.7.0,true,prisma,prisma.resource,flattened,extended,,,Detailed information about the resource that generated the alert
+8.7.0,true,prisma,prisma.tags,flattened,extended,,,Tags from prisma
 8.7.0,true,process,process.args,keyword,extended,array,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]",Array of process arguments.
 8.7.0,true,process,process.args_count,long,extended,,4,Length of the process.args array.
 8.7.0,true,process,process.code_signature.digest_algorithm,keyword,extended,,sha256,Hashing algorithm used to sign the process.
@@ -991,9 +1204,14 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,registry,registry.key,keyword,core,,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe,Hive-relative path of keys.
 8.7.0,true,registry,registry.path,keyword,core,,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger,"Full path, including hive, key and value"
 8.7.0,true,registry,registry.value,keyword,core,,Debugger,Name of the value written.
+8.7.0,true,related,related.email,keyword,extended,array,,All the email identifiers seen on your event.
+8.7.0,true,related,related.email.text,text,extended,,,All the email identifiers seen on your event.
 8.7.0,true,related,related.hash,keyword,extended,array,,All the hashes seen on your event.
-8.7.0,true,related,related.hosts,keyword,extended,array,,All the host identifiers seen on your event.
+8.7.0,true,related,related.hosts,keyword,extended,"array, array",,All the host identifiers seen on your event.
+8.7.0,true,related,related.hosts.text,text,extended,,,All the host identifiers seen on your event.
 8.7.0,true,related,related.ip,ip,extended,array,,All of the IPs seen on your event.
+8.7.0,true,related,related.pl,integer,extended,array,,All the PL levels seen in your event
+8.7.0,true,related,related.port,long,extended,array,,All the network ports seen in your event
 8.7.0,true,related,related.user,keyword,extended,array,,All the user names or other user identifiers seen on the event.
 8.7.0,true,rule,rule.author,keyword,extended,array,"[""Star-Lord""]",Rule author
 8.7.0,true,rule,rule.category,keyword,extended,,Attempted Information Leak,Rule category
@@ -1076,12 +1294,23 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,service,service.target.version,keyword,core,,3.2.4,Version of the service.
 8.7.0,true,service,service.type,keyword,core,,elasticsearch,The type of the service.
 8.7.0,true,service,service.version,keyword,core,,3.2.4,Version of the service.
+8.7.0,true,shibboleth,shibboleth.asserting.id,keyword,extended,,,The asserting ID
+8.7.0,true,shibboleth,shibboleth.asserting.party,keyword,extended,,,The asserting party
+8.7.0,true,shibboleth,shibboleth.attributes,keyword,extended,,,attributes
+8.7.0,true,shibboleth,shibboleth.authentication,keyword,extended,,,authentication
+8.7.0,true,shibboleth,shibboleth.binding.id,keyword,extended,,,response binding
+8.7.0,true,shibboleth,shibboleth.profile,keyword,extended,,,profile
+8.7.0,true,shibboleth,shibboleth.relying.party,keyword,extended,,,relying party
+8.7.0,true,shibboleth,shibboleth.request.binding,keyword,extended,,,request binding
+8.7.0,true,shibboleth,shibboleth.request.id,keyword,extended,,,request id
+8.7.0,true,shibboleth,shibboleth.response.binding,keyword,extended,,,response binding
 8.7.0,true,source,source.address,keyword,extended,,,Source network address.
 8.7.0,true,source,source.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
 8.7.0,true,source,source.as.organization.name,keyword,extended,,Google LLC,Organization name.
 8.7.0,true,source,source.as.organization.name.text,match_only_text,extended,,Google LLC,Organization name.
 8.7.0,true,source,source.bytes,long,core,,184,Bytes sent from the source to the destination.
 8.7.0,true,source,source.domain,keyword,core,,foo.example.com,The domain name of the source.
+8.7.0,true,source,source.domain.text,text,core,,foo.example.com,The domain name of the source.
 8.7.0,true,source,source.geo.city_name,keyword,core,,Montreal,City name.
 8.7.0,true,source,source.geo.continent_code,keyword,core,,NA,Continent code.
 8.7.0,true,source,source.geo.continent_name,keyword,core,,North America,Name of the continent.
@@ -1115,6 +1344,90 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,source,source.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
 8.7.0,true,source,source.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 8.7.0,true,span,span.id,keyword,extended,,3ff9a8981b7ccd5a,Unique identifier of the span within the scope of its trace.
+8.7.0,true,suricata,suricata.eve.alert.affected_product,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.attack_target,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.category,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.created_at,date,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.cve,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.deployment,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.former_category,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.gid,long,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.impact_flag,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.malware_family,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.performance_impact,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.policy,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.rev,long,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.service,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.signature,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.signature_id,long,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.signature_severity,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.tag,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.alert.updated_at,date,extended,,,
+8.7.0,true,suricata,suricata.eve.app_proto_tc,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.app_proto_ts,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.content_range.raw,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.content_range.size,long,extended,,,
+8.7.0,true,suricata,suricata.eve.dns.query.id,long,extended,,,
+8.7.0,true,suricata,suricata.eve.dns.query.rrname,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.dns.query.rrtype,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.dns.query.tx_id,long,extended,,,
+8.7.0,true,suricata,suricata.eve.dns.query.type,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.email.from,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.email.status,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.email.to,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.event_type,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.flow_id,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.flowbits,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.host,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.http.content_range.end,long,extended,,,
+8.7.0,true,suricata,suricata.eve.http.protocol,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.http.redirect,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.http.xff,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.http_content_type,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.http_request_body,text,extended,,,
+8.7.0,true,suricata,suricata.eve.http_request_body_printable,text,extended,,,
+8.7.0,true,suricata,suricata.eve.http_response_body,text,extended,,,
+8.7.0,true,suricata,suricata.eve.http_response_body_printable,text,extended,,,
+8.7.0,true,suricata,suricata.eve.in_iface,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.packet_info.linktype,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.payload,text,extended,,,
+8.7.0,true,suricata,suricata.eve.payload_printable,text,extended,,,
+8.7.0,true,suricata,suricata.eve.smb.client_dialects,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smb.command,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smb.dialect,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smb.id,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smb.server_guid,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smb.session_id,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smb.tree_id,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smtp.helo,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smtp.mail_from,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.smtp.rcpt_to,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.ssh.server.proto_version,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.ssh.server.software_version,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.stream,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.fingerprint,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.issuerdn,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.ja3.hash,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.ja3.string,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.ja3s.hash,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.ja3s.string,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.notafter,date,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.notbefore,date,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.serial,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.session_resumed,boolean,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.sni,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.subject,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tls.version,keyword,extended,,,
+8.7.0,true,suricata,suricata.eve.tx_id,long,extended,,,
+8.7.0,true,system,system.auth.ssh.dropped_ip,ip,extended,,,The client IP from SSH connections that are open and immediately dropped.
+8.7.0,true,system,system.auth.ssh.event,keyword,extended,,,"The SSH event as found in the logs (Accepted, Invalid, Failed, etc.)"
+8.7.0,true,system,system.auth.ssh.method,keyword,extended,,,"The SSH authentication method. Can be one of ""password"" or ""publickey""."
+8.7.0,true,system,system.auth.ssh.signature,keyword,extended,,,The signature of the client public key.
+8.7.0,true,system,system.auth.sudo.command,keyword,extended,,,The command executed via sudo.
+8.7.0,true,system,system.auth.sudo.error,keyword,extended,,,The error message in case the sudo command failed.
+8.7.0,true,system,system.auth.sudo.pwd,keyword,extended,,,The current directory where the sudo command is executed.
+8.7.0,true,system,system.auth.sudo.tty,keyword,extended,,,The TTY where the sudo command is executed.
+8.7.0,true,system,system.auth.sudo.user,keyword,extended,,,The target user to which the sudo command is switching.
 8.7.0,true,threat,threat.enrichments,nested,extended,array,,List of objects containing indicators enriching the event.
 8.7.0,true,threat,threat.enrichments.indicator,object,extended,,,Object containing indicators enriching the event.
 8.7.0,true,threat,threat.enrichments.indicator.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
@@ -1193,6 +1506,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,threat,threat.enrichments.indicator.file.mode,keyword,extended,,0640,Mode of the file in octal representation.
 8.7.0,true,threat,threat.enrichments.indicator.file.mtime,date,extended,,,Last time the file content was modified.
 8.7.0,true,threat,threat.enrichments.indicator.file.name,keyword,extended,,example.png,"Name of the file including the extension, without the directory."
+8.7.0,true,threat,threat.enrichments.indicator.file.offset,long,extended,,,The file offset
 8.7.0,true,threat,threat.enrichments.indicator.file.owner,keyword,extended,,alice,File owner's username.
 8.7.0,true,threat,threat.enrichments.indicator.file.path,keyword,extended,,/home/alice/example.png,"Full path to the file, including the file name."
 8.7.0,true,threat,threat.enrichments.indicator.file.path.text,match_only_text,extended,,/home/alice/example.png,"Full path to the file, including the file name."
@@ -1288,6 +1602,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,threat,threat.enrichments.indicator.url.original.text,match_only_text,extended,,https://www.elastic.co:443/search?q=elasticsearch#top or /search?q=elasticsearch,Unmodified original url as seen in the event source.
 8.7.0,true,threat,threat.enrichments.indicator.url.password,keyword,extended,,,Password of the request.
 8.7.0,true,threat,threat.enrichments.indicator.url.path,wildcard,extended,,,"Path of the request, such as ""/search""."
+8.7.0,true,threat,threat.enrichments.indicator.url.pl,integer,extended,,,Protect Level of URL
 8.7.0,true,threat,threat.enrichments.indicator.url.port,long,extended,,443,"Port of the request, such as 443."
 8.7.0,true,threat,threat.enrichments.indicator.url.query,keyword,extended,,,Query string of the request.
 8.7.0,true,threat,threat.enrichments.indicator.url.registered_domain,keyword,extended,,example.com,"The highest registered url domain, stripped of the subdomain."
@@ -1410,6 +1725,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,threat,threat.indicator.file.mode,keyword,extended,,0640,Mode of the file in octal representation.
 8.7.0,true,threat,threat.indicator.file.mtime,date,extended,,,Last time the file content was modified.
 8.7.0,true,threat,threat.indicator.file.name,keyword,extended,,example.png,"Name of the file including the extension, without the directory."
+8.7.0,true,threat,threat.indicator.file.offset,long,extended,,,The file offset
 8.7.0,true,threat,threat.indicator.file.owner,keyword,extended,,alice,File owner's username.
 8.7.0,true,threat,threat.indicator.file.path,keyword,extended,,/home/alice/example.png,"Full path to the file, including the file name."
 8.7.0,true,threat,threat.indicator.file.path.text,match_only_text,extended,,/home/alice/example.png,"Full path to the file, including the file name."
@@ -1505,6 +1821,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,threat,threat.indicator.url.original.text,match_only_text,extended,,https://www.elastic.co:443/search?q=elasticsearch#top or /search?q=elasticsearch,Unmodified original url as seen in the event source.
 8.7.0,true,threat,threat.indicator.url.password,keyword,extended,,,Password of the request.
 8.7.0,true,threat,threat.indicator.url.path,wildcard,extended,,,"Path of the request, such as ""/search""."
+8.7.0,true,threat,threat.indicator.url.pl,integer,extended,,,Protect Level of URL
 8.7.0,true,threat,threat.indicator.url.port,long,extended,,443,"Port of the request, such as 443."
 8.7.0,true,threat,threat.indicator.url.query,keyword,extended,,,Query string of the request.
 8.7.0,true,threat,threat.indicator.url.registered_domain,keyword,extended,,example.com,"The highest registered url domain, stripped of the subdomain."
@@ -1553,6 +1870,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,threat,threat.technique.subtechnique.name,keyword,extended,array,PowerShell,Threat subtechnique name.
 8.7.0,true,threat,threat.technique.subtechnique.name.text,match_only_text,extended,,PowerShell,Threat subtechnique name.
 8.7.0,true,threat,threat.technique.subtechnique.reference,keyword,extended,array,https://attack.mitre.org/techniques/T1059/001/,Threat subtechnique URL reference.
+8.7.0,true,ticket,ticket.st,keyword,extended,,,Service Ticket
+8.7.0,true,ticket,ticket.tgt,keyword,extended,,,Ticket Granting Ticket
 8.7.0,true,tls,tls.cipher,keyword,extended,,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,String indicating the cipher used during the current connection.
 8.7.0,true,tls,tls.client.certificate,keyword,extended,,MII...,PEM-encoded stand-alone certificate offered by the client.
 8.7.0,true,tls,tls.client.certificate_chain,keyword,extended,array,"[""MII..."", ""MII...""]",Array of PEM-encoded certificates that make up the certificate chain offered by the client.
@@ -1641,6 +1960,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,url,url.original.text,match_only_text,extended,,https://www.elastic.co:443/search?q=elasticsearch#top or /search?q=elasticsearch,Unmodified original url as seen in the event source.
 8.7.0,true,url,url.password,keyword,extended,,,Password of the request.
 8.7.0,true,url,url.path,wildcard,extended,,,"Path of the request, such as ""/search""."
+8.7.0,true,url,url.pl,integer,extended,,,Protect Level of URL
 8.7.0,true,url,url.port,long,extended,,443,"Port of the request, such as 443."
 8.7.0,true,url,url.query,keyword,extended,,,Query string of the request.
 8.7.0,true,url,url.registered_domain,keyword,extended,,example.com,"The highest registered url domain, stripped of the subdomain."
