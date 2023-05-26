@@ -17112,6 +17112,83 @@ process:
   short: These fields contain information about a process.
   title: Process
   type: group
+redcap:
+  description: Fields for logs from redcap survey application
+  fields:
+    redcap.action:
+      dashed_name: redcap-action
+      description: action
+      flat_name: redcap.action
+      ignore_above: 1024
+      level: extended
+      name: action
+      normalize: []
+      short: action
+      type: keyword
+    redcap.log_view_id:
+      dashed_name: redcap-log-view-id
+      description: log_view_id
+      flat_name: redcap.log_view_id
+      level: extended
+      name: log_view_id
+      normalize: []
+      short: log_view_id
+      type: unsigned_long
+    redcap.miscellaneous:
+      dashed_name: redcap-miscellaneous
+      description: extra information for the log entry
+      flat_name: redcap.miscellaneous
+      level: extended
+      name: miscellaneous
+      normalize: []
+      norms: false
+      short: extra information for the log entry
+      type: text
+    redcap.page:
+      dashed_name: redcap-page
+      description: redcat webpage
+      flat_name: redcap.page
+      ignore_above: 1024
+      level: extended
+      name: page
+      normalize: []
+      short: redcat webpage
+      type: keyword
+    redcap.project_id:
+      dashed_name: redcap-project-id
+      description: project id
+      flat_name: redcap.project_id
+      level: extended
+      name: project_id
+      normalize: []
+      short: project id
+      type: unsigned_long
+    redcap.session_id:
+      dashed_name: redcap-session-id
+      description: session id
+      flat_name: redcap.session_id
+      ignore_above: 1024
+      level: extended
+      name: session_id
+      normalize: []
+      short: session id
+      type: keyword
+    redcap.user:
+      dashed_name: redcap-user
+      description: user
+      flat_name: redcap.user
+      ignore_above: 1024
+      level: extended
+      name: user
+      normalize: []
+      short: user
+      type: keyword
+  group: 2
+  name: redcap
+  prefix: redcap.
+  short: redcap
+  title: redcap
+  type: group
 registry:
   description: Fields related to Windows Registry operations.
   fields:

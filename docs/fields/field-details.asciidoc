@@ -12526,6 +12526,135 @@ Note: this reuse should contain an array of group field set objects.
 |=====
 
 
+[[ecs-redcap]]
+=== redcap Fields
+
+Fields for logs from redcap survey application
+
+[discrete]
+==== redcap Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-redcap-action]]
+<<field-redcap-action, redcap.action>>
+
+a| action
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-redcap-log-view-id]]
+<<field-redcap-log-view-id, redcap.log_view_id>>
+
+a| log_view_id
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-redcap-miscellaneous]]
+<<field-redcap-miscellaneous, redcap.miscellaneous>>
+
+a| extra information for the log entry
+
+type: text
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-redcap-page]]
+<<field-redcap-page, redcap.page>>
+
+a| redcat webpage
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-redcap-project-id]]
+<<field-redcap-project-id, redcap.project_id>>
+
+a| project id
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-redcap-session-id]]
+<<field-redcap-session-id, redcap.session_id>>
+
+a| session id
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-redcap-user]]
+<<field-redcap-user, redcap.user>>
+
+a| user
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-registry]]
 === Registry Fields
 

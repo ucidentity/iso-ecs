@@ -9901,6 +9901,52 @@
         default_field: false
       description: The working directory of the process.
       example: /home/alice
+  - name: redcap
+    title: redcap
+    group: 2
+    description: Fields for logs from redcap survey application
+    type: group
+    default_field: true
+    fields:
+    - name: action
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: action
+      default_field: false
+    - name: log_view_id
+      level: extended
+      type: unsigned_long
+      description: log_view_id
+      default_field: false
+    - name: miscellaneous
+      level: extended
+      type: text
+      description: extra information for the log entry
+      default_field: false
+    - name: page
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: redcat webpage
+      default_field: false
+    - name: project_id
+      level: extended
+      type: unsigned_long
+      description: project id
+      default_field: false
+    - name: session_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: session id
+      default_field: false
+    - name: user
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: user
+      default_field: false
   - name: registry
     title: Registry
     group: 2

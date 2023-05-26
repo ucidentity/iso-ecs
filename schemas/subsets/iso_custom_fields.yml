@@ -27,6 +27,8 @@ fields:
     fields: "*"
   prisma:
     fields: "*"
+  redcap:
+    fields: "*"
   shibboleth:
     fields: "*"
   suricata:

@@ -17,6 +17,7 @@
     "ecs_8.7.0_malware",
     "ecs_8.7.0_packet",
     "ecs_8.7.0_prisma",
+    "ecs_8.7.0_redcap",
     "ecs_8.7.0_shibboleth",
     "ecs_8.7.0_suricata",
     "ecs_8.7.0_system",

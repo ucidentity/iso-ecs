@@ -22710,6 +22710,103 @@ process:
         fork. Only executable and args are set.
     root: false
     title: Process
+redcap:
+  field_details:
+    dashed_name: redcap
+    description: Fields for logs from redcap survey application
+    flat_name: redcap
+    name: redcap
+    node_name: redcap
+    short: redcap
+    type: group
+  fields:
+    action:
+      field_details:
+        dashed_name: redcap-action
+        description: action
+        flat_name: redcap.action
+        ignore_above: 1024
+        level: extended
+        name: action
+        node_name: action
+        normalize: []
+        short: action
+        type: keyword
+    log_view_id:
+      field_details:
+        dashed_name: redcap-log-view-id
+        description: log_view_id
+        flat_name: redcap.log_view_id
+        level: extended
+        name: log_view_id
+        node_name: log_view_id
+        normalize: []
+        short: log_view_id
+        type: unsigned_long
+    miscellaneous:
+      field_details:
+        dashed_name: redcap-miscellaneous
+        description: extra information for the log entry
+        flat_name: redcap.miscellaneous
+        level: extended
+        name: miscellaneous
+        node_name: miscellaneous
+        normalize: []
+        norms: false
+        short: extra information for the log entry
+        type: text
+    page:
+      field_details:
+        dashed_name: redcap-page
+        description: redcat webpage
+        flat_name: redcap.page
+        ignore_above: 1024
+        level: extended
+        name: page
+        node_name: page
+        normalize: []
+        short: redcat webpage
+        type: keyword
+    project_id:
+      field_details:
+        dashed_name: redcap-project-id
+        description: project id
+        flat_name: redcap.project_id
+        level: extended
+        name: project_id
+        node_name: project_id
+        normalize: []
+        short: project id
+        type: unsigned_long
+    session_id:
+      field_details:
+        dashed_name: redcap-session-id
+        description: session id
+        flat_name: redcap.session_id
+        ignore_above: 1024
+        level: extended
+        name: session_id
+        node_name: session_id
+        normalize: []
+        short: session id
+        type: keyword
+    user:
+      field_details:
+        dashed_name: redcap-user
+        description: user
+        flat_name: redcap.user
+        ignore_above: 1024
+        level: extended
+        name: user
+        node_name: user
+        normalize: []
+        short: user
+        type: keyword
+  schema_details:
+    group: 2
+    prefix: redcap.
+    root: false
+    title: redcap
 registry:
   field_details:
     dashed_name: registry

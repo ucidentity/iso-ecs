@@ -1203,6 +1203,13 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,process,process.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
 8.7.0,true,process,process.working_directory,keyword,extended,,/home/alice,The working directory of the process.
 8.7.0,true,process,process.working_directory.text,match_only_text,extended,,/home/alice,The working directory of the process.
+8.7.0,true,redcap,redcap.action,keyword,extended,,,action
+8.7.0,true,redcap,redcap.log_view_id,unsigned_long,extended,,,log_view_id
+8.7.0,true,redcap,redcap.miscellaneous,text,extended,,,extra information for the log entry
+8.7.0,true,redcap,redcap.page,keyword,extended,,,redcat webpage
+8.7.0,true,redcap,redcap.project_id,unsigned_long,extended,,,project id
+8.7.0,true,redcap,redcap.session_id,keyword,extended,,,session id
+8.7.0,true,redcap,redcap.user,keyword,extended,,,user
 8.7.0,true,registry,registry.data.bytes,keyword,extended,,ZQBuAC0AVQBTAAAAZQBuAAAAAAA=,Original bytes written with base64 encoding.
 8.7.0,true,registry,registry.data.strings,wildcard,core,array,"[""C:\rta\red_ttp\bin\myapp.exe""]",List of strings representing what was written to the registry.
 8.7.0,true,registry,registry.data.type,keyword,core,,REG_SZ,Standard registry type for encoding contents

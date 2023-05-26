@@ -116,6 +116,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-process,Process>> | These fields contain information about a process.
 
+| <<ecs-redcap,redcap>> | redcap
+
 | <<ecs-registry,Registry>> | Fields related to Windows Registry operations.
 
 | <<ecs-related,Related>> | Fields meant to facilitate pivoting around a piece of data.
