@@ -484,6 +484,100 @@ aws:
                 short: The name of the Subscription Filter used to send CloudWatch
                   Logs to Security
                 type: keyword
+    lambda:
+      field_details:
+        dashed_name: aws-lambda
+        flat_name: aws.lambda
+        intermediate: true
+        name: lambda
+        node_name: lambda
+        type: object
+      fields:
+        duration:
+          field_details:
+            dashed_name: aws-lambda-duration
+            flat_name: aws.lambda.duration
+            intermediate: true
+            name: lambda.duration
+            node_name: duration
+            type: object
+          fields:
+            billed:
+              field_details:
+                dashed_name: aws-lambda-duration-billed
+                description: Billed duration (ms) for a lambda invocation
+                flat_name: aws.lambda.duration.billed
+                level: extended
+                name: lambda.duration.billed
+                node_name: billed
+                normalize: []
+                short: Billed duration (ms) for a lambda invocation
+                type: unsigned_long
+            init:
+              field_details:
+                dashed_name: aws-lambda-duration-init
+                description: Init duration (ms) for a lambda invocation
+                flat_name: aws.lambda.duration.init
+                level: extended
+                name: lambda.duration.init
+                node_name: init
+                normalize: []
+                short: Init duration (ms) for a lambda invocation
+                type: unsigned_long
+            run:
+              field_details:
+                dashed_name: aws-lambda-duration-run
+                description: running duration (ms) for a lambda invocation
+                flat_name: aws.lambda.duration.run
+                level: extended
+                name: lambda.duration.run
+                node_name: run
+                normalize: []
+                short: running duration (ms) for a lambda invocation
+                type: unsigned_long
+        memory:
+          field_details:
+            dashed_name: aws-lambda-memory
+            flat_name: aws.lambda.memory
+            intermediate: true
+            name: lambda.memory
+            node_name: memory
+            type: object
+          fields:
+            size:
+              field_details:
+                dashed_name: aws-lambda-memory-size
+                description: Size (MB) of memory allocated to a lambda invocation
+                flat_name: aws.lambda.memory.size
+                level: extended
+                name: lambda.memory.size
+                node_name: size
+                normalize: []
+                short: Size (MB) of memory allocated to a lambda invocation
+                type: unsigned_long
+            used:
+              field_details:
+                dashed_name: aws-lambda-memory-used
+                description: Actual amount (MB) of memory used by lambda invocation
+                flat_name: aws.lambda.memory.used
+                level: extended
+                name: lambda.memory.used
+                node_name: used
+                normalize: []
+                short: Actual amount (MB) of memory used by lambda invocation
+                type: unsigned_long
+        version:
+          field_details:
+            dashed_name: aws-lambda-version
+            description: Lambda function version
+            flat_name: aws.lambda.version
+            ignore_above: 1024
+            level: extended
+            name: lambda.version
+            node_name: version
+            normalize: []
+            short: Lambda function version
+            type: keyword
     s3:
       field_details:
         dashed_name: aws-s3

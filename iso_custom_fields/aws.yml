@@ -7,6 +7,7 @@
   type: group
   fields:
 
+# Cloudwatch fields
     - name: cloudwatch.log.group
       level: extended
       type: keyword
@@ -31,6 +32,47 @@
       description: |
         The name of the Subscription Filter used to send CloudWatch Logs to Security
 
+# Lambda function invocation log fields
+
+    - name: lambda.duration.billed
+      level: extended
+      type: unsigned_long
+      description: |
+        Billed duration (ms) for a lambda invocation
+
+    - name: lambda.duration.init
+      level: extended
+      type: unsigned_long
+      description: |
+        Init duration (ms) for a lambda invocation
+
+    - name: lambda.duration.run
+      level: extended
+      type: unsigned_long
+      description: |
+        running duration (ms) for a lambda invocation
+
+    - name: lambda.memory.size
+      level: extended
+      type: unsigned_long
+      description: |
+        Size (MB) of memory allocated to a lambda invocation
+
+    - name: lambda.memory.used
+      level: extended
+      type: unsigned_long
+      description: |
+        Actual amount (MB) of memory used by lambda invocation
+
+    - name: lambda.version
+      level: extended
+      type: keyword
+      description: |
+        Lambda function version
+
+
+
+# S3 bucket fields
     - name: s3.bucket.arn
       level: extended
       type: keyword
@@ -49,7 +91,8 @@
       description: |
         The S3 Object Key
 
-    # - name: aws.waf
+
+# waf fields
     - name: waf.arn
       level: extended
       type: keyword

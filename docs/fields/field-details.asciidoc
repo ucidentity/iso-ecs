@@ -553,6 +553,102 @@ type: keyword
 // ===============================================================
 
 |
+[[field-aws-lambda-duration-billed]]
+<<field-aws-lambda-duration-billed, aws.lambda.duration.billed>>
+
+a| Billed duration (ms) for a lambda invocation
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-lambda-duration-init]]
+<<field-aws-lambda-duration-init, aws.lambda.duration.init>>
+
+a| Init duration (ms) for a lambda invocation
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-lambda-duration-run]]
+<<field-aws-lambda-duration-run, aws.lambda.duration.run>>
+
+a| running duration (ms) for a lambda invocation
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-lambda-memory-size]]
+<<field-aws-lambda-memory-size, aws.lambda.memory.size>>
+
+a| Size (MB) of memory allocated to a lambda invocation
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-lambda-memory-used]]
+<<field-aws-lambda-memory-used, aws.lambda.memory.used>>
+
+a| Actual amount (MB) of memory used by lambda invocation
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-lambda-version]]
+<<field-aws-lambda-version, aws.lambda.version>>
+
+a| Lambda function version
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-aws-s3-bucket-arn]]
 <<field-aws-s3-bucket-arn, aws.s3.bucket.arn>>
 

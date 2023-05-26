@@ -296,6 +296,37 @@
       description: The name of the Subscription Filter used to send CloudWatch Logs
         to Security
       default_field: false
+    - name: lambda.duration.billed
+      level: extended
+      type: unsigned_long
+      description: Billed duration (ms) for a lambda invocation
+      default_field: false
+    - name: lambda.duration.init
+      level: extended
+      type: unsigned_long
+      description: Init duration (ms) for a lambda invocation
+      default_field: false
+    - name: lambda.duration.run
+      level: extended
+      type: unsigned_long
+      description: running duration (ms) for a lambda invocation
+      default_field: false
+    - name: lambda.memory.size
+      level: extended
+      type: unsigned_long
+      description: Size (MB) of memory allocated to a lambda invocation
+      default_field: false
+    - name: lambda.memory.used
+      level: extended
+      type: unsigned_long
+      description: Actual amount (MB) of memory used by lambda invocation
+      default_field: false
+    - name: lambda.version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Lambda function version
+      default_field: false
     - name: s3.bucket.arn
       level: extended
       type: keyword

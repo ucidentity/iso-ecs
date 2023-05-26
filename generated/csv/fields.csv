@@ -22,6 +22,12 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,aws,aws.cloudwatch.log.message_type,keyword,extended,,,CloudWatch MessageType
 8.7.0,true,aws,aws.cloudwatch.log.stream,keyword,extended,,,The CloudWatch LogStream
 8.7.0,true,aws,aws.cloudwatch.log.subscription_filters,keyword,extended,,,The name of the Subscription Filter used to send CloudWatch Logs to Security
+8.7.0,true,aws,aws.lambda.duration.billed,unsigned_long,extended,,,Billed duration (ms) for a lambda invocation
+8.7.0,true,aws,aws.lambda.duration.init,unsigned_long,extended,,,Init duration (ms) for a lambda invocation
+8.7.0,true,aws,aws.lambda.duration.run,unsigned_long,extended,,,running duration (ms) for a lambda invocation
+8.7.0,true,aws,aws.lambda.memory.size,unsigned_long,extended,,,Size (MB) of memory allocated to a lambda invocation
+8.7.0,true,aws,aws.lambda.memory.used,unsigned_long,extended,,,Actual amount (MB) of memory used by lambda invocation
+8.7.0,true,aws,aws.lambda.version,keyword,extended,,,Lambda function version
 8.7.0,true,aws,aws.s3.bucket.arn,keyword,extended,,,The ARN of the S3 Bucket
 8.7.0,true,aws,aws.s3.bucket.name,keyword,extended,,,The S3 Bucket Name
 8.7.0,true,aws,aws.s3.object.key,keyword,extended,,,The S3 Object Key

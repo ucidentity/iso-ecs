@@ -128,6 +128,37 @@
               }
             }
           },
+          "lambda": {
+            "properties": {
+              "duration": {
+                "properties": {
+                  "billed": {
+                    "type": "unsigned_long"
+                  },
+                  "init": {
+                    "type": "unsigned_long"
+                  },
+                  "run": {
+                    "type": "unsigned_long"
+                  }
+                }
+              },
+              "memory": {
+                "properties": {
+                  "size": {
+                    "type": "unsigned_long"
+                  },
+                  "used": {
+                    "type": "unsigned_long"
+                  }
+                }
+              },
+              "version": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
           "s3": {
             "properties": {
               "bucket": {

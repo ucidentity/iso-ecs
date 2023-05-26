@@ -282,6 +282,61 @@ aws.cloudwatch.log.subscription_filters:
   normalize: []
   short: The name of the Subscription Filter used to send CloudWatch Logs to Security
   type: keyword
+aws.lambda.duration.billed:
+  dashed_name: aws-lambda-duration-billed
+  description: Billed duration (ms) for a lambda invocation
+  flat_name: aws.lambda.duration.billed
+  level: extended
+  name: lambda.duration.billed
+  normalize: []
+  short: Billed duration (ms) for a lambda invocation
+  type: unsigned_long
+aws.lambda.duration.init:
+  dashed_name: aws-lambda-duration-init
+  description: Init duration (ms) for a lambda invocation
+  flat_name: aws.lambda.duration.init
+  level: extended
+  name: lambda.duration.init
+  normalize: []
+  short: Init duration (ms) for a lambda invocation
+  type: unsigned_long
+aws.lambda.duration.run:
+  dashed_name: aws-lambda-duration-run
+  description: running duration (ms) for a lambda invocation
+  flat_name: aws.lambda.duration.run
+  level: extended
+  name: lambda.duration.run
+  normalize: []
+  short: running duration (ms) for a lambda invocation
+  type: unsigned_long
+aws.lambda.memory.size:
+  dashed_name: aws-lambda-memory-size
+  description: Size (MB) of memory allocated to a lambda invocation
+  flat_name: aws.lambda.memory.size
+  level: extended
+  name: lambda.memory.size
+  normalize: []
+  short: Size (MB) of memory allocated to a lambda invocation
+  type: unsigned_long
+aws.lambda.memory.used:
+  dashed_name: aws-lambda-memory-used
+  description: Actual amount (MB) of memory used by lambda invocation
+  flat_name: aws.lambda.memory.used
+  level: extended
+  name: lambda.memory.used
+  normalize: []
+  short: Actual amount (MB) of memory used by lambda invocation
+  type: unsigned_long
+aws.lambda.version:
+  dashed_name: aws-lambda-version
+  description: Lambda function version
+  flat_name: aws.lambda.version
+  ignore_above: 1024
+  level: extended
+  name: lambda.version
+  normalize: []
+  short: Lambda function version
+  type: keyword
 aws.s3.bucket.arn:
   dashed_name: aws-s3-bucket-arn
   description: The ARN of the S3 Bucket
