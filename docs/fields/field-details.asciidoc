@@ -553,12 +553,28 @@ type: keyword
 // ===============================================================
 
 |
+[[field-aws-lambda-action]]
+<<field-aws-lambda-action, aws.lambda.action>>
+
+a| lambda action (START, REPORT, ...)
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-aws-lambda-duration-billed]]
 <<field-aws-lambda-duration-billed, aws.lambda.duration.billed>>
 
 a| Billed duration (ms) for a lambda invocation
 
-type: unsigned_long
+type: double
 
 
 
@@ -574,7 +590,7 @@ type: unsigned_long
 
 a| Init duration (ms) for a lambda invocation
 
-type: unsigned_long
+type: double
 
 
 
@@ -590,7 +606,7 @@ type: unsigned_long
 
 a| running duration (ms) for a lambda invocation
 
-type: unsigned_long
+type: double
 
 
 
@@ -623,6 +639,22 @@ type: unsigned_long
 a| Actual amount (MB) of memory used by lambda invocation
 
 type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-aws-lambda-requestid]]
+<<field-aws-lambda-requestid, aws.lambda.requestid>>
+
+a| Lambda request id
+
+type: keyword
 
 
 

@@ -296,19 +296,25 @@
       description: The name of the Subscription Filter used to send CloudWatch Logs
         to Security
       default_field: false
+    - name: lambda.action
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: lambda action (START, REPORT, ...)
+      default_field: false
     - name: lambda.duration.billed
       level: extended
-      type: unsigned_long
+      type: double
       description: Billed duration (ms) for a lambda invocation
       default_field: false
     - name: lambda.duration.init
       level: extended
-      type: unsigned_long
+      type: double
       description: Init duration (ms) for a lambda invocation
       default_field: false
     - name: lambda.duration.run
       level: extended
-      type: unsigned_long
+      type: double
       description: running duration (ms) for a lambda invocation
       default_field: false
     - name: lambda.memory.size
@@ -320,6 +326,12 @@
       level: extended
       type: unsigned_long
       description: Actual amount (MB) of memory used by lambda invocation
+      default_field: false
+    - name: lambda.requestid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Lambda request id
       default_field: false
     - name: lambda.version
       level: extended

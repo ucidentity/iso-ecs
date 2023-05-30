@@ -34,21 +34,27 @@
 
 # Lambda function invocation log fields
 
+    - name: lambda.action
+      level: extended
+      type: keyword
+      description: |
+        lambda action (START, REPORT, ...)
+
     - name: lambda.duration.billed
       level: extended
-      type: unsigned_long
+      type: double
       description: |
         Billed duration (ms) for a lambda invocation
 
     - name: lambda.duration.init
       level: extended
-      type: unsigned_long
+      type: double
       description: |
         Init duration (ms) for a lambda invocation
 
     - name: lambda.duration.run
       level: extended
-      type: unsigned_long
+      type: double
       description: |
         running duration (ms) for a lambda invocation
 
@@ -64,11 +70,18 @@
       description: |
         Actual amount (MB) of memory used by lambda invocation
 
+    - name: lambda.requestid
+      level: extended
+      type: keyword
+      description: |
+        Lambda request id
+
     - name: lambda.version
       level: extended
       type: keyword
       description: |
         Lambda function version
+
 
 
 

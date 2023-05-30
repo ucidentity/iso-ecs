@@ -493,6 +493,18 @@ aws:
         node_name: lambda
         type: object
       fields:
+        action:
+          field_details:
+            dashed_name: aws-lambda-action
+            description: lambda action (START, REPORT, ...)
+            flat_name: aws.lambda.action
+            ignore_above: 1024
+            level: extended
+            name: lambda.action
+            node_name: action
+            normalize: []
+            short: lambda action (START, REPORT, ...)
+            type: keyword
         duration:
           field_details:
             dashed_name: aws-lambda-duration
@@ -512,7 +524,7 @@ aws:
                 node_name: billed
                 normalize: []
                 short: Billed duration (ms) for a lambda invocation
-                type: unsigned_long
+                type: double
             init:
               field_details:
                 dashed_name: aws-lambda-duration-init
@@ -523,7 +535,7 @@ aws:
                 node_name: init
                 normalize: []
                 short: Init duration (ms) for a lambda invocation
-                type: unsigned_long
+                type: double
             run:
               field_details:
                 dashed_name: aws-lambda-duration-run
@@ -534,7 +546,7 @@ aws:
                 node_name: run
                 normalize: []
                 short: running duration (ms) for a lambda invocation
-                type: unsigned_long
+                type: double
         memory:
           field_details:
             dashed_name: aws-lambda-memory
@@ -566,6 +578,18 @@ aws:
                 normalize: []
                 short: Actual amount (MB) of memory used by lambda invocation
                 type: unsigned_long
+        requestid:
+          field_details:
+            dashed_name: aws-lambda-requestid
+            description: Lambda request id
+            flat_name: aws.lambda.requestid
+            ignore_above: 1024
+            level: extended
+            name: lambda.requestid
+            node_name: requestid
+            normalize: []
+            short: Lambda request id
+            type: keyword
         version:
           field_details:
             dashed_name: aws-lambda-version

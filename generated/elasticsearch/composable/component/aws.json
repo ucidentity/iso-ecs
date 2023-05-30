@@ -34,16 +34,20 @@
             },
             "lambda": {
               "properties": {
+                "action": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
                 "duration": {
                   "properties": {
                     "billed": {
-                      "type": "unsigned_long"
+                      "type": "double"
                     },
                     "init": {
-                      "type": "unsigned_long"
+                      "type": "double"
                     },
                     "run": {
-                      "type": "unsigned_long"
+                      "type": "double"
                     }
                   }
                 },
@@ -56,6 +60,10 @@
                       "type": "unsigned_long"
                     }
                   }
+                },
+                "requestid": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
                 },
                 "version": {
                   "ignore_above": 1024,

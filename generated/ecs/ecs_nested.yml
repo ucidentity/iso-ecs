@@ -356,6 +356,16 @@ aws:
       normalize: []
       short: The name of the Subscription Filter used to send CloudWatch Logs to Security
       type: keyword
+    aws.lambda.action:
+      dashed_name: aws-lambda-action
+      description: lambda action (START, REPORT, ...)
+      flat_name: aws.lambda.action
+      ignore_above: 1024
+      level: extended
+      name: lambda.action
+      normalize: []
+      short: lambda action (START, REPORT, ...)
+      type: keyword
     aws.lambda.duration.billed:
       dashed_name: aws-lambda-duration-billed
       description: Billed duration (ms) for a lambda invocation
@@ -364,7 +374,7 @@ aws:
       name: lambda.duration.billed
       normalize: []
       short: Billed duration (ms) for a lambda invocation
-      type: unsigned_long
+      type: double
     aws.lambda.duration.init:
       dashed_name: aws-lambda-duration-init
       description: Init duration (ms) for a lambda invocation
@@ -373,7 +383,7 @@ aws:
       name: lambda.duration.init
       normalize: []
       short: Init duration (ms) for a lambda invocation
-      type: unsigned_long
+      type: double
     aws.lambda.duration.run:
       dashed_name: aws-lambda-duration-run
       description: running duration (ms) for a lambda invocation
@@ -382,7 +392,7 @@ aws:
       name: lambda.duration.run
       normalize: []
       short: running duration (ms) for a lambda invocation
-      type: unsigned_long
+      type: double
     aws.lambda.memory.size:
       dashed_name: aws-lambda-memory-size
       description: Size (MB) of memory allocated to a lambda invocation
@@ -401,6 +411,16 @@ aws:
       normalize: []
       short: Actual amount (MB) of memory used by lambda invocation
       type: unsigned_long
+    aws.lambda.requestid:
+      dashed_name: aws-lambda-requestid
+      description: Lambda request id
+      flat_name: aws.lambda.requestid
+      ignore_above: 1024
+      level: extended
+      name: lambda.requestid
+      normalize: []
+      short: Lambda request id
+      type: keyword
     aws.lambda.version:
       dashed_name: aws-lambda-version
       description: Lambda function version
