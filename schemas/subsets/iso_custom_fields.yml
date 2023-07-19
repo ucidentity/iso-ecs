@@ -5,6 +5,8 @@ fields:
     fields: "*"
   aws:
     fields: "*"
+  auditd:
+    fields: "*"
   beyondtrust:
     fields: "*"
   bpr:
@@ -37,4 +39,14 @@ fields:
     fields: "*"
   ticket:
     fields: "*"
-   
+  user:
+    terminal: "*"
+    fields: 
+      saved:
+        fields: "*"
+      audit:
+        fields: "*"
+      filesystem:
+        fields: "*"
+      owner:
+        fields: "*"

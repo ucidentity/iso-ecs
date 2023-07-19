@@ -18,6 +18,86 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,arcsight,arcsight.category.significance,keyword,extended,,,Event's significance
 8.7.0,true,arcsight,arcsight.category.technique,keyword,extended,,,Event's technique
 8.7.0,true,arcsight,arcsight.classid,keyword,extended,,,Event's Classification ID
+8.7.0,true,auditd,auditd.log.a0,keyword,extended,,,The first argument to the system call
+8.7.0,true,auditd,auditd.log.addr,ip,extended,,,ip
+8.7.0,true,auditd,auditd.log.audit_failure,keyword,extended,,,audit_failure
+8.7.0,true,auditd,auditd.log.cipher,keyword,extended,,,cipher
+8.7.0,true,auditd,auditd.log.data,keyword,extended,,,data
+8.7.0,true,auditd,auditd.log.default-context,keyword,extended,,,default-context
+8.7.0,true,auditd,auditd.log.dev,keyword,extended,,,dev
+8.7.0,true,auditd,auditd.log.direction,keyword,extended,,,direction
+8.7.0,true,auditd,auditd.log.dst_prefixlen,long,extended,,,dst_prefixlen
+8.7.0,true,auditd,auditd.log.entries,long,extended,,,entries
+8.7.0,true,auditd,auditd.log.family,keyword,extended,,,family
+8.7.0,true,auditd,auditd.log.fe,keyword,extended,,,fe
+8.7.0,true,auditd,auditd.log.fi,keyword,extended,,,fi
+8.7.0,true,auditd,auditd.log.format,keyword,extended,,,format
+8.7.0,true,auditd,auditd.log.fp,keyword,extended,,,fp
+8.7.0,true,auditd,auditd.log.fver,keyword,extended,,,fver
+8.7.0,true,auditd,auditd.log.gpg_res,keyword,extended,,,gpg_res
+8.7.0,true,auditd,auditd.log.hostname,keyword,extended,,,hostname
+8.7.0,true,auditd,auditd.log.id,keyword,extended,,,id
+8.7.0,true,auditd,auditd.log.img-ctx,keyword,extended,,,img-ctx
+8.7.0,true,auditd,auditd.log.inode,keyword,extended,,,inode
+8.7.0,true,auditd,auditd.log.item,keyword,extended,,,index of item
+8.7.0,true,auditd,auditd.log.items,keyword,extended,,,The number of items in an event.
+8.7.0,true,auditd,auditd.log.kernel,keyword,extended,,,kernel
+8.7.0,true,auditd,auditd.log.key_enforce,boolean,extended,,,key_enforce
+8.7.0,true,auditd,auditd.log.kind,keyword,extended,,,kind
+8.7.0,true,auditd,auditd.log.ksize,long,extended,,,ksize
+8.7.0,true,auditd,auditd.log.laddr,ip,extended,,,laddr
+8.7.0,true,auditd,auditd.log.list,keyword,extended,,,list
+8.7.0,true,auditd,auditd.log.lport,long,extended,,,lport
+8.7.0,true,auditd,auditd.log.major,keyword,extended,,,major
+8.7.0,true,auditd,auditd.log.minor,keyword,extended,,,minor
+8.7.0,true,auditd,auditd.log.mode,keyword,extended,,,mode
+8.7.0,true,auditd,auditd.log.model,keyword,extended,,,model
+8.7.0,true,auditd,auditd.log.name,keyword,extended,,,name
+8.7.0,true,auditd,auditd.log.new-level,keyword,extended,,,new-level
+8.7.0,true,auditd,auditd.log.new_auid,keyword,extended,,,new audit id
+8.7.0,true,auditd,auditd.log.new_pe,keyword,extended,,,new_pe
+8.7.0,true,auditd,auditd.log.new_pi,keyword,extended,,,new_pi
+8.7.0,true,auditd,auditd.log.new_pp,keyword,extended,,,new_pp
+8.7.0,true,auditd,auditd.log.new_ses,keyword,extended,,,For login events this is the new session ID. It can be used to tie a user to future events by session ID.
+8.7.0,true,auditd,auditd.log.node,keyword,extended,,,node
+8.7.0,true,auditd,auditd.log.obj,keyword,extended,,,obj
+8.7.0,true,auditd,auditd.log.objtype,keyword,extended,,,objtype
+8.7.0,true,auditd,auditd.log.old,keyword,extended,,,old
+8.7.0,true,auditd,auditd.log.old-level,keyword,extended,,,old-level
+8.7.0,true,auditd,auditd.log.old_auid,keyword,extended,,,For login events this is the old audit ID used for the user prior to this login.
+8.7.0,true,auditd,auditd.log.old_pe,keyword,extended,,,old_pe
+8.7.0,true,auditd,auditd.log.old_pi,keyword,extended,,,old_pi
+8.7.0,true,auditd,auditd.log.old_pp,keyword,extended,,,old_pp
+8.7.0,true,auditd,auditd.log.old_ses,keyword,extended,,,For login events this is the old session ID used for the user prior to this login.
+8.7.0,true,auditd,auditd.log.op,keyword,extended,,,op
+8.7.0,true,auditd,auditd.log.pfs,keyword,extended,,,pfs
+8.7.0,true,auditd,auditd.log.proctitle,keyword,extended,,,proctitle
+8.7.0,true,auditd,auditd.log.rdev,keyword,extended,,,rdev
+8.7.0,true,auditd,auditd.log.reason,keyword,extended,,,reason
+8.7.0,true,auditd,auditd.log.record_type,keyword,extended,,,record_type
+8.7.0,true,auditd,auditd.log.reset,keyword,extended,,,reset
+8.7.0,true,auditd,auditd.log.root_dir,keyword,extended,,,root_dir
+8.7.0,true,auditd,auditd.log.rport,long,extended,,,rport
+8.7.0,true,auditd,auditd.log.saddr,keyword,extended,,,saddr
+8.7.0,true,auditd,auditd.log.selected-context,keyword,extended,,,selected-context
+8.7.0,true,auditd,auditd.log.sequence,long,extended,,,The audit event sequence number.
+8.7.0,true,auditd,auditd.log.ses,keyword,extended,,,ses
+8.7.0,true,auditd,auditd.log.spid,keyword,extended,,,spid
+8.7.0,true,auditd,auditd.log.src_prefixlen,long,extended,,,src_prefixlen
+8.7.0,true,auditd,auditd.log.subj,keyword,extended,,,subj
+8.7.0,true,auditd,auditd.log.success,boolean,extended,,,success
+8.7.0,true,auditd,auditd.log.sw,keyword,extended,,,sw
+8.7.0,true,auditd,auditd.log.sw_type,keyword,extended,,,sw_type
+8.7.0,true,auditd,auditd.log.syscall,keyword,extended,,,syscall
+8.7.0,true,auditd,auditd.log.table,keyword,extended,,,table
+8.7.0,true,auditd,auditd.log.tty,keyword,extended,,,tty
+8.7.0,true,auditd,auditd.log.uid,keyword,extended,,,uid
+8.7.0,true,auditd,auditd.log.unit,keyword,extended,,,unit
+8.7.0,true,auditd,auditd.log.uuid,keyword,extended,,,uuid
+8.7.0,true,auditd,auditd.log.ver,keyword,extended,,,ver
+8.7.0,true,auditd,auditd.log.virt,keyword,extended,,,virt
+8.7.0,true,auditd,auditd.log.vm,keyword,extended,,,vm
+8.7.0,true,auditd,auditd.log.vm-ctx,keyword,extended,,,vm-ctx
 8.7.0,true,aws,aws.cloudwatch.log.group,keyword,extended,,,The CloudWatch LogGroup
 8.7.0,true,aws,aws.cloudwatch.log.message_type,keyword,extended,,,CloudWatch MessageType
 8.7.0,true,aws,aws.cloudwatch.log.stream,keyword,extended,,,The CloudWatch LogStream
@@ -1983,6 +2063,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,url,url.subdomain,keyword,extended,,east,The subdomain of the domain.
 8.7.0,true,url,url.top_level_domain,keyword,extended,,co.uk,"The effective top level domain (com, org, net, co.uk)."
 8.7.0,true,url,url.username,keyword,extended,,,Username of the request.
+8.7.0,true,user,user.audit.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.7.0,true,user,user.audit.group.name,keyword,extended,,,Name of the group.
+8.7.0,true,user,user.audit.id,keyword,extended,,,One or multiple unique identifiers of the user.
+8.7.0,true,user,user.audit.name,keyword,extended,,,Short name or login of the user.
 8.7.0,true,user,user.changes.domain,keyword,extended,,,Name of the directory the user is a member of.
 8.7.0,true,user,user.changes.email,keyword,extended,,,User email address.
 8.7.0,true,user,user.changes.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
@@ -2009,6 +2093,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,user,user.effective.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
 8.7.0,true,user,user.effective.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 8.7.0,true,user,user.email,keyword,extended,,,User email address.
+8.7.0,true,user,user.filesystem.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.7.0,true,user,user.filesystem.group.name,keyword,extended,,,Name of the group.
+8.7.0,true,user,user.filesystem.id,keyword,extended,,,One or multiple unique identifiers of the user.
+8.7.0,true,user,user.filesystem.name,keyword,extended,,,Short name or login of the user.
 8.7.0,true,user,user.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
 8.7.0,true,user,user.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
 8.7.0,true,user,user.group.domain,keyword,extended,,,Name of the directory the group is a member of.
@@ -2018,6 +2106,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
 8.7.0,true,user,user.name,keyword,core,,a.einstein,Short name or login of the user.
 8.7.0,true,user,user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.7.0,true,user,user.owner.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.7.0,true,user,user.owner.group.name,keyword,extended,,,Name of the group.
+8.7.0,true,user,user.owner.id,keyword,extended,,,One or multiple unique identifiers of the user.
+8.7.0,true,user,user.owner.name,keyword,extended,,,Short name or login of the user.
 8.7.0,true,user,user.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
 8.7.0,true,user,user.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
 8.7.0,true,user,user.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
@@ -2025,6 +2117,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,user,user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
 8.7.0,true,user,user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
 8.7.0,true,user,user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.7.0,true,user,user.saved.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.7.0,true,user,user.saved.group.name,keyword,extended,,,Name of the group.
+8.7.0,true,user,user.saved.id,keyword,extended,,,One or multiple unique identifiers of the user.
+8.7.0,true,user,user.saved.name,keyword,extended,,,Short name or login of the user.
 8.7.0,true,user,user.target.domain,keyword,extended,,,Name of the directory the user is a member of.
 8.7.0,true,user,user.target.email,keyword,extended,,,User email address.
 8.7.0,true,user,user.target.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."

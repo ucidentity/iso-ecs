@@ -406,6 +406,989 @@ as:
       top_level: false
     root: false
     title: Autonomous System
+auditd:
+  field_details:
+    dashed_name: auditd
+    description: Linux Auditd
+    flat_name: auditd
+    name: auditd
+    node_name: auditd
+    short: auditd
+    type: group
+  fields:
+    log:
+      field_details:
+        dashed_name: auditd-log
+        flat_name: auditd.log
+        intermediate: true
+        name: log
+        node_name: log
+        type: object
+      fields:
+        a0:
+          field_details:
+            dashed_name: auditd-log-a0
+            description: The first argument to the system call
+            flat_name: auditd.log.a0
+            ignore_above: 1024
+            level: extended
+            name: log.a0
+            node_name: a0
+            normalize: []
+            short: The first argument to the system call
+            type: keyword
+        addr:
+          field_details:
+            dashed_name: auditd-log-addr
+            description: ip
+            flat_name: auditd.log.addr
+            level: extended
+            name: log.addr
+            node_name: addr
+            normalize: []
+            short: ip
+            type: ip
+        audit_failure:
+          field_details:
+            dashed_name: auditd-log-audit-failure
+            description: audit_failure
+            flat_name: auditd.log.audit_failure
+            ignore_above: 1024
+            level: extended
+            name: log.audit_failure
+            node_name: audit_failure
+            normalize: []
+            short: audit_failure
+            type: keyword
+        cipher:
+          field_details:
+            dashed_name: auditd-log-cipher
+            description: cipher
+            flat_name: auditd.log.cipher
+            ignore_above: 1024
+            level: extended
+            name: log.cipher
+            node_name: cipher
+            normalize: []
+            short: cipher
+            type: keyword
+        data:
+          field_details:
+            dashed_name: auditd-log-data
+            description: data
+            flat_name: auditd.log.data
+            ignore_above: 1024
+            level: extended
+            name: log.data
+            node_name: data
+            normalize: []
+            short: data
+            type: keyword
+        default-context:
+          field_details:
+            dashed_name: auditd-log-default-context
+            description: default-context
+            flat_name: auditd.log.default-context
+            ignore_above: 1024
+            level: extended
+            name: log.default-context
+            node_name: default-context
+            normalize: []
+            short: default-context
+            type: keyword
+        dev:
+          field_details:
+            dashed_name: auditd-log-dev
+            description: dev
+            flat_name: auditd.log.dev
+            ignore_above: 1024
+            level: extended
+            name: log.dev
+            node_name: dev
+            normalize: []
+            short: dev
+            type: keyword
+        direction:
+          field_details:
+            dashed_name: auditd-log-direction
+            description: direction
+            flat_name: auditd.log.direction
+            ignore_above: 1024
+            level: extended
+            name: log.direction
+            node_name: direction
+            normalize: []
+            short: direction
+            type: keyword
+        dst_prefixlen:
+          field_details:
+            dashed_name: auditd-log-dst-prefixlen
+            description: dst_prefixlen
+            flat_name: auditd.log.dst_prefixlen
+            level: extended
+            name: log.dst_prefixlen
+            node_name: dst_prefixlen
+            normalize: []
+            short: dst_prefixlen
+            type: long
+        entries:
+          field_details:
+            dashed_name: auditd-log-entries
+            description: entries
+            flat_name: auditd.log.entries
+            level: extended
+            name: log.entries
+            node_name: entries
+            normalize: []
+            short: entries
+            type: long
+        family:
+          field_details:
+            dashed_name: auditd-log-family
+            description: family
+            flat_name: auditd.log.family
+            ignore_above: 1024
+            level: extended
+            name: log.family
+            node_name: family
+            normalize: []
+            short: family
+            type: keyword
+        fe:
+          field_details:
+            dashed_name: auditd-log-fe
+            description: fe
+            flat_name: auditd.log.fe
+            ignore_above: 1024
+            level: extended
+            name: log.fe
+            node_name: fe
+            normalize: []
+            short: fe
+            type: keyword
+        fi:
+          field_details:
+            dashed_name: auditd-log-fi
+            description: fi
+            flat_name: auditd.log.fi
+            ignore_above: 1024
+            level: extended
+            name: log.fi
+            node_name: fi
+            normalize: []
+            short: fi
+            type: keyword
+        format:
+          field_details:
+            dashed_name: auditd-log-format
+            description: format
+            flat_name: auditd.log.format
+            ignore_above: 1024
+            level: extended
+            name: log.format
+            node_name: format
+            normalize: []
+            short: format
+            type: keyword
+        fp:
+          field_details:
+            dashed_name: auditd-log-fp
+            description: fp
+            flat_name: auditd.log.fp
+            ignore_above: 1024
+            level: extended
+            name: log.fp
+            node_name: fp
+            normalize: []
+            short: fp
+            type: keyword
+        fver:
+          field_details:
+            dashed_name: auditd-log-fver
+            description: fver
+            flat_name: auditd.log.fver
+            ignore_above: 1024
+            level: extended
+            name: log.fver
+            node_name: fver
+            normalize: []
+            short: fver
+            type: keyword
+        gpg_res:
+          field_details:
+            dashed_name: auditd-log-gpg-res
+            description: gpg_res
+            flat_name: auditd.log.gpg_res
+            ignore_above: 1024
+            level: extended
+            name: log.gpg_res
+            node_name: gpg_res
+            normalize: []
+            short: gpg_res
+            type: keyword
+        hostname:
+          field_details:
+            dashed_name: auditd-log-hostname
+            description: hostname
+            flat_name: auditd.log.hostname
+            ignore_above: 1024
+            level: extended
+            name: log.hostname
+            node_name: hostname
+            normalize: []
+            short: hostname
+            type: keyword
+        id:
+          field_details:
+            dashed_name: auditd-log-id
+            description: id
+            flat_name: auditd.log.id
+            ignore_above: 1024
+            level: extended
+            name: log.id
+            node_name: id
+            normalize: []
+            short: id
+            type: keyword
+        img-ctx:
+          field_details:
+            dashed_name: auditd-log-img-ctx
+            description: img-ctx
+            flat_name: auditd.log.img-ctx
+            ignore_above: 1024
+            level: extended
+            name: log.img-ctx
+            node_name: img-ctx
+            normalize: []
+            short: img-ctx
+            type: keyword
+        inode:
+          field_details:
+            dashed_name: auditd-log-inode
+            description: inode
+            flat_name: auditd.log.inode
+            ignore_above: 1024
+            level: extended
+            name: log.inode
+            node_name: inode
+            normalize: []
+            short: inode
+            type: keyword
+        item:
+          field_details:
+            dashed_name: auditd-log-item
+            description: The item field indicates which item out of the total number
+              of items. This number is zero-based; a value of 0 means it is the first
+              item.
+            flat_name: auditd.log.item
+            ignore_above: 1024
+            level: extended
+            name: log.item
+            node_name: item
+            normalize: []
+            short: index of item
+            type: keyword
+        items:
+          field_details:
+            dashed_name: auditd-log-items
+            description: The number of items in an event.
+            flat_name: auditd.log.items
+            ignore_above: 1024
+            level: extended
+            name: log.items
+            node_name: items
+            normalize: []
+            short: The number of items in an event.
+            type: keyword
+        kernel:
+          field_details:
+            dashed_name: auditd-log-kernel
+            description: kernel
+            flat_name: auditd.log.kernel
+            ignore_above: 1024
+            level: extended
+            name: log.kernel
+            node_name: kernel
+            normalize: []
+            short: kernel
+            type: keyword
+        key_enforce:
+          field_details:
+            dashed_name: auditd-log-key-enforce
+            description: key_enforce
+            flat_name: auditd.log.key_enforce
+            level: extended
+            name: log.key_enforce
+            node_name: key_enforce
+            normalize: []
+            short: key_enforce
+            type: boolean
+        kind:
+          field_details:
+            dashed_name: auditd-log-kind
+            description: kind
+            flat_name: auditd.log.kind
+            ignore_above: 1024
+            level: extended
+            name: log.kind
+            node_name: kind
+            normalize: []
+            short: kind
+            type: keyword
+        ksize:
+          field_details:
+            dashed_name: auditd-log-ksize
+            description: ksize
+            flat_name: auditd.log.ksize
+            level: extended
+            name: log.ksize
+            node_name: ksize
+            normalize: []
+            short: ksize
+            type: long
+        laddr:
+          field_details:
+            dashed_name: auditd-log-laddr
+            description: laddr
+            flat_name: auditd.log.laddr
+            level: extended
+            name: log.laddr
+            node_name: laddr
+            normalize: []
+            short: laddr
+            type: ip
+        list:
+          field_details:
+            dashed_name: auditd-log-list
+            description: list
+            flat_name: auditd.log.list
+            ignore_above: 1024
+            level: extended
+            name: log.list
+            node_name: list
+            normalize: []
+            short: list
+            type: keyword
+        lport:
+          field_details:
+            dashed_name: auditd-log-lport
+            description: lport
+            flat_name: auditd.log.lport
+            level: extended
+            name: log.lport
+            node_name: lport
+            normalize: []
+            short: lport
+            type: long
+        major:
+          field_details:
+            dashed_name: auditd-log-major
+            description: major
+            flat_name: auditd.log.major
+            ignore_above: 1024
+            level: extended
+            name: log.major
+            node_name: major
+            normalize: []
+            short: major
+            type: keyword
+        minor:
+          field_details:
+            dashed_name: auditd-log-minor
+            description: minor
+            flat_name: auditd.log.minor
+            ignore_above: 1024
+            level: extended
+            name: log.minor
+            node_name: minor
+            normalize: []
+            short: minor
+            type: keyword
+        mode:
+          field_details:
+            dashed_name: auditd-log-mode
+            description: mode
+            flat_name: auditd.log.mode
+            ignore_above: 1024
+            level: extended
+            name: log.mode
+            node_name: mode
+            normalize: []
+            short: mode
+            type: keyword
+        model:
+          field_details:
+            dashed_name: auditd-log-model
+            description: model
+            flat_name: auditd.log.model
+            ignore_above: 1024
+            level: extended
+            name: log.model
+            node_name: model
+            normalize: []
+            short: model
+            type: keyword
+        name:
+          field_details:
+            dashed_name: auditd-log-name
+            description: name
+            flat_name: auditd.log.name
+            ignore_above: 1024
+            level: extended
+            name: log.name
+            node_name: name
+            normalize: []
+            short: name
+            type: keyword
+        new-level:
+          field_details:
+            dashed_name: auditd-log-new-level
+            description: new-level
+            flat_name: auditd.log.new-level
+            ignore_above: 1024
+            level: extended
+            name: log.new-level
+            node_name: new-level
+            normalize: []
+            short: new-level
+            type: keyword
+        new_auid:
+          field_details:
+            dashed_name: auditd-log-new-auid
+            description: For login events this is the new audit ID. The audit ID can
+              be used to trace future events to the user even if their identity changes
+              (like becoming root).
+            flat_name: auditd.log.new_auid
+            ignore_above: 1024
+            level: extended
+            name: log.new_auid
+            node_name: new_auid
+            normalize: []
+            short: new audit id
+            type: keyword
+        new_pe:
+          field_details:
+            dashed_name: auditd-log-new-pe
+            description: new_pe
+            flat_name: auditd.log.new_pe
+            ignore_above: 1024
+            level: extended
+            name: log.new_pe
+            node_name: new_pe
+            normalize: []
+            short: new_pe
+            type: keyword
+        new_pi:
+          field_details:
+            dashed_name: auditd-log-new-pi
+            description: new_pi
+            flat_name: auditd.log.new_pi
+            ignore_above: 1024
+            level: extended
+            name: log.new_pi
+            node_name: new_pi
+            normalize: []
+            short: new_pi
+            type: keyword
+        new_pp:
+          field_details:
+            dashed_name: auditd-log-new-pp
+            description: new_pp
+            flat_name: auditd.log.new_pp
+            ignore_above: 1024
+            level: extended
+            name: log.new_pp
+            node_name: new_pp
+            normalize: []
+            short: new_pp
+            type: keyword
+        new_ses:
+          field_details:
+            dashed_name: auditd-log-new-ses
+            description: For login events this is the new session ID. It can be used
+              to tie a user to future events by session ID.
+            flat_name: auditd.log.new_ses
+            ignore_above: 1024
+            level: extended
+            name: log.new_ses
+            node_name: new_ses
+            normalize: []
+            short: For login events this is the new session ID. It can be used to
+              tie a user to future events by session ID.
+            type: keyword
+        node:
+          field_details:
+            dashed_name: auditd-log-node
+            description: node
+            flat_name: auditd.log.node
+            ignore_above: 1024
+            level: extended
+            name: log.node
+            node_name: node
+            normalize: []
+            short: node
+            type: keyword
+        obj:
+          field_details:
+            dashed_name: auditd-log-obj
+            description: obj
+            flat_name: auditd.log.obj
+            ignore_above: 1024
+            level: extended
+            name: log.obj
+            node_name: obj
+            normalize: []
+            short: obj
+            type: keyword
+        objtype:
+          field_details:
+            dashed_name: auditd-log-objtype
+            description: objtype
+            flat_name: auditd.log.objtype
+            ignore_above: 1024
+            level: extended
+            name: log.objtype
+            node_name: objtype
+            normalize: []
+            short: objtype
+            type: keyword
+        old:
+          field_details:
+            dashed_name: auditd-log-old
+            description: old
+            flat_name: auditd.log.old
+            ignore_above: 1024
+            level: extended
+            name: log.old
+            node_name: old
+            normalize: []
+            short: old
+            type: keyword
+        old-level:
+          field_details:
+            dashed_name: auditd-log-old-level
+            description: old-level
+            flat_name: auditd.log.old-level
+            ignore_above: 1024
+            level: extended
+            name: log.old-level
+            node_name: old-level
+            normalize: []
+            short: old-level
+            type: keyword
+        old_auid:
+          field_details:
+            dashed_name: auditd-log-old-auid
+            description: For login events this is the old audit ID used for the user
+              prior to this login.
+            flat_name: auditd.log.old_auid
+            ignore_above: 1024
+            level: extended
+            name: log.old_auid
+            node_name: old_auid
+            normalize: []
+            short: For login events this is the old audit ID used for the user prior
+              to this login.
+            type: keyword
+        old_pe:
+          field_details:
+            dashed_name: auditd-log-old-pe
+            description: old_pe
+            flat_name: auditd.log.old_pe
+            ignore_above: 1024
+            level: extended
+            name: log.old_pe
+            node_name: old_pe
+            normalize: []
+            short: old_pe
+            type: keyword
+        old_pi:
+          field_details:
+            dashed_name: auditd-log-old-pi
+            description: old_pi
+            flat_name: auditd.log.old_pi
+            ignore_above: 1024
+            level: extended
+            name: log.old_pi
+            node_name: old_pi
+            normalize: []
+            short: old_pi
+            type: keyword
+        old_pp:
+          field_details:
+            dashed_name: auditd-log-old-pp
+            description: old_pp
+            flat_name: auditd.log.old_pp
+            ignore_above: 1024
+            level: extended
+            name: log.old_pp
+            node_name: old_pp
+            normalize: []
+            short: old_pp
+            type: keyword
+        old_ses:
+          field_details:
+            dashed_name: auditd-log-old-ses
+            description: For login events this is the old session ID used for the
+              user prior to this login.
+            flat_name: auditd.log.old_ses
+            ignore_above: 1024
+            level: extended
+            name: log.old_ses
+            node_name: old_ses
+            normalize: []
+            short: For login events this is the old session ID used for the user prior
+              to this login.
+            type: keyword
+        op:
+          field_details:
+            dashed_name: auditd-log-op
+            description: op
+            flat_name: auditd.log.op
+            ignore_above: 1024
+            level: extended
+            name: log.op
+            node_name: op
+            normalize: []
+            short: op
+            type: keyword
+        pfs:
+          field_details:
+            dashed_name: auditd-log-pfs
+            description: pfs
+            flat_name: auditd.log.pfs
+            ignore_above: 1024
+            level: extended
+            name: log.pfs
+            node_name: pfs
+            normalize: []
+            short: pfs
+            type: keyword
+        proctitle:
+          field_details:
+            dashed_name: auditd-log-proctitle
+            description: proctitle
+            flat_name: auditd.log.proctitle
+            ignore_above: 1024
+            level: extended
+            name: log.proctitle
+            node_name: proctitle
+            normalize: []
+            short: proctitle
+            type: keyword
+        rdev:
+          field_details:
+            dashed_name: auditd-log-rdev
+            description: rdev
+            flat_name: auditd.log.rdev
+            ignore_above: 1024
+            level: extended
+            name: log.rdev
+            node_name: rdev
+            normalize: []
+            short: rdev
+            type: keyword
+        reason:
+          field_details:
+            dashed_name: auditd-log-reason
+            description: reason
+            flat_name: auditd.log.reason
+            ignore_above: 1024
+            level: extended
+            name: log.reason
+            node_name: reason
+            normalize: []
+            short: reason
+            type: keyword
+        record_type:
+          field_details:
+            dashed_name: auditd-log-record-type
+            description: record_type
+            flat_name: auditd.log.record_type
+            ignore_above: 1024
+            level: extended
+            name: log.record_type
+            node_name: record_type
+            normalize: []
+            short: record_type
+            type: keyword
+        reset:
+          field_details:
+            dashed_name: auditd-log-reset
+            description: reset
+            flat_name: auditd.log.reset
+            ignore_above: 1024
+            level: extended
+            name: log.reset
+            node_name: reset
+            normalize: []
+            short: reset
+            type: keyword
+        root_dir:
+          field_details:
+            dashed_name: auditd-log-root-dir
+            description: root_dir
+            flat_name: auditd.log.root_dir
+            ignore_above: 1024
+            level: extended
+            name: log.root_dir
+            node_name: root_dir
+            normalize: []
+            short: root_dir
+            type: keyword
+        rport:
+          field_details:
+            dashed_name: auditd-log-rport
+            description: rport
+            flat_name: auditd.log.rport
+            level: extended
+            name: log.rport
+            node_name: rport
+            normalize: []
+            short: rport
+            type: long
+        saddr:
+          field_details:
+            dashed_name: auditd-log-saddr
+            description: saddr
+            flat_name: auditd.log.saddr
+            ignore_above: 1024
+            level: extended
+            name: log.saddr
+            node_name: saddr
+            normalize: []
+            short: saddr
+            type: keyword
+        selected-context:
+          field_details:
+            dashed_name: auditd-log-selected-context
+            description: selected-context
+            flat_name: auditd.log.selected-context
+            ignore_above: 1024
+            level: extended
+            name: log.selected-context
+            node_name: selected-context
+            normalize: []
+            short: selected-context
+            type: keyword
+        sequence:
+          field_details:
+            dashed_name: auditd-log-sequence
+            description: The audit event sequence number.
+            flat_name: auditd.log.sequence
+            level: extended
+            name: log.sequence
+            node_name: sequence
+            normalize: []
+            short: The audit event sequence number.
+            type: long
+        ses:
+          field_details:
+            dashed_name: auditd-log-ses
+            description: ses
+            flat_name: auditd.log.ses
+            ignore_above: 1024
+            level: extended
+            name: log.ses
+            node_name: ses
+            normalize: []
+            short: ses
+            type: keyword
+        spid:
+          field_details:
+            dashed_name: auditd-log-spid
+            description: spid
+            flat_name: auditd.log.spid
+            ignore_above: 1024
+            level: extended
+            name: log.spid
+            node_name: spid
+            normalize: []
+            short: spid
+            type: keyword
+        src_prefixlen:
+          field_details:
+            dashed_name: auditd-log-src-prefixlen
+            description: src_prefixlen
+            flat_name: auditd.log.src_prefixlen
+            level: extended
+            name: log.src_prefixlen
+            node_name: src_prefixlen
+            normalize: []
+            short: src_prefixlen
+            type: long
+        subj:
+          field_details:
+            dashed_name: auditd-log-subj
+            description: subj
+            flat_name: auditd.log.subj
+            ignore_above: 1024
+            level: extended
+            name: log.subj
+            node_name: subj
+            normalize: []
+            short: subj
+            type: keyword
+        success:
+          field_details:
+            dashed_name: auditd-log-success
+            description: success
+            flat_name: auditd.log.success
+            level: extended
+            name: log.success
+            node_name: success
+            normalize: []
+            short: success
+            type: boolean
+        sw:
+          field_details:
+            dashed_name: auditd-log-sw
+            description: sw
+            flat_name: auditd.log.sw
+            ignore_above: 1024
+            level: extended
+            name: log.sw
+            node_name: sw
+            normalize: []
+            short: sw
+            type: keyword
+        sw_type:
+          field_details:
+            dashed_name: auditd-log-sw-type
+            description: sw_type
+            flat_name: auditd.log.sw_type
+            ignore_above: 1024
+            level: extended
+            name: log.sw_type
+            node_name: sw_type
+            normalize: []
+            short: sw_type
+            type: keyword
+        syscall:
+          field_details:
+            dashed_name: auditd-log-syscall
+            description: syscall
+            flat_name: auditd.log.syscall
+            ignore_above: 1024
+            level: extended
+            name: log.syscall
+            node_name: syscall
+            normalize: []
+            short: syscall
+            type: keyword
+        table:
+          field_details:
+            dashed_name: auditd-log-table
+            description: table
+            flat_name: auditd.log.table
+            ignore_above: 1024
+            level: extended
+            name: log.table
+            node_name: table
+            normalize: []
+            short: table
+            type: keyword
+        tty:
+          field_details:
+            dashed_name: auditd-log-tty
+            description: tty
+            flat_name: auditd.log.tty
+            ignore_above: 1024
+            level: extended
+            name: log.tty
+            node_name: tty
+            normalize: []
+            short: tty
+            type: keyword
+        uid:
+          field_details:
+            dashed_name: auditd-log-uid
+            description: uid
+            flat_name: auditd.log.uid
+            ignore_above: 1024
+            level: extended
+            name: log.uid
+            node_name: uid
+            normalize: []
+            short: uid
+            type: keyword
+        unit:
+          field_details:
+            dashed_name: auditd-log-unit
+            description: unit
+            flat_name: auditd.log.unit
+            ignore_above: 1024
+            level: extended
+            name: log.unit
+            node_name: unit
+            normalize: []
+            short: unit
+            type: keyword
+        uuid:
+          field_details:
+            dashed_name: auditd-log-uuid
+            description: uuid
+            flat_name: auditd.log.uuid
+            ignore_above: 1024
+            level: extended
+            name: log.uuid
+            node_name: uuid
+            normalize: []
+            short: uuid
+            type: keyword
+        ver:
+          field_details:
+            dashed_name: auditd-log-ver
+            description: ver
+            flat_name: auditd.log.ver
+            ignore_above: 1024
+            level: extended
+            name: log.ver
+            node_name: ver
+            normalize: []
+            short: ver
+            type: keyword
+        virt:
+          field_details:
+            dashed_name: auditd-log-virt
+            description: virt
+            flat_name: auditd.log.virt
+            ignore_above: 1024
+            level: extended
+            name: log.virt
+            node_name: virt
+            normalize: []
+            short: virt
+            type: keyword
+        vm:
+          field_details:
+            dashed_name: auditd-log-vm
+            description: vm
+            flat_name: auditd.log.vm
+            ignore_above: 1024
+            level: extended
+            name: log.vm
+            node_name: vm
+            normalize: []
+            short: vm
+            type: keyword
+        vm-ctx:
+          field_details:
+            dashed_name: auditd-log-vm-ctx
+            description: vm-ctx
+            flat_name: auditd.log.vm-ctx
+            ignore_above: 1024
+            level: extended
+            name: log.vm-ctx
+            node_name: vm-ctx
+            normalize: []
+            short: vm-ctx
+            type: keyword
+  schema_details:
+    group: 2
+    prefix: auditd.
+    root: false
+    title: auditd
 aws:
   field_details:
     dashed_name: aws
@@ -2998,11 +3981,7 @@ client:
     user:
       field_details:
         dashed_name: client-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: client.user
         intermediate: true
         name: user
@@ -4961,11 +5940,7 @@ destination:
     user:
       field_details:
         dashed_name: destination-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: destination.user
         intermediate: true
         name: user
@@ -16796,11 +17771,7 @@ process:
         attested_user:
           field_details:
             dashed_name: process-entry-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.entry_leader.user
             intermediate: true
             name: attested_user
@@ -17233,11 +18204,7 @@ process:
         real_user:
           field_details:
             dashed_name: process-entry-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.entry_leader.user
             intermediate: true
             name: real_user
@@ -17353,11 +18320,7 @@ process:
         saved_user:
           field_details:
             dashed_name: process-entry-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.entry_leader.user
             intermediate: true
             name: saved_user
@@ -17512,11 +18475,7 @@ process:
         user:
           field_details:
             dashed_name: process-entry-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.entry_leader.user
             intermediate: true
             name: user
@@ -17875,11 +18834,7 @@ process:
         real_user:
           field_details:
             dashed_name: process-group-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.group_leader.user
             intermediate: true
             name: real_user
@@ -17995,11 +18950,7 @@ process:
         saved_user:
           field_details:
             dashed_name: process-group-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.group_leader.user
             intermediate: true
             name: saved_user
@@ -18154,11 +19105,7 @@ process:
         user:
           field_details:
             dashed_name: process-group-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.group_leader.user
             intermediate: true
             name: user
@@ -20556,11 +21503,7 @@ process:
         real_user:
           field_details:
             dashed_name: process-parent-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.parent.user
             intermediate: true
             name: real_user
@@ -20643,11 +21586,7 @@ process:
         saved_user:
           field_details:
             dashed_name: process-parent-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.parent.user
             intermediate: true
             name: saved_user
@@ -20873,11 +21812,7 @@ process:
         user:
           field_details:
             dashed_name: process-parent-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.parent.user
             intermediate: true
             name: user
@@ -21428,11 +22363,7 @@ process:
     real_user:
       field_details:
         dashed_name: process-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: process.user
         intermediate: true
         name: real_user
@@ -21515,11 +22446,7 @@ process:
     saved_user:
       field_details:
         dashed_name: process-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: process.user
         intermediate: true
         name: saved_user
@@ -21942,11 +22869,7 @@ process:
         real_user:
           field_details:
             dashed_name: process-session-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.session_leader.user
             intermediate: true
             name: real_user
@@ -22062,11 +22985,7 @@ process:
         saved_user:
           field_details:
             dashed_name: process-session-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.session_leader.user
             intermediate: true
             name: saved_user
@@ -22221,11 +23140,7 @@ process:
         user:
           field_details:
             dashed_name: process-session-leader-user
-            description: 'The user fields describe information about the user that
-              is relevant to the event.
-
-              Fields can have one entry or multiple entries. If a user has more than
-              one id, provide an array that includes all of them.'
+            description: user fields
             flat_name: process.session_leader.user
             intermediate: true
             name: user
@@ -22492,11 +23407,7 @@ process:
     user:
       field_details:
         dashed_name: process-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: process.user
         intermediate: true
         name: user
@@ -23837,11 +24748,7 @@ server:
     user:
       field_details:
         dashed_name: server-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: server.user
         intermediate: true
         name: user
@@ -25481,11 +26388,7 @@ source:
     user:
       field_details:
         dashed_name: source-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: source.user
         intermediate: true
         name: user
@@ -35898,25 +36801,83 @@ url:
 user:
   field_details:
     dashed_name: user
-    description: 'The user fields describe information about the user that is relevant
-      to the event.
-
-      Fields can have one entry or multiple entries. If a user has more than one id,
-      provide an array that includes all of them.'
+    description: user fields
     flat_name: user
     name: user
     node_name: user
     short: Fields to describe the user relevant to the event.
     type: group
   fields:
+    audit:
+      field_details:
+        dashed_name: user-audit
+        flat_name: user.audit
+        intermediate: true
+        name: audit
+        node_name: audit
+        type: object
+      fields:
+        group:
+          field_details:
+            dashed_name: user-audit-group
+            flat_name: user.audit.group
+            intermediate: true
+            name: audit.group
+            node_name: group
+            type: object
+          fields:
+            id:
+              field_details:
+                dashed_name: user-audit-group-id
+                description: Unique identifier for the group on the system/platform.
+                flat_name: user.audit.group.id
+                ignore_above: 1024
+                level: extended
+                name: audit.group.id
+                node_name: id
+                normalize: []
+                short: Unique identifier for the group on the system/platform.
+                type: keyword
+            name:
+              field_details:
+                dashed_name: user-audit-group-name
+                description: Name of the group.
+                flat_name: user.audit.group.name
+                ignore_above: 1024
+                level: extended
+                name: audit.group.name
+                node_name: name
+                normalize: []
+                short: Name of the group.
+                type: keyword
+        id:
+          field_details:
+            dashed_name: user-audit-id
+            description: One or multiple unique identifiers of the user.
+            flat_name: user.audit.id
+            ignore_above: 1024
+            level: extended
+            name: audit.id
+            node_name: id
+            normalize: []
+            short: One or multiple unique identifiers of the user.
+            type: keyword
+        name:
+          field_details:
+            dashed_name: user-audit-name
+            description: Short name or login of the user.
+            flat_name: user.audit.name
+            ignore_above: 1024
+            level: extended
+            name: audit.name
+            node_name: name
+            normalize: []
+            short: Short name or login of the user.
+            type: keyword
     changes:
       field_details:
         dashed_name: user-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: user.user
         intermediate: true
         name: changes
@@ -36107,11 +37068,7 @@ user:
     effective:
       field_details:
         dashed_name: user-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: user.user
         intermediate: true
         name: effective
@@ -36297,6 +37254,72 @@ user:
         normalize: []
         short: User email address.
         type: keyword
+    filesystem:
+      field_details:
+        dashed_name: user-filesystem
+        flat_name: user.filesystem
+        intermediate: true
+        name: filesystem
+        node_name: filesystem
+        type: object
+      fields:
+        group:
+          field_details:
+            dashed_name: user-filesystem-group
+            flat_name: user.filesystem.group
+            intermediate: true
+            name: filesystem.group
+            node_name: group
+            type: object
+          fields:
+            id:
+              field_details:
+                dashed_name: user-filesystem-group-id
+                description: Unique identifier for the group on the system/platform.
+                flat_name: user.filesystem.group.id
+                ignore_above: 1024
+                level: extended
+                name: filesystem.group.id
+                node_name: id
+                normalize: []
+                short: Unique identifier for the group on the system/platform.
+                type: keyword
+            name:
+              field_details:
+                dashed_name: user-filesystem-group-name
+                description: Name of the group.
+                flat_name: user.filesystem.group.name
+                ignore_above: 1024
+                level: extended
+                name: filesystem.group.name
+                node_name: name
+                normalize: []
+                short: Name of the group.
+                type: keyword
+        id:
+          field_details:
+            dashed_name: user-filesystem-id
+            description: One or multiple unique identifiers of the user.
+            flat_name: user.filesystem.id
+            ignore_above: 1024
+            level: extended
+            name: filesystem.id
+            node_name: id
+            normalize: []
+            short: One or multiple unique identifiers of the user.
+            type: keyword
+        name:
+          field_details:
+            dashed_name: user-filesystem-name
+            description: Short name or login of the user.
+            flat_name: user.filesystem.name
+            ignore_above: 1024
+            level: extended
+            name: filesystem.name
+            node_name: name
+            normalize: []
+            short: Short name or login of the user.
+            type: keyword
     full_name:
       field_details:
         dashed_name: user-full-name
@@ -36415,6 +37438,72 @@ user:
         normalize: []
         short: Short name or login of the user.
         type: keyword
+    owner:
+      field_details:
+        dashed_name: user-owner
+        flat_name: user.owner
+        intermediate: true
+        name: owner
+        node_name: owner
+        type: object
+      fields:
+        group:
+          field_details:
+            dashed_name: user-owner-group
+            flat_name: user.owner.group
+            intermediate: true
+            name: owner.group
+            node_name: group
+            type: object
+          fields:
+            id:
+              field_details:
+                dashed_name: user-owner-group-id
+                description: Unique identifier for the group on the system/platform.
+                flat_name: user.owner.group.id
+                ignore_above: 1024
+                level: extended
+                name: owner.group.id
+                node_name: id
+                normalize: []
+                short: Unique identifier for the group on the system/platform.
+                type: keyword
+            name:
+              field_details:
+                dashed_name: user-owner-group-name
+                description: Name of the group.
+                flat_name: user.owner.group.name
+                ignore_above: 1024
+                level: extended
+                name: owner.group.name
+                node_name: name
+                normalize: []
+                short: Name of the group.
+                type: keyword
+        id:
+          field_details:
+            dashed_name: user-owner-id
+            description: One or multiple unique identifiers of the user.
+            flat_name: user.owner.id
+            ignore_above: 1024
+            level: extended
+            name: owner.id
+            node_name: id
+            normalize: []
+            short: One or multiple unique identifiers of the user.
+            type: keyword
+        name:
+          field_details:
+            dashed_name: user-owner-name
+            description: Short name or login of the user.
+            flat_name: user.owner.name
+            ignore_above: 1024
+            level: extended
+            name: owner.name
+            node_name: name
+            normalize: []
+            short: Short name or login of the user.
+            type: keyword
     risk:
       field_details:
         beta: These fields are in beta and are subject to change.
@@ -36537,14 +37626,76 @@ user:
         - array
         short: Array of user roles at the time of the event.
         type: keyword
+    saved:
+      field_details:
+        dashed_name: user-saved
+        flat_name: user.saved
+        intermediate: true
+        name: saved
+        node_name: saved
+        type: object
+      fields:
+        group:
+          field_details:
+            dashed_name: user-saved-group
+            flat_name: user.saved.group
+            intermediate: true
+            name: saved.group
+            node_name: group
+            type: object
+          fields:
+            id:
+              field_details:
+                dashed_name: user-saved-group-id
+                description: Unique identifier for the group on the system/platform.
+                flat_name: user.saved.group.id
+                ignore_above: 1024
+                level: extended
+                name: saved.group.id
+                node_name: id
+                normalize: []
+                short: Unique identifier for the group on the system/platform.
+                type: keyword
+            name:
+              field_details:
+                dashed_name: user-saved-group-name
+                description: Name of the group.
+                flat_name: user.saved.group.name
+                ignore_above: 1024
+                level: extended
+                name: saved.group.name
+                node_name: name
+                normalize: []
+                short: Name of the group.
+                type: keyword
+        id:
+          field_details:
+            dashed_name: user-saved-id
+            description: One or multiple unique identifiers of the user.
+            flat_name: user.saved.id
+            ignore_above: 1024
+            level: extended
+            name: saved.id
+            node_name: id
+            normalize: []
+            short: One or multiple unique identifiers of the user.
+            type: keyword
+        name:
+          field_details:
+            dashed_name: user-saved-name
+            description: Short name or login of the user.
+            flat_name: user.saved.name
+            ignore_above: 1024
+            level: extended
+            name: saved.name
+            node_name: name
+            normalize: []
+            short: Short name or login of the user.
+            type: keyword
     target:
       field_details:
         dashed_name: user-user
-        description: 'The user fields describe information about the user that is
-          relevant to the event.
-
-          Fields can have one entry or multiple entries. If a user has more than one
-          id, provide an array that includes all of them.'
+        description: user fields
         flat_name: user.user
         intermediate: true
         name: target
@@ -36790,7 +37941,7 @@ user:
       schema_name: user
       short: Captures changes made to a user.
     root: false
-    title: User
+    title: user fields
 user_agent:
   field_details:
     dashed_name: user-agent

@@ -241,6 +241,804 @@ arcsight.classid:
   normalize: []
   short: Event's Classification ID
   type: keyword
+auditd.log.a0:
+  dashed_name: auditd-log-a0
+  description: The first argument to the system call
+  flat_name: auditd.log.a0
+  ignore_above: 1024
+  level: extended
+  name: log.a0
+  normalize: []
+  short: The first argument to the system call
+  type: keyword
+auditd.log.addr:
+  dashed_name: auditd-log-addr
+  description: ip
+  flat_name: auditd.log.addr
+  level: extended
+  name: log.addr
+  normalize: []
+  short: ip
+  type: ip
+auditd.log.audit_failure:
+  dashed_name: auditd-log-audit-failure
+  description: audit_failure
+  flat_name: auditd.log.audit_failure
+  ignore_above: 1024
+  level: extended
+  name: log.audit_failure
+  normalize: []
+  short: audit_failure
+  type: keyword
+auditd.log.cipher:
+  dashed_name: auditd-log-cipher
+  description: cipher
+  flat_name: auditd.log.cipher
+  ignore_above: 1024
+  level: extended
+  name: log.cipher
+  normalize: []
+  short: cipher
+  type: keyword
+auditd.log.data:
+  dashed_name: auditd-log-data
+  description: data
+  flat_name: auditd.log.data
+  ignore_above: 1024
+  level: extended
+  name: log.data
+  normalize: []
+  short: data
+  type: keyword
+auditd.log.default-context:
+  dashed_name: auditd-log-default-context
+  description: default-context
+  flat_name: auditd.log.default-context
+  ignore_above: 1024
+  level: extended
+  name: log.default-context
+  normalize: []
+  short: default-context
+  type: keyword
+auditd.log.dev:
+  dashed_name: auditd-log-dev
+  description: dev
+  flat_name: auditd.log.dev
+  ignore_above: 1024
+  level: extended
+  name: log.dev
+  normalize: []
+  short: dev
+  type: keyword
+auditd.log.direction:
+  dashed_name: auditd-log-direction
+  description: direction
+  flat_name: auditd.log.direction
+  ignore_above: 1024
+  level: extended
+  name: log.direction
+  normalize: []
+  short: direction
+  type: keyword
+auditd.log.dst_prefixlen:
+  dashed_name: auditd-log-dst-prefixlen
+  description: dst_prefixlen
+  flat_name: auditd.log.dst_prefixlen
+  level: extended
+  name: log.dst_prefixlen
+  normalize: []
+  short: dst_prefixlen
+  type: long
+auditd.log.entries:
+  dashed_name: auditd-log-entries
+  description: entries
+  flat_name: auditd.log.entries
+  level: extended
+  name: log.entries
+  normalize: []
+  short: entries
+  type: long
+auditd.log.family:
+  dashed_name: auditd-log-family
+  description: family
+  flat_name: auditd.log.family
+  ignore_above: 1024
+  level: extended
+  name: log.family
+  normalize: []
+  short: family
+  type: keyword
+auditd.log.fe:
+  dashed_name: auditd-log-fe
+  description: fe
+  flat_name: auditd.log.fe
+  ignore_above: 1024
+  level: extended
+  name: log.fe
+  normalize: []
+  short: fe
+  type: keyword
+auditd.log.fi:
+  dashed_name: auditd-log-fi
+  description: fi
+  flat_name: auditd.log.fi
+  ignore_above: 1024
+  level: extended
+  name: log.fi
+  normalize: []
+  short: fi
+  type: keyword
+auditd.log.format:
+  dashed_name: auditd-log-format
+  description: format
+  flat_name: auditd.log.format
+  ignore_above: 1024
+  level: extended
+  name: log.format
+  normalize: []
+  short: format
+  type: keyword
+auditd.log.fp:
+  dashed_name: auditd-log-fp
+  description: fp
+  flat_name: auditd.log.fp
+  ignore_above: 1024
+  level: extended
+  name: log.fp
+  normalize: []
+  short: fp
+  type: keyword
+auditd.log.fver:
+  dashed_name: auditd-log-fver
+  description: fver
+  flat_name: auditd.log.fver
+  ignore_above: 1024
+  level: extended
+  name: log.fver
+  normalize: []
+  short: fver
+  type: keyword
+auditd.log.gpg_res:
+  dashed_name: auditd-log-gpg-res
+  description: gpg_res
+  flat_name: auditd.log.gpg_res
+  ignore_above: 1024
+  level: extended
+  name: log.gpg_res
+  normalize: []
+  short: gpg_res
+  type: keyword
+auditd.log.hostname:
+  dashed_name: auditd-log-hostname
+  description: hostname
+  flat_name: auditd.log.hostname
+  ignore_above: 1024
+  level: extended
+  name: log.hostname
+  normalize: []
+  short: hostname
+  type: keyword
+auditd.log.id:
+  dashed_name: auditd-log-id
+  description: id
+  flat_name: auditd.log.id
+  ignore_above: 1024
+  level: extended
+  name: log.id
+  normalize: []
+  short: id
+  type: keyword
+auditd.log.img-ctx:
+  dashed_name: auditd-log-img-ctx
+  description: img-ctx
+  flat_name: auditd.log.img-ctx
+  ignore_above: 1024
+  level: extended
+  name: log.img-ctx
+  normalize: []
+  short: img-ctx
+  type: keyword
+auditd.log.inode:
+  dashed_name: auditd-log-inode
+  description: inode
+  flat_name: auditd.log.inode
+  ignore_above: 1024
+  level: extended
+  name: log.inode
+  normalize: []
+  short: inode
+  type: keyword
+auditd.log.item:
+  dashed_name: auditd-log-item
+  description: The item field indicates which item out of the total number of items.
+    This number is zero-based; a value of 0 means it is the first item.
+  flat_name: auditd.log.item
+  ignore_above: 1024
+  level: extended
+  name: log.item
+  normalize: []
+  short: index of item
+  type: keyword
+auditd.log.items:
+  dashed_name: auditd-log-items
+  description: The number of items in an event.
+  flat_name: auditd.log.items
+  ignore_above: 1024
+  level: extended
+  name: log.items
+  normalize: []
+  short: The number of items in an event.
+  type: keyword
+auditd.log.kernel:
+  dashed_name: auditd-log-kernel
+  description: kernel
+  flat_name: auditd.log.kernel
+  ignore_above: 1024
+  level: extended
+  name: log.kernel
+  normalize: []
+  short: kernel
+  type: keyword
+auditd.log.key_enforce:
+  dashed_name: auditd-log-key-enforce
+  description: key_enforce
+  flat_name: auditd.log.key_enforce
+  level: extended
+  name: log.key_enforce
+  normalize: []
+  short: key_enforce
+  type: boolean
+auditd.log.kind:
+  dashed_name: auditd-log-kind
+  description: kind
+  flat_name: auditd.log.kind
+  ignore_above: 1024
+  level: extended
+  name: log.kind
+  normalize: []
+  short: kind
+  type: keyword
+auditd.log.ksize:
+  dashed_name: auditd-log-ksize
+  description: ksize
+  flat_name: auditd.log.ksize
+  level: extended
+  name: log.ksize
+  normalize: []
+  short: ksize
+  type: long
+auditd.log.laddr:
+  dashed_name: auditd-log-laddr
+  description: laddr
+  flat_name: auditd.log.laddr
+  level: extended
+  name: log.laddr
+  normalize: []
+  short: laddr
+  type: ip
+auditd.log.list:
+  dashed_name: auditd-log-list
+  description: list
+  flat_name: auditd.log.list
+  ignore_above: 1024
+  level: extended
+  name: log.list
+  normalize: []
+  short: list
+  type: keyword
+auditd.log.lport:
+  dashed_name: auditd-log-lport
+  description: lport
+  flat_name: auditd.log.lport
+  level: extended
+  name: log.lport
+  normalize: []
+  short: lport
+  type: long
+auditd.log.major:
+  dashed_name: auditd-log-major
+  description: major
+  flat_name: auditd.log.major
+  ignore_above: 1024
+  level: extended
+  name: log.major
+  normalize: []
+  short: major
+  type: keyword
+auditd.log.minor:
+  dashed_name: auditd-log-minor
+  description: minor
+  flat_name: auditd.log.minor
+  ignore_above: 1024
+  level: extended
+  name: log.minor
+  normalize: []
+  short: minor
+  type: keyword
+auditd.log.mode:
+  dashed_name: auditd-log-mode
+  description: mode
+  flat_name: auditd.log.mode
+  ignore_above: 1024
+  level: extended
+  name: log.mode
+  normalize: []
+  short: mode
+  type: keyword
+auditd.log.model:
+  dashed_name: auditd-log-model
+  description: model
+  flat_name: auditd.log.model
+  ignore_above: 1024
+  level: extended
+  name: log.model
+  normalize: []
+  short: model
+  type: keyword
+auditd.log.name:
+  dashed_name: auditd-log-name
+  description: name
+  flat_name: auditd.log.name
+  ignore_above: 1024
+  level: extended
+  name: log.name
+  normalize: []
+  short: name
+  type: keyword
+auditd.log.new-level:
+  dashed_name: auditd-log-new-level
+  description: new-level
+  flat_name: auditd.log.new-level
+  ignore_above: 1024
+  level: extended
+  name: log.new-level
+  normalize: []
+  short: new-level
+  type: keyword
+auditd.log.new_auid:
+  dashed_name: auditd-log-new-auid
+  description: For login events this is the new audit ID. The audit ID can be used
+    to trace future events to the user even if their identity changes (like becoming
+    root).
+  flat_name: auditd.log.new_auid
+  ignore_above: 1024
+  level: extended
+  name: log.new_auid
+  normalize: []
+  short: new audit id
+  type: keyword
+auditd.log.new_pe:
+  dashed_name: auditd-log-new-pe
+  description: new_pe
+  flat_name: auditd.log.new_pe
+  ignore_above: 1024
+  level: extended
+  name: log.new_pe
+  normalize: []
+  short: new_pe
+  type: keyword
+auditd.log.new_pi:
+  dashed_name: auditd-log-new-pi
+  description: new_pi
+  flat_name: auditd.log.new_pi
+  ignore_above: 1024
+  level: extended
+  name: log.new_pi
+  normalize: []
+  short: new_pi
+  type: keyword
+auditd.log.new_pp:
+  dashed_name: auditd-log-new-pp
+  description: new_pp
+  flat_name: auditd.log.new_pp
+  ignore_above: 1024
+  level: extended
+  name: log.new_pp
+  normalize: []
+  short: new_pp
+  type: keyword
+auditd.log.new_ses:
+  dashed_name: auditd-log-new-ses
+  description: For login events this is the new session ID. It can be used to tie
+    a user to future events by session ID.
+  flat_name: auditd.log.new_ses
+  ignore_above: 1024
+  level: extended
+  name: log.new_ses
+  normalize: []
+  short: For login events this is the new session ID. It can be used to tie a user
+    to future events by session ID.
+  type: keyword
+auditd.log.node:
+  dashed_name: auditd-log-node
+  description: node
+  flat_name: auditd.log.node
+  ignore_above: 1024
+  level: extended
+  name: log.node
+  normalize: []
+  short: node
+  type: keyword
+auditd.log.obj:
+  dashed_name: auditd-log-obj
+  description: obj
+  flat_name: auditd.log.obj
+  ignore_above: 1024
+  level: extended
+  name: log.obj
+  normalize: []
+  short: obj
+  type: keyword
+auditd.log.objtype:
+  dashed_name: auditd-log-objtype
+  description: objtype
+  flat_name: auditd.log.objtype
+  ignore_above: 1024
+  level: extended
+  name: log.objtype
+  normalize: []
+  short: objtype
+  type: keyword
+auditd.log.old:
+  dashed_name: auditd-log-old
+  description: old
+  flat_name: auditd.log.old
+  ignore_above: 1024
+  level: extended
+  name: log.old
+  normalize: []
+  short: old
+  type: keyword
+auditd.log.old-level:
+  dashed_name: auditd-log-old-level
+  description: old-level
+  flat_name: auditd.log.old-level
+  ignore_above: 1024
+  level: extended
+  name: log.old-level
+  normalize: []
+  short: old-level
+  type: keyword
+auditd.log.old_auid:
+  dashed_name: auditd-log-old-auid
+  description: For login events this is the old audit ID used for the user prior to
+    this login.
+  flat_name: auditd.log.old_auid
+  ignore_above: 1024
+  level: extended
+  name: log.old_auid
+  normalize: []
+  short: For login events this is the old audit ID used for the user prior to this
+    login.
+  type: keyword
+auditd.log.old_pe:
+  dashed_name: auditd-log-old-pe
+  description: old_pe
+  flat_name: auditd.log.old_pe
+  ignore_above: 1024
+  level: extended
+  name: log.old_pe
+  normalize: []
+  short: old_pe
+  type: keyword
+auditd.log.old_pi:
+  dashed_name: auditd-log-old-pi
+  description: old_pi
+  flat_name: auditd.log.old_pi
+  ignore_above: 1024
+  level: extended
+  name: log.old_pi
+  normalize: []
+  short: old_pi
+  type: keyword
+auditd.log.old_pp:
+  dashed_name: auditd-log-old-pp
+  description: old_pp
+  flat_name: auditd.log.old_pp
+  ignore_above: 1024
+  level: extended
+  name: log.old_pp
+  normalize: []
+  short: old_pp
+  type: keyword
+auditd.log.old_ses:
+  dashed_name: auditd-log-old-ses
+  description: For login events this is the old session ID used for the user prior
+    to this login.
+  flat_name: auditd.log.old_ses
+  ignore_above: 1024
+  level: extended
+  name: log.old_ses
+  normalize: []
+  short: For login events this is the old session ID used for the user prior to this
+    login.
+  type: keyword
+auditd.log.op:
+  dashed_name: auditd-log-op
+  description: op
+  flat_name: auditd.log.op
+  ignore_above: 1024
+  level: extended
+  name: log.op
+  normalize: []
+  short: op
+  type: keyword
+auditd.log.pfs:
+  dashed_name: auditd-log-pfs
+  description: pfs
+  flat_name: auditd.log.pfs
+  ignore_above: 1024
+  level: extended
+  name: log.pfs
+  normalize: []
+  short: pfs
+  type: keyword
+auditd.log.proctitle:
+  dashed_name: auditd-log-proctitle
+  description: proctitle
+  flat_name: auditd.log.proctitle
+  ignore_above: 1024
+  level: extended
+  name: log.proctitle
+  normalize: []
+  short: proctitle
+  type: keyword
+auditd.log.rdev:
+  dashed_name: auditd-log-rdev
+  description: rdev
+  flat_name: auditd.log.rdev
+  ignore_above: 1024
+  level: extended
+  name: log.rdev
+  normalize: []
+  short: rdev
+  type: keyword
+auditd.log.reason:
+  dashed_name: auditd-log-reason
+  description: reason
+  flat_name: auditd.log.reason
+  ignore_above: 1024
+  level: extended
+  name: log.reason
+  normalize: []
+  short: reason
+  type: keyword
+auditd.log.record_type:
+  dashed_name: auditd-log-record-type
+  description: record_type
+  flat_name: auditd.log.record_type
+  ignore_above: 1024
+  level: extended
+  name: log.record_type
+  normalize: []
+  short: record_type
+  type: keyword
+auditd.log.reset:
+  dashed_name: auditd-log-reset
+  description: reset
+  flat_name: auditd.log.reset
+  ignore_above: 1024
+  level: extended
+  name: log.reset
+  normalize: []
+  short: reset
+  type: keyword
+auditd.log.root_dir:
+  dashed_name: auditd-log-root-dir
+  description: root_dir
+  flat_name: auditd.log.root_dir
+  ignore_above: 1024
+  level: extended
+  name: log.root_dir
+  normalize: []
+  short: root_dir
+  type: keyword
+auditd.log.rport:
+  dashed_name: auditd-log-rport
+  description: rport
+  flat_name: auditd.log.rport
+  level: extended
+  name: log.rport
+  normalize: []
+  short: rport
+  type: long
+auditd.log.saddr:
+  dashed_name: auditd-log-saddr
+  description: saddr
+  flat_name: auditd.log.saddr
+  ignore_above: 1024
+  level: extended
+  name: log.saddr
+  normalize: []
+  short: saddr
+  type: keyword
+auditd.log.selected-context:
+  dashed_name: auditd-log-selected-context
+  description: selected-context
+  flat_name: auditd.log.selected-context
+  ignore_above: 1024
+  level: extended
+  name: log.selected-context
+  normalize: []
+  short: selected-context
+  type: keyword
+auditd.log.sequence:
+  dashed_name: auditd-log-sequence
+  description: The audit event sequence number.
+  flat_name: auditd.log.sequence
+  level: extended
+  name: log.sequence
+  normalize: []
+  short: The audit event sequence number.
+  type: long
+auditd.log.ses:
+  dashed_name: auditd-log-ses
+  description: ses
+  flat_name: auditd.log.ses
+  ignore_above: 1024
+  level: extended
+  name: log.ses
+  normalize: []
+  short: ses
+  type: keyword
+auditd.log.spid:
+  dashed_name: auditd-log-spid
+  description: spid
+  flat_name: auditd.log.spid
+  ignore_above: 1024
+  level: extended
+  name: log.spid
+  normalize: []
+  short: spid
+  type: keyword
+auditd.log.src_prefixlen:
+  dashed_name: auditd-log-src-prefixlen
+  description: src_prefixlen
+  flat_name: auditd.log.src_prefixlen
+  level: extended
+  name: log.src_prefixlen
+  normalize: []
+  short: src_prefixlen
+  type: long
+auditd.log.subj:
+  dashed_name: auditd-log-subj
+  description: subj
+  flat_name: auditd.log.subj
+  ignore_above: 1024
+  level: extended
+  name: log.subj
+  normalize: []
+  short: subj
+  type: keyword
+auditd.log.success:
+  dashed_name: auditd-log-success
+  description: success
+  flat_name: auditd.log.success
+  level: extended
+  name: log.success
+  normalize: []
+  short: success
+  type: boolean
+auditd.log.sw:
+  dashed_name: auditd-log-sw
+  description: sw
+  flat_name: auditd.log.sw
+  ignore_above: 1024
+  level: extended
+  name: log.sw
+  normalize: []
+  short: sw
+  type: keyword
+auditd.log.sw_type:
+  dashed_name: auditd-log-sw-type
+  description: sw_type
+  flat_name: auditd.log.sw_type
+  ignore_above: 1024
+  level: extended
+  name: log.sw_type
+  normalize: []
+  short: sw_type
+  type: keyword
+auditd.log.syscall:
+  dashed_name: auditd-log-syscall
+  description: syscall
+  flat_name: auditd.log.syscall
+  ignore_above: 1024
+  level: extended
+  name: log.syscall
+  normalize: []
+  short: syscall
+  type: keyword
+auditd.log.table:
+  dashed_name: auditd-log-table
+  description: table
+  flat_name: auditd.log.table
+  ignore_above: 1024
+  level: extended
+  name: log.table
+  normalize: []
+  short: table
+  type: keyword
+auditd.log.tty:
+  dashed_name: auditd-log-tty
+  description: tty
+  flat_name: auditd.log.tty
+  ignore_above: 1024
+  level: extended
+  name: log.tty
+  normalize: []
+  short: tty
+  type: keyword
+auditd.log.uid:
+  dashed_name: auditd-log-uid
+  description: uid
+  flat_name: auditd.log.uid
+  ignore_above: 1024
+  level: extended
+  name: log.uid
+  normalize: []
+  short: uid
+  type: keyword
+auditd.log.unit:
+  dashed_name: auditd-log-unit
+  description: unit
+  flat_name: auditd.log.unit
+  ignore_above: 1024
+  level: extended
+  name: log.unit
+  normalize: []
+  short: unit
+  type: keyword
+auditd.log.uuid:
+  dashed_name: auditd-log-uuid
+  description: uuid
+  flat_name: auditd.log.uuid
+  ignore_above: 1024
+  level: extended
+  name: log.uuid
+  normalize: []
+  short: uuid
+  type: keyword
+auditd.log.ver:
+  dashed_name: auditd-log-ver
+  description: ver
+  flat_name: auditd.log.ver
+  ignore_above: 1024
+  level: extended
+  name: log.ver
+  normalize: []
+  short: ver
+  type: keyword
+auditd.log.virt:
+  dashed_name: auditd-log-virt
+  description: virt
+  flat_name: auditd.log.virt
+  ignore_above: 1024
+  level: extended
+  name: log.virt
+  normalize: []
+  short: virt
+  type: keyword
+auditd.log.vm:
+  dashed_name: auditd-log-vm
+  description: vm
+  flat_name: auditd.log.vm
+  ignore_above: 1024
+  level: extended
+  name: log.vm
+  normalize: []
+  short: vm
+  type: keyword
+auditd.log.vm-ctx:
+  dashed_name: auditd-log-vm-ctx
+  description: vm-ctx
+  flat_name: auditd.log.vm-ctx
+  ignore_above: 1024
+  level: extended
+  name: log.vm-ctx
+  normalize: []
+  short: vm-ctx
+  type: keyword
 aws.cloudwatch.log.group:
   dashed_name: aws-cloudwatch-log-group
   description: The CloudWatch LogGroup
@@ -24216,6 +25014,46 @@ url.username:
   normalize: []
   short: Username of the request.
   type: keyword
+user.audit.group.id:
+  dashed_name: user-audit-group-id
+  description: Unique identifier for the group on the system/platform.
+  flat_name: user.audit.group.id
+  ignore_above: 1024
+  level: extended
+  name: audit.group.id
+  normalize: []
+  short: Unique identifier for the group on the system/platform.
+  type: keyword
+user.audit.group.name:
+  dashed_name: user-audit-group-name
+  description: Name of the group.
+  flat_name: user.audit.group.name
+  ignore_above: 1024
+  level: extended
+  name: audit.group.name
+  normalize: []
+  short: Name of the group.
+  type: keyword
+user.audit.id:
+  dashed_name: user-audit-id
+  description: One or multiple unique identifiers of the user.
+  flat_name: user.audit.id
+  ignore_above: 1024
+  level: extended
+  name: audit.id
+  normalize: []
+  short: One or multiple unique identifiers of the user.
+  type: keyword
+user.audit.name:
+  dashed_name: user-audit-name
+  description: Short name or login of the user.
+  flat_name: user.audit.name
+  ignore_above: 1024
+  level: extended
+  name: audit.name
+  normalize: []
+  short: Short name or login of the user.
+  type: keyword
 user.changes.domain:
   dashed_name: user-changes-domain
   description: 'Name of the directory the user is a member of.
@@ -24500,6 +25338,46 @@ user.email:
   normalize: []
   short: User email address.
   type: keyword
+user.filesystem.group.id:
+  dashed_name: user-filesystem-group-id
+  description: Unique identifier for the group on the system/platform.
+  flat_name: user.filesystem.group.id
+  ignore_above: 1024
+  level: extended
+  name: filesystem.group.id
+  normalize: []
+  short: Unique identifier for the group on the system/platform.
+  type: keyword
+user.filesystem.group.name:
+  dashed_name: user-filesystem-group-name
+  description: Name of the group.
+  flat_name: user.filesystem.group.name
+  ignore_above: 1024
+  level: extended
+  name: filesystem.group.name
+  normalize: []
+  short: Name of the group.
+  type: keyword
+user.filesystem.id:
+  dashed_name: user-filesystem-id
+  description: One or multiple unique identifiers of the user.
+  flat_name: user.filesystem.id
+  ignore_above: 1024
+  level: extended
+  name: filesystem.id
+  normalize: []
+  short: One or multiple unique identifiers of the user.
+  type: keyword
+user.filesystem.name:
+  dashed_name: user-filesystem-name
+  description: Short name or login of the user.
+  flat_name: user.filesystem.name
+  ignore_above: 1024
+  level: extended
+  name: filesystem.name
+  normalize: []
+  short: Short name or login of the user.
+  type: keyword
 user.full_name:
   dashed_name: user-full-name
   description: User's full name, if available.
@@ -24587,6 +25465,46 @@ user.name:
     name: text
     type: match_only_text
   name: name
+  normalize: []
+  short: Short name or login of the user.
+  type: keyword
+user.owner.group.id:
+  dashed_name: user-owner-group-id
+  description: Unique identifier for the group on the system/platform.
+  flat_name: user.owner.group.id
+  ignore_above: 1024
+  level: extended
+  name: owner.group.id
+  normalize: []
+  short: Unique identifier for the group on the system/platform.
+  type: keyword
+user.owner.group.name:
+  dashed_name: user-owner-group-name
+  description: Name of the group.
+  flat_name: user.owner.group.name
+  ignore_above: 1024
+  level: extended
+  name: owner.group.name
+  normalize: []
+  short: Name of the group.
+  type: keyword
+user.owner.id:
+  dashed_name: user-owner-id
+  description: One or multiple unique identifiers of the user.
+  flat_name: user.owner.id
+  ignore_above: 1024
+  level: extended
+  name: owner.id
+  normalize: []
+  short: One or multiple unique identifiers of the user.
+  type: keyword
+user.owner.name:
+  dashed_name: user-owner-name
+  description: Short name or login of the user.
+  flat_name: user.owner.name
+  ignore_above: 1024
+  level: extended
+  name: owner.name
   normalize: []
   short: Short name or login of the user.
   type: keyword
@@ -24681,6 +25599,46 @@ user.roles:
   normalize:
   - array
   short: Array of user roles at the time of the event.
+  type: keyword
+user.saved.group.id:
+  dashed_name: user-saved-group-id
+  description: Unique identifier for the group on the system/platform.
+  flat_name: user.saved.group.id
+  ignore_above: 1024
+  level: extended
+  name: saved.group.id
+  normalize: []
+  short: Unique identifier for the group on the system/platform.
+  type: keyword
+user.saved.group.name:
+  dashed_name: user-saved-group-name
+  description: Name of the group.
+  flat_name: user.saved.group.name
+  ignore_above: 1024
+  level: extended
+  name: saved.group.name
+  normalize: []
+  short: Name of the group.
+  type: keyword
+user.saved.id:
+  dashed_name: user-saved-id
+  description: One or multiple unique identifiers of the user.
+  flat_name: user.saved.id
+  ignore_above: 1024
+  level: extended
+  name: saved.id
+  normalize: []
+  short: One or multiple unique identifiers of the user.
+  type: keyword
+user.saved.name:
+  dashed_name: user-saved-name
+  description: Short name or login of the user.
+  flat_name: user.saved.name
+  ignore_above: 1024
+  level: extended
+  name: saved.name
+  normalize: []
+  short: Short name or login of the user.
   type: keyword
 user.target.domain:
   dashed_name: user-target-domain

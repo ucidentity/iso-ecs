@@ -474,6 +474,1303 @@ The `as` fields are expected to be nested at:
 
 
 Note also that the `as` fields are not expected to be used directly at the root of the events.
+[[ecs-auditd]]
+=== auditd Fields
+
+Linux Auditd
+
+[discrete]
+==== auditd Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-auditd-log-a0]]
+<<field-auditd-log-a0, auditd.log.a0>>
+
+a| The first argument to the system call
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-addr]]
+<<field-auditd-log-addr, auditd.log.addr>>
+
+a| ip
+
+type: ip
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-audit-failure]]
+<<field-auditd-log-audit-failure, auditd.log.audit_failure>>
+
+a| audit_failure
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-cipher]]
+<<field-auditd-log-cipher, auditd.log.cipher>>
+
+a| cipher
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-data]]
+<<field-auditd-log-data, auditd.log.data>>
+
+a| data
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-default-context]]
+<<field-auditd-log-default-context, auditd.log.default-context>>
+
+a| default-context
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-dev]]
+<<field-auditd-log-dev, auditd.log.dev>>
+
+a| dev
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-direction]]
+<<field-auditd-log-direction, auditd.log.direction>>
+
+a| direction
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-dst-prefixlen]]
+<<field-auditd-log-dst-prefixlen, auditd.log.dst_prefixlen>>
+
+a| dst_prefixlen
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-entries]]
+<<field-auditd-log-entries, auditd.log.entries>>
+
+a| entries
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-family]]
+<<field-auditd-log-family, auditd.log.family>>
+
+a| family
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-fe]]
+<<field-auditd-log-fe, auditd.log.fe>>
+
+a| fe
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-fi]]
+<<field-auditd-log-fi, auditd.log.fi>>
+
+a| fi
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-format]]
+<<field-auditd-log-format, auditd.log.format>>
+
+a| format
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-fp]]
+<<field-auditd-log-fp, auditd.log.fp>>
+
+a| fp
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-fver]]
+<<field-auditd-log-fver, auditd.log.fver>>
+
+a| fver
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-gpg-res]]
+<<field-auditd-log-gpg-res, auditd.log.gpg_res>>
+
+a| gpg_res
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-hostname]]
+<<field-auditd-log-hostname, auditd.log.hostname>>
+
+a| hostname
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-id]]
+<<field-auditd-log-id, auditd.log.id>>
+
+a| id
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-img-ctx]]
+<<field-auditd-log-img-ctx, auditd.log.img-ctx>>
+
+a| img-ctx
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-inode]]
+<<field-auditd-log-inode, auditd.log.inode>>
+
+a| inode
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-item]]
+<<field-auditd-log-item, auditd.log.item>>
+
+a| The item field indicates which item out of the total number of items. This number is zero-based; a value of 0 means it is the first item.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-items]]
+<<field-auditd-log-items, auditd.log.items>>
+
+a| The number of items in an event.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-kernel]]
+<<field-auditd-log-kernel, auditd.log.kernel>>
+
+a| kernel
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-key-enforce]]
+<<field-auditd-log-key-enforce, auditd.log.key_enforce>>
+
+a| key_enforce
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-kind]]
+<<field-auditd-log-kind, auditd.log.kind>>
+
+a| kind
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-ksize]]
+<<field-auditd-log-ksize, auditd.log.ksize>>
+
+a| ksize
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-laddr]]
+<<field-auditd-log-laddr, auditd.log.laddr>>
+
+a| laddr
+
+type: ip
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-list]]
+<<field-auditd-log-list, auditd.log.list>>
+
+a| list
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-lport]]
+<<field-auditd-log-lport, auditd.log.lport>>
+
+a| lport
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-major]]
+<<field-auditd-log-major, auditd.log.major>>
+
+a| major
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-minor]]
+<<field-auditd-log-minor, auditd.log.minor>>
+
+a| minor
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-mode]]
+<<field-auditd-log-mode, auditd.log.mode>>
+
+a| mode
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-model]]
+<<field-auditd-log-model, auditd.log.model>>
+
+a| model
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-name]]
+<<field-auditd-log-name, auditd.log.name>>
+
+a| name
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-new-level]]
+<<field-auditd-log-new-level, auditd.log.new-level>>
+
+a| new-level
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-new-auid]]
+<<field-auditd-log-new-auid, auditd.log.new_auid>>
+
+a| For login events this is the new audit ID. The audit ID can be used to trace future events to the user even if their identity changes (like becoming root).
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-new-pe]]
+<<field-auditd-log-new-pe, auditd.log.new_pe>>
+
+a| new_pe
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-new-pi]]
+<<field-auditd-log-new-pi, auditd.log.new_pi>>
+
+a| new_pi
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-new-pp]]
+<<field-auditd-log-new-pp, auditd.log.new_pp>>
+
+a| new_pp
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-new-ses]]
+<<field-auditd-log-new-ses, auditd.log.new_ses>>
+
+a| For login events this is the new session ID. It can be used to tie a user to future events by session ID.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-node]]
+<<field-auditd-log-node, auditd.log.node>>
+
+a| node
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-obj]]
+<<field-auditd-log-obj, auditd.log.obj>>
+
+a| obj
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-objtype]]
+<<field-auditd-log-objtype, auditd.log.objtype>>
+
+a| objtype
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-old]]
+<<field-auditd-log-old, auditd.log.old>>
+
+a| old
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-old-level]]
+<<field-auditd-log-old-level, auditd.log.old-level>>
+
+a| old-level
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-old-auid]]
+<<field-auditd-log-old-auid, auditd.log.old_auid>>
+
+a| For login events this is the old audit ID used for the user prior to this login.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-old-pe]]
+<<field-auditd-log-old-pe, auditd.log.old_pe>>
+
+a| old_pe
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-old-pi]]
+<<field-auditd-log-old-pi, auditd.log.old_pi>>
+
+a| old_pi
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-old-pp]]
+<<field-auditd-log-old-pp, auditd.log.old_pp>>
+
+a| old_pp
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-old-ses]]
+<<field-auditd-log-old-ses, auditd.log.old_ses>>
+
+a| For login events this is the old session ID used for the user prior to this login.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-op]]
+<<field-auditd-log-op, auditd.log.op>>
+
+a| op
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-pfs]]
+<<field-auditd-log-pfs, auditd.log.pfs>>
+
+a| pfs
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-proctitle]]
+<<field-auditd-log-proctitle, auditd.log.proctitle>>
+
+a| proctitle
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-rdev]]
+<<field-auditd-log-rdev, auditd.log.rdev>>
+
+a| rdev
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-reason]]
+<<field-auditd-log-reason, auditd.log.reason>>
+
+a| reason
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-record-type]]
+<<field-auditd-log-record-type, auditd.log.record_type>>
+
+a| record_type
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-reset]]
+<<field-auditd-log-reset, auditd.log.reset>>
+
+a| reset
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-root-dir]]
+<<field-auditd-log-root-dir, auditd.log.root_dir>>
+
+a| root_dir
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-rport]]
+<<field-auditd-log-rport, auditd.log.rport>>
+
+a| rport
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-saddr]]
+<<field-auditd-log-saddr, auditd.log.saddr>>
+
+a| saddr
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-selected-context]]
+<<field-auditd-log-selected-context, auditd.log.selected-context>>
+
+a| selected-context
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-sequence]]
+<<field-auditd-log-sequence, auditd.log.sequence>>
+
+a| The audit event sequence number.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-ses]]
+<<field-auditd-log-ses, auditd.log.ses>>
+
+a| ses
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-spid]]
+<<field-auditd-log-spid, auditd.log.spid>>
+
+a| spid
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-src-prefixlen]]
+<<field-auditd-log-src-prefixlen, auditd.log.src_prefixlen>>
+
+a| src_prefixlen
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-subj]]
+<<field-auditd-log-subj, auditd.log.subj>>
+
+a| subj
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-success]]
+<<field-auditd-log-success, auditd.log.success>>
+
+a| success
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-sw]]
+<<field-auditd-log-sw, auditd.log.sw>>
+
+a| sw
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-sw-type]]
+<<field-auditd-log-sw-type, auditd.log.sw_type>>
+
+a| sw_type
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-syscall]]
+<<field-auditd-log-syscall, auditd.log.syscall>>
+
+a| syscall
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-table]]
+<<field-auditd-log-table, auditd.log.table>>
+
+a| table
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-tty]]
+<<field-auditd-log-tty, auditd.log.tty>>
+
+a| tty
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-uid]]
+<<field-auditd-log-uid, auditd.log.uid>>
+
+a| uid
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-unit]]
+<<field-auditd-log-unit, auditd.log.unit>>
+
+a| unit
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-uuid]]
+<<field-auditd-log-uuid, auditd.log.uuid>>
+
+a| uuid
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-ver]]
+<<field-auditd-log-ver, auditd.log.ver>>
+
+a| ver
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-virt]]
+<<field-auditd-log-virt, auditd.log.virt>>
+
+a| virt
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-vm]]
+<<field-auditd-log-vm, auditd.log.vm>>
+
+a| vm
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-auditd-log-vm-ctx]]
+<<field-auditd-log-vm-ctx, auditd.log.vm-ctx>>
+
+a| vm-ctx
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-aws]]
 === aws Fields
 
@@ -18002,18 +19299,80 @@ Note also that the `url` fields may be used directly at the root of the events.
 
 
 [[ecs-user]]
-=== User Fields
+=== user fields Fields
 
-The user fields describe information about the user that is relevant to the event.
-
-Fields can have one entry or multiple entries. If a user has more than one id, provide an array that includes all of them.
+user fields
 
 [discrete]
-==== User Field Details
+==== user fields Field Details
 
 [options="header"]
 |=====
 | Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-user-audit-group-id]]
+<<field-user-audit-group-id, user.audit.group.id>>
+
+a| Unique identifier for the group on the system/platform.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-audit-group-name]]
+<<field-user-audit-group-name, user.audit.group.name>>
+
+a| Name of the group.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-audit-id]]
+<<field-user-audit-id, user.audit.id>>
+
+a| One or multiple unique identifiers of the user.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-audit-name]]
+<<field-user-audit-name, user.audit.name>>
+
+a| Short name or login of the user.
+
+type: keyword
+
+
+
+
+
+| extended
 
 // ===============================================================
 
@@ -18040,6 +19399,70 @@ type: keyword
 <<field-user-email, user.email>>
 
 a| User email address.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-filesystem-group-id]]
+<<field-user-filesystem-group-id, user.filesystem.group.id>>
+
+a| Unique identifier for the group on the system/platform.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-filesystem-group-name]]
+<<field-user-filesystem-group-name, user.filesystem.group.name>>
+
+a| Name of the group.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-filesystem-id]]
+<<field-user-filesystem-id, user.filesystem.id>>
+
+a| One or multiple unique identifiers of the user.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-filesystem-name]]
+<<field-user-filesystem-name, user.filesystem.name>>
+
+a| Short name or login of the user.
 
 type: keyword
 
@@ -18130,6 +19553,70 @@ example: `a.einstein`
 // ===============================================================
 
 |
+[[field-user-owner-group-id]]
+<<field-user-owner-group-id, user.owner.group.id>>
+
+a| Unique identifier for the group on the system/platform.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-owner-group-name]]
+<<field-user-owner-group-name, user.owner.group.name>>
+
+a| Name of the group.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-owner-id]]
+<<field-user-owner-id, user.owner.id>>
+
+a| One or multiple unique identifiers of the user.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-owner-name]]
+<<field-user-owner-name, user.owner.name>>
+
+a| Short name or login of the user.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-user-roles]]
 <<field-user-roles, user.roles>>
 
@@ -18143,6 +19630,70 @@ Note: this field should contain an array of values.
 
 
 example: `["kibana_admin", "reporting_user"]`
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-saved-group-id]]
+<<field-user-saved-group-id, user.saved.group.id>>
+
+a| Unique identifier for the group on the system/platform.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-saved-group-name]]
+<<field-user-saved-group-name, user.saved.group.name>>
+
+a| Name of the group.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-saved-id]]
+<<field-user-saved-id, user.saved.id>>
+
+a| One or multiple unique identifiers of the user.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-user-saved-name]]
+<<field-user-saved-name, user.saved.name>>
+
+a| Short name or login of the user.
+
+type: keyword
+
+
+
+
 
 | extended
 
@@ -18183,7 +19734,7 @@ Note also that the `user` fields may be used directly at the root of the events.
 
 [[ecs-user-nestings]]
 [discrete]
-===== Field sets that can be nested under User
+===== Field sets that can be nested under user fields
 
 [options="header"]
 |=====
@@ -18232,9 +19783,9 @@ Note also that the `user` fields may be used directly at the root of the events.
 
 
 [discrete]
-==== User Field Usage
+==== user fields Field Usage
 
-For usage and examples of the user fields, please see the <<ecs-user-usage, User Fields Usage and Examples>> section.
+For usage and examples of the user fields, please see the <<ecs-user-usage, user fields Fields Usage and Examples>> section.
 
 include::usage/user.asciidoc[]
 

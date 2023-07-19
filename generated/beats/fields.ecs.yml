@@ -264,6 +264,488 @@
         default_field: false
       description: Organization name.
       example: Google LLC
+  - name: auditd
+    title: auditd
+    group: 2
+    description: Linux Auditd
+    type: group
+    default_field: true
+    fields:
+    - name: log.a0
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The first argument to the system call
+      default_field: false
+    - name: log.addr
+      level: extended
+      type: ip
+      description: ip
+      default_field: false
+    - name: log.audit_failure
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: audit_failure
+      default_field: false
+    - name: log.cipher
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: cipher
+      default_field: false
+    - name: log.data
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: data
+      default_field: false
+    - name: log.default-context
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: default-context
+      default_field: false
+    - name: log.dev
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: dev
+      default_field: false
+    - name: log.direction
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: direction
+      default_field: false
+    - name: log.dst_prefixlen
+      level: extended
+      type: long
+      description: dst_prefixlen
+      default_field: false
+    - name: log.entries
+      level: extended
+      type: long
+      description: entries
+      default_field: false
+    - name: log.family
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: family
+      default_field: false
+    - name: log.fe
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fe
+      default_field: false
+    - name: log.fi
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fi
+      default_field: false
+    - name: log.format
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: format
+      default_field: false
+    - name: log.fp
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fp
+      default_field: false
+    - name: log.fver
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fver
+      default_field: false
+    - name: log.gpg_res
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: gpg_res
+      default_field: false
+    - name: log.hostname
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: hostname
+      default_field: false
+    - name: log.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: id
+      default_field: false
+    - name: log.img-ctx
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: img-ctx
+      default_field: false
+    - name: log.inode
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: inode
+      default_field: false
+    - name: log.item
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The item field indicates which item out of the total number of
+        items. This number is zero-based; a value of 0 means it is the first item.
+      default_field: false
+    - name: log.items
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The number of items in an event.
+      default_field: false
+    - name: log.kernel
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: kernel
+      default_field: false
+    - name: log.key_enforce
+      level: extended
+      type: boolean
+      description: key_enforce
+      default_field: false
+    - name: log.kind
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: kind
+      default_field: false
+    - name: log.ksize
+      level: extended
+      type: long
+      description: ksize
+      default_field: false
+    - name: log.laddr
+      level: extended
+      type: ip
+      description: laddr
+      default_field: false
+    - name: log.list
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: list
+      default_field: false
+    - name: log.lport
+      level: extended
+      type: long
+      description: lport
+      default_field: false
+    - name: log.major
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: major
+      default_field: false
+    - name: log.minor
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: minor
+      default_field: false
+    - name: log.mode
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: mode
+      default_field: false
+    - name: log.model
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: model
+      default_field: false
+    - name: log.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: name
+      default_field: false
+    - name: log.new-level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: new-level
+      default_field: false
+    - name: log.new_auid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: For login events this is the new audit ID. The audit ID can be
+        used to trace future events to the user even if their identity changes (like
+        becoming root).
+      default_field: false
+    - name: log.new_pe
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: new_pe
+      default_field: false
+    - name: log.new_pi
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: new_pi
+      default_field: false
+    - name: log.new_pp
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: new_pp
+      default_field: false
+    - name: log.new_ses
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: For login events this is the new session ID. It can be used to
+        tie a user to future events by session ID.
+      default_field: false
+    - name: log.node
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: node
+      default_field: false
+    - name: log.obj
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: obj
+      default_field: false
+    - name: log.objtype
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: objtype
+      default_field: false
+    - name: log.old
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: old
+      default_field: false
+    - name: log.old-level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: old-level
+      default_field: false
+    - name: log.old_auid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: For login events this is the old audit ID used for the user prior
+        to this login.
+      default_field: false
+    - name: log.old_pe
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: old_pe
+      default_field: false
+    - name: log.old_pi
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: old_pi
+      default_field: false
+    - name: log.old_pp
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: old_pp
+      default_field: false
+    - name: log.old_ses
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: For login events this is the old session ID used for the user prior
+        to this login.
+      default_field: false
+    - name: log.op
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: op
+      default_field: false
+    - name: log.pfs
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: pfs
+      default_field: false
+    - name: log.proctitle
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: proctitle
+      default_field: false
+    - name: log.rdev
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: rdev
+      default_field: false
+    - name: log.reason
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: reason
+      default_field: false
+    - name: log.record_type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: record_type
+      default_field: false
+    - name: log.reset
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: reset
+      default_field: false
+    - name: log.root_dir
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: root_dir
+      default_field: false
+    - name: log.rport
+      level: extended
+      type: long
+      description: rport
+      default_field: false
+    - name: log.saddr
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: saddr
+      default_field: false
+    - name: log.selected-context
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: selected-context
+      default_field: false
+    - name: log.sequence
+      level: extended
+      type: long
+      description: The audit event sequence number.
+      default_field: false
+    - name: log.ses
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ses
+      default_field: false
+    - name: log.spid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: spid
+      default_field: false
+    - name: log.src_prefixlen
+      level: extended
+      type: long
+      description: src_prefixlen
+      default_field: false
+    - name: log.subj
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: subj
+      default_field: false
+    - name: log.success
+      level: extended
+      type: boolean
+      description: success
+      default_field: false
+    - name: log.sw
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: sw
+      default_field: false
+    - name: log.sw_type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: sw_type
+      default_field: false
+    - name: log.syscall
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: syscall
+      default_field: false
+    - name: log.table
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: table
+      default_field: false
+    - name: log.tty
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: tty
+      default_field: false
+    - name: log.uid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: uid
+      default_field: false
+    - name: log.unit
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: unit
+      default_field: false
+    - name: log.uuid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: uuid
+      default_field: false
+    - name: log.ver
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ver
+      default_field: false
+    - name: log.virt
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: virt
+      default_field: false
+    - name: log.vm
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: vm
+      default_field: false
+    - name: log.vm-ctx
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: vm-ctx
+      default_field: false
   - name: aws
     title: aws
     group: 2
@@ -15876,16 +16358,36 @@
       ignore_above: 1024
       description: Username of the request.
   - name: user
-    title: User
+    title: user fields
     group: 2
-    description: 'The user fields describe information about the user that is relevant
-      to the event.
-
-      Fields can have one entry or multiple entries. If a user has more than one id,
-      provide an array that includes all of them.'
+    description: user fields
     type: group
     default_field: true
     fields:
+    - name: audit.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: audit.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: audit.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: One or multiple unique identifiers of the user.
+      default_field: false
+    - name: audit.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Short name or login of the user.
+      default_field: false
     - name: changes.domain
       level: extended
       type: keyword
@@ -16054,6 +16556,30 @@
       type: keyword
       ignore_above: 1024
       description: User email address.
+    - name: filesystem.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: filesystem.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: filesystem.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: One or multiple unique identifiers of the user.
+      default_field: false
+    - name: filesystem.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Short name or login of the user.
+      default_field: false
     - name: full_name
       level: extended
       type: keyword
@@ -16106,6 +16632,30 @@
         default_field: false
       description: Short name or login of the user.
       example: a.einstein
+    - name: owner.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: owner.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: owner.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: One or multiple unique identifiers of the user.
+      default_field: false
+    - name: owner.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Short name or login of the user.
+      default_field: false
     - name: risk.calculated_level
       level: extended
       type: keyword
@@ -16158,6 +16708,30 @@
       ignore_above: 1024
       description: Array of user roles at the time of the event.
       example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+    - name: saved.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: saved.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: saved.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: One or multiple unique identifiers of the user.
+      default_field: false
+    - name: saved.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Short name or login of the user.
       default_field: false
     - name: target.domain
       level: extended
