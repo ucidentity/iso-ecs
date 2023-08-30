@@ -98,6 +98,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-malware,malware>> | Detected Malware Fields
 
+| <<ecs-nat_allocation,nat_allocation>> | nat_allocation
+
 | <<ecs-network,Network>> | Fields describing the communication path over which the event happened.
 
 | <<ecs-observer,Observer>> | Fields describing an entity observing the event from outside the host.

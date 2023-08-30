@@ -825,6 +825,22 @@ type: keyword
 // ===============================================================
 
 |
+[[field-auditd-log-ip]]
+<<field-auditd-log-ip, auditd.log.ip>>
+
+a| instruction pointer
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-auditd-log-item]]
 <<field-auditd-log-item, auditd.log.item>>
 
@@ -11067,6 +11083,119 @@ type: boolean
 <<field-malware-name, malware.name>>
 
 a| Name of malware
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
+[[ecs-nat_allocation]]
+=== nat_allocation Fields
+
+Fields for logs NOC NAT Pool Allocation
+
+[discrete]
+==== nat_allocation Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-nat-allocation-blocks-max]]
+<<field-nat-allocation-blocks-max, nat_allocation.blocks.max>>
+
+a| Max number of NAT pool blocks
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-nat-allocation-blocks-used]]
+<<field-nat-allocation-blocks-used, nat_allocation.blocks.used>>
+
+a| Current number of NAT pool blocks used
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-nat-allocation-pool]]
+<<field-nat-allocation-pool, nat_allocation.pool>>
+
+a| Nat allocation pool
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-nat-allocation-port-high]]
+<<field-nat-allocation-port-high, nat_allocation.port.high>>
+
+a| High port in allocated block
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-nat-allocation-port-low]]
+<<field-nat-allocation-port-low, nat_allocation.port.low>>
+
+a| Low port in allocated block
+
+type: unsigned_long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-nat-allocation-session-id]]
+<<field-nat-allocation-session-id, nat_allocation.session_id>>
+
+a| session id
 
 type: keyword
 

@@ -522,6 +522,16 @@ auditd:
       normalize: []
       short: inode
       type: keyword
+    auditd.log.ip:
+      dashed_name: auditd-log-ip
+      description: instruction pointer
+      flat_name: auditd.log.ip
+      ignore_above: 1024
+      level: extended
+      name: log.ip
+      normalize: []
+      short: instruction pointer
+      type: keyword
     auditd.log.item:
       dashed_name: auditd-log-item
       description: The item field indicates which item out of the total number of
@@ -11189,6 +11199,71 @@ malware:
   prefix: malware.
   short: Detected Malware Fields
   title: malware
+  type: group
+nat_allocation:
+  description: Fields for logs NOC NAT Pool Allocation
+  fields:
+    nat_allocation.blocks.max:
+      dashed_name: nat-allocation-blocks-max
+      description: Max number of NAT pool blocks
+      flat_name: nat_allocation.blocks.max
+      level: extended
+      name: blocks.max
+      normalize: []
+      short: Max number of NAT pool blocks
+      type: unsigned_long
+    nat_allocation.blocks.used:
+      dashed_name: nat-allocation-blocks-used
+      description: Current number of NAT pool blocks used
+      flat_name: nat_allocation.blocks.used
+      level: extended
+      name: blocks.used
+      normalize: []
+      short: Current number of NAT pool blocks used
+      type: unsigned_long
+    nat_allocation.pool:
+      dashed_name: nat-allocation-pool
+      description: Nat allocation pool
+      flat_name: nat_allocation.pool
+      ignore_above: 1024
+      level: extended
+      name: pool
+      normalize: []
+      short: Nat allocation pool
+      type: keyword
+    nat_allocation.port.high:
+      dashed_name: nat-allocation-port-high
+      description: High port in allocated block
+      flat_name: nat_allocation.port.high
+      level: extended
+      name: port.high
+      normalize: []
+      short: High port in allocated block
+      type: unsigned_long
+    nat_allocation.port.low:
+      dashed_name: nat-allocation-port-low
+      description: Low port in allocated block
+      flat_name: nat_allocation.port.low
+      level: extended
+      name: port.low
+      normalize: []
+      short: Low port in allocated block
+      type: unsigned_long
+    nat_allocation.session_id:
+      dashed_name: nat-allocation-session-id
+      description: session id
+      flat_name: nat_allocation.session_id
+      ignore_above: 1024
+      level: extended
+      name: session_id
+      normalize: []
+      short: session id
+      type: keyword
+  group: 2
+  name: nat_allocation
+  prefix: nat_allocation.
+  short: nat_allocation
+  title: nat_allocation
   type: group
 network:
   description: 'The network is defined as the communication path over which a host

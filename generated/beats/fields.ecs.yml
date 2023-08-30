@@ -394,6 +394,12 @@
       ignore_above: 1024
       description: inode
       default_field: false
+    - name: log.ip
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: instruction pointer
+      default_field: false
     - name: log.item
       level: extended
       type: keyword
@@ -6457,6 +6463,45 @@
       type: keyword
       ignore_above: 1024
       description: Name of malware
+      default_field: false
+  - name: nat_allocation
+    title: nat_allocation
+    group: 2
+    description: Fields for logs NOC NAT Pool Allocation
+    type: group
+    default_field: true
+    fields:
+    - name: blocks.max
+      level: extended
+      type: unsigned_long
+      description: Max number of NAT pool blocks
+      default_field: false
+    - name: blocks.used
+      level: extended
+      type: unsigned_long
+      description: Current number of NAT pool blocks used
+      default_field: false
+    - name: pool
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Nat allocation pool
+      default_field: false
+    - name: port.high
+      level: extended
+      type: unsigned_long
+      description: High port in allocated block
+      default_field: false
+    - name: port.low
+      level: extended
+      type: unsigned_long
+      description: Low port in allocated block
+      default_field: false
+    - name: session_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: session id
       default_field: false
   - name: network
     title: Network

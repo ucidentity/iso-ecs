@@ -91,6 +91,10 @@
                   "ignore_above": 1024,
                   "type": "keyword"
                 },
+                "ip": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
                 "item": {
                   "ignore_above": 1024,
                   "type": "keyword"

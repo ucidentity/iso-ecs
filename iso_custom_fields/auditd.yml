@@ -138,6 +138,10 @@
       description: id
       type: keyword
       level: extended
+    - name: log.ip
+      description: instruction pointer
+      type: keyword
+      level: extended
     - name: log.inode
       description: inode
       type: keyword

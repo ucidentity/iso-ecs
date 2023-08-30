@@ -674,6 +674,18 @@ auditd:
             normalize: []
             short: inode
             type: keyword
+        ip:
+          field_details:
+            dashed_name: auditd-log-ip
+            description: instruction pointer
+            flat_name: auditd.log.ip
+            ignore_above: 1024
+            level: extended
+            name: log.ip
+            node_name: ip
+            normalize: []
+            short: instruction pointer
+            type: keyword
         item:
           field_details:
             dashed_name: auditd-log-item
@@ -14616,6 +14628,107 @@ malware:
     prefix: malware.
     root: false
     title: malware
+nat_allocation:
+  field_details:
+    dashed_name: nat-allocation
+    description: Fields for logs NOC NAT Pool Allocation
+    flat_name: nat_allocation
+    name: nat_allocation
+    node_name: nat_allocation
+    short: nat_allocation
+    type: group
+  fields:
+    blocks:
+      field_details:
+        dashed_name: nat-allocation-blocks
+        flat_name: nat_allocation.blocks
+        intermediate: true
+        name: blocks
+        node_name: blocks
+        type: object
+      fields:
+        max:
+          field_details:
+            dashed_name: nat-allocation-blocks-max
+            description: Max number of NAT pool blocks
+            flat_name: nat_allocation.blocks.max
+            level: extended
+            name: blocks.max
+            node_name: max
+            normalize: []
+            short: Max number of NAT pool blocks
+            type: unsigned_long
+        used:
+          field_details:
+            dashed_name: nat-allocation-blocks-used
+            description: Current number of NAT pool blocks used
+            flat_name: nat_allocation.blocks.used
+            level: extended
+            name: blocks.used
+            node_name: used
+            normalize: []
+            short: Current number of NAT pool blocks used
+            type: unsigned_long
+    pool:
+      field_details:
+        dashed_name: nat-allocation-pool
+        description: Nat allocation pool
+        flat_name: nat_allocation.pool
+        ignore_above: 1024
+        level: extended
+        name: pool
+        node_name: pool
+        normalize: []
+        short: Nat allocation pool
+        type: keyword
+    port:
+      field_details:
+        dashed_name: nat-allocation-port
+        flat_name: nat_allocation.port
+        intermediate: true
+        name: port
+        node_name: port
+        type: object
+      fields:
+        high:
+          field_details:
+            dashed_name: nat-allocation-port-high
+            description: High port in allocated block
+            flat_name: nat_allocation.port.high
+            level: extended
+            name: port.high
+            node_name: high
+            normalize: []
+            short: High port in allocated block
+            type: unsigned_long
+        low:
+          field_details:
+            dashed_name: nat-allocation-port-low
+            description: Low port in allocated block
+            flat_name: nat_allocation.port.low
+            level: extended
+            name: port.low
+            node_name: low
+            normalize: []
+            short: Low port in allocated block
+            type: unsigned_long
+    session_id:
+      field_details:
+        dashed_name: nat-allocation-session-id
+        description: session id
+        flat_name: nat_allocation.session_id
+        ignore_above: 1024
+        level: extended
+        name: session_id
+        node_name: session_id
+        normalize: []
+        short: session id
+        type: keyword
+  schema_details:
+    group: 2
+    prefix: nat_allocation.
+    root: false
+    title: nat_allocation
 network:
   field_details:
     dashed_name: network

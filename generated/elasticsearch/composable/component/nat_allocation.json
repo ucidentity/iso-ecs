@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-nat_allocation.html",
+    "ecs_version": "8.7.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "nat_allocation": {
+          "properties": {
+            "blocks": {
+              "properties": {
+                "max": {
+                  "type": "unsigned_long"
+                },
+                "used": {
+                  "type": "unsigned_long"
+                }
+              }
+            },
+            "pool": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "port": {
+              "properties": {
+                "high": {
+                  "type": "unsigned_long"
+                },
+                "low": {
+                  "type": "unsigned_long"
+                }
+              }
+            },
+            "session_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}

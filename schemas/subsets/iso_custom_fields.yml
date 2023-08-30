@@ -25,6 +25,8 @@ fields:
     fields: "*"
   malware:
     fields: "*"
+  nat_allocation:
+    fields: "*"
   packet:
     fields: "*"
   prisma:

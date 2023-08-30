@@ -39,6 +39,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,auditd,auditd.log.id,keyword,extended,,,id
 8.7.0,true,auditd,auditd.log.img-ctx,keyword,extended,,,img-ctx
 8.7.0,true,auditd,auditd.log.inode,keyword,extended,,,inode
+8.7.0,true,auditd,auditd.log.ip,keyword,extended,,,instruction pointer
 8.7.0,true,auditd,auditd.log.item,keyword,extended,,,index of item
 8.7.0,true,auditd,auditd.log.items,keyword,extended,,,The number of items in an event.
 8.7.0,true,auditd,auditd.log.kernel,keyword,extended,,,kernel
@@ -776,6 +777,12 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,logstash,logstash.log.pipeline_id,keyword,extended,,,ID of logstash pipeline that generated the log
 8.7.0,true,malware,malware.malicious,boolean,extended,,,Whether the malware is malicious
 8.7.0,true,malware,malware.name,keyword,extended,,,Name of malware
+8.7.0,true,nat_allocation,nat_allocation.blocks.max,unsigned_long,extended,,,Max number of NAT pool blocks
+8.7.0,true,nat_allocation,nat_allocation.blocks.used,unsigned_long,extended,,,Current number of NAT pool blocks used
+8.7.0,true,nat_allocation,nat_allocation.pool,keyword,extended,,,Nat allocation pool
+8.7.0,true,nat_allocation,nat_allocation.port.high,unsigned_long,extended,,,High port in allocated block
+8.7.0,true,nat_allocation,nat_allocation.port.low,unsigned_long,extended,,,Low port in allocated block
+8.7.0,true,nat_allocation,nat_allocation.session_id,keyword,extended,,,session id
 8.7.0,true,network,network.application,keyword,extended,,aim,Application level protocol name.
 8.7.0,true,network,network.bytes,long,core,,368,Total bytes transferred in both directions.
 8.7.0,true,network,network.community_id,keyword,extended,,1:hO+sN4H+MG5MY/8hIrXPqc4ZQz0=,A hash of source and destination IPs and ports.

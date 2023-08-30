@@ -187,6 +187,10 @@
                 "ignore_above": 1024,
                 "type": "keyword"
               },
+              "ip": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
               "item": {
                 "ignore_above": 1024,
                 "type": "keyword"
@@ -3616,6 +3620,38 @@
       },
       "message": {
         "type": "match_only_text"
+      },
+      "nat_allocation": {
+        "properties": {
+          "blocks": {
+            "properties": {
+              "max": {
+                "type": "unsigned_long"
+              },
+              "used": {
+                "type": "unsigned_long"
+              }
+            }
+          },
+          "pool": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "port": {
+            "properties": {
+              "high": {
+                "type": "unsigned_long"
+              },
+              "low": {
+                "type": "unsigned_long"
+              }
+            }
+          },
+          "session_id": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        }
       },
       "network": {
         "properties": {
