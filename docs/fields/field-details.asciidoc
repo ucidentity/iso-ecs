@@ -4892,6 +4892,22 @@ type: object
 // ===============================================================
 
 |
+[[field-container-log-tag]]
+<<field-container-log-tag, container.log.tag>>
+
+a| User defined tag of a container. Originates from the Docker journald logging driver.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-container-memory-usage]]
 <<field-container-memory-usage, container.memory.usage>>
 
@@ -8812,6 +8828,1063 @@ The `hash` fields are expected to be nested at:
 
 
 Note also that the `hash` fields are not expected to be used directly at the root of the events.
+[[ecs-hashicorp_vault]]
+=== hashicorp vault audit logs Fields
+
+hashicorp vault audit logs
+
+[discrete]
+==== hashicorp vault audit logs Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-accessor]]
+<<field-hashicorp-vault-audit-auth-accessor, hashicorp_vault.audit.auth.accessor>>
+
+a| This is an HMAC of the client token accessor
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-client-token]]
+<<field-hashicorp-vault-audit-auth-client-token, hashicorp_vault.audit.auth.client_token>>
+
+a| This is an HMAC of the client's token ID.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-display-name]]
+<<field-hashicorp-vault-audit-auth-display-name, hashicorp_vault.audit.auth.display_name>>
+
+a| Display name is a non-security sensitive identifier that is applicable to this auth. It is used for logging and prefixing of dynamic secrets. For example, it may be "armon" for the github credential backend. If the client token is used to generate a SQL credential, the user may be "github-armon-uuid". This is to help identify the source without using audit tables.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-entity-id]]
+<<field-hashicorp-vault-audit-auth-entity-id, hashicorp_vault.audit.auth.entity_id>>
+
+a| Entity ID is the identifier of the entity in identity store to which the identity of the authenticating client belongs to.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-external-namespace-policies]]
+<<field-hashicorp-vault-audit-auth-external-namespace-policies, hashicorp_vault.audit.auth.external_namespace_policies>>
+
+a| External namespace policies represent the policies authorized from different namespaces indexed by respective namespace identifiers.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-identity-policies]]
+<<field-hashicorp-vault-audit-auth-identity-policies, hashicorp_vault.audit.auth.identity_policies>>
+
+a| These are the policies sourced from the identity.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-metadata]]
+<<field-hashicorp-vault-audit-auth-metadata, hashicorp_vault.audit.auth.metadata>>
+
+a| This will contain a list of metadata key/value pairs associated with the authenticated user.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-no-default-policy]]
+<<field-hashicorp-vault-audit-auth-no-default-policy, hashicorp_vault.audit.auth.no_default_policy>>
+
+a| Indicates that the default policy should not be added by core when creating a token. The default policy will still be added if it's explicitly defined.
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policies]]
+<<field-hashicorp-vault-audit-auth-policies, hashicorp_vault.audit.auth.policies>>
+
+a| Policies is the list of policies that the authenticated user is associated with.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-allowed]]
+<<field-hashicorp-vault-audit-auth-policy-results-allowed, hashicorp_vault.audit.auth.policy_results.allowed>>
+
+a| 
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-entity-created]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-entity-created, hashicorp_vault.audit.auth.policy_results.granting_policies.entity_created>>
+
+a| entity_created is set to true if an entity is created as part of a login request.
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-error]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-error, hashicorp_vault.audit.auth.policy_results.granting_policies.error>>
+
+a| If an error occurred with the request, the error message is included in this field's value.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-name]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-name, hashicorp_vault.audit.auth.policy_results.granting_policies.name>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-namespace-id]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-namespace-id, hashicorp_vault.audit.auth.policy_results.granting_policies.namespace_id>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-remaining-uses]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-remaining-uses, hashicorp_vault.audit.auth.policy_results.granting_policies.remaining_uses>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-certificate-serial-number]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-certificate-serial-number, hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_certificate_serial_number>>
+
+a| Serial number from the client's certificate.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-id]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-id, hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_id>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token, hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token>>
+
+a| This is an HMAC of the client's token ID.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token-accessor]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token_accessor>>
+
+a| This is an HMAC of the client token accessor.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-data]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-data, hashicorp_vault.audit.auth.policy_results.granting_policies.request.data>>
+
+a| The data object will contain secret data in key/value pairs.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-headers]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-headers, hashicorp_vault.audit.auth.policy_results.granting_policies.request.headers>>
+
+a| Additional HTTP headers specified by the client as part of the request.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-id]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-id, hashicorp_vault.audit.auth.policy_results.granting_policies.request.id>>
+
+a| This is the unique request identifier.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-accessor]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_accessor>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-type]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-type, hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-id]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-id, hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.id>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-path]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-path, hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.path>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-operation]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-operation, hashicorp_vault.audit.auth.policy_results.granting_policies.request.operation>>
+
+a| This is the type of operation which corresponds to path capabilities and is expected to be one of: create, read, update, delete, or list.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-path]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-path, hashicorp_vault.audit.auth.policy_results.granting_policies.request.path>>
+
+a| The requested Vault path for operation.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-policy-override]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-policy-override, hashicorp_vault.audit.auth.policy_results.granting_policies.request.policy_override>>
+
+a| Policy override indicates that the requestor wishes to override soft-mandatory Sentinel policies.
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-address]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-address, hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_address>>
+
+a| The IP address of the client making the request.
+
+type: ip
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-port]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-port, hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_port>>
+
+a| The remote port of the client making the request.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-replication-cluster]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-replication-cluster, hashicorp_vault.audit.auth.policy_results.granting_policies.request.replication_cluster>>
+
+a| Name given to the replication secondary where this request originated.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-accessor]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.accessor>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-client-token]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-client-token, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.client_token>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-data]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-data, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.data>>
+
+a| Response payload.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-display-name]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-display-name, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.display_name>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-entity-id]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-entity-id, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.entity_id>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-external-namespace-policies]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-external-namespace-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.external_namespace_policies>>
+
+a| 
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-headers]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-headers, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.headers>>
+
+a| Headers will contain the http headers from the plugin that it wishes to have as part of the output.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-identity-policies]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-identity-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.identity_policies>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-metadata]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-metadata, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.metadata>>
+
+a| 
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-accessor]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_accessor>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-type]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-type, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-no-default-policy]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-no-default-policy, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.no_default_policy>>
+
+a| 
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-num-uses]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-num-uses, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.num_uses>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-policies]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.policies>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-redirect]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-redirect, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.redirect>>
+
+a| Redirect is an HTTP URL to redirect to for further authentication. This is only valid for credential backends. This will be blanked for any logical backend and ignored.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-issue-time]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-issue-time, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_issue_time>>
+
+a| 
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-policies]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_policies>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-ttl]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-ttl, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_ttl>>
+
+a| Time to live for the token in seconds.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-type]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-type, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-warnings]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-warnings, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.warnings>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-accessor]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.accessor>>
+
+a| The token accessor for the wrapped response token.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-path]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-path, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_path>>
+
+a| Creation path is the original request path that was used to create the wrapped response.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-time]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-time, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_time>>
+
+a| The creation time. This can be used with the TTL to figure out an expected expiration.
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-token]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-token, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.token>>
+
+a| The token containing the wrapped response.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-ttl]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-ttl, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.ttl>>
+
+a| Specifies the desired TTL of the wrapping token.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-type]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-type, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.type>>
+
+a| Audit record type (request or response).
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-wrapped-accessor]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-wrapped-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.wrapped_accessor>>
+
+a| The token accessor for the wrapped response token.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-wrap-ttl]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-wrap-ttl, hashicorp_vault.audit.auth.policy_results.granting_policies.request.wrap_ttl>>
+
+a| If the token is wrapped, this displays configured wrapped TTL in seconds.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-issue-time]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-issue-time, hashicorp_vault.audit.auth.policy_results.granting_policies.token_issue_time>>
+
+a| 
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-policies]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.token_policies>>
+
+a| These are the policies sourced from the token.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-ttl]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-ttl, hashicorp_vault.audit.auth.policy_results.granting_policies.token_ttl>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-type]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-type, hashicorp_vault.audit.auth.policy_results.granting_policies.token_type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-type]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-type, hashicorp_vault.audit.auth.policy_results.granting_policies.type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-host]]
 === Host Fields
 
@@ -9523,6 +10596,551 @@ The `interface` fields are expected to be nested at:
 
 
 Note also that the `interface` fields are not expected to be used directly at the root of the events.
+[[ecs-journald]]
+=== journald Fields
+
+journald
+
+[discrete]
+==== journald Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-journald-audit-login-uid]]
+<<field-journald-audit-login-uid, journald.audit.login_uid>>
+
+a| The login UID of the process the journal entry originates from, as maintained by the kernel audit subsystem.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-audit-session]]
+<<field-journald-audit-session, journald.audit.session>>
+
+a| The session of the process the journal entry originates from, as maintained by the kernel audit subsystem.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-code-file]]
+<<field-journald-code-file, journald.code.file>>
+
+a| The code location generating this message, if known. Contains the source filename.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-code-func]]
+<<field-journald-code-func, journald.code.func>>
+
+a| The code location generating this message, if known. Contains the function name.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-code-line]]
+<<field-journald-code-line, journald.code.line>>
+
+a| The code location generating this message, if known. Contains the line number.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-coredump-unit]]
+<<field-journald-coredump-unit, journald.coredump.unit>>
+
+a| Used to annotate messages containing coredumps from system units.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-coredump-user-unit]]
+<<field-journald-coredump-user-unit, journald.coredump.user_unit>>
+
+a| Used to annotate messages containing coredumps from user units.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-custom]]
+<<field-journald-custom, journald.custom>>
+
+a| Structured fields added to the log message by the caller.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-gid]]
+<<field-journald-gid, journald.gid>>
+
+a| The group ID of the process the journal entry originates from formatted as a decimal string. Note that entries obtained via "stdout" or "stderr" of forked processes will contain credentials valid for a parent process.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-host-boot-id]]
+<<field-journald-host-boot-id, journald.host.boot_id>>
+
+a| The kernel boot ID for the boot the message was generated in, formatted as a 128-bit hexadecimal string.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-kernel-device]]
+<<field-journald-kernel-device, journald.kernel.device>>
+
+a| The kernel device name. If the entry is associated to a block device, contains the major and minor numbers of the device node, separated by ":" and prefixed by "b". Similarly for character devices, but prefixed by "c". For network devices, this is the interface index prefixed by "n". For all other devices, this is the subsystem name prefixed by "+", followed by ":", followed by the kernel device name.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-kernel-device-name]]
+<<field-journald-kernel-device-name, journald.kernel.device_name>>
+
+a| The kernel device name as it shows up in the device tree below `/sys/`.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-kernel-device-node-path]]
+<<field-journald-kernel-device-node-path, journald.kernel.device_node_path>>
+
+a| The device node path of this device in `/dev/`.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-kernel-device-symlinks]]
+<<field-journald-kernel-device-symlinks, journald.kernel.device_symlinks>>
+
+a| Additional symlink names pointing to the device node in `/dev/`. This field is frequently set more than once per entry.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-kernel-subsystem]]
+<<field-journald-kernel-subsystem, journald.kernel.subsystem>>
+
+a| The kernel subsystem name.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-audit-login-uid]]
+<<field-journald-object-audit-login-uid, journald.object.audit.login_uid>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-audit-session]]
+<<field-journald-object-audit-session, journald.object.audit.session>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-gid]]
+<<field-journald-object-gid, journald.object.gid>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-pid]]
+<<field-journald-object-pid, journald.object.pid>>
+
+a| Privileged programs (currently UID 0) may attach OBJECT_PID= to a message. This will instruct systemd-journald to attach additional `journald.object.*` on behalf of the caller. These additional fields added automatically by systemd-journald. These additional `journald.object.*` fields are the same as the equivalent `journald.*` field except that the process identified by PID is described, instead of the process which logged the message.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-process-command-line]]
+<<field-journald-object-process-command-line, journald.object.process.command_line>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-process-executable]]
+<<field-journald-object-process-executable, journald.object.process.executable>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-process-name]]
+<<field-journald-object-process-name, journald.object.process.name>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-systemd-owner-uid]]
+<<field-journald-object-systemd-owner-uid, journald.object.systemd.owner_uid>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-systemd-session]]
+<<field-journald-object-systemd-session, journald.object.systemd.session>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-systemd-unit]]
+<<field-journald-object-systemd-unit, journald.object.systemd.unit>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-systemd-user-unit]]
+<<field-journald-object-systemd-user-unit, journald.object.systemd.user_unit>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-object-uid]]
+<<field-journald-object-uid, journald.object.uid>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-pid]]
+<<field-journald-pid, journald.pid>>
+
+a| The process ID of the process the journal entry originates from formatted as a decimal string. Note that entries obtained via "stdout" or "stderr" of forked processes will contain credentials valid for a parent process.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-process-capabilities]]
+<<field-journald-process-capabilities, journald.process.capabilities>>
+
+a| The effective capabilities(7) of the process the journal entry originates from.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-process-command-line]]
+<<field-journald-process-command-line, journald.process.command_line>>
+
+a| The command line of the process the journal entry originates from.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-process-executable]]
+<<field-journald-process-executable, journald.process.executable>>
+
+a| The executable path of the process the journal entry originates from.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-process-name]]
+<<field-journald-process-name, journald.process.name>>
+
+a| The name of the process the journal entry originates from.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-journald-uid]]
+<<field-journald-uid, journald.uid>>
+
+a| The user ID of the process the journal entry originates from formatted as a decimal string. Note that entries obtained via "stdout" or "stderr" of forked processes will contain credentials valid for a parent process.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-ldap]]
 === LDAP Fields
 
@@ -17118,6 +18736,183 @@ type: keyword
 <<field-system-auth-sudo-user, system.auth.sudo.user>>
 
 a| The target user to which the sudo command is switching.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
+[[ecs-systemd]]
+=== systemd Fields
+
+systemd
+
+[discrete]
+==== systemd Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-systemd-cgroup]]
+<<field-systemd-cgroup, systemd.cgroup>>
+
+a| The control group path in the systemd hierarchy.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-custom]]
+<<field-systemd-custom, systemd.custom>>
+
+a| Structured fields added to the log message by the caller.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-invocation-id]]
+<<field-systemd-invocation-id, systemd.invocation_id>>
+
+a| The invocation ID for the runtime cycle of the unit the message was generated in, as available to processes of the unit in $INVOCATION_ID.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-owner-uid]]
+<<field-systemd-owner-uid, systemd.owner_uid>>
+
+a| The owner UID of the systemd user unit or systemd session (if any) of the process the journal entry originates from.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-session]]
+<<field-systemd-session, systemd.session>>
+
+a| The systemd session ID (if any).
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-slice]]
+<<field-systemd-slice, systemd.slice>>
+
+a| The systemd slice unit name.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-transport]]
+<<field-systemd-transport, systemd.transport>>
+
+a| How the entry was received by the journal service.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-unit]]
+<<field-systemd-unit, systemd.unit>>
+
+a| The systemd unit name.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-user-slice]]
+<<field-systemd-user-slice, systemd.user_slice>>
+
+a| The systemd user slice name.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-systemd-user-unit]]
+<<field-systemd-user-unit, systemd.user_unit>>
+
+a| The unit name in the systemd user manager (if any).
 
 type: keyword
 

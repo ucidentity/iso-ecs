@@ -31,6 +31,8 @@ fields:
     fields: "*"
   prisma:
     fields: "*"
+  journald:
+    fields: "*"
   redcap:
     fields: "*"
   shibboleth:
@@ -38,6 +40,8 @@ fields:
   suricata:
     fields: "*"
   system:
+    fields: "*"
+  systemd:
     fields: "*"
   ticket:
     fields: "*"
@@ -52,3 +56,5 @@ fields:
         fields: "*"
       owner:
         fields: "*"
+  hashicorp_vault: 
+    fields: "*"

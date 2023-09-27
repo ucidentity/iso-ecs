@@ -82,11 +82,15 @@ For a single page representation of all fields, please see the
 
 | <<ecs-hash,Hash>> | Hashes, usually file hashes.
 
+| <<ecs-hashicorp_vault,hashicorp vault audit logs>> | hashicorp vault audit logs
+
 | <<ecs-host,Host>> | Fields describing the relevant computing instance.
 
 | <<ecs-http,HTTP>> | Fields describing an HTTP request.
 
 | <<ecs-interface,Interface>> | Fields to describe observer interface information.
+
+| <<ecs-journald,journald>> | journald
 
 | <<ecs-ldap,LDAP>> | Lightweight Directory Access Protocol
 
@@ -141,6 +145,8 @@ For a single page representation of all fields, please see the
 | <<ecs-suricata,suricata>> | Fields for logs from suricata
 
 | <<ecs-system,System fields, often from syslog>> | Fields for system logs, like sshd, sudo
+
+| <<ecs-systemd,systemd>> | systemd
 
 | <<ecs-threat,Threat>> | Fields to classify events and alerts according to a threat taxonomy.
 

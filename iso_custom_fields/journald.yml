@@ -1,0 +1,196 @@
+- name: journald
+  type: group
+  title: journald
+  short: journald
+  description: journald
+  group: 2
+  fields:
+  - name: audit.login_uid
+    type: long
+    description: The login UID of the process the journal entry originates from, as
+      maintained by the kernel audit subsystem.
+    level: extended
+    short: ''
+  - name: audit.session
+    type: keyword
+    description: The session of the process the journal entry originates from, as
+      maintained by the kernel audit subsystem.
+    level: extended
+    short: ''
+  - name: code.file
+    type: keyword
+    description: The code location generating this message, if known. Contains the
+      source filename.
+    level: extended
+    short: ''
+  - name: code.func
+    type: keyword
+    description: The code location generating this message, if known. Contains the
+      function name.
+    level: extended
+    short: ''
+  - name: code.line
+    type: long
+    description: The code location generating this message, if known. Contains the
+      line number.
+    level: extended
+    short: ''
+  - name: coredump.unit
+    type: keyword
+    description: Used to annotate messages containing coredumps from system units.
+    level: extended
+    short: ''
+  - name: coredump.user_unit
+    type: keyword
+    description: Used to annotate messages containing coredumps from user units.
+    level: extended
+    short: ''
+  - name: gid
+    type: long
+    description: The group ID of the process the journal entry originates from formatted
+      as a decimal string. Note that entries obtained via "stdout" or "stderr" of
+      forked processes will contain credentials valid for a parent process.
+    level: extended
+    short: ''
+  - name: host.boot_id
+    type: keyword
+    description: The kernel boot ID for the boot the message was generated in, formatted
+      as a 128-bit hexadecimal string.
+    level: extended
+    short: ''
+  - name: kernel.device
+    type: keyword
+    description: The kernel device name. If the entry is associated to a block device,
+      contains the major and minor numbers of the device node, separated by ":" and
+      prefixed by "b". Similarly for character devices, but prefixed by "c". For network
+      devices, this is the interface index prefixed by "n". For all other devices,
+      this is the subsystem name prefixed by "+", followed by ":", followed by the
+      kernel device name.
+    level: extended
+    short: ''
+  - name: kernel.device_name
+    type: keyword
+    description: The kernel device name as it shows up in the device tree below `/sys/`.
+    level: extended
+    short: ''
+  - name: kernel.device_node_path
+    type: keyword
+    description: The device node path of this device in `/dev/`.
+    level: extended
+    short: ''
+  - name: kernel.device_symlinks
+    type: keyword
+    description: Additional symlink names pointing to the device node in `/dev/`.
+      This field is frequently set more than once per entry.
+    level: extended
+    short: ''
+  - name: kernel.subsystem
+    type: keyword
+    description: The kernel subsystem name.
+    level: extended
+    short: ''
+  - name: object.pid
+    type: long
+    description: Privileged programs (currently UID 0) may attach OBJECT_PID= to a
+      message. This will instruct systemd-journald to attach additional `journald.object.*`
+      on behalf of the caller. These additional fields added automatically by systemd-journald.
+      These additional `journald.object.*` fields are the same as the equivalent `journald.*`
+      field except that the process identified by PID is described, instead of the
+      process which logged the message.
+    level: extended
+    short: ''
+  - name: object.audit.login_uid
+    type: long
+    description: ''
+    level: extended
+    short: ''
+  - name: object.audit.session
+    type: long
+    description: ''
+    level: extended
+    short: ''
+  - name: object.gid
+    type: long
+    description: ''
+    level: extended
+    short: ''
+  - name: object.process.command_line
+    type: keyword
+    description: ''
+    level: extended
+    short: ''
+  - name: object.process.executable
+    type: keyword
+    description: ''
+    level: extended
+    short: ''
+  - name: object.process.name
+    type: keyword
+    description: ''
+    level: extended
+    short: ''
+  - name: object.systemd.owner_uid
+    type: long
+    description: ''
+    level: extended
+    short: ''
+  - name: object.systemd.session
+    type: keyword
+    description: ''
+    level: extended
+    short: ''
+  - name: object.systemd.unit
+    type: keyword
+    description: ''
+    level: extended
+    short: ''
+  - name: object.systemd.user_unit
+    type: keyword
+    description: ''
+    level: extended
+    short: ''
+  - name: object.uid
+    type: long
+    description: ''
+    level: extended
+    short: ''
+  - name: pid
+    type: long
+    description: The process ID of the process the journal entry originates from formatted
+      as a decimal string. Note that entries obtained via "stdout" or "stderr" of
+      forked processes will contain credentials valid for a parent process.
+    level: extended
+    short: ''
+  - name: process.capabilities
+    type: keyword
+    description: The effective capabilities(7) of the process the journal entry originates
+      from.
+    level: extended
+    short: ''
+  - name: process.command_line
+    type: keyword
+    description: The command line of the process the journal entry originates from.
+    level: extended
+    short: ''
+  - name: process.executable
+    type: keyword
+    description: The executable path of the process the journal entry originates from.
+    level: extended
+    short: ''
+  - name: process.name
+    type: keyword
+    description: The name of the process the journal entry originates from.
+    level: extended
+    short: ''
+  - name: uid
+    type: long
+    description: The user ID of the process the journal entry originates from formatted
+      as a decimal string. Note that entries obtained via "stdout" or "stderr" of
+      forked processes will contain credentials valid for a parent process.
+    level: extended
+    short: ''
+  - name: custom
+    type: flattened
+    description: Structured fields added to the log message by the caller.
+    level: extended
+    short: ''

@@ -314,6 +314,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,container,container.image.name,keyword,extended,,,Name of the image the container was built on.
 8.7.0,true,container,container.image.tag,keyword,extended,array,,Container image tags.
 8.7.0,true,container,container.labels,object,extended,,,Image labels.
+8.7.0,true,container,container.log.tag,keyword,extended,,,User defined tag of a container. Originates from the Docker journald logging driver.
 8.7.0,true,container,container.memory.usage,scaled_float,extended,,,"Percent memory used, between 0 and 1."
 8.7.0,true,container,container.name,keyword,extended,,,Container name.
 8.7.0,true,container,container.network.egress.bytes,long,extended,,,The number of bytes sent on all network interfaces.
@@ -643,6 +644,71 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,grouper,grouper.priv,keyword,extended,,,privleges
 8.7.0,true,grouper,grouper.stem,keyword,extended,,,stem
 8.7.0,true,grouper,grouper.subject,keyword,extended,,,subject
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.accessor,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.client_token,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.display_name,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.entity_id,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.external_namespace_policies,flattened,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.identity_policies,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.metadata,flattened,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.no_default_policy,boolean,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policies,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.allowed,boolean,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.entity_created,boolean,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.error,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.name,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.namespace_id,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.remaining_uses,long,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_certificate_serial_number,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_id,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token_accessor,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.data,flattened,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.headers,flattened,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.id,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_accessor,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_type,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.id,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.path,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.operation,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.path,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.policy_override,boolean,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_address,ip,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_port,long,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.replication_cluster,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.accessor,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.client_token,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.data,flattened,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.display_name,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.entity_id,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.external_namespace_policies,flattened,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.headers,flattened,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.identity_policies,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.metadata,flattened,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_accessor,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_type,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.no_default_policy,boolean,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.num_uses,long,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.policies,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.redirect,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_issue_time,date,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_policies,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_ttl,long,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_type,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.warnings,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.accessor,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_path,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_time,date,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.token,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.ttl,long,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.type,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.wrapped_accessor,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.request.wrap_ttl,long,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.token_issue_time,date,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.token_policies,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.token_ttl,long,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.token_type,keyword,extended,,,
+8.7.0,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.type,keyword,extended,,,
 8.7.0,true,host,host.architecture,keyword,core,,x86_64,Operating system architecture.
 8.7.0,true,host,host.boot.id,keyword,extended,,88a1f0ed-5ae5-41ee-af6b-41921c311872,Linux boot uuid taken from /proc/sys/kernel/random/boot_id
 8.7.0,true,host,host.cpu.usage,scaled_float,extended,,,"Percent CPU used, between 0 and 1."
@@ -703,6 +769,39 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,http,http.response.mime_type,keyword,extended,,image/gif,Mime type of the body of the response.
 8.7.0,true,http,http.response.status_code,long,extended,,404,HTTP response status code.
 8.7.0,true,http,http.version,keyword,extended,,1.1,HTTP version.
+8.7.0,true,journald,journald.audit.login_uid,long,extended,,,
+8.7.0,true,journald,journald.audit.session,keyword,extended,,,
+8.7.0,true,journald,journald.code.file,keyword,extended,,,
+8.7.0,true,journald,journald.code.func,keyword,extended,,,
+8.7.0,true,journald,journald.code.line,long,extended,,,
+8.7.0,true,journald,journald.coredump.unit,keyword,extended,,,
+8.7.0,true,journald,journald.coredump.user_unit,keyword,extended,,,
+8.7.0,true,journald,journald.custom,flattened,extended,,,
+8.7.0,true,journald,journald.gid,long,extended,,,
+8.7.0,true,journald,journald.host.boot_id,keyword,extended,,,
+8.7.0,true,journald,journald.kernel.device,keyword,extended,,,
+8.7.0,true,journald,journald.kernel.device_name,keyword,extended,,,
+8.7.0,true,journald,journald.kernel.device_node_path,keyword,extended,,,
+8.7.0,true,journald,journald.kernel.device_symlinks,keyword,extended,,,
+8.7.0,true,journald,journald.kernel.subsystem,keyword,extended,,,
+8.7.0,true,journald,journald.object.audit.login_uid,long,extended,,,
+8.7.0,true,journald,journald.object.audit.session,long,extended,,,
+8.7.0,true,journald,journald.object.gid,long,extended,,,
+8.7.0,true,journald,journald.object.pid,long,extended,,,
+8.7.0,true,journald,journald.object.process.command_line,keyword,extended,,,
+8.7.0,true,journald,journald.object.process.executable,keyword,extended,,,
+8.7.0,true,journald,journald.object.process.name,keyword,extended,,,
+8.7.0,true,journald,journald.object.systemd.owner_uid,long,extended,,,
+8.7.0,true,journald,journald.object.systemd.session,keyword,extended,,,
+8.7.0,true,journald,journald.object.systemd.unit,keyword,extended,,,
+8.7.0,true,journald,journald.object.systemd.user_unit,keyword,extended,,,
+8.7.0,true,journald,journald.object.uid,long,extended,,,
+8.7.0,true,journald,journald.pid,long,extended,,,
+8.7.0,true,journald,journald.process.capabilities,keyword,extended,,,
+8.7.0,true,journald,journald.process.command_line,keyword,extended,,,
+8.7.0,true,journald,journald.process.executable,keyword,extended,,,
+8.7.0,true,journald,journald.process.name,keyword,extended,,,
+8.7.0,true,journald,journald.uid,long,extended,,,
 8.7.0,true,ldap,ldap.attributes,keyword,extended,,,LDAP properties
 8.7.0,true,ldap,ldap.base,keyword,extended,,,LDAP Search Base
 8.7.0,true,ldap,ldap.category,keyword,extended,,,LDAP DN
@@ -1530,6 +1629,16 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,system,system.auth.sudo.pwd,keyword,extended,,,The current directory where the sudo command is executed.
 8.7.0,true,system,system.auth.sudo.tty,keyword,extended,,,The TTY where the sudo command is executed.
 8.7.0,true,system,system.auth.sudo.user,keyword,extended,,,The target user to which the sudo command is switching.
+8.7.0,true,systemd,systemd.cgroup,keyword,extended,,,
+8.7.0,true,systemd,systemd.custom,flattened,extended,,,
+8.7.0,true,systemd,systemd.invocation_id,keyword,extended,,,
+8.7.0,true,systemd,systemd.owner_uid,long,extended,,,
+8.7.0,true,systemd,systemd.session,keyword,extended,,,
+8.7.0,true,systemd,systemd.slice,keyword,extended,,,
+8.7.0,true,systemd,systemd.transport,keyword,extended,,,
+8.7.0,true,systemd,systemd.unit,keyword,extended,,,
+8.7.0,true,systemd,systemd.user_slice,keyword,extended,,,
+8.7.0,true,systemd,systemd.user_unit,keyword,extended,,,
 8.7.0,true,threat,threat.enrichments,nested,extended,array,,List of objects containing indicators enriching the event.
 8.7.0,true,threat,threat.enrichments.indicator,object,extended,,,Object containing indicators enriching the event.
 8.7.0,true,threat,threat.enrichments.indicator.as.number,long,extended,,15169,Unique number allocated to the autonomous system.

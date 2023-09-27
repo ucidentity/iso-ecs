@@ -1,0 +1,10 @@
+---
+
+- name: container
+  fields:
+
+    - name: log.tag
+      level: extended
+      type: keyword
+      description: >
+        User defined tag of a container. Originates from the Docker journald logging driver.

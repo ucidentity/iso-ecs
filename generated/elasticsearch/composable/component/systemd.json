@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-systemd.html",
+    "ecs_version": "8.7.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "systemd": {
+          "properties": {
+            "cgroup": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "custom": {
+              "type": "flattened"
+            },
+            "invocation_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "owner_uid": {
+              "type": "long"
+            },
+            "session": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "slice": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "transport": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "unit": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "user_slice": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "user_unit": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}
