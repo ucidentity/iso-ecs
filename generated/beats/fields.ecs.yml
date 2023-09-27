@@ -1335,258 +1335,251 @@
       ignore_above: 1024
       description: Application's CAS provider
       default_field: false
-  - name: cisco_duo_admin
-    title: Cisco DUO Admin
+  - name: cisco_duo
+    title: cisco_duo
     group: 2
-    description: Fields specific to DUO Admin Logs
+    description: Fields for Cisco Duo logs
     type: group
     default_field: true
     fields:
-    - name: action
+    - name: admin.action
       level: extended
       type: keyword
       ignore_above: 1024
       description: The type of change that was performed
       default_field: false
-    - name: action_performed_on
+    - name: admin.action_performed_on
       level: extended
       type: keyword
       ignore_above: 1024
       description: The object that was acted on.
       default_field: false
-    - name: flattened
+    - name: admin.flattened
       level: extended
       type: flattened
       description: ES flattened datatype for objects where the subfields aren't known
         in advance.
       default_field: false
-    - name: user.name
+    - name: admin.user.name
       level: extended
       type: keyword
       ignore_above: 1024
       description: The full name of the administrator who performed the action in
         the Duo Admin Panel.
       default_field: false
-  - name: cisco_duo_auth
-    title: cisco_duo_auth
-    group: 2
-    description: Fields for Cisco Duo Authentication logs
-    type: group
-    default_field: true
-    fields:
-    - name: access_device.flash_version
+    - name: auth.access_device.flash_version
       level: extended
       type: keyword
       ignore_above: 1024
       description: The Flash plugin version used, if present.
       default_field: false
-    - name: access_device.hostname
+    - name: auth.access_device.hostname
       level: extended
       type: keyword
       ignore_above: 1024
       description: The hostname, if present.
       default_field: false
-    - name: access_device.ip
+    - name: auth.access_device.ip
       level: extended
       type: ip
       description: The access device's IP address.
       default_field: false
-    - name: access_device.is_encryption_enabled
+    - name: auth.access_device.is_encryption_enabled
       level: extended
       type: keyword
       ignore_above: 1024
       description: Reports the disk encryption state as detected by the Duo Device
         Health app.
       default_field: false
-    - name: access_device.is_firewall_enabled
+    - name: auth.access_device.is_firewall_enabled
       level: extended
       type: keyword
       ignore_above: 1024
       description: Reports the firewall state as detected by the Duo Device Health
         app.
       default_field: false
-    - name: access_device.is_password_set
+    - name: auth.access_device.is_password_set
       level: extended
       type: keyword
       ignore_above: 1024
       description: Reports the system password state as detected by the Duo Device
         Health app
       default_field: false
-    - name: access_device.java_version
+    - name: auth.access_device.java_version
       level: extended
       type: keyword
       ignore_above: 1024
       description: The Java plugin version used.
       default_field: false
-    - name: access_device.location.city
+    - name: auth.access_device.location.city
       level: extended
       type: keyword
       ignore_above: 1024
       description: The city name of the access device using geoip location.
       default_field: false
-    - name: access_device.location.country
+    - name: auth.access_device.location.country
       level: extended
       type: keyword
       ignore_above: 1024
       description: The country of the access device using geoip location.
       default_field: false
-    - name: access_device.location.state
+    - name: auth.access_device.location.state
       level: extended
       type: keyword
       ignore_above: 1024
       description: The state name of the access device using geoip location.
       default_field: false
-    - name: access_device.security_agents
+    - name: auth.access_device.security_agents
       level: extended
       type: keyword
       ignore_above: 1024
       description: Reports the security agents present on the endpoint as detected
         by the Duo Device Health app.
       default_field: false
-    - name: alias
+    - name: auth.alias
       level: extended
       type: keyword
       ignore_above: 1024
       description: The username alias used to log in.
       default_field: false
-    - name: application.key
+    - name: auth.application.key
       level: extended
       type: keyword
       ignore_above: 1024
       description: The application's integration_key.
       default_field: false
-    - name: application.name
+    - name: auth.application.name
       level: extended
       type: keyword
       ignore_above: 1024
       description: The application's name.
       default_field: false
-    - name: auth_device.as.number
+    - name: auth.auth_device.as.number
       level: extended
       type: long
       description: Unique number allocated to the autonomous system. The autonomous
         system number (ASN) uniquely identifies each network on the Internet.
       default_field: false
-    - name: auth_device.as.organization.name
+    - name: auth.auth_device.as.organization.name
       level: extended
       type: keyword
       ignore_above: 1024
       description: Organization name.
       default_field: false
-    - name: auth_device.geo.city_name
+    - name: auth.auth_device.geo.city_name
       level: extended
       type: keyword
       ignore_above: 1024
       description: City name.
       default_field: false
-    - name: auth_device.geo.continent_name
+    - name: auth.auth_device.geo.continent_name
       level: extended
       type: keyword
       ignore_above: 1024
       description: Name of the continent.
       default_field: false
-    - name: auth_device.geo.country_iso_code
+    - name: auth.auth_device.geo.country_iso_code
       level: extended
       type: keyword
       ignore_above: 1024
       description: Country ISO code.
       default_field: false
-    - name: auth_device.geo.country_name
+    - name: auth.auth_device.geo.country_name
       level: extended
       type: keyword
       ignore_above: 1024
       description: Country name.
       default_field: false
-    - name: auth_device.geo.location
+    - name: auth.auth_device.geo.location
       level: core
       type: geo_point
       description: Longitude and latitude.
       default_field: false
-    - name: auth_device.geo.region_iso_code
+    - name: auth.auth_device.geo.region_iso_code
       level: extended
       type: keyword
       ignore_above: 1024
       description: Region ISO code.
       default_field: false
-    - name: auth_device.geo.region_name
+    - name: auth.auth_device.geo.region_name
       level: extended
       type: keyword
       ignore_above: 1024
       description: Region name.
       default_field: false
-    - name: auth_device.ip
+    - name: auth.auth_device.ip
       level: extended
       type: ip
       description: The IP address of the authentication device.
       default_field: false
-    - name: auth_device.location.city
+    - name: auth.auth_device.location.city
       level: extended
       type: keyword
       ignore_above: 1024
       description: The city name of the authentication device using geoip location.
       default_field: false
-    - name: auth_device.location.country
+    - name: auth.auth_device.location.country
       level: extended
       type: keyword
       ignore_above: 1024
       description: The country of the authentication device using geoip location.
       default_field: false
-    - name: auth_device.location.state
+    - name: auth.auth_device.location.state
       level: extended
       type: keyword
       ignore_above: 1024
       description: The state name of the authentication device using geoip location.
       default_field: false
-    - name: auth_device.name
+    - name: auth.auth_device.name
       level: extended
       type: keyword
       ignore_above: 1024
       description: The name of the authentication device.
       default_field: false
-    - name: email
+    - name: auth.email
       level: extended
       type: keyword
       ignore_above: 1024
       description: The email address of the user, if known to Duo, otherwise none.
       default_field: false
-    - name: event_type
+    - name: auth.event_type
       level: extended
       type: keyword
       ignore_above: 1024
       description: The type of activity logged.
       default_field: false
-    - name: factor
+    - name: auth.factor
       level: extended
       type: keyword
       ignore_above: 1024
       description: The authentication factor.
       default_field: false
-    - name: ood_software
+    - name: auth.ood_software
       level: extended
       type: keyword
       ignore_above: 1024
       description: If authentication was denied due to out-of-date software, shows
         the name of the software.
       default_field: false
-    - name: reason
+    - name: auth.reason
       level: extended
       type: keyword
       ignore_above: 1024
       description: Provide the reason for the authentication attempt result.
       default_field: false
-    - name: result
+    - name: auth.result
       level: extended
       type: keyword
       ignore_above: 1024
       description: The result of the authentication attempt.
       default_field: false
-    - name: trusted_endpoint_status
+    - name: auth.trusted_endpoint_status
       level: extended
       type: keyword
       ignore_above: 1024
       description: Status of Trusted Endpoint.
       default_field: false
-    - name: txid
+    - name: auth.txid
       level: extended
       type: keyword
       ignore_above: 1024

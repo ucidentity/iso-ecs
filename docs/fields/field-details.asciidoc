@@ -3343,13 +3343,13 @@ type: keyword
 |=====
 
 
-[[ecs-cisco_duo_admin]]
-=== Cisco DUO Admin Fields
+[[ecs-cisco_duo]]
+=== cisco_duo Fields
 
-Fields specific to DUO Admin Logs
+Fields for Cisco Duo logs
 
 [discrete]
-==== Cisco DUO Admin Field Details
+==== cisco_duo Field Details
 
 [options="header"]
 |=====
@@ -3359,7 +3359,7 @@ Fields specific to DUO Admin Logs
 
 |
 [[field-cisco-duo-admin-action]]
-<<field-cisco-duo-admin-action, cisco_duo_admin.action>>
+<<field-cisco-duo-admin-action, cisco_duo.admin.action>>
 
 a| The type of change that was performed
 
@@ -3375,7 +3375,7 @@ type: keyword
 
 |
 [[field-cisco-duo-admin-action-performed-on]]
-<<field-cisco-duo-admin-action-performed-on, cisco_duo_admin.action_performed_on>>
+<<field-cisco-duo-admin-action-performed-on, cisco_duo.admin.action_performed_on>>
 
 a| The object that was acted on.
 
@@ -3391,7 +3391,7 @@ type: keyword
 
 |
 [[field-cisco-duo-admin-flattened]]
-<<field-cisco-duo-admin-flattened, cisco_duo_admin.flattened>>
+<<field-cisco-duo-admin-flattened, cisco_duo.admin.flattened>>
 
 a| ES flattened datatype for objects where the subfields aren't known in advance.
 
@@ -3407,7 +3407,7 @@ type: flattened
 
 |
 [[field-cisco-duo-admin-user-name]]
-<<field-cisco-duo-admin-user-name, cisco_duo_admin.user.name>>
+<<field-cisco-duo-admin-user-name, cisco_duo.admin.user.name>>
 
 a| The full name of the administrator who performed the action in the Duo Admin Panel.
 
@@ -3421,26 +3421,9 @@ type: keyword
 
 // ===============================================================
 
-|=====
-
-
-[[ecs-cisco_duo_auth]]
-=== cisco_duo_auth Fields
-
-Fields for Cisco Duo Authentication logs
-
-[discrete]
-==== cisco_duo_auth Field Details
-
-[options="header"]
-|=====
-| Field  | Description | Level
-
-// ===============================================================
-
 |
 [[field-cisco-duo-auth-access-device-flash-version]]
-<<field-cisco-duo-auth-access-device-flash-version, cisco_duo_auth.access_device.flash_version>>
+<<field-cisco-duo-auth-access-device-flash-version, cisco_duo.auth.access_device.flash_version>>
 
 a| The Flash plugin version used, if present.
 
@@ -3456,7 +3439,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-hostname]]
-<<field-cisco-duo-auth-access-device-hostname, cisco_duo_auth.access_device.hostname>>
+<<field-cisco-duo-auth-access-device-hostname, cisco_duo.auth.access_device.hostname>>
 
 a| The hostname, if present.
 
@@ -3472,7 +3455,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-ip]]
-<<field-cisco-duo-auth-access-device-ip, cisco_duo_auth.access_device.ip>>
+<<field-cisco-duo-auth-access-device-ip, cisco_duo.auth.access_device.ip>>
 
 a| The access device's IP address.
 
@@ -3488,7 +3471,7 @@ type: ip
 
 |
 [[field-cisco-duo-auth-access-device-is-encryption-enabled]]
-<<field-cisco-duo-auth-access-device-is-encryption-enabled, cisco_duo_auth.access_device.is_encryption_enabled>>
+<<field-cisco-duo-auth-access-device-is-encryption-enabled, cisco_duo.auth.access_device.is_encryption_enabled>>
 
 a| Reports the disk encryption state as detected by the Duo Device Health app.
 
@@ -3504,7 +3487,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-is-firewall-enabled]]
-<<field-cisco-duo-auth-access-device-is-firewall-enabled, cisco_duo_auth.access_device.is_firewall_enabled>>
+<<field-cisco-duo-auth-access-device-is-firewall-enabled, cisco_duo.auth.access_device.is_firewall_enabled>>
 
 a| Reports the firewall state as detected by the Duo Device Health app.
 
@@ -3520,7 +3503,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-is-password-set]]
-<<field-cisco-duo-auth-access-device-is-password-set, cisco_duo_auth.access_device.is_password_set>>
+<<field-cisco-duo-auth-access-device-is-password-set, cisco_duo.auth.access_device.is_password_set>>
 
 a| Reports the system password state as detected by the Duo Device Health app
 
@@ -3536,7 +3519,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-java-version]]
-<<field-cisco-duo-auth-access-device-java-version, cisco_duo_auth.access_device.java_version>>
+<<field-cisco-duo-auth-access-device-java-version, cisco_duo.auth.access_device.java_version>>
 
 a| The Java plugin version used.
 
@@ -3552,7 +3535,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-location-city]]
-<<field-cisco-duo-auth-access-device-location-city, cisco_duo_auth.access_device.location.city>>
+<<field-cisco-duo-auth-access-device-location-city, cisco_duo.auth.access_device.location.city>>
 
 a| The city name of the access device using geoip location.
 
@@ -3568,7 +3551,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-location-country]]
-<<field-cisco-duo-auth-access-device-location-country, cisco_duo_auth.access_device.location.country>>
+<<field-cisco-duo-auth-access-device-location-country, cisco_duo.auth.access_device.location.country>>
 
 a| The country of the access device using geoip location.
 
@@ -3584,7 +3567,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-location-state]]
-<<field-cisco-duo-auth-access-device-location-state, cisco_duo_auth.access_device.location.state>>
+<<field-cisco-duo-auth-access-device-location-state, cisco_duo.auth.access_device.location.state>>
 
 a| The state name of the access device using geoip location.
 
@@ -3600,7 +3583,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-access-device-security-agents]]
-<<field-cisco-duo-auth-access-device-security-agents, cisco_duo_auth.access_device.security_agents>>
+<<field-cisco-duo-auth-access-device-security-agents, cisco_duo.auth.access_device.security_agents>>
 
 a| Reports the security agents present on the endpoint as detected by the Duo Device Health app.
 
@@ -3616,7 +3599,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-alias]]
-<<field-cisco-duo-auth-alias, cisco_duo_auth.alias>>
+<<field-cisco-duo-auth-alias, cisco_duo.auth.alias>>
 
 a| The username alias used to log in.
 
@@ -3632,7 +3615,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-application-key]]
-<<field-cisco-duo-auth-application-key, cisco_duo_auth.application.key>>
+<<field-cisco-duo-auth-application-key, cisco_duo.auth.application.key>>
 
 a| The application's integration_key.
 
@@ -3648,7 +3631,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-application-name]]
-<<field-cisco-duo-auth-application-name, cisco_duo_auth.application.name>>
+<<field-cisco-duo-auth-application-name, cisco_duo.auth.application.name>>
 
 a| The application's name.
 
@@ -3664,7 +3647,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-as-number]]
-<<field-cisco-duo-auth-auth-device-as-number, cisco_duo_auth.auth_device.as.number>>
+<<field-cisco-duo-auth-auth-device-as-number, cisco_duo.auth.auth_device.as.number>>
 
 a| Unique number allocated to the autonomous system. The autonomous system number (ASN) uniquely identifies each network on the Internet.
 
@@ -3680,7 +3663,7 @@ type: long
 
 |
 [[field-cisco-duo-auth-auth-device-as-organization-name]]
-<<field-cisco-duo-auth-auth-device-as-organization-name, cisco_duo_auth.auth_device.as.organization.name>>
+<<field-cisco-duo-auth-auth-device-as-organization-name, cisco_duo.auth.auth_device.as.organization.name>>
 
 a| Organization name.
 
@@ -3696,7 +3679,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-geo-city-name]]
-<<field-cisco-duo-auth-auth-device-geo-city-name, cisco_duo_auth.auth_device.geo.city_name>>
+<<field-cisco-duo-auth-auth-device-geo-city-name, cisco_duo.auth.auth_device.geo.city_name>>
 
 a| City name.
 
@@ -3712,7 +3695,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-geo-continent-name]]
-<<field-cisco-duo-auth-auth-device-geo-continent-name, cisco_duo_auth.auth_device.geo.continent_name>>
+<<field-cisco-duo-auth-auth-device-geo-continent-name, cisco_duo.auth.auth_device.geo.continent_name>>
 
 a| Name of the continent.
 
@@ -3728,7 +3711,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-geo-country-iso-code]]
-<<field-cisco-duo-auth-auth-device-geo-country-iso-code, cisco_duo_auth.auth_device.geo.country_iso_code>>
+<<field-cisco-duo-auth-auth-device-geo-country-iso-code, cisco_duo.auth.auth_device.geo.country_iso_code>>
 
 a| Country ISO code.
 
@@ -3744,7 +3727,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-geo-country-name]]
-<<field-cisco-duo-auth-auth-device-geo-country-name, cisco_duo_auth.auth_device.geo.country_name>>
+<<field-cisco-duo-auth-auth-device-geo-country-name, cisco_duo.auth.auth_device.geo.country_name>>
 
 a| Country name.
 
@@ -3760,7 +3743,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-geo-location]]
-<<field-cisco-duo-auth-auth-device-geo-location, cisco_duo_auth.auth_device.geo.location>>
+<<field-cisco-duo-auth-auth-device-geo-location, cisco_duo.auth.auth_device.geo.location>>
 
 a| Longitude and latitude.
 
@@ -3776,7 +3759,7 @@ type: geo_point
 
 |
 [[field-cisco-duo-auth-auth-device-geo-region-iso-code]]
-<<field-cisco-duo-auth-auth-device-geo-region-iso-code, cisco_duo_auth.auth_device.geo.region_iso_code>>
+<<field-cisco-duo-auth-auth-device-geo-region-iso-code, cisco_duo.auth.auth_device.geo.region_iso_code>>
 
 a| Region ISO code.
 
@@ -3792,7 +3775,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-geo-region-name]]
-<<field-cisco-duo-auth-auth-device-geo-region-name, cisco_duo_auth.auth_device.geo.region_name>>
+<<field-cisco-duo-auth-auth-device-geo-region-name, cisco_duo.auth.auth_device.geo.region_name>>
 
 a| Region name.
 
@@ -3808,7 +3791,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-ip]]
-<<field-cisco-duo-auth-auth-device-ip, cisco_duo_auth.auth_device.ip>>
+<<field-cisco-duo-auth-auth-device-ip, cisco_duo.auth.auth_device.ip>>
 
 a| The IP address of the authentication device.
 
@@ -3824,7 +3807,7 @@ type: ip
 
 |
 [[field-cisco-duo-auth-auth-device-location-city]]
-<<field-cisco-duo-auth-auth-device-location-city, cisco_duo_auth.auth_device.location.city>>
+<<field-cisco-duo-auth-auth-device-location-city, cisco_duo.auth.auth_device.location.city>>
 
 a| The city name of the authentication device using geoip location.
 
@@ -3840,7 +3823,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-location-country]]
-<<field-cisco-duo-auth-auth-device-location-country, cisco_duo_auth.auth_device.location.country>>
+<<field-cisco-duo-auth-auth-device-location-country, cisco_duo.auth.auth_device.location.country>>
 
 a| The country of the authentication device using geoip location.
 
@@ -3856,7 +3839,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-location-state]]
-<<field-cisco-duo-auth-auth-device-location-state, cisco_duo_auth.auth_device.location.state>>
+<<field-cisco-duo-auth-auth-device-location-state, cisco_duo.auth.auth_device.location.state>>
 
 a| The state name of the authentication device using geoip location.
 
@@ -3872,7 +3855,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-auth-device-name]]
-<<field-cisco-duo-auth-auth-device-name, cisco_duo_auth.auth_device.name>>
+<<field-cisco-duo-auth-auth-device-name, cisco_duo.auth.auth_device.name>>
 
 a| The name of the authentication device.
 
@@ -3888,7 +3871,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-email]]
-<<field-cisco-duo-auth-email, cisco_duo_auth.email>>
+<<field-cisco-duo-auth-email, cisco_duo.auth.email>>
 
 a| The email address of the user, if known to Duo, otherwise none.
 
@@ -3904,7 +3887,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-event-type]]
-<<field-cisco-duo-auth-event-type, cisco_duo_auth.event_type>>
+<<field-cisco-duo-auth-event-type, cisco_duo.auth.event_type>>
 
 a| The type of activity logged.
 
@@ -3920,7 +3903,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-factor]]
-<<field-cisco-duo-auth-factor, cisco_duo_auth.factor>>
+<<field-cisco-duo-auth-factor, cisco_duo.auth.factor>>
 
 a| The authentication factor.
 
@@ -3936,7 +3919,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-ood-software]]
-<<field-cisco-duo-auth-ood-software, cisco_duo_auth.ood_software>>
+<<field-cisco-duo-auth-ood-software, cisco_duo.auth.ood_software>>
 
 a| If authentication was denied due to out-of-date software, shows the name of the software.
 
@@ -3952,7 +3935,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-reason]]
-<<field-cisco-duo-auth-reason, cisco_duo_auth.reason>>
+<<field-cisco-duo-auth-reason, cisco_duo.auth.reason>>
 
 a| Provide the reason for the authentication attempt result.
 
@@ -3968,7 +3951,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-result]]
-<<field-cisco-duo-auth-result, cisco_duo_auth.result>>
+<<field-cisco-duo-auth-result, cisco_duo.auth.result>>
 
 a| The result of the authentication attempt.
 
@@ -3984,7 +3967,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-trusted-endpoint-status]]
-<<field-cisco-duo-auth-trusted-endpoint-status, cisco_duo_auth.trusted_endpoint_status>>
+<<field-cisco-duo-auth-trusted-endpoint-status, cisco_duo.auth.trusted_endpoint_status>>
 
 a| Status of Trusted Endpoint.
 
@@ -4000,7 +3983,7 @@ type: keyword
 
 |
 [[field-cisco-duo-auth-txid]]
-<<field-cisco-duo-auth-txid, cisco_duo_auth.txid>>
+<<field-cisco-duo-auth-txid, cisco_duo.auth.txid>>
 
 a| The transaction ID of the event.
 

@@ -13,9 +13,7 @@ fields:
     fields: "*"
   cas:
     fields: "*"
-  cisco_duo_admin:
-    fields: "*"
-  cisco_duo_auth:
+  cisco_duo:
     fields: "*"
   grouper:
     fields: "*"
