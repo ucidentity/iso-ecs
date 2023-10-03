@@ -17,6 +17,8 @@ fields:
     fields: "*"
   grouper:
     fields: "*"
+  hashicorp_vault: 
+    fields: "*"
   ldap:
     fields: "*"
   logstash:
@@ -54,5 +56,3 @@ fields:
         fields: "*"
       owner:
         fields: "*"
-  hashicorp_vault: 
-    fields: "*"
