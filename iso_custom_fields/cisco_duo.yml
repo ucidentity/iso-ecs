@@ -233,8 +233,9 @@
       type: keyword
       description: |
         The full name of the administrator who performed the action in the Duo Admin Panel.
-    - name: admin.flattened
-      level: extended
-      type: flattened
-      description: |
-        ES flattened datatype for objects where the subfields aren't known in advance.
+
+    # - name: admin.flattened
+    #   level: extended
+    #   type: flattened
+    #   description: |
+    #     ES flattened datatype for objects where the subfields aren't known in advance.

@@ -2189,17 +2189,6 @@ cisco_duo:
       normalize: []
       short: The object that was acted on.
       type: keyword
-    cisco_duo.admin.flattened:
-      dashed_name: cisco-duo-admin-flattened
-      description: ES flattened datatype for objects where the subfields aren't known
-        in advance.
-      flat_name: cisco_duo.admin.flattened
-      level: extended
-      name: admin.flattened
-      normalize: []
-      short: ES flattened datatype for objects where the subfields aren't known in
-        advance.
-      type: flattened
     cisco_duo.admin.user.name:
       dashed_name: cisco-duo-admin-user-name
       description: The full name of the administrator who performed the action in

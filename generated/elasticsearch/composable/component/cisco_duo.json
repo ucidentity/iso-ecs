@@ -18,9 +18,6 @@
                   "ignore_above": 1024,
                   "type": "keyword"
                 },
-                "flattened": {
-                  "type": "flattened"
-                },
                 "user": {
                   "properties": {
                     "name": {

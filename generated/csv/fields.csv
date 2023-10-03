@@ -194,7 +194,6 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,cas,cas.provider,keyword,extended,,,Application's CAS provider
 8.7.0,true,cisco_duo,cisco_duo.admin.action,keyword,extended,,,The type of change that was performed
 8.7.0,true,cisco_duo,cisco_duo.admin.action_performed_on,keyword,extended,,,The object that was acted on.
-8.7.0,true,cisco_duo,cisco_duo.admin.flattened,flattened,extended,,,ES flattened datatype for objects where the subfields aren't known in advance.
 8.7.0,true,cisco_duo,cisco_duo.admin.user.name,keyword,extended,,,The full name of the administrator who performed the action in the Duo Admin Panel.
 8.7.0,true,cisco_duo,cisco_duo.auth.access_device.flash_version,keyword,extended,,,"The Flash plugin version used, if present."
 8.7.0,true,cisco_duo,cisco_duo.auth.access_device.hostname,keyword,extended,,,"The hostname, if present."

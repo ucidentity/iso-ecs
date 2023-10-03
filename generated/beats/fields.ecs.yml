@@ -1354,12 +1354,6 @@
       ignore_above: 1024
       description: The object that was acted on.
       default_field: false
-    - name: admin.flattened
-      level: extended
-      type: flattened
-      description: ES flattened datatype for objects where the subfields aren't known
-        in advance.
-      default_field: false
     - name: admin.user.name
       level: extended
       type: keyword

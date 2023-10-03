@@ -3390,22 +3390,6 @@ type: keyword
 // ===============================================================
 
 |
-[[field-cisco-duo-admin-flattened]]
-<<field-cisco-duo-admin-flattened, cisco_duo.admin.flattened>>
-
-a| ES flattened datatype for objects where the subfields aren't known in advance.
-
-type: flattened
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
 [[field-cisco-duo-admin-user-name]]
 <<field-cisco-duo-admin-user-name, cisco_duo.admin.user.name>>
 
