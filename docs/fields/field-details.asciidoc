@@ -8796,12 +8796,12 @@ The `hash` fields are expected to be nested at:
 
 Note also that the `hash` fields are not expected to be used directly at the root of the events.
 [[ecs-hashicorp_vault]]
-=== hashicorp vault audit logs Fields
+=== Hashicrop Vault Audit Logs Fields
 
-hashicorp vault audit logs
+Hashicrop Vault Audit Logs
 
 [discrete]
-==== hashicorp vault audit logs Field Details
+==== Hashicrop Vault Audit Logs Field Details
 
 [options="header"]
 |=====
@@ -8970,38 +8970,6 @@ type: boolean
 // ===============================================================
 
 |
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-entity-created]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-entity-created, hashicorp_vault.audit.auth.policy_results.granting_policies.entity_created>>
-
-a| entity_created is set to true if an entity is created as part of a login request.
-
-type: boolean
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-error]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-error, hashicorp_vault.audit.auth.policy_results.granting_policies.error>>
-
-a| If an error occurred with the request, the error message is included in this field's value.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
 [[field-hashicorp-vault-audit-auth-policy-results-granting-policies-name]]
 <<field-hashicorp-vault-audit-auth-policy-results-granting-policies-name, hashicorp_vault.audit.auth.policy_results.granting_policies.name>>
 
@@ -9034,8 +9002,24 @@ type: keyword
 // ===============================================================
 
 |
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-remaining-uses]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-remaining-uses, hashicorp_vault.audit.auth.policy_results.granting_policies.remaining_uses>>
+[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-type]]
+<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-type, hashicorp_vault.audit.auth.policy_results.granting_policies.type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-auth-remaining-uses]]
+<<field-hashicorp-vault-audit-auth-remaining-uses, hashicorp_vault.audit.auth.remaining_uses>>
 
 a| 
 
@@ -9050,520 +9034,8 @@ type: long
 // ===============================================================
 
 |
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-certificate-serial-number]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-certificate-serial-number, hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_certificate_serial_number>>
-
-a| Serial number from the client's certificate.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-id]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-id, hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_id>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token, hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token>>
-
-a| This is an HMAC of the client's token ID.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token-accessor]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token_accessor>>
-
-a| This is an HMAC of the client token accessor.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-data]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-data, hashicorp_vault.audit.auth.policy_results.granting_policies.request.data>>
-
-a| The data object will contain secret data in key/value pairs.
-
-type: flattened
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-headers]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-headers, hashicorp_vault.audit.auth.policy_results.granting_policies.request.headers>>
-
-a| Additional HTTP headers specified by the client as part of the request.
-
-type: flattened
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-id]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-id, hashicorp_vault.audit.auth.policy_results.granting_policies.request.id>>
-
-a| This is the unique request identifier.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-accessor]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_accessor>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-type]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-type, hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_type>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-id]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-id, hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.id>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-path]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-path, hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.path>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-operation]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-operation, hashicorp_vault.audit.auth.policy_results.granting_policies.request.operation>>
-
-a| This is the type of operation which corresponds to path capabilities and is expected to be one of: create, read, update, delete, or list.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-path]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-path, hashicorp_vault.audit.auth.policy_results.granting_policies.request.path>>
-
-a| The requested Vault path for operation.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-policy-override]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-policy-override, hashicorp_vault.audit.auth.policy_results.granting_policies.request.policy_override>>
-
-a| Policy override indicates that the requestor wishes to override soft-mandatory Sentinel policies.
-
-type: boolean
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-address]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-address, hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_address>>
-
-a| The IP address of the client making the request.
-
-type: ip
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-port]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-port, hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_port>>
-
-a| The remote port of the client making the request.
-
-type: long
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-replication-cluster]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-replication-cluster, hashicorp_vault.audit.auth.policy_results.granting_policies.request.replication_cluster>>
-
-a| Name given to the replication secondary where this request originated.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-accessor]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.accessor>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-client-token]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-client-token, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.client_token>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-data]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-data, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.data>>
-
-a| Response payload.
-
-type: flattened
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-display-name]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-display-name, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.display_name>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-entity-id]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-entity-id, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.entity_id>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-external-namespace-policies]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-external-namespace-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.external_namespace_policies>>
-
-a| 
-
-type: flattened
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-headers]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-headers, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.headers>>
-
-a| Headers will contain the http headers from the plugin that it wishes to have as part of the output.
-
-type: flattened
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-identity-policies]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-identity-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.identity_policies>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-metadata]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-metadata, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.metadata>>
-
-a| 
-
-type: flattened
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-accessor]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_accessor>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-type]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-type, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_type>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-no-default-policy]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-no-default-policy, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.no_default_policy>>
-
-a| 
-
-type: boolean
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-num-uses]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-num-uses, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.num_uses>>
-
-a| 
-
-type: long
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-policies]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.policies>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-redirect]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-redirect, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.redirect>>
-
-a| Redirect is an HTTP URL to redirect to for further authentication. This is only valid for credential backends. This will be blanked for any logical backend and ignored.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-issue-time]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-issue-time, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_issue_time>>
+[[field-hashicorp-vault-audit-auth-token-issue-time]]
+<<field-hashicorp-vault-audit-auth-token-issue-time, hashicorp_vault.audit.auth.token_issue_time>>
 
 a| 
 
@@ -9578,216 +9050,8 @@ type: date
 // ===============================================================
 
 |
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-policies]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_policies>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-ttl]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-ttl, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_ttl>>
-
-a| Time to live for the token in seconds.
-
-type: long
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-type]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-type, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_type>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-warnings]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-warnings, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.warnings>>
-
-a| 
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-accessor]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.accessor>>
-
-a| The token accessor for the wrapped response token.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-path]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-path, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_path>>
-
-a| Creation path is the original request path that was used to create the wrapped response.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-time]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-time, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_time>>
-
-a| The creation time. This can be used with the TTL to figure out an expected expiration.
-
-type: date
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-token]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-token, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.token>>
-
-a| The token containing the wrapped response.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-ttl]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-ttl, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.ttl>>
-
-a| Specifies the desired TTL of the wrapping token.
-
-type: long
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-type]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-type, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.type>>
-
-a| Audit record type (request or response).
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-wrapped-accessor]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-wrapped-accessor, hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.wrapped_accessor>>
-
-a| The token accessor for the wrapped response token.
-
-type: keyword
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-wrap-ttl]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-request-wrap-ttl, hashicorp_vault.audit.auth.policy_results.granting_policies.request.wrap_ttl>>
-
-a| If the token is wrapped, this displays configured wrapped TTL in seconds.
-
-type: long
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-issue-time]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-issue-time, hashicorp_vault.audit.auth.policy_results.granting_policies.token_issue_time>>
-
-a| 
-
-type: date
-
-
-
-
-
-| extended
-
-// ===============================================================
-
-|
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-policies]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-policies, hashicorp_vault.audit.auth.policy_results.granting_policies.token_policies>>
+[[field-hashicorp-vault-audit-auth-token-policies]]
+<<field-hashicorp-vault-audit-auth-token-policies, hashicorp_vault.audit.auth.token_policies>>
 
 a| These are the policies sourced from the token.
 
@@ -9802,8 +9066,8 @@ type: keyword
 // ===============================================================
 
 |
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-ttl]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-ttl, hashicorp_vault.audit.auth.policy_results.granting_policies.token_ttl>>
+[[field-hashicorp-vault-audit-auth-token-ttl]]
+<<field-hashicorp-vault-audit-auth-token-ttl, hashicorp_vault.audit.auth.token_ttl>>
 
 a| 
 
@@ -9818,8 +9082,8 @@ type: long
 // ===============================================================
 
 |
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-type]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-token-type, hashicorp_vault.audit.auth.policy_results.granting_policies.token_type>>
+[[field-hashicorp-vault-audit-auth-token-type]]
+<<field-hashicorp-vault-audit-auth-token-type, hashicorp_vault.audit.auth.token_type>>
 
 a| 
 
@@ -9834,10 +9098,752 @@ type: keyword
 // ===============================================================
 
 |
-[[field-hashicorp-vault-audit-auth-policy-results-granting-policies-type]]
-<<field-hashicorp-vault-audit-auth-policy-results-granting-policies-type, hashicorp_vault.audit.auth.policy_results.granting_policies.type>>
+[[field-hashicorp-vault-audit-entity-created]]
+<<field-hashicorp-vault-audit-entity-created, hashicorp_vault.audit.entity_created>>
+
+a| entity_created is set to true if an entity is created as part of a login request.
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-error]]
+<<field-hashicorp-vault-audit-error, hashicorp_vault.audit.error>>
+
+a| If an error occurred with the request, the error message is included in this field's value.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-client-certificate-serial-number]]
+<<field-hashicorp-vault-audit-request-client-certificate-serial-number, hashicorp_vault.audit.request.client_certificate_serial_number>>
+
+a| Serial number from the client's certificate.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-client-id]]
+<<field-hashicorp-vault-audit-request-client-id, hashicorp_vault.audit.request.client_id>>
 
 a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-client-token]]
+<<field-hashicorp-vault-audit-request-client-token, hashicorp_vault.audit.request.client_token>>
+
+a| This is an HMAC of the client's token ID.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-client-token-accessor]]
+<<field-hashicorp-vault-audit-request-client-token-accessor, hashicorp_vault.audit.request.client_token_accessor>>
+
+a| This is an HMAC of the client token accessor.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-data]]
+<<field-hashicorp-vault-audit-request-data, hashicorp_vault.audit.request.data>>
+
+a| The data object will contain secret data in key/value pairs.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-headers]]
+<<field-hashicorp-vault-audit-request-headers, hashicorp_vault.audit.request.headers>>
+
+a| Additional HTTP headers specified by the client as part of the request.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-id]]
+<<field-hashicorp-vault-audit-request-id, hashicorp_vault.audit.request.id>>
+
+a| This is the unique request identifier.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-mount-accessor]]
+<<field-hashicorp-vault-audit-request-mount-accessor, hashicorp_vault.audit.request.mount_accessor>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-mount-type]]
+<<field-hashicorp-vault-audit-request-mount-type, hashicorp_vault.audit.request.mount_type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-namespace-id]]
+<<field-hashicorp-vault-audit-request-namespace-id, hashicorp_vault.audit.request.namespace.id>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-namespace-path]]
+<<field-hashicorp-vault-audit-request-namespace-path, hashicorp_vault.audit.request.namespace.path>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-operation]]
+<<field-hashicorp-vault-audit-request-operation, hashicorp_vault.audit.request.operation>>
+
+a| This is the type of operation which corresponds to path capabilities and is expected to be one of: create, read, update, delete, or list.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-path]]
+<<field-hashicorp-vault-audit-request-path, hashicorp_vault.audit.request.path>>
+
+a| The requested Vault path for operation.
+
+type: keyword
+
+Multi-fields:
+
+* hashicorp_vault.audit.request.path.text (type: text)
+
+
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-policy-override]]
+<<field-hashicorp-vault-audit-request-policy-override, hashicorp_vault.audit.request.policy_override>>
+
+a| Policy override indicates that the requestor wishes to override soft-mandatory Sentinel policies.
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-remote-address]]
+<<field-hashicorp-vault-audit-request-remote-address, hashicorp_vault.audit.request.remote_address>>
+
+a| The IP address of the client making the request.
+
+type: ip
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-remote-port]]
+<<field-hashicorp-vault-audit-request-remote-port, hashicorp_vault.audit.request.remote_port>>
+
+a| The remote port of the client making the request.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-replication-cluster]]
+<<field-hashicorp-vault-audit-request-replication-cluster, hashicorp_vault.audit.request.replication_cluster>>
+
+a| Name given to the replication secondary where this request originated.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-request-wrap-ttl]]
+<<field-hashicorp-vault-audit-request-wrap-ttl, hashicorp_vault.audit.request.wrap_ttl>>
+
+a| If the token is wrapped, this displays configured wrapped TTL in seconds.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-accessor]]
+<<field-hashicorp-vault-audit-response-auth-accessor, hashicorp_vault.audit.response.auth.accessor>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-client-token]]
+<<field-hashicorp-vault-audit-response-auth-client-token, hashicorp_vault.audit.response.auth.client_token>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-display-name]]
+<<field-hashicorp-vault-audit-response-auth-display-name, hashicorp_vault.audit.response.auth.display_name>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-entity-id]]
+<<field-hashicorp-vault-audit-response-auth-entity-id, hashicorp_vault.audit.response.auth.entity_id>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-external-namespace-policies]]
+<<field-hashicorp-vault-audit-response-auth-external-namespace-policies, hashicorp_vault.audit.response.auth.external_namespace_policies>>
+
+a| 
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-identity-policies]]
+<<field-hashicorp-vault-audit-response-auth-identity-policies, hashicorp_vault.audit.response.auth.identity_policies>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-metadata]]
+<<field-hashicorp-vault-audit-response-auth-metadata, hashicorp_vault.audit.response.auth.metadata>>
+
+a| 
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-no-default-policy]]
+<<field-hashicorp-vault-audit-response-auth-no-default-policy, hashicorp_vault.audit.response.auth.no_default_policy>>
+
+a| 
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-num-uses]]
+<<field-hashicorp-vault-audit-response-auth-num-uses, hashicorp_vault.audit.response.auth.num_uses>>
+
+a| 
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-policies]]
+<<field-hashicorp-vault-audit-response-auth-policies, hashicorp_vault.audit.response.auth.policies>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-token-issue-time]]
+<<field-hashicorp-vault-audit-response-auth-token-issue-time, hashicorp_vault.audit.response.auth.token_issue_time>>
+
+a| 
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-token-policies]]
+<<field-hashicorp-vault-audit-response-auth-token-policies, hashicorp_vault.audit.response.auth.token_policies>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-token-ttl]]
+<<field-hashicorp-vault-audit-response-auth-token-ttl, hashicorp_vault.audit.response.auth.token_ttl>>
+
+a| Time to live for the token in seconds.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-auth-token-type]]
+<<field-hashicorp-vault-audit-response-auth-token-type, hashicorp_vault.audit.response.auth.token_type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-data]]
+<<field-hashicorp-vault-audit-response-data, hashicorp_vault.audit.response.data>>
+
+a| Response payload.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-headers]]
+<<field-hashicorp-vault-audit-response-headers, hashicorp_vault.audit.response.headers>>
+
+a| Headers will contain the http headers from the plugin that it wishes to have as part of the output.
+
+type: flattened
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-mount-accessor]]
+<<field-hashicorp-vault-audit-response-mount-accessor, hashicorp_vault.audit.response.mount_accessor>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-mount-type]]
+<<field-hashicorp-vault-audit-response-mount-type, hashicorp_vault.audit.response.mount_type>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-redirect]]
+<<field-hashicorp-vault-audit-response-redirect, hashicorp_vault.audit.response.redirect>>
+
+a| Redirect is an HTTP URL to redirect to for further authentication. This is only valid for credential backends. This will be blanked for any logical backend and ignored.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-warnings]]
+<<field-hashicorp-vault-audit-response-warnings, hashicorp_vault.audit.response.warnings>>
+
+a| 
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-wrap-info-accessor]]
+<<field-hashicorp-vault-audit-response-wrap-info-accessor, hashicorp_vault.audit.response.wrap_info.accessor>>
+
+a| The token accessor for the wrapped response token.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-wrap-info-creation-path]]
+<<field-hashicorp-vault-audit-response-wrap-info-creation-path, hashicorp_vault.audit.response.wrap_info.creation_path>>
+
+a| Creation path is the original request path that was used to create the wrapped response.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-wrap-info-creation-time]]
+<<field-hashicorp-vault-audit-response-wrap-info-creation-time, hashicorp_vault.audit.response.wrap_info.creation_time>>
+
+a| The creation time. This can be used with the TTL to figure out an expected expiration.
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-wrap-info-token]]
+<<field-hashicorp-vault-audit-response-wrap-info-token, hashicorp_vault.audit.response.wrap_info.token>>
+
+a| The token containing the wrapped response.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-wrap-info-ttl]]
+<<field-hashicorp-vault-audit-response-wrap-info-ttl, hashicorp_vault.audit.response.wrap_info.ttl>>
+
+a| Specifies the desired TTL of the wrapping token.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-response-wrap-info-wrapped-accessor]]
+<<field-hashicorp-vault-audit-response-wrap-info-wrapped-accessor, hashicorp_vault.audit.response.wrap_info.wrapped_accessor>>
+
+a| The token accessor for the wrapped response token.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-hashicorp-vault-audit-type]]
+<<field-hashicorp-vault-audit-type, hashicorp_vault.audit.type>>
+
+a| Audit record type (request or response).
 
 type: keyword
 

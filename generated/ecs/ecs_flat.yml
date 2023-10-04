@@ -7986,27 +7986,6 @@ hashicorp_vault.audit.auth.policy_results.allowed:
   normalize: []
   short: ''
   type: boolean
-hashicorp_vault.audit.auth.policy_results.granting_policies.entity_created:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-entity-created
-  description: entity_created is set to true if an entity is created as part of a
-    login request.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.entity_created
-  level: extended
-  name: audit.auth.policy_results.granting_policies.entity_created
-  normalize: []
-  short: ''
-  type: boolean
-hashicorp_vault.audit.auth.policy_results.granting_policies.error:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-error
-  description: If an error occurred with the request, the error message is included
-    in this field's value.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.error
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.error
-  normalize: []
-  short: ''
-  type: keyword
 hashicorp_vault.audit.auth.policy_results.granting_policies.name:
   dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-name
   description: ''
@@ -8027,494 +8006,6 @@ hashicorp_vault.audit.auth.policy_results.granting_policies.namespace_id:
   normalize: []
   short: ''
   type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.remaining_uses:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-remaining-uses
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.remaining_uses
-  level: extended
-  name: audit.auth.policy_results.granting_policies.remaining_uses
-  normalize: []
-  short: ''
-  type: long
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_certificate_serial_number:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-certificate-serial-number
-  description: Serial number from the client's certificate.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_certificate_serial_number
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.client_certificate_serial_number
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_id:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-id
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_id
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.client_id
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token
-  description: This is an HMAC of the client's token ID.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.client_token
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token_accessor:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-client-token-accessor
-  description: This is an HMAC of the client token accessor.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.client_token_accessor
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.client_token_accessor
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.data:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-data
-  description: The data object will contain secret data in key/value pairs.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.data
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.data
-  normalize: []
-  short: ''
-  type: flattened
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.headers:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-headers
-  description: Additional HTTP headers specified by the client as part of the request.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.headers
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.headers
-  normalize: []
-  short: ''
-  type: flattened
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.id:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-id
-  description: This is the unique request identifier.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.id
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.id
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_accessor:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-accessor
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_accessor
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.mount_accessor
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_type:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-mount-type
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.mount_type
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.mount_type
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.id:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-id
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.id
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.namespace.id
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.path:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-namespace-path
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.namespace.path
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.namespace.path
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.operation:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-operation
-  description: 'This is the type of operation which corresponds to path capabilities
-    and is expected to be one of: create, read, update, delete, or list.'
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.operation
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.operation
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.path:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-path
-  description: The requested Vault path for operation.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.path
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.path
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.policy_override:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-policy-override
-  description: Policy override indicates that the requestor wishes to override soft-mandatory
-    Sentinel policies.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.policy_override
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.policy_override
-  normalize: []
-  short: ''
-  type: boolean
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_address:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-address
-  description: The IP address of the client making the request.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_address
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.remote_address
-  normalize: []
-  short: ''
-  type: ip
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_port:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-remote-port
-  description: The remote port of the client making the request.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.remote_port
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.remote_port
-  normalize: []
-  short: ''
-  type: long
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.replication_cluster:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-replication-cluster
-  description: Name given to the replication secondary where this request originated.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.replication_cluster
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.replication_cluster
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.accessor:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-accessor
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.accessor
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.accessor
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.client_token:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-client-token
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.client_token
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.client_token
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.data:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-data
-  description: Response payload.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.data
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.data
-  normalize: []
-  short: ''
-  type: flattened
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.display_name:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-display-name
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.display_name
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.display_name
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.entity_id:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-entity-id
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.entity_id
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.entity_id
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.external_namespace_policies:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-external-namespace-policies
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.external_namespace_policies
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.external_namespace_policies
-  normalize: []
-  short: ''
-  type: flattened
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.headers:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-headers
-  description: Headers will contain the http headers from the plugin that it wishes
-    to have as part of the output.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.headers
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.headers
-  normalize: []
-  short: ''
-  type: flattened
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.identity_policies:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-identity-policies
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.identity_policies
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.identity_policies
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.metadata:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-metadata
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.metadata
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.metadata
-  normalize: []
-  short: ''
-  type: flattened
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_accessor:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-accessor
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_accessor
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.mount_accessor
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_type:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-mount-type
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.mount_type
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.mount_type
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.no_default_policy:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-no-default-policy
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.no_default_policy
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.no_default_policy
-  normalize: []
-  short: ''
-  type: boolean
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.num_uses:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-num-uses
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.num_uses
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.num_uses
-  normalize: []
-  short: ''
-  type: long
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.policies:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-policies
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.policies
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.policies
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.redirect:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-redirect
-  description: Redirect is an HTTP URL to redirect to for further authentication.
-    This is only valid for credential backends. This will be blanked for any logical
-    backend and ignored.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.redirect
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.redirect
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_issue_time:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-issue-time
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_issue_time
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.token_issue_time
-  normalize: []
-  short: ''
-  type: date
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_policies:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-policies
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_policies
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.token_policies
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_ttl:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-ttl
-  description: Time to live for the token in seconds.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_ttl
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.token_ttl
-  normalize: []
-  short: ''
-  type: long
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_type:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-token-type
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.token_type
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.token_type
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.warnings:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-warnings
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.warnings
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.warnings
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.accessor:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-accessor
-  description: The token accessor for the wrapped response token.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.accessor
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.accessor
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_path:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-path
-  description: Creation path is the original request path that was used to create
-    the wrapped response.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_path
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_path
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_time:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-creation-time
-  description: The creation time. This can be used with the TTL to figure out an expected
-    expiration.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_time
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_time
-  normalize: []
-  short: ''
-  type: date
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.token:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-token
-  description: The token containing the wrapped response.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.token
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.token
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.ttl:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-ttl
-  description: Specifies the desired TTL of the wrapping token.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.ttl
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.ttl
-  normalize: []
-  short: ''
-  type: long
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.type:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-type
-  description: Audit record type (request or response).
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.type
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.type
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.wrapped_accessor:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-response-auth-wrap-info-wrapped-accessor
-  description: The token accessor for the wrapped response token.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.wrapped_accessor
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.wrapped_accessor
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.request.wrap_ttl:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-request-wrap-ttl
-  description: If the token is wrapped, this displays configured wrapped TTL in seconds.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.request.wrap_ttl
-  level: extended
-  name: audit.auth.policy_results.granting_policies.request.wrap_ttl
-  normalize: []
-  short: ''
-  type: long
-hashicorp_vault.audit.auth.policy_results.granting_policies.token_issue_time:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-token-issue-time
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.token_issue_time
-  level: extended
-  name: audit.auth.policy_results.granting_policies.token_issue_time
-  normalize: []
-  short: ''
-  type: date
-hashicorp_vault.audit.auth.policy_results.granting_policies.token_policies:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-token-policies
-  description: These are the policies sourced from the token.
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.token_policies
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.token_policies
-  normalize: []
-  short: ''
-  type: keyword
-hashicorp_vault.audit.auth.policy_results.granting_policies.token_ttl:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-token-ttl
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.token_ttl
-  level: extended
-  name: audit.auth.policy_results.granting_policies.token_ttl
-  normalize: []
-  short: ''
-  type: long
-hashicorp_vault.audit.auth.policy_results.granting_policies.token_type:
-  dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-token-type
-  description: ''
-  flat_name: hashicorp_vault.audit.auth.policy_results.granting_policies.token_type
-  ignore_above: 1024
-  level: extended
-  name: audit.auth.policy_results.granting_policies.token_type
-  normalize: []
-  short: ''
-  type: keyword
 hashicorp_vault.audit.auth.policy_results.granting_policies.type:
   dashed_name: hashicorp-vault-audit-auth-policy-results-granting-policies-type
   description: ''
@@ -8522,6 +8013,520 @@ hashicorp_vault.audit.auth.policy_results.granting_policies.type:
   ignore_above: 1024
   level: extended
   name: audit.auth.policy_results.granting_policies.type
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.auth.remaining_uses:
+  dashed_name: hashicorp-vault-audit-auth-remaining-uses
+  description: ''
+  flat_name: hashicorp_vault.audit.auth.remaining_uses
+  level: extended
+  name: audit.auth.remaining_uses
+  normalize: []
+  short: ''
+  type: long
+hashicorp_vault.audit.auth.token_issue_time:
+  dashed_name: hashicorp-vault-audit-auth-token-issue-time
+  description: ''
+  flat_name: hashicorp_vault.audit.auth.token_issue_time
+  level: extended
+  name: audit.auth.token_issue_time
+  normalize: []
+  short: ''
+  type: date
+hashicorp_vault.audit.auth.token_policies:
+  dashed_name: hashicorp-vault-audit-auth-token-policies
+  description: These are the policies sourced from the token.
+  flat_name: hashicorp_vault.audit.auth.token_policies
+  ignore_above: 1024
+  level: extended
+  name: audit.auth.token_policies
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.auth.token_ttl:
+  dashed_name: hashicorp-vault-audit-auth-token-ttl
+  description: ''
+  flat_name: hashicorp_vault.audit.auth.token_ttl
+  level: extended
+  name: audit.auth.token_ttl
+  normalize: []
+  short: ''
+  type: long
+hashicorp_vault.audit.auth.token_type:
+  dashed_name: hashicorp-vault-audit-auth-token-type
+  description: ''
+  flat_name: hashicorp_vault.audit.auth.token_type
+  ignore_above: 1024
+  level: extended
+  name: audit.auth.token_type
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.entity_created:
+  dashed_name: hashicorp-vault-audit-entity-created
+  description: entity_created is set to true if an entity is created as part of a
+    login request.
+  flat_name: hashicorp_vault.audit.entity_created
+  level: extended
+  name: audit.entity_created
+  normalize: []
+  short: ''
+  type: boolean
+hashicorp_vault.audit.error:
+  dashed_name: hashicorp-vault-audit-error
+  description: If an error occurred with the request, the error message is included
+    in this field's value.
+  flat_name: hashicorp_vault.audit.error
+  ignore_above: 1024
+  level: extended
+  name: audit.error
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.client_certificate_serial_number:
+  dashed_name: hashicorp-vault-audit-request-client-certificate-serial-number
+  description: Serial number from the client's certificate.
+  flat_name: hashicorp_vault.audit.request.client_certificate_serial_number
+  ignore_above: 1024
+  level: extended
+  name: audit.request.client_certificate_serial_number
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.client_id:
+  dashed_name: hashicorp-vault-audit-request-client-id
+  description: ''
+  flat_name: hashicorp_vault.audit.request.client_id
+  ignore_above: 1024
+  level: extended
+  name: audit.request.client_id
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.client_token:
+  dashed_name: hashicorp-vault-audit-request-client-token
+  description: This is an HMAC of the client's token ID.
+  flat_name: hashicorp_vault.audit.request.client_token
+  ignore_above: 1024
+  level: extended
+  name: audit.request.client_token
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.client_token_accessor:
+  dashed_name: hashicorp-vault-audit-request-client-token-accessor
+  description: This is an HMAC of the client token accessor.
+  flat_name: hashicorp_vault.audit.request.client_token_accessor
+  ignore_above: 1024
+  level: extended
+  name: audit.request.client_token_accessor
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.data:
+  dashed_name: hashicorp-vault-audit-request-data
+  description: The data object will contain secret data in key/value pairs.
+  flat_name: hashicorp_vault.audit.request.data
+  level: extended
+  name: audit.request.data
+  normalize: []
+  short: ''
+  type: flattened
+hashicorp_vault.audit.request.headers:
+  dashed_name: hashicorp-vault-audit-request-headers
+  description: Additional HTTP headers specified by the client as part of the request.
+  flat_name: hashicorp_vault.audit.request.headers
+  level: extended
+  name: audit.request.headers
+  normalize: []
+  short: ''
+  type: flattened
+hashicorp_vault.audit.request.id:
+  dashed_name: hashicorp-vault-audit-request-id
+  description: This is the unique request identifier.
+  flat_name: hashicorp_vault.audit.request.id
+  ignore_above: 1024
+  level: extended
+  name: audit.request.id
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.mount_accessor:
+  dashed_name: hashicorp-vault-audit-request-mount-accessor
+  description: ''
+  flat_name: hashicorp_vault.audit.request.mount_accessor
+  ignore_above: 1024
+  level: extended
+  name: audit.request.mount_accessor
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.mount_type:
+  dashed_name: hashicorp-vault-audit-request-mount-type
+  description: ''
+  flat_name: hashicorp_vault.audit.request.mount_type
+  ignore_above: 1024
+  level: extended
+  name: audit.request.mount_type
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.namespace.id:
+  dashed_name: hashicorp-vault-audit-request-namespace-id
+  description: ''
+  flat_name: hashicorp_vault.audit.request.namespace.id
+  ignore_above: 1024
+  level: extended
+  name: audit.request.namespace.id
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.namespace.path:
+  dashed_name: hashicorp-vault-audit-request-namespace-path
+  description: ''
+  flat_name: hashicorp_vault.audit.request.namespace.path
+  ignore_above: 1024
+  level: extended
+  name: audit.request.namespace.path
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.operation:
+  dashed_name: hashicorp-vault-audit-request-operation
+  description: 'This is the type of operation which corresponds to path capabilities
+    and is expected to be one of: create, read, update, delete, or list.'
+  flat_name: hashicorp_vault.audit.request.operation
+  ignore_above: 1024
+  level: extended
+  name: audit.request.operation
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.path:
+  dashed_name: hashicorp-vault-audit-request-path
+  description: The requested Vault path for operation.
+  flat_name: hashicorp_vault.audit.request.path
+  ignore_above: 1024
+  level: extended
+  multi_fields:
+  - flat_name: hashicorp_vault.audit.request.path.text
+    name: text
+    norms: false
+    type: text
+  name: audit.request.path
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.policy_override:
+  dashed_name: hashicorp-vault-audit-request-policy-override
+  description: Policy override indicates that the requestor wishes to override soft-mandatory
+    Sentinel policies.
+  flat_name: hashicorp_vault.audit.request.policy_override
+  level: extended
+  name: audit.request.policy_override
+  normalize: []
+  short: ''
+  type: boolean
+hashicorp_vault.audit.request.remote_address:
+  dashed_name: hashicorp-vault-audit-request-remote-address
+  description: The IP address of the client making the request.
+  flat_name: hashicorp_vault.audit.request.remote_address
+  level: extended
+  name: audit.request.remote_address
+  normalize: []
+  short: ''
+  type: ip
+hashicorp_vault.audit.request.remote_port:
+  dashed_name: hashicorp-vault-audit-request-remote-port
+  description: The remote port of the client making the request.
+  flat_name: hashicorp_vault.audit.request.remote_port
+  level: extended
+  name: audit.request.remote_port
+  normalize: []
+  short: ''
+  type: long
+hashicorp_vault.audit.request.replication_cluster:
+  dashed_name: hashicorp-vault-audit-request-replication-cluster
+  description: Name given to the replication secondary where this request originated.
+  flat_name: hashicorp_vault.audit.request.replication_cluster
+  ignore_above: 1024
+  level: extended
+  name: audit.request.replication_cluster
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.request.wrap_ttl:
+  dashed_name: hashicorp-vault-audit-request-wrap-ttl
+  description: If the token is wrapped, this displays configured wrapped TTL in seconds.
+  flat_name: hashicorp_vault.audit.request.wrap_ttl
+  level: extended
+  name: audit.request.wrap_ttl
+  normalize: []
+  short: ''
+  type: long
+hashicorp_vault.audit.response.auth.accessor:
+  dashed_name: hashicorp-vault-audit-response-auth-accessor
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.accessor
+  ignore_above: 1024
+  level: extended
+  name: audit.response.auth.accessor
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.auth.client_token:
+  dashed_name: hashicorp-vault-audit-response-auth-client-token
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.client_token
+  ignore_above: 1024
+  level: extended
+  name: audit.response.auth.client_token
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.auth.display_name:
+  dashed_name: hashicorp-vault-audit-response-auth-display-name
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.display_name
+  ignore_above: 1024
+  level: extended
+  name: audit.response.auth.display_name
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.auth.entity_id:
+  dashed_name: hashicorp-vault-audit-response-auth-entity-id
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.entity_id
+  ignore_above: 1024
+  level: extended
+  name: audit.response.auth.entity_id
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.auth.external_namespace_policies:
+  dashed_name: hashicorp-vault-audit-response-auth-external-namespace-policies
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.external_namespace_policies
+  level: extended
+  name: audit.response.auth.external_namespace_policies
+  normalize: []
+  short: ''
+  type: flattened
+hashicorp_vault.audit.response.auth.identity_policies:
+  dashed_name: hashicorp-vault-audit-response-auth-identity-policies
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.identity_policies
+  ignore_above: 1024
+  level: extended
+  name: audit.response.auth.identity_policies
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.auth.metadata:
+  dashed_name: hashicorp-vault-audit-response-auth-metadata
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.metadata
+  level: extended
+  name: audit.response.auth.metadata
+  normalize: []
+  short: ''
+  type: flattened
+hashicorp_vault.audit.response.auth.no_default_policy:
+  dashed_name: hashicorp-vault-audit-response-auth-no-default-policy
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.no_default_policy
+  level: extended
+  name: audit.response.auth.no_default_policy
+  normalize: []
+  short: ''
+  type: boolean
+hashicorp_vault.audit.response.auth.num_uses:
+  dashed_name: hashicorp-vault-audit-response-auth-num-uses
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.num_uses
+  level: extended
+  name: audit.response.auth.num_uses
+  normalize: []
+  short: ''
+  type: long
+hashicorp_vault.audit.response.auth.policies:
+  dashed_name: hashicorp-vault-audit-response-auth-policies
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.policies
+  ignore_above: 1024
+  level: extended
+  name: audit.response.auth.policies
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.auth.token_issue_time:
+  dashed_name: hashicorp-vault-audit-response-auth-token-issue-time
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.token_issue_time
+  level: extended
+  name: audit.response.auth.token_issue_time
+  normalize: []
+  short: ''
+  type: date
+hashicorp_vault.audit.response.auth.token_policies:
+  dashed_name: hashicorp-vault-audit-response-auth-token-policies
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.token_policies
+  ignore_above: 1024
+  level: extended
+  name: audit.response.auth.token_policies
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.auth.token_ttl:
+  dashed_name: hashicorp-vault-audit-response-auth-token-ttl
+  description: Time to live for the token in seconds.
+  flat_name: hashicorp_vault.audit.response.auth.token_ttl
+  level: extended
+  name: audit.response.auth.token_ttl
+  normalize: []
+  short: ''
+  type: long
+hashicorp_vault.audit.response.auth.token_type:
+  dashed_name: hashicorp-vault-audit-response-auth-token-type
+  description: ''
+  flat_name: hashicorp_vault.audit.response.auth.token_type
+  ignore_above: 1024
+  level: extended
+  name: audit.response.auth.token_type
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.data:
+  dashed_name: hashicorp-vault-audit-response-data
+  description: Response payload.
+  flat_name: hashicorp_vault.audit.response.data
+  level: extended
+  name: audit.response.data
+  normalize: []
+  short: ''
+  type: flattened
+hashicorp_vault.audit.response.headers:
+  dashed_name: hashicorp-vault-audit-response-headers
+  description: Headers will contain the http headers from the plugin that it wishes
+    to have as part of the output.
+  flat_name: hashicorp_vault.audit.response.headers
+  level: extended
+  name: audit.response.headers
+  normalize: []
+  short: ''
+  type: flattened
+hashicorp_vault.audit.response.mount_accessor:
+  dashed_name: hashicorp-vault-audit-response-mount-accessor
+  description: ''
+  flat_name: hashicorp_vault.audit.response.mount_accessor
+  ignore_above: 1024
+  level: extended
+  name: audit.response.mount_accessor
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.mount_type:
+  dashed_name: hashicorp-vault-audit-response-mount-type
+  description: ''
+  flat_name: hashicorp_vault.audit.response.mount_type
+  ignore_above: 1024
+  level: extended
+  name: audit.response.mount_type
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.redirect:
+  dashed_name: hashicorp-vault-audit-response-redirect
+  description: Redirect is an HTTP URL to redirect to for further authentication.
+    This is only valid for credential backends. This will be blanked for any logical
+    backend and ignored.
+  flat_name: hashicorp_vault.audit.response.redirect
+  ignore_above: 1024
+  level: extended
+  name: audit.response.redirect
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.warnings:
+  dashed_name: hashicorp-vault-audit-response-warnings
+  description: ''
+  flat_name: hashicorp_vault.audit.response.warnings
+  ignore_above: 1024
+  level: extended
+  name: audit.response.warnings
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.wrap_info.accessor:
+  dashed_name: hashicorp-vault-audit-response-wrap-info-accessor
+  description: The token accessor for the wrapped response token.
+  flat_name: hashicorp_vault.audit.response.wrap_info.accessor
+  ignore_above: 1024
+  level: extended
+  name: audit.response.wrap_info.accessor
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.wrap_info.creation_path:
+  dashed_name: hashicorp-vault-audit-response-wrap-info-creation-path
+  description: Creation path is the original request path that was used to create
+    the wrapped response.
+  flat_name: hashicorp_vault.audit.response.wrap_info.creation_path
+  ignore_above: 1024
+  level: extended
+  name: audit.response.wrap_info.creation_path
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.wrap_info.creation_time:
+  dashed_name: hashicorp-vault-audit-response-wrap-info-creation-time
+  description: The creation time. This can be used with the TTL to figure out an expected
+    expiration.
+  flat_name: hashicorp_vault.audit.response.wrap_info.creation_time
+  level: extended
+  name: audit.response.wrap_info.creation_time
+  normalize: []
+  short: ''
+  type: date
+hashicorp_vault.audit.response.wrap_info.token:
+  dashed_name: hashicorp-vault-audit-response-wrap-info-token
+  description: The token containing the wrapped response.
+  flat_name: hashicorp_vault.audit.response.wrap_info.token
+  ignore_above: 1024
+  level: extended
+  name: audit.response.wrap_info.token
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.response.wrap_info.ttl:
+  dashed_name: hashicorp-vault-audit-response-wrap-info-ttl
+  description: Specifies the desired TTL of the wrapping token.
+  flat_name: hashicorp_vault.audit.response.wrap_info.ttl
+  level: extended
+  name: audit.response.wrap_info.ttl
+  normalize: []
+  short: ''
+  type: long
+hashicorp_vault.audit.response.wrap_info.wrapped_accessor:
+  dashed_name: hashicorp-vault-audit-response-wrap-info-wrapped-accessor
+  description: The token accessor for the wrapped response token.
+  flat_name: hashicorp_vault.audit.response.wrap_info.wrapped_accessor
+  ignore_above: 1024
+  level: extended
+  name: audit.response.wrap_info.wrapped_accessor
+  normalize: []
+  short: ''
+  type: keyword
+hashicorp_vault.audit.type:
+  dashed_name: hashicorp-vault-audit-type
+  description: Audit record type (request or response).
+  flat_name: hashicorp_vault.audit.type
+  ignore_above: 1024
+  level: extended
+  name: audit.type
   normalize: []
   short: ''
   type: keyword

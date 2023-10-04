@@ -1,352 +1,369 @@
 - name: hashicorp_vault
+  short: Hashicrop Vault Audit Logs
+  title: Hashicrop Vault Audit Logs
   type: group
-  title: hashicorp vault audit logs
-  short: hashicorp vault audit logs
-  description: hashicorp vault audit logs
-  group: 2
+  description: Hashicrop Vault Audit Logs
   fields:
-  - name: audit.auth.accessor
+  - description: This is an HMAC of the client token accessor
     level: extended
-    type: keyword
+    name: audit.auth.accessor
     short: ''
-    description: This is an HMAC of the client token accessor
-  - name: audit.auth.client_token
+    type: keyword
+  - description: This is an HMAC of the client's token ID.
     level: extended
-    type: keyword
+    name: audit.auth.client_token
     short: ''
-    description: This is an HMAC of the client's token ID.
-  - name: audit.auth.display_name
-    level: extended
     type: keyword
-    short: ''
-    description: Display name is a non-security sensitive identifier that is applicable
+  - description: 'Display name is a non-security sensitive identifier that is applicable
       to this auth. It is used for logging and prefixing of dynamic secrets. For example,
       it may be "armon" for the github credential backend. If the client token is
       used to generate a SQL credential, the user may be "github-armon-uuid". This
       is to help identify the source without using audit tables.
-  - name: audit.auth.entity_id
+
+      '
     level: extended
-    type: keyword
+    name: audit.auth.display_name
     short: ''
-    description: Entity ID is the identifier of the entity in identity store to which
+    type: keyword
+  - description: 'Entity ID is the identifier of the entity in identity store to which
       the identity of the authenticating client belongs to.
-  - name: audit.auth.external_namespace_policies
+
+      '
     level: extended
-    type: flattened
+    name: audit.auth.entity_id
     short: ''
-    description: External namespace policies represent the policies authorized from
+    type: keyword
+  - description: External namespace policies represent the policies authorized from
       different namespaces indexed by respective namespace identifiers.
-  - name: audit.auth.identity_policies
     level: extended
-    type: keyword
+    name: audit.auth.external_namespace_policies
     short: ''
-    description: These are the policies sourced from the identity.
-  - name: audit.auth.metadata
-    level: extended
     type: flattened
+  - description: These are the policies sourced from the identity.
+    level: extended
+    name: audit.auth.identity_policies
     short: ''
-    description: This will contain a list of metadata key/value pairs associated with
+    type: keyword
+  - description: This will contain a list of metadata key/value pairs associated with
       the authenticated user.
-  - name: audit.auth.no_default_policy
     level: extended
-    type: boolean
+    name: audit.auth.metadata
     short: ''
-    description: Indicates that the default policy should not be added by core when
-      creating a token. The default policy will still be added if it's explicitly
+    type: flattened
+  - description: 'Indicates that the default policy should not be added by core when
+      creating a token. The default policy will still be added if it''s explicitly
       defined.
-  - name: audit.auth.policies
+
+      '
     level: extended
-    type: keyword
+    name: audit.auth.no_default_policy
     short: ''
-    description: Policies is the list of policies that the authenticated user is associated
+    type: boolean
+  - description: Policies is the list of policies that the authenticated user is associated
       with.
-  - name: audit.auth.policy_results.allowed
     level: extended
+    name: audit.auth.policies
+    short: ''
+    type: keyword
+  - description: ''
+    level: extended
+    name: audit.auth.policy_results.allowed
+    short: ''
     type: boolean
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.name
+  - description: ''
     level: extended
+    name: audit.auth.policy_results.granting_policies.name
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.namespace_id
+  - description: ''
     level: extended
+    name: audit.auth.policy_results.granting_policies.namespace_id
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.type
+  - description: ''
     level: extended
+    name: audit.auth.policy_results.granting_policies.type
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.remaining_uses
+  - description: ''
     level: extended
+    name: audit.auth.remaining_uses
+    short: ''
     type: long
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.token_issue_time
+  - description: ''
     level: extended
+    name: audit.auth.token_issue_time
+    short: ''
     type: date
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.token_policies
+  - description: These are the policies sourced from the token.
     level: extended
+    name: audit.auth.token_policies
+    short: ''
     type: keyword
-    short: ''
-    description: These are the policies sourced from the token.
-  - name: audit.auth.policy_results.granting_policies.token_ttl
+  - description: ''
     level: extended
+    name: audit.auth.token_ttl
+    short: ''
     type: long
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.token_type
+  - description: ''
     level: extended
+    name: audit.auth.token_type
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.entity_created
-    level: extended
-    type: boolean
-    short: ''
-    description: entity_created is set to true if an entity is created as part of
+  - description: entity_created is set to true if an entity is created as part of
       a login request.
-  - name: audit.auth.policy_results.granting_policies.error
     level: extended
-    type: keyword
+    name: audit.entity_created
     short: ''
-    description: If an error occurred with the request, the error message is included
+    type: boolean
+  - description: If an error occurred with the request, the error message is included
       in this field's value.
-  - name: audit.auth.policy_results.granting_policies.request.client_certificate_serial_number
     level: extended
-    type: keyword
+    name: audit.error
     short: ''
-    description: Serial number from the client's certificate.
-  - name: audit.auth.policy_results.granting_policies.request.client_id
-    level: extended
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.client_token
+  - description: Serial number from the client's certificate.
     level: extended
+    name: audit.request.client_certificate_serial_number
+    short: ''
     type: keyword
-    short: ''
-    description: This is an HMAC of the client's token ID.
-  - name: audit.auth.policy_results.granting_policies.request.client_token_accessor
+  - description: ''
     level: extended
+    name: audit.request.client_id
+    short: ''
     type: keyword
-    short: ''
-    description: This is an HMAC of the client token accessor.
-  - name: audit.auth.policy_results.granting_policies.request.data
+  - description: This is an HMAC of the client's token ID.
     level: extended
+    name: audit.request.client_token
+    short: ''
+    type: keyword
+  - description: This is an HMAC of the client token accessor.
+    level: extended
+    name: audit.request.client_token_accessor
+    short: ''
+    type: keyword
+  - description: The data object will contain secret data in key/value pairs.
+    level: extended
+    name: audit.request.data
+    short: ''
     type: flattened
-    short: ''
-    description: The data object will contain secret data in key/value pairs.
-  - name: audit.auth.policy_results.granting_policies.request.headers
+  - description: Additional HTTP headers specified by the client as part of the request.
     level: extended
+    name: audit.request.headers
+    short: ''
     type: flattened
-    short: ''
-    description: Additional HTTP headers specified by the client as part of the request.
-  - name: audit.auth.policy_results.granting_policies.request.id
+  - description: This is the unique request identifier.
     level: extended
+    name: audit.request.id
+    short: ''
     type: keyword
-    short: ''
-    description: This is the unique request identifier.
-  - name: audit.auth.policy_results.granting_policies.request.mount_accessor
+  - description: ''
     level: extended
+    name: audit.request.mount_accessor
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.mount_type
+  - description: ''
     level: extended
+    name: audit.request.mount_type
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.namespace.id
+  - description: ''
     level: extended
+    name: audit.request.namespace.id
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.namespace.path
+  - description: ''
     level: extended
+    name: audit.request.namespace.path
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.operation
+  - description: 'This is the type of operation which corresponds to path capabilities
+      and is expected to be one of: create, read, update, delete, or list.
+
+      '
     level: extended
+    name: audit.request.operation
+    short: ''
     type: keyword
-    short: ''
-    description: 'This is the type of operation which corresponds to path capabilities
-      and is expected to be one of: create, read, update, delete, or list.'
-  - name: audit.auth.policy_results.granting_policies.request.path
+  - description: The requested Vault path for operation.
     level: extended
+    multi_fields:
+    - name: text
+      type: text
+    name: audit.request.path
+    short: ''
     type: keyword
-    short: ''
-    description: The requested Vault path for operation.
-  - name: audit.auth.policy_results.granting_policies.request.policy_override
+  - description: 'Policy override indicates that the requestor wishes to override
+      soft-mandatory Sentinel policies.
+
+      '
     level: extended
+    name: audit.request.policy_override
+    short: ''
     type: boolean
-    short: ''
-    description: Policy override indicates that the requestor wishes to override soft-mandatory
-      Sentinel policies.
-  - name: audit.auth.policy_results.granting_policies.request.remote_address
+  - description: The IP address of the client making the request.
     level: extended
+    name: audit.request.remote_address
+    short: ''
     type: ip
-    short: ''
-    description: The IP address of the client making the request.
-  - name: audit.auth.policy_results.granting_policies.request.remote_port
+  - description: The remote port of the client making the request.
     level: extended
+    name: audit.request.remote_port
+    short: ''
     type: long
-    short: ''
-    description: The remote port of the client making the request.
-  - name: audit.auth.policy_results.granting_policies.request.replication_cluster
+  - description: Name given to the replication secondary where this request originated.
     level: extended
+    name: audit.request.replication_cluster
+    short: ''
     type: keyword
-    short: ''
-    description: Name given to the replication secondary where this request originated.
-  - name: audit.auth.policy_results.granting_policies.request.wrap_ttl
-    level: extended
-    type: long
-    short: ''
-    description: If the token is wrapped, this displays configured wrapped TTL in
+  - description: If the token is wrapped, this displays configured wrapped TTL in
       seconds.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.accessor
     level: extended
-    type: keyword
+    name: audit.request.wrap_ttl
     short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.client_token
+    type: long
+  - description: ''
     level: extended
-    type: keyword
+    name: audit.response.auth.accessor
     short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.display_name
-    level: extended
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.entity_id
+  - description: ''
     level: extended
+    name: audit.response.auth.client_token
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.external_namespace_policies
+  - description: ''
     level: extended
+    name: audit.response.auth.display_name
+    short: ''
+    type: keyword
+  - description: ''
+    level: extended
+    name: audit.response.auth.entity_id
+    short: ''
+    type: keyword
+  - description: ''
+    level: extended
+    name: audit.response.auth.external_namespace_policies
+    short: ''
     type: flattened
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.identity_policies
+  - description: ''
     level: extended
+    name: audit.response.auth.identity_policies
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.metadata
+  - description: ''
     level: extended
+    name: audit.response.auth.metadata
+    short: ''
     type: flattened
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.no_default_policy
+  - description: ''
     level: extended
+    name: audit.response.auth.no_default_policy
+    short: ''
     type: boolean
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.num_uses
+  - description: ''
     level: extended
+    name: audit.response.auth.num_uses
+    short: ''
     type: long
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.policies
+  - description: ''
     level: extended
+    name: audit.response.auth.policies
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.token_issue_time
+  - description: ''
     level: extended
+    name: audit.response.auth.token_issue_time
+    short: ''
     type: date
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.token_policies
+  - description: ''
     level: extended
+    name: audit.response.auth.token_policies
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.token_ttl
+  - description: Time to live for the token in seconds.
     level: extended
+    name: audit.response.auth.token_ttl
+    short: ''
     type: long
-    short: ''
-    description: Time to live for the token in seconds.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.token_type
+  - description: ''
     level: extended
+    name: audit.response.auth.token_type
+    short: ''
     type: keyword
-    short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.data
+  - description: Response payload.
     level: extended
-    type: flattened
+    name: audit.response.data
     short: ''
-    description: Response payload.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.headers
-    level: extended
     type: flattened
-    short: ''
-    description: Headers will contain the http headers from the plugin that it wishes
+  - description: 'Headers will contain the http headers from the plugin that it wishes
       to have as part of the output.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.mount_accessor
+
+      '
     level: extended
-    type: keyword
+    name: audit.response.headers
     short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.mount_type
+    type: flattened
+  - description: ''
     level: extended
-    type: keyword
+    name: audit.response.mount_accessor
     short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.redirect
+    type: keyword
+  - description: ''
     level: extended
-    type: keyword
+    name: audit.response.mount_type
     short: ''
-    description: Redirect is an HTTP URL to redirect to for further authentication.
+    type: keyword
+  - description: 'Redirect is an HTTP URL to redirect to for further authentication.
       This is only valid for credential backends. This will be blanked for any logical
       backend and ignored.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.warnings
+
+      '
     level: extended
-    type: keyword
+    name: audit.response.redirect
     short: ''
-    description: ''
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.accessor
+    type: keyword
+  - description: ''
     level: extended
-    type: keyword
+    name: audit.response.warnings
     short: ''
-    description: The token accessor for the wrapped response token.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_path
+    type: keyword
+  - description: The token accessor for the wrapped response token.
     level: extended
-    type: keyword
+    name: audit.response.wrap_info.accessor
     short: ''
-    description: Creation path is the original request path that was used to create
+    type: keyword
+  - description: Creation path is the original request path that was used to create
       the wrapped response.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_time
     level: extended
-    type: date
+    name: audit.response.wrap_info.creation_path
     short: ''
-    description: The creation time. This can be used with the TTL to figure out an
+    type: keyword
+  - description: The creation time. This can be used with the TTL to figure out an
       expected expiration.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.token
     level: extended
-    type: keyword
+    name: audit.response.wrap_info.creation_time
     short: ''
-    description: The token containing the wrapped response.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.ttl
+    type: date
+  - description: The token containing the wrapped response.
     level: extended
+    name: audit.response.wrap_info.token
+    short: ''
+    type: keyword
+  - description: Specifies the desired TTL of the wrapping token.
+    level: extended
+    name: audit.response.wrap_info.ttl
+    short: ''
     type: long
-    short: ''
-    description: Specifies the desired TTL of the wrapping token.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.wrapped_accessor
+  - description: The token accessor for the wrapped response token.
     level: extended
-    type: keyword
+    name: audit.response.wrap_info.wrapped_accessor
     short: ''
-    description: The token accessor for the wrapped response token.
-  - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.type
+    type: keyword
+  - description: Audit record type (request or response).
     level: extended
-    type: keyword
+    name: audit.type
     short: ''
-    description: Audit record type (request or response).
+    type: keyword
+

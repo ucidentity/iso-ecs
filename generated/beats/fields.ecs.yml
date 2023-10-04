@@ -5342,9 +5342,9 @@
       description: TLSH hash.
       default_field: false
   - name: hashicorp_vault
-    title: hashicorp vault audit logs
+    title: Hashicrop Vault Audit Logs
     group: 2
-    description: hashicorp vault audit logs
+    description: Hashicrop Vault Audit Logs
     type: group
     default_field: true
     fields:
@@ -5414,19 +5414,6 @@
       type: boolean
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.entity_created
-      level: extended
-      type: boolean
-      description: entity_created is set to true if an entity is created as part of
-        a login request.
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.error
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: If an error occurred with the request, the error message is included
-        in this field's value.
-      default_field: false
     - name: audit.auth.policy_results.granting_policies.name
       level: extended
       type: keyword
@@ -5439,191 +5426,264 @@
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.remaining_uses
+    - name: audit.auth.policy_results.granting_policies.type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: audit.auth.remaining_uses
       level: extended
       type: long
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.client_certificate_serial_number
+    - name: audit.auth.token_issue_time
+      level: extended
+      type: date
+      description: ''
+      default_field: false
+    - name: audit.auth.token_policies
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: These are the policies sourced from the token.
+      default_field: false
+    - name: audit.auth.token_ttl
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: audit.auth.token_type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: audit.entity_created
+      level: extended
+      type: boolean
+      description: entity_created is set to true if an entity is created as part of
+        a login request.
+      default_field: false
+    - name: audit.error
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: If an error occurred with the request, the error message is included
+        in this field's value.
+      default_field: false
+    - name: audit.request.client_certificate_serial_number
       level: extended
       type: keyword
       ignore_above: 1024
       description: Serial number from the client's certificate.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.client_id
+    - name: audit.request.client_id
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.client_token
+    - name: audit.request.client_token
       level: extended
       type: keyword
       ignore_above: 1024
       description: This is an HMAC of the client's token ID.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.client_token_accessor
+    - name: audit.request.client_token_accessor
       level: extended
       type: keyword
       ignore_above: 1024
       description: This is an HMAC of the client token accessor.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.data
+    - name: audit.request.data
       level: extended
       type: flattened
       description: The data object will contain secret data in key/value pairs.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.headers
+    - name: audit.request.headers
       level: extended
       type: flattened
       description: Additional HTTP headers specified by the client as part of the
         request.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.id
+    - name: audit.request.id
       level: extended
       type: keyword
       ignore_above: 1024
       description: This is the unique request identifier.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.mount_accessor
+    - name: audit.request.mount_accessor
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.mount_type
+    - name: audit.request.mount_type
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.namespace.id
+    - name: audit.request.namespace.id
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.namespace.path
+    - name: audit.request.namespace.path
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.operation
+    - name: audit.request.operation
       level: extended
       type: keyword
       ignore_above: 1024
       description: 'This is the type of operation which corresponds to path capabilities
         and is expected to be one of: create, read, update, delete, or list.'
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.path
+    - name: audit.request.path
       level: extended
       type: keyword
       ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: text
+        norms: false
       description: The requested Vault path for operation.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.policy_override
+    - name: audit.request.policy_override
       level: extended
       type: boolean
       description: Policy override indicates that the requestor wishes to override
         soft-mandatory Sentinel policies.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.remote_address
+    - name: audit.request.remote_address
       level: extended
       type: ip
       description: The IP address of the client making the request.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.remote_port
+    - name: audit.request.remote_port
       level: extended
       type: long
       description: The remote port of the client making the request.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.replication_cluster
+    - name: audit.request.replication_cluster
       level: extended
       type: keyword
       ignore_above: 1024
       description: Name given to the replication secondary where this request originated.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.accessor
+    - name: audit.request.wrap_ttl
+      level: extended
+      type: long
+      description: If the token is wrapped, this displays configured wrapped TTL in
+        seconds.
+      default_field: false
+    - name: audit.response.auth.accessor
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.client_token
+    - name: audit.response.auth.client_token
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.data
+    - name: audit.response.auth.display_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: audit.response.auth.entity_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: audit.response.auth.external_namespace_policies
+      level: extended
+      type: flattened
+      description: ''
+      default_field: false
+    - name: audit.response.auth.identity_policies
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: audit.response.auth.metadata
+      level: extended
+      type: flattened
+      description: ''
+      default_field: false
+    - name: audit.response.auth.no_default_policy
+      level: extended
+      type: boolean
+      description: ''
+      default_field: false
+    - name: audit.response.auth.num_uses
+      level: extended
+      type: long
+      description: ''
+      default_field: false
+    - name: audit.response.auth.policies
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: audit.response.auth.token_issue_time
+      level: extended
+      type: date
+      description: ''
+      default_field: false
+    - name: audit.response.auth.token_policies
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: audit.response.auth.token_ttl
+      level: extended
+      type: long
+      description: Time to live for the token in seconds.
+      default_field: false
+    - name: audit.response.auth.token_type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: ''
+      default_field: false
+    - name: audit.response.data
       level: extended
       type: flattened
       description: Response payload.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.display_name
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.entity_id
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.external_namespace_policies
-      level: extended
-      type: flattened
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.headers
+    - name: audit.response.headers
       level: extended
       type: flattened
       description: Headers will contain the http headers from the plugin that it wishes
         to have as part of the output.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.identity_policies
+    - name: audit.response.mount_accessor
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.metadata
-      level: extended
-      type: flattened
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.mount_accessor
+    - name: audit.response.mount_type
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.mount_type
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.no_default_policy
-      level: extended
-      type: boolean
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.num_uses
-      level: extended
-      type: long
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.policies
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.redirect
+    - name: audit.response.redirect
       level: extended
       type: keyword
       ignore_above: 1024
@@ -5631,109 +5691,53 @@
         This is only valid for credential backends. This will be blanked for any logical
         backend and ignored.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.token_issue_time
-      level: extended
-      type: date
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.token_policies
+    - name: audit.response.warnings
       level: extended
       type: keyword
       ignore_above: 1024
       description: ''
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.token_ttl
-      level: extended
-      type: long
-      description: Time to live for the token in seconds.
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.token_type
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.warnings
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.accessor
+    - name: audit.response.wrap_info.accessor
       level: extended
       type: keyword
       ignore_above: 1024
       description: The token accessor for the wrapped response token.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_path
+    - name: audit.response.wrap_info.creation_path
       level: extended
       type: keyword
       ignore_above: 1024
       description: Creation path is the original request path that was used to create
         the wrapped response.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.creation_time
+    - name: audit.response.wrap_info.creation_time
       level: extended
       type: date
       description: The creation time. This can be used with the TTL to figure out
         an expected expiration.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.token
+    - name: audit.response.wrap_info.token
       level: extended
       type: keyword
       ignore_above: 1024
       description: The token containing the wrapped response.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.ttl
+    - name: audit.response.wrap_info.ttl
       level: extended
       type: long
       description: Specifies the desired TTL of the wrapping token.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.type
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: Audit record type (request or response).
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.response.auth.wrap_info.wrapped_accessor
+    - name: audit.response.wrap_info.wrapped_accessor
       level: extended
       type: keyword
       ignore_above: 1024
       description: The token accessor for the wrapped response token.
       default_field: false
-    - name: audit.auth.policy_results.granting_policies.request.wrap_ttl
-      level: extended
-      type: long
-      description: If the token is wrapped, this displays configured wrapped TTL in
-        seconds.
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.token_issue_time
-      level: extended
-      type: date
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.token_policies
+    - name: audit.type
       level: extended
       type: keyword
       ignore_above: 1024
-      description: These are the policies sourced from the token.
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.token_ttl
-      level: extended
-      type: long
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.token_type
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: ''
-      default_field: false
-    - name: audit.auth.policy_results.granting_policies.type
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: ''
+      description: Audit record type (request or response).
       default_field: false
   - name: host
     title: Host

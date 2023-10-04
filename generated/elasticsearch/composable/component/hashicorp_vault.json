@@ -52,219 +52,11 @@
                         },
                         "granting_policies": {
                           "properties": {
-                            "entity_created": {
-                              "type": "boolean"
-                            },
-                            "error": {
-                              "ignore_above": 1024,
-                              "type": "keyword"
-                            },
                             "name": {
                               "ignore_above": 1024,
                               "type": "keyword"
                             },
                             "namespace_id": {
-                              "ignore_above": 1024,
-                              "type": "keyword"
-                            },
-                            "remaining_uses": {
-                              "type": "long"
-                            },
-                            "request": {
-                              "properties": {
-                                "client_certificate_serial_number": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "client_id": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "client_token": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "client_token_accessor": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "data": {
-                                  "type": "flattened"
-                                },
-                                "headers": {
-                                  "type": "flattened"
-                                },
-                                "id": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "mount_accessor": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "mount_type": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "namespace": {
-                                  "properties": {
-                                    "id": {
-                                      "ignore_above": 1024,
-                                      "type": "keyword"
-                                    },
-                                    "path": {
-                                      "ignore_above": 1024,
-                                      "type": "keyword"
-                                    }
-                                  }
-                                },
-                                "operation": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "path": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "policy_override": {
-                                  "type": "boolean"
-                                },
-                                "remote_address": {
-                                  "type": "ip"
-                                },
-                                "remote_port": {
-                                  "type": "long"
-                                },
-                                "replication_cluster": {
-                                  "ignore_above": 1024,
-                                  "type": "keyword"
-                                },
-                                "response": {
-                                  "properties": {
-                                    "auth": {
-                                      "properties": {
-                                        "accessor": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "client_token": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "data": {
-                                          "type": "flattened"
-                                        },
-                                        "display_name": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "entity_id": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "external_namespace_policies": {
-                                          "type": "flattened"
-                                        },
-                                        "headers": {
-                                          "type": "flattened"
-                                        },
-                                        "identity_policies": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "metadata": {
-                                          "type": "flattened"
-                                        },
-                                        "mount_accessor": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "mount_type": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "no_default_policy": {
-                                          "type": "boolean"
-                                        },
-                                        "num_uses": {
-                                          "type": "long"
-                                        },
-                                        "policies": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "redirect": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "token_issue_time": {
-                                          "type": "date"
-                                        },
-                                        "token_policies": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "token_ttl": {
-                                          "type": "long"
-                                        },
-                                        "token_type": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "warnings": {
-                                          "ignore_above": 1024,
-                                          "type": "keyword"
-                                        },
-                                        "wrap_info": {
-                                          "properties": {
-                                            "accessor": {
-                                              "ignore_above": 1024,
-                                              "type": "keyword"
-                                            },
-                                            "creation_path": {
-                                              "ignore_above": 1024,
-                                              "type": "keyword"
-                                            },
-                                            "creation_time": {
-                                              "type": "date"
-                                            },
-                                            "token": {
-                                              "ignore_above": 1024,
-                                              "type": "keyword"
-                                            },
-                                            "ttl": {
-                                              "type": "long"
-                                            },
-                                            "type": {
-                                              "ignore_above": 1024,
-                                              "type": "keyword"
-                                            },
-                                            "wrapped_accessor": {
-                                              "ignore_above": 1024,
-                                              "type": "keyword"
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "wrap_ttl": {
-                                  "type": "long"
-                                }
-                              }
-                            },
-                            "token_issue_time": {
-                              "type": "date"
-                            },
-                            "token_policies": {
-                              "ignore_above": 1024,
-                              "type": "keyword"
-                            },
-                            "token_ttl": {
-                              "type": "long"
-                            },
-                            "token_type": {
                               "ignore_above": 1024,
                               "type": "keyword"
                             },
@@ -275,8 +67,222 @@
                           }
                         }
                       }
+                    },
+                    "remaining_uses": {
+                      "type": "long"
+                    },
+                    "token_issue_time": {
+                      "type": "date"
+                    },
+                    "token_policies": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "token_ttl": {
+                      "type": "long"
+                    },
+                    "token_type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
                     }
                   }
+                },
+                "entity_created": {
+                  "type": "boolean"
+                },
+                "error": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "request": {
+                  "properties": {
+                    "client_certificate_serial_number": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "client_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "client_token": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "client_token_accessor": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "data": {
+                      "type": "flattened"
+                    },
+                    "headers": {
+                      "type": "flattened"
+                    },
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "mount_accessor": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "mount_type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "namespace": {
+                      "properties": {
+                        "id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "path": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "operation": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "path": {
+                      "fields": {
+                        "text": {
+                          "norms": false,
+                          "type": "text"
+                        }
+                      },
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "policy_override": {
+                      "type": "boolean"
+                    },
+                    "remote_address": {
+                      "type": "ip"
+                    },
+                    "remote_port": {
+                      "type": "long"
+                    },
+                    "replication_cluster": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "wrap_ttl": {
+                      "type": "long"
+                    }
+                  }
+                },
+                "response": {
+                  "properties": {
+                    "auth": {
+                      "properties": {
+                        "accessor": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "client_token": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "display_name": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "entity_id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "external_namespace_policies": {
+                          "type": "flattened"
+                        },
+                        "identity_policies": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "metadata": {
+                          "type": "flattened"
+                        },
+                        "no_default_policy": {
+                          "type": "boolean"
+                        },
+                        "num_uses": {
+                          "type": "long"
+                        },
+                        "policies": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "token_issue_time": {
+                          "type": "date"
+                        },
+                        "token_policies": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "token_ttl": {
+                          "type": "long"
+                        },
+                        "token_type": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "data": {
+                      "type": "flattened"
+                    },
+                    "headers": {
+                      "type": "flattened"
+                    },
+                    "mount_accessor": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "mount_type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "redirect": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "warnings": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "wrap_info": {
+                      "properties": {
+                        "accessor": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "creation_path": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "creation_time": {
+                          "type": "date"
+                        },
+                        "token": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "ttl": {
+                          "type": "long"
+                        },
+                        "wrapped_accessor": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "type": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
                 }
               }
             }

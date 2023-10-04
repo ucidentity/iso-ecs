@@ -80,7 +80,7 @@ For a single page representation of all fields, please see the
 
 | <<ecs-hash,Hash>> | Hashes, usually file hashes.
 
-| <<ecs-hashicorp_vault,hashicorp vault audit logs>> | hashicorp vault audit logs
+| <<ecs-hashicorp_vault,Hashicrop Vault Audit Logs>> | Hashicrop Vault Audit Logs
 
 | <<ecs-host,Host>> | Fields describing the relevant computing instance.
 
