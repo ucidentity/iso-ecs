@@ -1548,6 +1548,12 @@
       ignore_above: 1024
       description: The authentication factor.
       default_field: false
+    - name: auth.geo_mismatch
+      level: extended
+      type: boolean
+      description: True when auth_device.geo.state != access_device.geo.state. indicates
+        a potential security issue.
+      default_field: false
     - name: auth.ood_software
       level: extended
       type: keyword

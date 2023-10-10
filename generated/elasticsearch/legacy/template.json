@@ -1089,6 +1089,9 @@
                 "ignore_above": 1024,
                 "type": "keyword"
               },
+              "geo_mismatch": {
+                "type": "boolean"
+              },
               "ood_software": {
                 "ignore_above": 1024,
                 "type": "keyword"

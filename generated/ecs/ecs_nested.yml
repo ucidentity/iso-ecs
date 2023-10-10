@@ -2515,6 +2515,17 @@ cisco_duo:
       normalize: []
       short: The authentication factor.
       type: keyword
+    cisco_duo.auth.geo_mismatch:
+      dashed_name: cisco-duo-auth-geo-mismatch
+      description: True when auth_device.geo.state != access_device.geo.state. indicates
+        a potential security issue.
+      flat_name: cisco_duo.auth.geo_mismatch
+      level: extended
+      name: auth.geo_mismatch
+      normalize: []
+      short: True when auth_device.geo.state != access_device.geo.state. indicates
+        a potential security issue.
+      type: boolean
     cisco_duo.auth.ood_software:
       dashed_name: cisco-duo-auth-ood-software
       description: If authentication was denied due to out-of-date software, shows

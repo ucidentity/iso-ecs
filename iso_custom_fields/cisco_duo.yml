@@ -218,6 +218,12 @@
       description: |
         The name of the authentication device.
 
+    - name: auth.geo_mismatch
+      level: extended
+      type: boolean
+      description: |
+        True when auth_device.geo.state != access_device.geo.state. indicates a potential security issue.
+
     - name: admin.action
       level: extended
       type: keyword

@@ -226,6 +226,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,cisco_duo,cisco_duo.auth.email,keyword,extended,,,"The email address of the user, if known to Duo, otherwise none."
 8.7.0,true,cisco_duo,cisco_duo.auth.event_type,keyword,extended,,,The type of activity logged.
 8.7.0,true,cisco_duo,cisco_duo.auth.factor,keyword,extended,,,The authentication factor.
+8.7.0,true,cisco_duo,cisco_duo.auth.geo_mismatch,boolean,extended,,,True when auth_device.geo.state != access_device.geo.state. indicates a potential security issue.
 8.7.0,true,cisco_duo,cisco_duo.auth.ood_software,keyword,extended,,,"If authentication was denied due to out-of-date software, shows the name of the software."
 8.7.0,true,cisco_duo,cisco_duo.auth.reason,keyword,extended,,,Provide the reason for the authentication attempt result.
 8.7.0,true,cisco_duo,cisco_duo.auth.result,keyword,extended,,,The result of the authentication attempt.

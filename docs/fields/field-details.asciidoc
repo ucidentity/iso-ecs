@@ -3902,6 +3902,22 @@ type: keyword
 // ===============================================================
 
 |
+[[field-cisco-duo-auth-geo-mismatch]]
+<<field-cisco-duo-auth-geo-mismatch, cisco_duo.auth.geo_mismatch>>
+
+a| True when auth_device.geo.state != access_device.geo.state. indicates a potential security issue.
+
+type: boolean
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-cisco-duo-auth-ood-software]]
 <<field-cisco-duo-auth-ood-software, cisco_duo.auth.ood_software>>
 
