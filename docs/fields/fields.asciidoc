@@ -164,6 +164,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-vulnerability,Vulnerability>> | Fields to describe the vulnerability relevant to an event.
 
+| <<ecs-winlog,Windows Event Logs>> | winlog
+
 | <<ecs-x509,x509 Certificate>> | These fields contain x509 certificate metadata.
 
 |=====

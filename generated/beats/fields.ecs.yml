@@ -17798,6 +17798,1561 @@
         prioritization regarding remediation. For example (https://nvd.nist.gov/vuln-metrics/cvss)
       example: Critical
       default_field: false
+  - name: winlog
+    title: Windows Event Logs
+    group: 2
+    description: Windows Event Logs
+    type: group
+    default_field: true
+    fields:
+    - name: activity_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A globally unique identifier that identifies the current activity.
+        The events that are published with this identifier are part of the same activity.
+      default_field: false
+    - name: api
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'The event log API type used to read the record. The possible values
+        are "wineventlog" for the Windows Event Log API or "eventlogging" for the
+        Event Logging API.
+
+        The Event Logging API was designed for Windows Server 2003 or Windows 2000
+        operating systems. In Windows Vista, the event logging infrastructure was
+        redesigned. On Windows Vista or later operating systems, the Windows Event
+        Log API is used. Winlogbeat automatically detects which API to use for reading
+        event logs.'
+      default_field: false
+    - name: channel
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The name of the channel from which this record was read. This value
+        is one of the names from the `event_logs` collection in the configuration.
+      default_field: false
+    - name: computerObject.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: computerObject.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: computerObject.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: computer_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The name of the computer that generated the record. When using
+        Windows event forwarding, this name can differ from `agent.hostname`.
+      default_field: false
+    - name: event_data.AccessGranted
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AccessMask
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AccessMaskDescription
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AccessRemoved
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AccountDomain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AccountExpires
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AccountName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AllowedToDelegateTo
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AuditPolicyChanges
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AuditPolicyChangesDescription
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AuditSourceName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.AuthenticationPackageName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Binary
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.BitlockerUserInputTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.BootMode
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.BootType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.BuildVersion
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.CallerProcessId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.CallerProcessName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Category
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.CategoryId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ClientAddress
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ClientInfo
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ClientName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.CommandLine
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Company
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ComputerAccountChange
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Configuration
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.CorruptionActionState
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.CrashOnAuditFailValue
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.CreationUtcTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Description
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Details
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DeviceName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DeviceNameLength
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DeviceTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DeviceVersionMajor
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DeviceVersionMinor
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DisplayName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DnsHostName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DomainBehaviorVersion
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DomainName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DomainPolicyChanged
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DomainSid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DriveName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DriverName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DriverNameLength
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Dummy
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.DwordVal
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.EnabledPrivilegeList
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.EntryCount
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.EventSourceId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.EventType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ExtraInfo
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.FailureName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.FailureNameLength
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.FailureReason
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.FileVersion
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.FinalStatus
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Group
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.GroupTypeChange
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.HandleId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.HomeDirectory
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.HomePath
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.IdleImplementation
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.IdleStateCount
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ImpersonationLevel
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.IntegrityLevel
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.IpAddress
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.IpPort
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.KerberosPolicyChange
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.KeyLength
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LastBootGood
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LastShutdownGood
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LmPackageName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LogonGuid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LogonHours
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LogonID
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LogonId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LogonProcessName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.LogonType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MachineAccountQuota
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MajorVersion
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MandatoryLabel
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MaximumPerformancePercent
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MemberName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MemberSid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MinimumPerformancePercent
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MinimumThrottlePercent
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MinorVersion
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.MixedDomainMode
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewProcessId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewProcessName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewSchemeGuid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewSd
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewSdDacl0
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewSdDacl1
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewSdDacl2
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewSdSacl0
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewSdSacl1
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewSdSacl2
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewTargetUserName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewUACList
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NewUacValue
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.NominalFrequency
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Number
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ObjectName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ObjectServer
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ObjectType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OemInformation
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldSchemeGuid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldSd
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldSdDacl0
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldSdDacl1
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldSdDacl2
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldSdSacl0
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldSdSacl1
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldSdSacl2
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldTargetUserName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OldUacValue
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.OriginalFileName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PackageName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ParentProcessName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PasswordHistoryLength
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PasswordLastSet
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Path
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PerformanceImplementation
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PreAuthType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PreviousCreationUtcTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PreviousTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PrimaryGroupId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PrivilegeList
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ProcessId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ProcessName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ProcessPath
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ProcessPid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Product
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ProfilePath
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PuaCount
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.PuaPolicyId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.QfeVersion
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Reason
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SamAccountName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SchemaVersion
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ScriptBlockText
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ScriptPath
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Service
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ServiceAccount
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ServiceFileName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ServiceName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ServicePrincipalNames
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ServiceSid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ServiceStartType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ServiceType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ServiceVersion
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Session
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SessionName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ShutdownActionType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ShutdownEventCode
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.ShutdownReason
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SidFilteringEnabled
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SidHistory
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Signature
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SignatureStatus
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Signed
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.StartTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.State
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Status
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.StatusDescription
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.StopTime
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubCategory
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubCategoryGuid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubCategoryId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubStatus
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubcategoryGuid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubcategoryId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubjectDomainName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubjectLogonId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubjectUserName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.SubjectUserSid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TSId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TargetDomainName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TargetInfo
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TargetLogonGuid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TargetLogonId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TargetServerName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TargetSid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TargetUserName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TargetUserSid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TdoAttributes
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TdoDirection
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TdoType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TerminalSessionId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TicketEncryptionType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TicketEncryptionTypeDescription
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TicketOptions
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TicketOptionsDescription
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TokenElevationType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.TransmittedServices
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.UserAccountControl
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.UserParameters
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.UserPrincipalName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.UserSid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.UserWorkstations
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.Workstation
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.WorkstationName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.param1
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.param2
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.param3
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.param4
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.param5
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.param6
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.param7
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_data.param8
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: event_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The event identifier. The value is specific to the source of the
+        event.
+      default_field: false
+    - name: keywords
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The keywords are used to classify an event.
+      default_field: false
+    - name: level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The event severity.  Levels are Critical, Error, Warning and Information,
+        Verbose
+      default_field: false
+    - name: opcode
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The opcode defined in the event. Task and opcode are typically
+        used to identify the location in the application from where the event was
+        logged.
+      default_field: false
+    - name: outcome
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Success or Failure of the event.
+      default_field: false
+    - name: process.pid
+      level: extended
+      type: long
+      description: The process_id of the Client Server Runtime Process.
+      default_field: false
+    - name: process.thread.id
+      level: extended
+      type: long
+      description: null
+      default_field: false
+    - name: provider_guid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A globally unique identifier that identifies the provider that
+        logged the event.
+      default_field: false
+    - name: provider_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The source of the event log record (the application or service
+        that logged the record).
+      default_field: false
+    - name: record_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The record ID of the event log record. The first record written
+        to an event log is record number 1, and other records are numbered sequentially.
+        If the record number reaches the maximum value (2^32^ for the Event Logging
+        API and 2^64^ for the Windows Event Log API), the next record number will
+        be 0.
+      default_field: false
+    - name: related_activity_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A globally unique identifier that identifies the activity to which
+        control was transferred to. The related events would then have this identifier
+        as their `activity_id` identifier.
+      default_field: false
+    - name: task
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The task defined in the event. Task and opcode are typically used
+        to identify the location in the application from where the event was logged.
+        The category used by the Event Logging API (on pre Windows Vista operating
+        systems) is written to this field.
+      default_field: false
+    - name: time_created
+      level: extended
+      type: date
+      description: Time event was created
+      default_field: false
+    - name: trustAttribute
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: trustDirection
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: trustType
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: user.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The domain that the account associated with this event is a member
+        of.
+      default_field: false
+    - name: user.identifier
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'The Windows security identifier (SID) of the account associated
+        with this event.
+
+        If Winlogbeat cannot resolve the SID to a name, then the `user.name`, `user.domain`,
+        and `user.type` fields will be omitted from the event. If you discover Winlogbeat
+        not resolving SIDs, review the log for clues as to what the problem may be.'
+      example: S-1-5-21-3541430928-2051711210-1391384369-1001
+      default_field: false
+    - name: user.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the user associated with this event.
+      default_field: false
+    - name: user.type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: The type of account associated with this event.
+      default_field: false
+    - name: user_data
+      level: extended
+      type: object
+      object_type: keyword
+      description: The event specific data. This field is mutually exclusive with
+        `event_data`.
+      default_field: false
+    - name: user_data.BackupPath
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: user_data.Channel
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: user_data.SubjectDomainName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: user_data.SubjectLogonId
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: user_data.SubjectUserName
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: user_data.SubjectUserSid
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: user_data.xml_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: null
+      default_field: false
+    - name: version
+      level: extended
+      type: long
+      description: The version number of the event's definition.
+      default_field: false
   - name: x509
     title: x509 Certificate
     group: 2

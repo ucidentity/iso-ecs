@@ -22129,6 +22129,4075 @@ example: `Critical`
 |=====
 
 
+[[ecs-winlog]]
+=== Windows Event Logs Fields
+
+Windows Event Logs
+
+[discrete]
+==== Windows Event Logs Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-winlog-activity-id]]
+<<field-winlog-activity-id, winlog.activity_id>>
+
+a| A globally unique identifier that identifies the current activity. The events that are published with this identifier are part of the same activity.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-api]]
+<<field-winlog-api, winlog.api>>
+
+a| The event log API type used to read the record. The possible values are "wineventlog" for the Windows Event Log API or "eventlogging" for the Event Logging API.
+
+The Event Logging API was designed for Windows Server 2003 or Windows 2000 operating systems. In Windows Vista, the event logging infrastructure was redesigned. On Windows Vista or later operating systems, the Windows Event Log API is used. Winlogbeat automatically detects which API to use for reading event logs.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-channel]]
+<<field-winlog-channel, winlog.channel>>
+
+a| The name of the channel from which this record was read. This value is one of the names from the `event_logs` collection in the configuration.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-computerObject-domain]]
+<<field-winlog-computerObject-domain, winlog.computerObject.domain>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-computerObject-id]]
+<<field-winlog-computerObject-id, winlog.computerObject.id>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-computerObject-name]]
+<<field-winlog-computerObject-name, winlog.computerObject.name>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-computer-name]]
+<<field-winlog-computer-name, winlog.computer_name>>
+
+a| The name of the computer that generated the record. When using Windows event forwarding, this name can differ from `agent.hostname`.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AccessGranted]]
+<<field-winlog-event-data-AccessGranted, winlog.event_data.AccessGranted>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AccessMask]]
+<<field-winlog-event-data-AccessMask, winlog.event_data.AccessMask>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AccessMaskDescription]]
+<<field-winlog-event-data-AccessMaskDescription, winlog.event_data.AccessMaskDescription>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AccessRemoved]]
+<<field-winlog-event-data-AccessRemoved, winlog.event_data.AccessRemoved>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AccountDomain]]
+<<field-winlog-event-data-AccountDomain, winlog.event_data.AccountDomain>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AccountExpires]]
+<<field-winlog-event-data-AccountExpires, winlog.event_data.AccountExpires>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AccountName]]
+<<field-winlog-event-data-AccountName, winlog.event_data.AccountName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AllowedToDelegateTo]]
+<<field-winlog-event-data-AllowedToDelegateTo, winlog.event_data.AllowedToDelegateTo>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AuditPolicyChanges]]
+<<field-winlog-event-data-AuditPolicyChanges, winlog.event_data.AuditPolicyChanges>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AuditPolicyChangesDescription]]
+<<field-winlog-event-data-AuditPolicyChangesDescription, winlog.event_data.AuditPolicyChangesDescription>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AuditSourceName]]
+<<field-winlog-event-data-AuditSourceName, winlog.event_data.AuditSourceName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-AuthenticationPackageName]]
+<<field-winlog-event-data-AuthenticationPackageName, winlog.event_data.AuthenticationPackageName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Binary]]
+<<field-winlog-event-data-Binary, winlog.event_data.Binary>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-BitlockerUserInputTime]]
+<<field-winlog-event-data-BitlockerUserInputTime, winlog.event_data.BitlockerUserInputTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-BootMode]]
+<<field-winlog-event-data-BootMode, winlog.event_data.BootMode>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-BootType]]
+<<field-winlog-event-data-BootType, winlog.event_data.BootType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-BuildVersion]]
+<<field-winlog-event-data-BuildVersion, winlog.event_data.BuildVersion>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-CallerProcessId]]
+<<field-winlog-event-data-CallerProcessId, winlog.event_data.CallerProcessId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-CallerProcessName]]
+<<field-winlog-event-data-CallerProcessName, winlog.event_data.CallerProcessName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Category]]
+<<field-winlog-event-data-Category, winlog.event_data.Category>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-CategoryId]]
+<<field-winlog-event-data-CategoryId, winlog.event_data.CategoryId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ClientAddress]]
+<<field-winlog-event-data-ClientAddress, winlog.event_data.ClientAddress>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ClientInfo]]
+<<field-winlog-event-data-ClientInfo, winlog.event_data.ClientInfo>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ClientName]]
+<<field-winlog-event-data-ClientName, winlog.event_data.ClientName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-CommandLine]]
+<<field-winlog-event-data-CommandLine, winlog.event_data.CommandLine>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Company]]
+<<field-winlog-event-data-Company, winlog.event_data.Company>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ComputerAccountChange]]
+<<field-winlog-event-data-ComputerAccountChange, winlog.event_data.ComputerAccountChange>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Configuration]]
+<<field-winlog-event-data-Configuration, winlog.event_data.Configuration>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-CorruptionActionState]]
+<<field-winlog-event-data-CorruptionActionState, winlog.event_data.CorruptionActionState>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-CrashOnAuditFailValue]]
+<<field-winlog-event-data-CrashOnAuditFailValue, winlog.event_data.CrashOnAuditFailValue>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-CreationUtcTime]]
+<<field-winlog-event-data-CreationUtcTime, winlog.event_data.CreationUtcTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Description]]
+<<field-winlog-event-data-Description, winlog.event_data.Description>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Details]]
+<<field-winlog-event-data-Details, winlog.event_data.Details>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DeviceName]]
+<<field-winlog-event-data-DeviceName, winlog.event_data.DeviceName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DeviceNameLength]]
+<<field-winlog-event-data-DeviceNameLength, winlog.event_data.DeviceNameLength>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DeviceTime]]
+<<field-winlog-event-data-DeviceTime, winlog.event_data.DeviceTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DeviceVersionMajor]]
+<<field-winlog-event-data-DeviceVersionMajor, winlog.event_data.DeviceVersionMajor>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DeviceVersionMinor]]
+<<field-winlog-event-data-DeviceVersionMinor, winlog.event_data.DeviceVersionMinor>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DisplayName]]
+<<field-winlog-event-data-DisplayName, winlog.event_data.DisplayName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DnsHostName]]
+<<field-winlog-event-data-DnsHostName, winlog.event_data.DnsHostName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DomainBehaviorVersion]]
+<<field-winlog-event-data-DomainBehaviorVersion, winlog.event_data.DomainBehaviorVersion>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DomainName]]
+<<field-winlog-event-data-DomainName, winlog.event_data.DomainName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DomainPolicyChanged]]
+<<field-winlog-event-data-DomainPolicyChanged, winlog.event_data.DomainPolicyChanged>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DomainSid]]
+<<field-winlog-event-data-DomainSid, winlog.event_data.DomainSid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DriveName]]
+<<field-winlog-event-data-DriveName, winlog.event_data.DriveName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DriverName]]
+<<field-winlog-event-data-DriverName, winlog.event_data.DriverName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DriverNameLength]]
+<<field-winlog-event-data-DriverNameLength, winlog.event_data.DriverNameLength>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Dummy]]
+<<field-winlog-event-data-Dummy, winlog.event_data.Dummy>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-DwordVal]]
+<<field-winlog-event-data-DwordVal, winlog.event_data.DwordVal>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-EnabledPrivilegeList]]
+<<field-winlog-event-data-EnabledPrivilegeList, winlog.event_data.EnabledPrivilegeList>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-EntryCount]]
+<<field-winlog-event-data-EntryCount, winlog.event_data.EntryCount>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-EventSourceId]]
+<<field-winlog-event-data-EventSourceId, winlog.event_data.EventSourceId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-EventType]]
+<<field-winlog-event-data-EventType, winlog.event_data.EventType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ExtraInfo]]
+<<field-winlog-event-data-ExtraInfo, winlog.event_data.ExtraInfo>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-FailureName]]
+<<field-winlog-event-data-FailureName, winlog.event_data.FailureName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-FailureNameLength]]
+<<field-winlog-event-data-FailureNameLength, winlog.event_data.FailureNameLength>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-FailureReason]]
+<<field-winlog-event-data-FailureReason, winlog.event_data.FailureReason>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-FileVersion]]
+<<field-winlog-event-data-FileVersion, winlog.event_data.FileVersion>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-FinalStatus]]
+<<field-winlog-event-data-FinalStatus, winlog.event_data.FinalStatus>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Group]]
+<<field-winlog-event-data-Group, winlog.event_data.Group>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-GroupTypeChange]]
+<<field-winlog-event-data-GroupTypeChange, winlog.event_data.GroupTypeChange>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-HandleId]]
+<<field-winlog-event-data-HandleId, winlog.event_data.HandleId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-HomeDirectory]]
+<<field-winlog-event-data-HomeDirectory, winlog.event_data.HomeDirectory>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-HomePath]]
+<<field-winlog-event-data-HomePath, winlog.event_data.HomePath>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-IdleImplementation]]
+<<field-winlog-event-data-IdleImplementation, winlog.event_data.IdleImplementation>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-IdleStateCount]]
+<<field-winlog-event-data-IdleStateCount, winlog.event_data.IdleStateCount>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ImpersonationLevel]]
+<<field-winlog-event-data-ImpersonationLevel, winlog.event_data.ImpersonationLevel>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-IntegrityLevel]]
+<<field-winlog-event-data-IntegrityLevel, winlog.event_data.IntegrityLevel>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-IpAddress]]
+<<field-winlog-event-data-IpAddress, winlog.event_data.IpAddress>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-IpPort]]
+<<field-winlog-event-data-IpPort, winlog.event_data.IpPort>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-KerberosPolicyChange]]
+<<field-winlog-event-data-KerberosPolicyChange, winlog.event_data.KerberosPolicyChange>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-KeyLength]]
+<<field-winlog-event-data-KeyLength, winlog.event_data.KeyLength>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LastBootGood]]
+<<field-winlog-event-data-LastBootGood, winlog.event_data.LastBootGood>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LastShutdownGood]]
+<<field-winlog-event-data-LastShutdownGood, winlog.event_data.LastShutdownGood>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LmPackageName]]
+<<field-winlog-event-data-LmPackageName, winlog.event_data.LmPackageName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LogonGuid]]
+<<field-winlog-event-data-LogonGuid, winlog.event_data.LogonGuid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LogonHours]]
+<<field-winlog-event-data-LogonHours, winlog.event_data.LogonHours>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LogonID]]
+<<field-winlog-event-data-LogonID, winlog.event_data.LogonID>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LogonId]]
+<<field-winlog-event-data-LogonId, winlog.event_data.LogonId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LogonProcessName]]
+<<field-winlog-event-data-LogonProcessName, winlog.event_data.LogonProcessName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-LogonType]]
+<<field-winlog-event-data-LogonType, winlog.event_data.LogonType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MachineAccountQuota]]
+<<field-winlog-event-data-MachineAccountQuota, winlog.event_data.MachineAccountQuota>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MajorVersion]]
+<<field-winlog-event-data-MajorVersion, winlog.event_data.MajorVersion>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MandatoryLabel]]
+<<field-winlog-event-data-MandatoryLabel, winlog.event_data.MandatoryLabel>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MaximumPerformancePercent]]
+<<field-winlog-event-data-MaximumPerformancePercent, winlog.event_data.MaximumPerformancePercent>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MemberName]]
+<<field-winlog-event-data-MemberName, winlog.event_data.MemberName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MemberSid]]
+<<field-winlog-event-data-MemberSid, winlog.event_data.MemberSid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MinimumPerformancePercent]]
+<<field-winlog-event-data-MinimumPerformancePercent, winlog.event_data.MinimumPerformancePercent>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MinimumThrottlePercent]]
+<<field-winlog-event-data-MinimumThrottlePercent, winlog.event_data.MinimumThrottlePercent>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MinorVersion]]
+<<field-winlog-event-data-MinorVersion, winlog.event_data.MinorVersion>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-MixedDomainMode]]
+<<field-winlog-event-data-MixedDomainMode, winlog.event_data.MixedDomainMode>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewProcessId]]
+<<field-winlog-event-data-NewProcessId, winlog.event_data.NewProcessId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewProcessName]]
+<<field-winlog-event-data-NewProcessName, winlog.event_data.NewProcessName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewSchemeGuid]]
+<<field-winlog-event-data-NewSchemeGuid, winlog.event_data.NewSchemeGuid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewSd]]
+<<field-winlog-event-data-NewSd, winlog.event_data.NewSd>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewSdDacl0]]
+<<field-winlog-event-data-NewSdDacl0, winlog.event_data.NewSdDacl0>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewSdDacl1]]
+<<field-winlog-event-data-NewSdDacl1, winlog.event_data.NewSdDacl1>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewSdDacl2]]
+<<field-winlog-event-data-NewSdDacl2, winlog.event_data.NewSdDacl2>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewSdSacl0]]
+<<field-winlog-event-data-NewSdSacl0, winlog.event_data.NewSdSacl0>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewSdSacl1]]
+<<field-winlog-event-data-NewSdSacl1, winlog.event_data.NewSdSacl1>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewSdSacl2]]
+<<field-winlog-event-data-NewSdSacl2, winlog.event_data.NewSdSacl2>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewTargetUserName]]
+<<field-winlog-event-data-NewTargetUserName, winlog.event_data.NewTargetUserName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewTime]]
+<<field-winlog-event-data-NewTime, winlog.event_data.NewTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewUACList]]
+<<field-winlog-event-data-NewUACList, winlog.event_data.NewUACList>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NewUacValue]]
+<<field-winlog-event-data-NewUacValue, winlog.event_data.NewUacValue>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-NominalFrequency]]
+<<field-winlog-event-data-NominalFrequency, winlog.event_data.NominalFrequency>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Number]]
+<<field-winlog-event-data-Number, winlog.event_data.Number>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ObjectName]]
+<<field-winlog-event-data-ObjectName, winlog.event_data.ObjectName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ObjectServer]]
+<<field-winlog-event-data-ObjectServer, winlog.event_data.ObjectServer>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ObjectType]]
+<<field-winlog-event-data-ObjectType, winlog.event_data.ObjectType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OemInformation]]
+<<field-winlog-event-data-OemInformation, winlog.event_data.OemInformation>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldSchemeGuid]]
+<<field-winlog-event-data-OldSchemeGuid, winlog.event_data.OldSchemeGuid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldSd]]
+<<field-winlog-event-data-OldSd, winlog.event_data.OldSd>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldSdDacl0]]
+<<field-winlog-event-data-OldSdDacl0, winlog.event_data.OldSdDacl0>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldSdDacl1]]
+<<field-winlog-event-data-OldSdDacl1, winlog.event_data.OldSdDacl1>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldSdDacl2]]
+<<field-winlog-event-data-OldSdDacl2, winlog.event_data.OldSdDacl2>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldSdSacl0]]
+<<field-winlog-event-data-OldSdSacl0, winlog.event_data.OldSdSacl0>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldSdSacl1]]
+<<field-winlog-event-data-OldSdSacl1, winlog.event_data.OldSdSacl1>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldSdSacl2]]
+<<field-winlog-event-data-OldSdSacl2, winlog.event_data.OldSdSacl2>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldTargetUserName]]
+<<field-winlog-event-data-OldTargetUserName, winlog.event_data.OldTargetUserName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldTime]]
+<<field-winlog-event-data-OldTime, winlog.event_data.OldTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OldUacValue]]
+<<field-winlog-event-data-OldUacValue, winlog.event_data.OldUacValue>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-OriginalFileName]]
+<<field-winlog-event-data-OriginalFileName, winlog.event_data.OriginalFileName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PackageName]]
+<<field-winlog-event-data-PackageName, winlog.event_data.PackageName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ParentProcessName]]
+<<field-winlog-event-data-ParentProcessName, winlog.event_data.ParentProcessName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PasswordHistoryLength]]
+<<field-winlog-event-data-PasswordHistoryLength, winlog.event_data.PasswordHistoryLength>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PasswordLastSet]]
+<<field-winlog-event-data-PasswordLastSet, winlog.event_data.PasswordLastSet>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Path]]
+<<field-winlog-event-data-Path, winlog.event_data.Path>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PerformanceImplementation]]
+<<field-winlog-event-data-PerformanceImplementation, winlog.event_data.PerformanceImplementation>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PreAuthType]]
+<<field-winlog-event-data-PreAuthType, winlog.event_data.PreAuthType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PreviousCreationUtcTime]]
+<<field-winlog-event-data-PreviousCreationUtcTime, winlog.event_data.PreviousCreationUtcTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PreviousTime]]
+<<field-winlog-event-data-PreviousTime, winlog.event_data.PreviousTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PrimaryGroupId]]
+<<field-winlog-event-data-PrimaryGroupId, winlog.event_data.PrimaryGroupId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PrivilegeList]]
+<<field-winlog-event-data-PrivilegeList, winlog.event_data.PrivilegeList>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ProcessId]]
+<<field-winlog-event-data-ProcessId, winlog.event_data.ProcessId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ProcessName]]
+<<field-winlog-event-data-ProcessName, winlog.event_data.ProcessName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ProcessPath]]
+<<field-winlog-event-data-ProcessPath, winlog.event_data.ProcessPath>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ProcessPid]]
+<<field-winlog-event-data-ProcessPid, winlog.event_data.ProcessPid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Product]]
+<<field-winlog-event-data-Product, winlog.event_data.Product>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ProfilePath]]
+<<field-winlog-event-data-ProfilePath, winlog.event_data.ProfilePath>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PuaCount]]
+<<field-winlog-event-data-PuaCount, winlog.event_data.PuaCount>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-PuaPolicyId]]
+<<field-winlog-event-data-PuaPolicyId, winlog.event_data.PuaPolicyId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-QfeVersion]]
+<<field-winlog-event-data-QfeVersion, winlog.event_data.QfeVersion>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Reason]]
+<<field-winlog-event-data-Reason, winlog.event_data.Reason>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SamAccountName]]
+<<field-winlog-event-data-SamAccountName, winlog.event_data.SamAccountName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SchemaVersion]]
+<<field-winlog-event-data-SchemaVersion, winlog.event_data.SchemaVersion>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ScriptBlockText]]
+<<field-winlog-event-data-ScriptBlockText, winlog.event_data.ScriptBlockText>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ScriptPath]]
+<<field-winlog-event-data-ScriptPath, winlog.event_data.ScriptPath>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Service]]
+<<field-winlog-event-data-Service, winlog.event_data.Service>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ServiceAccount]]
+<<field-winlog-event-data-ServiceAccount, winlog.event_data.ServiceAccount>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ServiceFileName]]
+<<field-winlog-event-data-ServiceFileName, winlog.event_data.ServiceFileName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ServiceName]]
+<<field-winlog-event-data-ServiceName, winlog.event_data.ServiceName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ServicePrincipalNames]]
+<<field-winlog-event-data-ServicePrincipalNames, winlog.event_data.ServicePrincipalNames>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ServiceSid]]
+<<field-winlog-event-data-ServiceSid, winlog.event_data.ServiceSid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ServiceStartType]]
+<<field-winlog-event-data-ServiceStartType, winlog.event_data.ServiceStartType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ServiceType]]
+<<field-winlog-event-data-ServiceType, winlog.event_data.ServiceType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ServiceVersion]]
+<<field-winlog-event-data-ServiceVersion, winlog.event_data.ServiceVersion>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Session]]
+<<field-winlog-event-data-Session, winlog.event_data.Session>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SessionName]]
+<<field-winlog-event-data-SessionName, winlog.event_data.SessionName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ShutdownActionType]]
+<<field-winlog-event-data-ShutdownActionType, winlog.event_data.ShutdownActionType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ShutdownEventCode]]
+<<field-winlog-event-data-ShutdownEventCode, winlog.event_data.ShutdownEventCode>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-ShutdownReason]]
+<<field-winlog-event-data-ShutdownReason, winlog.event_data.ShutdownReason>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SidFilteringEnabled]]
+<<field-winlog-event-data-SidFilteringEnabled, winlog.event_data.SidFilteringEnabled>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SidHistory]]
+<<field-winlog-event-data-SidHistory, winlog.event_data.SidHistory>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Signature]]
+<<field-winlog-event-data-Signature, winlog.event_data.Signature>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SignatureStatus]]
+<<field-winlog-event-data-SignatureStatus, winlog.event_data.SignatureStatus>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Signed]]
+<<field-winlog-event-data-Signed, winlog.event_data.Signed>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-StartTime]]
+<<field-winlog-event-data-StartTime, winlog.event_data.StartTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-State]]
+<<field-winlog-event-data-State, winlog.event_data.State>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Status]]
+<<field-winlog-event-data-Status, winlog.event_data.Status>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-StatusDescription]]
+<<field-winlog-event-data-StatusDescription, winlog.event_data.StatusDescription>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-StopTime]]
+<<field-winlog-event-data-StopTime, winlog.event_data.StopTime>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubCategory]]
+<<field-winlog-event-data-SubCategory, winlog.event_data.SubCategory>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubCategoryGuid]]
+<<field-winlog-event-data-SubCategoryGuid, winlog.event_data.SubCategoryGuid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubCategoryId]]
+<<field-winlog-event-data-SubCategoryId, winlog.event_data.SubCategoryId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubStatus]]
+<<field-winlog-event-data-SubStatus, winlog.event_data.SubStatus>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubcategoryGuid]]
+<<field-winlog-event-data-SubcategoryGuid, winlog.event_data.SubcategoryGuid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubcategoryId]]
+<<field-winlog-event-data-SubcategoryId, winlog.event_data.SubcategoryId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubjectDomainName]]
+<<field-winlog-event-data-SubjectDomainName, winlog.event_data.SubjectDomainName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubjectLogonId]]
+<<field-winlog-event-data-SubjectLogonId, winlog.event_data.SubjectLogonId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubjectUserName]]
+<<field-winlog-event-data-SubjectUserName, winlog.event_data.SubjectUserName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-SubjectUserSid]]
+<<field-winlog-event-data-SubjectUserSid, winlog.event_data.SubjectUserSid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TSId]]
+<<field-winlog-event-data-TSId, winlog.event_data.TSId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TargetDomainName]]
+<<field-winlog-event-data-TargetDomainName, winlog.event_data.TargetDomainName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TargetInfo]]
+<<field-winlog-event-data-TargetInfo, winlog.event_data.TargetInfo>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TargetLogonGuid]]
+<<field-winlog-event-data-TargetLogonGuid, winlog.event_data.TargetLogonGuid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TargetLogonId]]
+<<field-winlog-event-data-TargetLogonId, winlog.event_data.TargetLogonId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TargetServerName]]
+<<field-winlog-event-data-TargetServerName, winlog.event_data.TargetServerName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TargetSid]]
+<<field-winlog-event-data-TargetSid, winlog.event_data.TargetSid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TargetUserName]]
+<<field-winlog-event-data-TargetUserName, winlog.event_data.TargetUserName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TargetUserSid]]
+<<field-winlog-event-data-TargetUserSid, winlog.event_data.TargetUserSid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TdoAttributes]]
+<<field-winlog-event-data-TdoAttributes, winlog.event_data.TdoAttributes>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TdoDirection]]
+<<field-winlog-event-data-TdoDirection, winlog.event_data.TdoDirection>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TdoType]]
+<<field-winlog-event-data-TdoType, winlog.event_data.TdoType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TerminalSessionId]]
+<<field-winlog-event-data-TerminalSessionId, winlog.event_data.TerminalSessionId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TicketEncryptionType]]
+<<field-winlog-event-data-TicketEncryptionType, winlog.event_data.TicketEncryptionType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TicketEncryptionTypeDescription]]
+<<field-winlog-event-data-TicketEncryptionTypeDescription, winlog.event_data.TicketEncryptionTypeDescription>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TicketOptions]]
+<<field-winlog-event-data-TicketOptions, winlog.event_data.TicketOptions>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TicketOptionsDescription]]
+<<field-winlog-event-data-TicketOptionsDescription, winlog.event_data.TicketOptionsDescription>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TokenElevationType]]
+<<field-winlog-event-data-TokenElevationType, winlog.event_data.TokenElevationType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-TransmittedServices]]
+<<field-winlog-event-data-TransmittedServices, winlog.event_data.TransmittedServices>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-UserAccountControl]]
+<<field-winlog-event-data-UserAccountControl, winlog.event_data.UserAccountControl>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-UserParameters]]
+<<field-winlog-event-data-UserParameters, winlog.event_data.UserParameters>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-UserPrincipalName]]
+<<field-winlog-event-data-UserPrincipalName, winlog.event_data.UserPrincipalName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-UserSid]]
+<<field-winlog-event-data-UserSid, winlog.event_data.UserSid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-UserWorkstations]]
+<<field-winlog-event-data-UserWorkstations, winlog.event_data.UserWorkstations>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Version]]
+<<field-winlog-event-data-Version, winlog.event_data.Version>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-Workstation]]
+<<field-winlog-event-data-Workstation, winlog.event_data.Workstation>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-WorkstationName]]
+<<field-winlog-event-data-WorkstationName, winlog.event_data.WorkstationName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-param1]]
+<<field-winlog-event-data-param1, winlog.event_data.param1>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-param2]]
+<<field-winlog-event-data-param2, winlog.event_data.param2>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-param3]]
+<<field-winlog-event-data-param3, winlog.event_data.param3>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-param4]]
+<<field-winlog-event-data-param4, winlog.event_data.param4>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-param5]]
+<<field-winlog-event-data-param5, winlog.event_data.param5>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-param6]]
+<<field-winlog-event-data-param6, winlog.event_data.param6>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-param7]]
+<<field-winlog-event-data-param7, winlog.event_data.param7>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-data-param8]]
+<<field-winlog-event-data-param8, winlog.event_data.param8>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-event-id]]
+<<field-winlog-event-id, winlog.event_id>>
+
+a| The event identifier. The value is specific to the source of the event.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-keywords]]
+<<field-winlog-keywords, winlog.keywords>>
+
+a| The keywords are used to classify an event.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-level]]
+<<field-winlog-level, winlog.level>>
+
+a| The event severity.  Levels are Critical, Error, Warning and Information, Verbose
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-opcode]]
+<<field-winlog-opcode, winlog.opcode>>
+
+a| The opcode defined in the event. Task and opcode are typically used to identify the location in the application from where the event was logged.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-outcome]]
+<<field-winlog-outcome, winlog.outcome>>
+
+a| Success or Failure of the event.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-process-pid]]
+<<field-winlog-process-pid, winlog.process.pid>>
+
+a| The process_id of the Client Server Runtime Process.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-process-thread-id]]
+<<field-winlog-process-thread-id, winlog.process.thread.id>>
+
+a| None
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-provider-guid]]
+<<field-winlog-provider-guid, winlog.provider_guid>>
+
+a| A globally unique identifier that identifies the provider that logged the event.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-provider-name]]
+<<field-winlog-provider-name, winlog.provider_name>>
+
+a| The source of the event log record (the application or service that logged the record).
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-record-id]]
+<<field-winlog-record-id, winlog.record_id>>
+
+a| The record ID of the event log record. The first record written to an event log is record number 1, and other records are numbered sequentially. If the record number reaches the maximum value (2^32^ for the Event Logging API and 2^64^ for the Windows Event Log API), the next record number will be 0.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-related-activity-id]]
+<<field-winlog-related-activity-id, winlog.related_activity_id>>
+
+a| A globally unique identifier that identifies the activity to which control was transferred to. The related events would then have this identifier as their `activity_id` identifier.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-task]]
+<<field-winlog-task, winlog.task>>
+
+a| The task defined in the event. Task and opcode are typically used to identify the location in the application from where the event was logged. The category used by the Event Logging API (on pre Windows Vista operating systems) is written to this field.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-time-created]]
+<<field-winlog-time-created, winlog.time_created>>
+
+a| Time event was created
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-trustAttribute]]
+<<field-winlog-trustAttribute, winlog.trustAttribute>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-trustDirection]]
+<<field-winlog-trustDirection, winlog.trustDirection>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-trustType]]
+<<field-winlog-trustType, winlog.trustType>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-domain]]
+<<field-winlog-user-domain, winlog.user.domain>>
+
+a| The domain that the account associated with this event is a member of.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-identifier]]
+<<field-winlog-user-identifier, winlog.user.identifier>>
+
+a| The Windows security identifier (SID) of the account associated with this event.
+
+If Winlogbeat cannot resolve the SID to a name, then the `user.name`, `user.domain`, and `user.type` fields will be omitted from the event. If you discover Winlogbeat not resolving SIDs, review the log for clues as to what the problem may be.
+
+type: keyword
+
+
+
+example: `S-1-5-21-3541430928-2051711210-1391384369-1001`
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-name]]
+<<field-winlog-user-name, winlog.user.name>>
+
+a| Name of the user associated with this event.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-type]]
+<<field-winlog-user-type, winlog.user.type>>
+
+a| The type of account associated with this event.
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-data]]
+<<field-winlog-user-data, winlog.user_data>>
+
+a| The event specific data. This field is mutually exclusive with `event_data`.
+
+type: object
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-data-BackupPath]]
+<<field-winlog-user-data-BackupPath, winlog.user_data.BackupPath>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-data-Channel]]
+<<field-winlog-user-data-Channel, winlog.user_data.Channel>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-data-SubjectDomainName]]
+<<field-winlog-user-data-SubjectDomainName, winlog.user_data.SubjectDomainName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-data-SubjectLogonId]]
+<<field-winlog-user-data-SubjectLogonId, winlog.user_data.SubjectLogonId>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-data-SubjectUserName]]
+<<field-winlog-user-data-SubjectUserName, winlog.user_data.SubjectUserName>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-data-SubjectUserSid]]
+<<field-winlog-user-data-SubjectUserSid, winlog.user_data.SubjectUserSid>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-user-data-xml-name]]
+<<field-winlog-user-data-xml-name, winlog.user_data.xml_name>>
+
+a| None
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-winlog-version]]
+<<field-winlog-version, winlog.version>>
+
+a| The version number of the event's definition.
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-x509]]
 === x509 Certificate Fields
 

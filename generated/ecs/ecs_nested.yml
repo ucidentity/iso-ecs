@@ -30447,6 +30447,2575 @@ vulnerability:
   short: Fields to describe the vulnerability relevant to an event.
   title: Vulnerability
   type: group
+winlog:
+  description: Windows Event Logs
+  fields:
+    winlog.activity_id:
+      dashed_name: winlog-activity-id
+      description: A globally unique identifier that identifies the current activity.
+        The events that are published with this identifier are part of the same activity.
+      flat_name: winlog.activity_id
+      ignore_above: 1024
+      level: extended
+      name: activity_id
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.api:
+      dashed_name: winlog-api
+      description: 'The event log API type used to read the record. The possible values
+        are "wineventlog" for the Windows Event Log API or "eventlogging" for the
+        Event Logging API.
+
+        The Event Logging API was designed for Windows Server 2003 or Windows 2000
+        operating systems. In Windows Vista, the event logging infrastructure was
+        redesigned. On Windows Vista or later operating systems, the Windows Event
+        Log API is used. Winlogbeat automatically detects which API to use for reading
+        event logs.'
+      flat_name: winlog.api
+      ignore_above: 1024
+      level: extended
+      name: api
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.channel:
+      dashed_name: winlog-channel
+      description: The name of the channel from which this record was read. This value
+        is one of the names from the `event_logs` collection in the configuration.
+      flat_name: winlog.channel
+      ignore_above: 1024
+      level: extended
+      name: channel
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.computerObject.domain:
+      dashed_name: winlog-computerObject-domain
+      description: null
+      flat_name: winlog.computerObject.domain
+      ignore_above: 1024
+      level: extended
+      name: computerObject.domain
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.computerObject.id:
+      dashed_name: winlog-computerObject-id
+      description: null
+      flat_name: winlog.computerObject.id
+      ignore_above: 1024
+      level: extended
+      name: computerObject.id
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.computerObject.name:
+      dashed_name: winlog-computerObject-name
+      description: null
+      flat_name: winlog.computerObject.name
+      ignore_above: 1024
+      level: extended
+      name: computerObject.name
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.computer_name:
+      dashed_name: winlog-computer-name
+      description: The name of the computer that generated the record. When using
+        Windows event forwarding, this name can differ from `agent.hostname`.
+      flat_name: winlog.computer_name
+      ignore_above: 1024
+      level: extended
+      name: computer_name
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AccessGranted:
+      dashed_name: winlog-event-data-AccessGranted
+      description: null
+      flat_name: winlog.event_data.AccessGranted
+      ignore_above: 1024
+      level: extended
+      name: event_data.AccessGranted
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AccessMask:
+      dashed_name: winlog-event-data-AccessMask
+      description: null
+      flat_name: winlog.event_data.AccessMask
+      ignore_above: 1024
+      level: extended
+      name: event_data.AccessMask
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AccessMaskDescription:
+      dashed_name: winlog-event-data-AccessMaskDescription
+      description: null
+      flat_name: winlog.event_data.AccessMaskDescription
+      ignore_above: 1024
+      level: extended
+      name: event_data.AccessMaskDescription
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AccessRemoved:
+      dashed_name: winlog-event-data-AccessRemoved
+      description: null
+      flat_name: winlog.event_data.AccessRemoved
+      ignore_above: 1024
+      level: extended
+      name: event_data.AccessRemoved
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AccountDomain:
+      dashed_name: winlog-event-data-AccountDomain
+      description: null
+      flat_name: winlog.event_data.AccountDomain
+      ignore_above: 1024
+      level: extended
+      name: event_data.AccountDomain
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AccountExpires:
+      dashed_name: winlog-event-data-AccountExpires
+      description: null
+      flat_name: winlog.event_data.AccountExpires
+      ignore_above: 1024
+      level: extended
+      name: event_data.AccountExpires
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AccountName:
+      dashed_name: winlog-event-data-AccountName
+      description: null
+      flat_name: winlog.event_data.AccountName
+      ignore_above: 1024
+      level: extended
+      name: event_data.AccountName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AllowedToDelegateTo:
+      dashed_name: winlog-event-data-AllowedToDelegateTo
+      description: null
+      flat_name: winlog.event_data.AllowedToDelegateTo
+      ignore_above: 1024
+      level: extended
+      name: event_data.AllowedToDelegateTo
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AuditPolicyChanges:
+      dashed_name: winlog-event-data-AuditPolicyChanges
+      description: null
+      flat_name: winlog.event_data.AuditPolicyChanges
+      ignore_above: 1024
+      level: extended
+      name: event_data.AuditPolicyChanges
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AuditPolicyChangesDescription:
+      dashed_name: winlog-event-data-AuditPolicyChangesDescription
+      description: null
+      flat_name: winlog.event_data.AuditPolicyChangesDescription
+      ignore_above: 1024
+      level: extended
+      name: event_data.AuditPolicyChangesDescription
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AuditSourceName:
+      dashed_name: winlog-event-data-AuditSourceName
+      description: null
+      flat_name: winlog.event_data.AuditSourceName
+      ignore_above: 1024
+      level: extended
+      name: event_data.AuditSourceName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.AuthenticationPackageName:
+      dashed_name: winlog-event-data-AuthenticationPackageName
+      description: null
+      flat_name: winlog.event_data.AuthenticationPackageName
+      ignore_above: 1024
+      level: extended
+      name: event_data.AuthenticationPackageName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Binary:
+      dashed_name: winlog-event-data-Binary
+      description: null
+      flat_name: winlog.event_data.Binary
+      ignore_above: 1024
+      level: extended
+      name: event_data.Binary
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.BitlockerUserInputTime:
+      dashed_name: winlog-event-data-BitlockerUserInputTime
+      description: null
+      flat_name: winlog.event_data.BitlockerUserInputTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.BitlockerUserInputTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.BootMode:
+      dashed_name: winlog-event-data-BootMode
+      description: null
+      flat_name: winlog.event_data.BootMode
+      ignore_above: 1024
+      level: extended
+      name: event_data.BootMode
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.BootType:
+      dashed_name: winlog-event-data-BootType
+      description: null
+      flat_name: winlog.event_data.BootType
+      ignore_above: 1024
+      level: extended
+      name: event_data.BootType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.BuildVersion:
+      dashed_name: winlog-event-data-BuildVersion
+      description: null
+      flat_name: winlog.event_data.BuildVersion
+      ignore_above: 1024
+      level: extended
+      name: event_data.BuildVersion
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.CallerProcessId:
+      dashed_name: winlog-event-data-CallerProcessId
+      description: null
+      flat_name: winlog.event_data.CallerProcessId
+      ignore_above: 1024
+      level: extended
+      name: event_data.CallerProcessId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.CallerProcessName:
+      dashed_name: winlog-event-data-CallerProcessName
+      description: null
+      flat_name: winlog.event_data.CallerProcessName
+      ignore_above: 1024
+      level: extended
+      name: event_data.CallerProcessName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Category:
+      dashed_name: winlog-event-data-Category
+      description: null
+      flat_name: winlog.event_data.Category
+      ignore_above: 1024
+      level: extended
+      name: event_data.Category
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.CategoryId:
+      dashed_name: winlog-event-data-CategoryId
+      description: null
+      flat_name: winlog.event_data.CategoryId
+      ignore_above: 1024
+      level: extended
+      name: event_data.CategoryId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ClientAddress:
+      dashed_name: winlog-event-data-ClientAddress
+      description: null
+      flat_name: winlog.event_data.ClientAddress
+      ignore_above: 1024
+      level: extended
+      name: event_data.ClientAddress
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ClientInfo:
+      dashed_name: winlog-event-data-ClientInfo
+      description: null
+      flat_name: winlog.event_data.ClientInfo
+      ignore_above: 1024
+      level: extended
+      name: event_data.ClientInfo
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ClientName:
+      dashed_name: winlog-event-data-ClientName
+      description: null
+      flat_name: winlog.event_data.ClientName
+      ignore_above: 1024
+      level: extended
+      name: event_data.ClientName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.CommandLine:
+      dashed_name: winlog-event-data-CommandLine
+      description: null
+      flat_name: winlog.event_data.CommandLine
+      ignore_above: 1024
+      level: extended
+      name: event_data.CommandLine
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Company:
+      dashed_name: winlog-event-data-Company
+      description: null
+      flat_name: winlog.event_data.Company
+      ignore_above: 1024
+      level: extended
+      name: event_data.Company
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ComputerAccountChange:
+      dashed_name: winlog-event-data-ComputerAccountChange
+      description: null
+      flat_name: winlog.event_data.ComputerAccountChange
+      ignore_above: 1024
+      level: extended
+      name: event_data.ComputerAccountChange
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Configuration:
+      dashed_name: winlog-event-data-Configuration
+      description: null
+      flat_name: winlog.event_data.Configuration
+      ignore_above: 1024
+      level: extended
+      name: event_data.Configuration
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.CorruptionActionState:
+      dashed_name: winlog-event-data-CorruptionActionState
+      description: null
+      flat_name: winlog.event_data.CorruptionActionState
+      ignore_above: 1024
+      level: extended
+      name: event_data.CorruptionActionState
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.CrashOnAuditFailValue:
+      dashed_name: winlog-event-data-CrashOnAuditFailValue
+      description: null
+      flat_name: winlog.event_data.CrashOnAuditFailValue
+      ignore_above: 1024
+      level: extended
+      name: event_data.CrashOnAuditFailValue
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.CreationUtcTime:
+      dashed_name: winlog-event-data-CreationUtcTime
+      description: null
+      flat_name: winlog.event_data.CreationUtcTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.CreationUtcTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Description:
+      dashed_name: winlog-event-data-Description
+      description: null
+      flat_name: winlog.event_data.Description
+      ignore_above: 1024
+      level: extended
+      name: event_data.Description
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Details:
+      dashed_name: winlog-event-data-Details
+      description: null
+      flat_name: winlog.event_data.Details
+      ignore_above: 1024
+      level: extended
+      name: event_data.Details
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DeviceName:
+      dashed_name: winlog-event-data-DeviceName
+      description: null
+      flat_name: winlog.event_data.DeviceName
+      ignore_above: 1024
+      level: extended
+      name: event_data.DeviceName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DeviceNameLength:
+      dashed_name: winlog-event-data-DeviceNameLength
+      description: null
+      flat_name: winlog.event_data.DeviceNameLength
+      ignore_above: 1024
+      level: extended
+      name: event_data.DeviceNameLength
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DeviceTime:
+      dashed_name: winlog-event-data-DeviceTime
+      description: null
+      flat_name: winlog.event_data.DeviceTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.DeviceTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DeviceVersionMajor:
+      dashed_name: winlog-event-data-DeviceVersionMajor
+      description: null
+      flat_name: winlog.event_data.DeviceVersionMajor
+      ignore_above: 1024
+      level: extended
+      name: event_data.DeviceVersionMajor
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DeviceVersionMinor:
+      dashed_name: winlog-event-data-DeviceVersionMinor
+      description: null
+      flat_name: winlog.event_data.DeviceVersionMinor
+      ignore_above: 1024
+      level: extended
+      name: event_data.DeviceVersionMinor
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DisplayName:
+      dashed_name: winlog-event-data-DisplayName
+      description: null
+      flat_name: winlog.event_data.DisplayName
+      ignore_above: 1024
+      level: extended
+      name: event_data.DisplayName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DnsHostName:
+      dashed_name: winlog-event-data-DnsHostName
+      description: null
+      flat_name: winlog.event_data.DnsHostName
+      ignore_above: 1024
+      level: extended
+      name: event_data.DnsHostName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DomainBehaviorVersion:
+      dashed_name: winlog-event-data-DomainBehaviorVersion
+      description: null
+      flat_name: winlog.event_data.DomainBehaviorVersion
+      ignore_above: 1024
+      level: extended
+      name: event_data.DomainBehaviorVersion
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DomainName:
+      dashed_name: winlog-event-data-DomainName
+      description: null
+      flat_name: winlog.event_data.DomainName
+      ignore_above: 1024
+      level: extended
+      name: event_data.DomainName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DomainPolicyChanged:
+      dashed_name: winlog-event-data-DomainPolicyChanged
+      description: null
+      flat_name: winlog.event_data.DomainPolicyChanged
+      ignore_above: 1024
+      level: extended
+      name: event_data.DomainPolicyChanged
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DomainSid:
+      dashed_name: winlog-event-data-DomainSid
+      description: null
+      flat_name: winlog.event_data.DomainSid
+      ignore_above: 1024
+      level: extended
+      name: event_data.DomainSid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DriveName:
+      dashed_name: winlog-event-data-DriveName
+      description: null
+      flat_name: winlog.event_data.DriveName
+      ignore_above: 1024
+      level: extended
+      name: event_data.DriveName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DriverName:
+      dashed_name: winlog-event-data-DriverName
+      description: null
+      flat_name: winlog.event_data.DriverName
+      ignore_above: 1024
+      level: extended
+      name: event_data.DriverName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DriverNameLength:
+      dashed_name: winlog-event-data-DriverNameLength
+      description: null
+      flat_name: winlog.event_data.DriverNameLength
+      ignore_above: 1024
+      level: extended
+      name: event_data.DriverNameLength
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Dummy:
+      dashed_name: winlog-event-data-Dummy
+      description: null
+      flat_name: winlog.event_data.Dummy
+      ignore_above: 1024
+      level: extended
+      name: event_data.Dummy
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.DwordVal:
+      dashed_name: winlog-event-data-DwordVal
+      description: null
+      flat_name: winlog.event_data.DwordVal
+      ignore_above: 1024
+      level: extended
+      name: event_data.DwordVal
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.EnabledPrivilegeList:
+      dashed_name: winlog-event-data-EnabledPrivilegeList
+      description: null
+      flat_name: winlog.event_data.EnabledPrivilegeList
+      ignore_above: 1024
+      level: extended
+      name: event_data.EnabledPrivilegeList
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.EntryCount:
+      dashed_name: winlog-event-data-EntryCount
+      description: null
+      flat_name: winlog.event_data.EntryCount
+      ignore_above: 1024
+      level: extended
+      name: event_data.EntryCount
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.EventSourceId:
+      dashed_name: winlog-event-data-EventSourceId
+      description: null
+      flat_name: winlog.event_data.EventSourceId
+      ignore_above: 1024
+      level: extended
+      name: event_data.EventSourceId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.EventType:
+      dashed_name: winlog-event-data-EventType
+      description: null
+      flat_name: winlog.event_data.EventType
+      ignore_above: 1024
+      level: extended
+      name: event_data.EventType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ExtraInfo:
+      dashed_name: winlog-event-data-ExtraInfo
+      description: null
+      flat_name: winlog.event_data.ExtraInfo
+      ignore_above: 1024
+      level: extended
+      name: event_data.ExtraInfo
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.FailureName:
+      dashed_name: winlog-event-data-FailureName
+      description: null
+      flat_name: winlog.event_data.FailureName
+      ignore_above: 1024
+      level: extended
+      name: event_data.FailureName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.FailureNameLength:
+      dashed_name: winlog-event-data-FailureNameLength
+      description: null
+      flat_name: winlog.event_data.FailureNameLength
+      ignore_above: 1024
+      level: extended
+      name: event_data.FailureNameLength
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.FailureReason:
+      dashed_name: winlog-event-data-FailureReason
+      description: null
+      flat_name: winlog.event_data.FailureReason
+      ignore_above: 1024
+      level: extended
+      name: event_data.FailureReason
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.FileVersion:
+      dashed_name: winlog-event-data-FileVersion
+      description: null
+      flat_name: winlog.event_data.FileVersion
+      ignore_above: 1024
+      level: extended
+      name: event_data.FileVersion
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.FinalStatus:
+      dashed_name: winlog-event-data-FinalStatus
+      description: null
+      flat_name: winlog.event_data.FinalStatus
+      ignore_above: 1024
+      level: extended
+      name: event_data.FinalStatus
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Group:
+      dashed_name: winlog-event-data-Group
+      description: null
+      flat_name: winlog.event_data.Group
+      ignore_above: 1024
+      level: extended
+      name: event_data.Group
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.GroupTypeChange:
+      dashed_name: winlog-event-data-GroupTypeChange
+      description: null
+      flat_name: winlog.event_data.GroupTypeChange
+      ignore_above: 1024
+      level: extended
+      name: event_data.GroupTypeChange
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.HandleId:
+      dashed_name: winlog-event-data-HandleId
+      description: null
+      flat_name: winlog.event_data.HandleId
+      ignore_above: 1024
+      level: extended
+      name: event_data.HandleId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.HomeDirectory:
+      dashed_name: winlog-event-data-HomeDirectory
+      description: null
+      flat_name: winlog.event_data.HomeDirectory
+      ignore_above: 1024
+      level: extended
+      name: event_data.HomeDirectory
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.HomePath:
+      dashed_name: winlog-event-data-HomePath
+      description: null
+      flat_name: winlog.event_data.HomePath
+      ignore_above: 1024
+      level: extended
+      name: event_data.HomePath
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.IdleImplementation:
+      dashed_name: winlog-event-data-IdleImplementation
+      description: null
+      flat_name: winlog.event_data.IdleImplementation
+      ignore_above: 1024
+      level: extended
+      name: event_data.IdleImplementation
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.IdleStateCount:
+      dashed_name: winlog-event-data-IdleStateCount
+      description: null
+      flat_name: winlog.event_data.IdleStateCount
+      ignore_above: 1024
+      level: extended
+      name: event_data.IdleStateCount
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ImpersonationLevel:
+      dashed_name: winlog-event-data-ImpersonationLevel
+      description: null
+      flat_name: winlog.event_data.ImpersonationLevel
+      ignore_above: 1024
+      level: extended
+      name: event_data.ImpersonationLevel
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.IntegrityLevel:
+      dashed_name: winlog-event-data-IntegrityLevel
+      description: null
+      flat_name: winlog.event_data.IntegrityLevel
+      ignore_above: 1024
+      level: extended
+      name: event_data.IntegrityLevel
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.IpAddress:
+      dashed_name: winlog-event-data-IpAddress
+      description: null
+      flat_name: winlog.event_data.IpAddress
+      ignore_above: 1024
+      level: extended
+      name: event_data.IpAddress
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.IpPort:
+      dashed_name: winlog-event-data-IpPort
+      description: null
+      flat_name: winlog.event_data.IpPort
+      ignore_above: 1024
+      level: extended
+      name: event_data.IpPort
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.KerberosPolicyChange:
+      dashed_name: winlog-event-data-KerberosPolicyChange
+      description: null
+      flat_name: winlog.event_data.KerberosPolicyChange
+      ignore_above: 1024
+      level: extended
+      name: event_data.KerberosPolicyChange
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.KeyLength:
+      dashed_name: winlog-event-data-KeyLength
+      description: null
+      flat_name: winlog.event_data.KeyLength
+      ignore_above: 1024
+      level: extended
+      name: event_data.KeyLength
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LastBootGood:
+      dashed_name: winlog-event-data-LastBootGood
+      description: null
+      flat_name: winlog.event_data.LastBootGood
+      ignore_above: 1024
+      level: extended
+      name: event_data.LastBootGood
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LastShutdownGood:
+      dashed_name: winlog-event-data-LastShutdownGood
+      description: null
+      flat_name: winlog.event_data.LastShutdownGood
+      ignore_above: 1024
+      level: extended
+      name: event_data.LastShutdownGood
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LmPackageName:
+      dashed_name: winlog-event-data-LmPackageName
+      description: null
+      flat_name: winlog.event_data.LmPackageName
+      ignore_above: 1024
+      level: extended
+      name: event_data.LmPackageName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LogonGuid:
+      dashed_name: winlog-event-data-LogonGuid
+      description: null
+      flat_name: winlog.event_data.LogonGuid
+      ignore_above: 1024
+      level: extended
+      name: event_data.LogonGuid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LogonHours:
+      dashed_name: winlog-event-data-LogonHours
+      description: null
+      flat_name: winlog.event_data.LogonHours
+      ignore_above: 1024
+      level: extended
+      name: event_data.LogonHours
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LogonID:
+      dashed_name: winlog-event-data-LogonID
+      description: null
+      flat_name: winlog.event_data.LogonID
+      ignore_above: 1024
+      level: extended
+      name: event_data.LogonID
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LogonId:
+      dashed_name: winlog-event-data-LogonId
+      description: null
+      flat_name: winlog.event_data.LogonId
+      ignore_above: 1024
+      level: extended
+      name: event_data.LogonId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LogonProcessName:
+      dashed_name: winlog-event-data-LogonProcessName
+      description: null
+      flat_name: winlog.event_data.LogonProcessName
+      ignore_above: 1024
+      level: extended
+      name: event_data.LogonProcessName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.LogonType:
+      dashed_name: winlog-event-data-LogonType
+      description: null
+      flat_name: winlog.event_data.LogonType
+      ignore_above: 1024
+      level: extended
+      name: event_data.LogonType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MachineAccountQuota:
+      dashed_name: winlog-event-data-MachineAccountQuota
+      description: null
+      flat_name: winlog.event_data.MachineAccountQuota
+      ignore_above: 1024
+      level: extended
+      name: event_data.MachineAccountQuota
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MajorVersion:
+      dashed_name: winlog-event-data-MajorVersion
+      description: null
+      flat_name: winlog.event_data.MajorVersion
+      ignore_above: 1024
+      level: extended
+      name: event_data.MajorVersion
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MandatoryLabel:
+      dashed_name: winlog-event-data-MandatoryLabel
+      description: null
+      flat_name: winlog.event_data.MandatoryLabel
+      ignore_above: 1024
+      level: extended
+      name: event_data.MandatoryLabel
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MaximumPerformancePercent:
+      dashed_name: winlog-event-data-MaximumPerformancePercent
+      description: null
+      flat_name: winlog.event_data.MaximumPerformancePercent
+      ignore_above: 1024
+      level: extended
+      name: event_data.MaximumPerformancePercent
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MemberName:
+      dashed_name: winlog-event-data-MemberName
+      description: null
+      flat_name: winlog.event_data.MemberName
+      ignore_above: 1024
+      level: extended
+      name: event_data.MemberName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MemberSid:
+      dashed_name: winlog-event-data-MemberSid
+      description: null
+      flat_name: winlog.event_data.MemberSid
+      ignore_above: 1024
+      level: extended
+      name: event_data.MemberSid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MinimumPerformancePercent:
+      dashed_name: winlog-event-data-MinimumPerformancePercent
+      description: null
+      flat_name: winlog.event_data.MinimumPerformancePercent
+      ignore_above: 1024
+      level: extended
+      name: event_data.MinimumPerformancePercent
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MinimumThrottlePercent:
+      dashed_name: winlog-event-data-MinimumThrottlePercent
+      description: null
+      flat_name: winlog.event_data.MinimumThrottlePercent
+      ignore_above: 1024
+      level: extended
+      name: event_data.MinimumThrottlePercent
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MinorVersion:
+      dashed_name: winlog-event-data-MinorVersion
+      description: null
+      flat_name: winlog.event_data.MinorVersion
+      ignore_above: 1024
+      level: extended
+      name: event_data.MinorVersion
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.MixedDomainMode:
+      dashed_name: winlog-event-data-MixedDomainMode
+      description: null
+      flat_name: winlog.event_data.MixedDomainMode
+      ignore_above: 1024
+      level: extended
+      name: event_data.MixedDomainMode
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewProcessId:
+      dashed_name: winlog-event-data-NewProcessId
+      description: null
+      flat_name: winlog.event_data.NewProcessId
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewProcessId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewProcessName:
+      dashed_name: winlog-event-data-NewProcessName
+      description: null
+      flat_name: winlog.event_data.NewProcessName
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewProcessName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewSchemeGuid:
+      dashed_name: winlog-event-data-NewSchemeGuid
+      description: null
+      flat_name: winlog.event_data.NewSchemeGuid
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewSchemeGuid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewSd:
+      dashed_name: winlog-event-data-NewSd
+      description: null
+      flat_name: winlog.event_data.NewSd
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewSd
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewSdDacl0:
+      dashed_name: winlog-event-data-NewSdDacl0
+      description: null
+      flat_name: winlog.event_data.NewSdDacl0
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewSdDacl0
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewSdDacl1:
+      dashed_name: winlog-event-data-NewSdDacl1
+      description: null
+      flat_name: winlog.event_data.NewSdDacl1
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewSdDacl1
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewSdDacl2:
+      dashed_name: winlog-event-data-NewSdDacl2
+      description: null
+      flat_name: winlog.event_data.NewSdDacl2
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewSdDacl2
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewSdSacl0:
+      dashed_name: winlog-event-data-NewSdSacl0
+      description: null
+      flat_name: winlog.event_data.NewSdSacl0
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewSdSacl0
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewSdSacl1:
+      dashed_name: winlog-event-data-NewSdSacl1
+      description: null
+      flat_name: winlog.event_data.NewSdSacl1
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewSdSacl1
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewSdSacl2:
+      dashed_name: winlog-event-data-NewSdSacl2
+      description: null
+      flat_name: winlog.event_data.NewSdSacl2
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewSdSacl2
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewTargetUserName:
+      dashed_name: winlog-event-data-NewTargetUserName
+      description: null
+      flat_name: winlog.event_data.NewTargetUserName
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewTargetUserName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewTime:
+      dashed_name: winlog-event-data-NewTime
+      description: null
+      flat_name: winlog.event_data.NewTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewUACList:
+      dashed_name: winlog-event-data-NewUACList
+      description: null
+      flat_name: winlog.event_data.NewUACList
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewUACList
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NewUacValue:
+      dashed_name: winlog-event-data-NewUacValue
+      description: null
+      flat_name: winlog.event_data.NewUacValue
+      ignore_above: 1024
+      level: extended
+      name: event_data.NewUacValue
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.NominalFrequency:
+      dashed_name: winlog-event-data-NominalFrequency
+      description: null
+      flat_name: winlog.event_data.NominalFrequency
+      ignore_above: 1024
+      level: extended
+      name: event_data.NominalFrequency
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Number:
+      dashed_name: winlog-event-data-Number
+      description: null
+      flat_name: winlog.event_data.Number
+      ignore_above: 1024
+      level: extended
+      name: event_data.Number
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ObjectName:
+      dashed_name: winlog-event-data-ObjectName
+      description: null
+      flat_name: winlog.event_data.ObjectName
+      ignore_above: 1024
+      level: extended
+      name: event_data.ObjectName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ObjectServer:
+      dashed_name: winlog-event-data-ObjectServer
+      description: null
+      flat_name: winlog.event_data.ObjectServer
+      ignore_above: 1024
+      level: extended
+      name: event_data.ObjectServer
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ObjectType:
+      dashed_name: winlog-event-data-ObjectType
+      description: null
+      flat_name: winlog.event_data.ObjectType
+      ignore_above: 1024
+      level: extended
+      name: event_data.ObjectType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OemInformation:
+      dashed_name: winlog-event-data-OemInformation
+      description: null
+      flat_name: winlog.event_data.OemInformation
+      ignore_above: 1024
+      level: extended
+      name: event_data.OemInformation
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldSchemeGuid:
+      dashed_name: winlog-event-data-OldSchemeGuid
+      description: null
+      flat_name: winlog.event_data.OldSchemeGuid
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldSchemeGuid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldSd:
+      dashed_name: winlog-event-data-OldSd
+      description: null
+      flat_name: winlog.event_data.OldSd
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldSd
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldSdDacl0:
+      dashed_name: winlog-event-data-OldSdDacl0
+      description: null
+      flat_name: winlog.event_data.OldSdDacl0
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldSdDacl0
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldSdDacl1:
+      dashed_name: winlog-event-data-OldSdDacl1
+      description: null
+      flat_name: winlog.event_data.OldSdDacl1
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldSdDacl1
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldSdDacl2:
+      dashed_name: winlog-event-data-OldSdDacl2
+      description: null
+      flat_name: winlog.event_data.OldSdDacl2
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldSdDacl2
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldSdSacl0:
+      dashed_name: winlog-event-data-OldSdSacl0
+      description: null
+      flat_name: winlog.event_data.OldSdSacl0
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldSdSacl0
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldSdSacl1:
+      dashed_name: winlog-event-data-OldSdSacl1
+      description: null
+      flat_name: winlog.event_data.OldSdSacl1
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldSdSacl1
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldSdSacl2:
+      dashed_name: winlog-event-data-OldSdSacl2
+      description: null
+      flat_name: winlog.event_data.OldSdSacl2
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldSdSacl2
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldTargetUserName:
+      dashed_name: winlog-event-data-OldTargetUserName
+      description: null
+      flat_name: winlog.event_data.OldTargetUserName
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldTargetUserName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldTime:
+      dashed_name: winlog-event-data-OldTime
+      description: null
+      flat_name: winlog.event_data.OldTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OldUacValue:
+      dashed_name: winlog-event-data-OldUacValue
+      description: null
+      flat_name: winlog.event_data.OldUacValue
+      ignore_above: 1024
+      level: extended
+      name: event_data.OldUacValue
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.OriginalFileName:
+      dashed_name: winlog-event-data-OriginalFileName
+      description: null
+      flat_name: winlog.event_data.OriginalFileName
+      ignore_above: 1024
+      level: extended
+      name: event_data.OriginalFileName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PackageName:
+      dashed_name: winlog-event-data-PackageName
+      description: null
+      flat_name: winlog.event_data.PackageName
+      ignore_above: 1024
+      level: extended
+      name: event_data.PackageName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ParentProcessName:
+      dashed_name: winlog-event-data-ParentProcessName
+      description: null
+      flat_name: winlog.event_data.ParentProcessName
+      ignore_above: 1024
+      level: extended
+      name: event_data.ParentProcessName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PasswordHistoryLength:
+      dashed_name: winlog-event-data-PasswordHistoryLength
+      description: null
+      flat_name: winlog.event_data.PasswordHistoryLength
+      ignore_above: 1024
+      level: extended
+      name: event_data.PasswordHistoryLength
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PasswordLastSet:
+      dashed_name: winlog-event-data-PasswordLastSet
+      description: null
+      flat_name: winlog.event_data.PasswordLastSet
+      ignore_above: 1024
+      level: extended
+      name: event_data.PasswordLastSet
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Path:
+      dashed_name: winlog-event-data-Path
+      description: null
+      flat_name: winlog.event_data.Path
+      ignore_above: 1024
+      level: extended
+      name: event_data.Path
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PerformanceImplementation:
+      dashed_name: winlog-event-data-PerformanceImplementation
+      description: null
+      flat_name: winlog.event_data.PerformanceImplementation
+      ignore_above: 1024
+      level: extended
+      name: event_data.PerformanceImplementation
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PreAuthType:
+      dashed_name: winlog-event-data-PreAuthType
+      description: null
+      flat_name: winlog.event_data.PreAuthType
+      ignore_above: 1024
+      level: extended
+      name: event_data.PreAuthType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PreviousCreationUtcTime:
+      dashed_name: winlog-event-data-PreviousCreationUtcTime
+      description: null
+      flat_name: winlog.event_data.PreviousCreationUtcTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.PreviousCreationUtcTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PreviousTime:
+      dashed_name: winlog-event-data-PreviousTime
+      description: null
+      flat_name: winlog.event_data.PreviousTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.PreviousTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PrimaryGroupId:
+      dashed_name: winlog-event-data-PrimaryGroupId
+      description: null
+      flat_name: winlog.event_data.PrimaryGroupId
+      ignore_above: 1024
+      level: extended
+      name: event_data.PrimaryGroupId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PrivilegeList:
+      dashed_name: winlog-event-data-PrivilegeList
+      description: null
+      flat_name: winlog.event_data.PrivilegeList
+      ignore_above: 1024
+      level: extended
+      name: event_data.PrivilegeList
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ProcessId:
+      dashed_name: winlog-event-data-ProcessId
+      description: null
+      flat_name: winlog.event_data.ProcessId
+      ignore_above: 1024
+      level: extended
+      name: event_data.ProcessId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ProcessName:
+      dashed_name: winlog-event-data-ProcessName
+      description: null
+      flat_name: winlog.event_data.ProcessName
+      ignore_above: 1024
+      level: extended
+      name: event_data.ProcessName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ProcessPath:
+      dashed_name: winlog-event-data-ProcessPath
+      description: null
+      flat_name: winlog.event_data.ProcessPath
+      ignore_above: 1024
+      level: extended
+      name: event_data.ProcessPath
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ProcessPid:
+      dashed_name: winlog-event-data-ProcessPid
+      description: null
+      flat_name: winlog.event_data.ProcessPid
+      ignore_above: 1024
+      level: extended
+      name: event_data.ProcessPid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Product:
+      dashed_name: winlog-event-data-Product
+      description: null
+      flat_name: winlog.event_data.Product
+      ignore_above: 1024
+      level: extended
+      name: event_data.Product
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ProfilePath:
+      dashed_name: winlog-event-data-ProfilePath
+      description: null
+      flat_name: winlog.event_data.ProfilePath
+      ignore_above: 1024
+      level: extended
+      name: event_data.ProfilePath
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PuaCount:
+      dashed_name: winlog-event-data-PuaCount
+      description: null
+      flat_name: winlog.event_data.PuaCount
+      ignore_above: 1024
+      level: extended
+      name: event_data.PuaCount
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.PuaPolicyId:
+      dashed_name: winlog-event-data-PuaPolicyId
+      description: null
+      flat_name: winlog.event_data.PuaPolicyId
+      ignore_above: 1024
+      level: extended
+      name: event_data.PuaPolicyId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.QfeVersion:
+      dashed_name: winlog-event-data-QfeVersion
+      description: null
+      flat_name: winlog.event_data.QfeVersion
+      ignore_above: 1024
+      level: extended
+      name: event_data.QfeVersion
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Reason:
+      dashed_name: winlog-event-data-Reason
+      description: null
+      flat_name: winlog.event_data.Reason
+      ignore_above: 1024
+      level: extended
+      name: event_data.Reason
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SamAccountName:
+      dashed_name: winlog-event-data-SamAccountName
+      description: null
+      flat_name: winlog.event_data.SamAccountName
+      ignore_above: 1024
+      level: extended
+      name: event_data.SamAccountName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SchemaVersion:
+      dashed_name: winlog-event-data-SchemaVersion
+      description: null
+      flat_name: winlog.event_data.SchemaVersion
+      ignore_above: 1024
+      level: extended
+      name: event_data.SchemaVersion
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ScriptBlockText:
+      dashed_name: winlog-event-data-ScriptBlockText
+      description: null
+      flat_name: winlog.event_data.ScriptBlockText
+      ignore_above: 1024
+      level: extended
+      name: event_data.ScriptBlockText
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ScriptPath:
+      dashed_name: winlog-event-data-ScriptPath
+      description: null
+      flat_name: winlog.event_data.ScriptPath
+      ignore_above: 1024
+      level: extended
+      name: event_data.ScriptPath
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Service:
+      dashed_name: winlog-event-data-Service
+      description: null
+      flat_name: winlog.event_data.Service
+      ignore_above: 1024
+      level: extended
+      name: event_data.Service
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ServiceAccount:
+      dashed_name: winlog-event-data-ServiceAccount
+      description: null
+      flat_name: winlog.event_data.ServiceAccount
+      ignore_above: 1024
+      level: extended
+      name: event_data.ServiceAccount
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ServiceFileName:
+      dashed_name: winlog-event-data-ServiceFileName
+      description: null
+      flat_name: winlog.event_data.ServiceFileName
+      ignore_above: 1024
+      level: extended
+      name: event_data.ServiceFileName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ServiceName:
+      dashed_name: winlog-event-data-ServiceName
+      description: null
+      flat_name: winlog.event_data.ServiceName
+      ignore_above: 1024
+      level: extended
+      name: event_data.ServiceName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ServicePrincipalNames:
+      dashed_name: winlog-event-data-ServicePrincipalNames
+      description: null
+      flat_name: winlog.event_data.ServicePrincipalNames
+      ignore_above: 1024
+      level: extended
+      name: event_data.ServicePrincipalNames
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ServiceSid:
+      dashed_name: winlog-event-data-ServiceSid
+      description: null
+      flat_name: winlog.event_data.ServiceSid
+      ignore_above: 1024
+      level: extended
+      name: event_data.ServiceSid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ServiceStartType:
+      dashed_name: winlog-event-data-ServiceStartType
+      description: null
+      flat_name: winlog.event_data.ServiceStartType
+      ignore_above: 1024
+      level: extended
+      name: event_data.ServiceStartType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ServiceType:
+      dashed_name: winlog-event-data-ServiceType
+      description: null
+      flat_name: winlog.event_data.ServiceType
+      ignore_above: 1024
+      level: extended
+      name: event_data.ServiceType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ServiceVersion:
+      dashed_name: winlog-event-data-ServiceVersion
+      description: null
+      flat_name: winlog.event_data.ServiceVersion
+      ignore_above: 1024
+      level: extended
+      name: event_data.ServiceVersion
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Session:
+      dashed_name: winlog-event-data-Session
+      description: null
+      flat_name: winlog.event_data.Session
+      ignore_above: 1024
+      level: extended
+      name: event_data.Session
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SessionName:
+      dashed_name: winlog-event-data-SessionName
+      description: null
+      flat_name: winlog.event_data.SessionName
+      ignore_above: 1024
+      level: extended
+      name: event_data.SessionName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ShutdownActionType:
+      dashed_name: winlog-event-data-ShutdownActionType
+      description: null
+      flat_name: winlog.event_data.ShutdownActionType
+      ignore_above: 1024
+      level: extended
+      name: event_data.ShutdownActionType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ShutdownEventCode:
+      dashed_name: winlog-event-data-ShutdownEventCode
+      description: null
+      flat_name: winlog.event_data.ShutdownEventCode
+      ignore_above: 1024
+      level: extended
+      name: event_data.ShutdownEventCode
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.ShutdownReason:
+      dashed_name: winlog-event-data-ShutdownReason
+      description: null
+      flat_name: winlog.event_data.ShutdownReason
+      ignore_above: 1024
+      level: extended
+      name: event_data.ShutdownReason
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SidFilteringEnabled:
+      dashed_name: winlog-event-data-SidFilteringEnabled
+      description: null
+      flat_name: winlog.event_data.SidFilteringEnabled
+      ignore_above: 1024
+      level: extended
+      name: event_data.SidFilteringEnabled
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SidHistory:
+      dashed_name: winlog-event-data-SidHistory
+      description: null
+      flat_name: winlog.event_data.SidHistory
+      ignore_above: 1024
+      level: extended
+      name: event_data.SidHistory
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Signature:
+      dashed_name: winlog-event-data-Signature
+      description: null
+      flat_name: winlog.event_data.Signature
+      ignore_above: 1024
+      level: extended
+      name: event_data.Signature
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SignatureStatus:
+      dashed_name: winlog-event-data-SignatureStatus
+      description: null
+      flat_name: winlog.event_data.SignatureStatus
+      ignore_above: 1024
+      level: extended
+      name: event_data.SignatureStatus
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Signed:
+      dashed_name: winlog-event-data-Signed
+      description: null
+      flat_name: winlog.event_data.Signed
+      ignore_above: 1024
+      level: extended
+      name: event_data.Signed
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.StartTime:
+      dashed_name: winlog-event-data-StartTime
+      description: null
+      flat_name: winlog.event_data.StartTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.StartTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.State:
+      dashed_name: winlog-event-data-State
+      description: null
+      flat_name: winlog.event_data.State
+      ignore_above: 1024
+      level: extended
+      name: event_data.State
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Status:
+      dashed_name: winlog-event-data-Status
+      description: null
+      flat_name: winlog.event_data.Status
+      ignore_above: 1024
+      level: extended
+      name: event_data.Status
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.StatusDescription:
+      dashed_name: winlog-event-data-StatusDescription
+      description: null
+      flat_name: winlog.event_data.StatusDescription
+      ignore_above: 1024
+      level: extended
+      name: event_data.StatusDescription
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.StopTime:
+      dashed_name: winlog-event-data-StopTime
+      description: null
+      flat_name: winlog.event_data.StopTime
+      ignore_above: 1024
+      level: extended
+      name: event_data.StopTime
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubCategory:
+      dashed_name: winlog-event-data-SubCategory
+      description: null
+      flat_name: winlog.event_data.SubCategory
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubCategory
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubCategoryGuid:
+      dashed_name: winlog-event-data-SubCategoryGuid
+      description: null
+      flat_name: winlog.event_data.SubCategoryGuid
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubCategoryGuid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubCategoryId:
+      dashed_name: winlog-event-data-SubCategoryId
+      description: null
+      flat_name: winlog.event_data.SubCategoryId
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubCategoryId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubStatus:
+      dashed_name: winlog-event-data-SubStatus
+      description: null
+      flat_name: winlog.event_data.SubStatus
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubStatus
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubcategoryGuid:
+      dashed_name: winlog-event-data-SubcategoryGuid
+      description: null
+      flat_name: winlog.event_data.SubcategoryGuid
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubcategoryGuid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubcategoryId:
+      dashed_name: winlog-event-data-SubcategoryId
+      description: null
+      flat_name: winlog.event_data.SubcategoryId
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubcategoryId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubjectDomainName:
+      dashed_name: winlog-event-data-SubjectDomainName
+      description: null
+      flat_name: winlog.event_data.SubjectDomainName
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubjectDomainName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubjectLogonId:
+      dashed_name: winlog-event-data-SubjectLogonId
+      description: null
+      flat_name: winlog.event_data.SubjectLogonId
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubjectLogonId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubjectUserName:
+      dashed_name: winlog-event-data-SubjectUserName
+      description: null
+      flat_name: winlog.event_data.SubjectUserName
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubjectUserName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.SubjectUserSid:
+      dashed_name: winlog-event-data-SubjectUserSid
+      description: null
+      flat_name: winlog.event_data.SubjectUserSid
+      ignore_above: 1024
+      level: extended
+      name: event_data.SubjectUserSid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TSId:
+      dashed_name: winlog-event-data-TSId
+      description: null
+      flat_name: winlog.event_data.TSId
+      ignore_above: 1024
+      level: extended
+      name: event_data.TSId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TargetDomainName:
+      dashed_name: winlog-event-data-TargetDomainName
+      description: null
+      flat_name: winlog.event_data.TargetDomainName
+      ignore_above: 1024
+      level: extended
+      name: event_data.TargetDomainName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TargetInfo:
+      dashed_name: winlog-event-data-TargetInfo
+      description: null
+      flat_name: winlog.event_data.TargetInfo
+      ignore_above: 1024
+      level: extended
+      name: event_data.TargetInfo
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TargetLogonGuid:
+      dashed_name: winlog-event-data-TargetLogonGuid
+      description: null
+      flat_name: winlog.event_data.TargetLogonGuid
+      ignore_above: 1024
+      level: extended
+      name: event_data.TargetLogonGuid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TargetLogonId:
+      dashed_name: winlog-event-data-TargetLogonId
+      description: null
+      flat_name: winlog.event_data.TargetLogonId
+      ignore_above: 1024
+      level: extended
+      name: event_data.TargetLogonId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TargetServerName:
+      dashed_name: winlog-event-data-TargetServerName
+      description: null
+      flat_name: winlog.event_data.TargetServerName
+      ignore_above: 1024
+      level: extended
+      name: event_data.TargetServerName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TargetSid:
+      dashed_name: winlog-event-data-TargetSid
+      description: null
+      flat_name: winlog.event_data.TargetSid
+      ignore_above: 1024
+      level: extended
+      name: event_data.TargetSid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TargetUserName:
+      dashed_name: winlog-event-data-TargetUserName
+      description: null
+      flat_name: winlog.event_data.TargetUserName
+      ignore_above: 1024
+      level: extended
+      name: event_data.TargetUserName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TargetUserSid:
+      dashed_name: winlog-event-data-TargetUserSid
+      description: null
+      flat_name: winlog.event_data.TargetUserSid
+      ignore_above: 1024
+      level: extended
+      name: event_data.TargetUserSid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TdoAttributes:
+      dashed_name: winlog-event-data-TdoAttributes
+      description: null
+      flat_name: winlog.event_data.TdoAttributes
+      ignore_above: 1024
+      level: extended
+      name: event_data.TdoAttributes
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TdoDirection:
+      dashed_name: winlog-event-data-TdoDirection
+      description: null
+      flat_name: winlog.event_data.TdoDirection
+      ignore_above: 1024
+      level: extended
+      name: event_data.TdoDirection
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TdoType:
+      dashed_name: winlog-event-data-TdoType
+      description: null
+      flat_name: winlog.event_data.TdoType
+      ignore_above: 1024
+      level: extended
+      name: event_data.TdoType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TerminalSessionId:
+      dashed_name: winlog-event-data-TerminalSessionId
+      description: null
+      flat_name: winlog.event_data.TerminalSessionId
+      ignore_above: 1024
+      level: extended
+      name: event_data.TerminalSessionId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TicketEncryptionType:
+      dashed_name: winlog-event-data-TicketEncryptionType
+      description: null
+      flat_name: winlog.event_data.TicketEncryptionType
+      ignore_above: 1024
+      level: extended
+      name: event_data.TicketEncryptionType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TicketEncryptionTypeDescription:
+      dashed_name: winlog-event-data-TicketEncryptionTypeDescription
+      description: null
+      flat_name: winlog.event_data.TicketEncryptionTypeDescription
+      ignore_above: 1024
+      level: extended
+      name: event_data.TicketEncryptionTypeDescription
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TicketOptions:
+      dashed_name: winlog-event-data-TicketOptions
+      description: null
+      flat_name: winlog.event_data.TicketOptions
+      ignore_above: 1024
+      level: extended
+      name: event_data.TicketOptions
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TicketOptionsDescription:
+      dashed_name: winlog-event-data-TicketOptionsDescription
+      description: null
+      flat_name: winlog.event_data.TicketOptionsDescription
+      ignore_above: 1024
+      level: extended
+      name: event_data.TicketOptionsDescription
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TokenElevationType:
+      dashed_name: winlog-event-data-TokenElevationType
+      description: null
+      flat_name: winlog.event_data.TokenElevationType
+      ignore_above: 1024
+      level: extended
+      name: event_data.TokenElevationType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.TransmittedServices:
+      dashed_name: winlog-event-data-TransmittedServices
+      description: null
+      flat_name: winlog.event_data.TransmittedServices
+      ignore_above: 1024
+      level: extended
+      name: event_data.TransmittedServices
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.UserAccountControl:
+      dashed_name: winlog-event-data-UserAccountControl
+      description: null
+      flat_name: winlog.event_data.UserAccountControl
+      ignore_above: 1024
+      level: extended
+      name: event_data.UserAccountControl
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.UserParameters:
+      dashed_name: winlog-event-data-UserParameters
+      description: null
+      flat_name: winlog.event_data.UserParameters
+      ignore_above: 1024
+      level: extended
+      name: event_data.UserParameters
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.UserPrincipalName:
+      dashed_name: winlog-event-data-UserPrincipalName
+      description: null
+      flat_name: winlog.event_data.UserPrincipalName
+      ignore_above: 1024
+      level: extended
+      name: event_data.UserPrincipalName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.UserSid:
+      dashed_name: winlog-event-data-UserSid
+      description: null
+      flat_name: winlog.event_data.UserSid
+      ignore_above: 1024
+      level: extended
+      name: event_data.UserSid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.UserWorkstations:
+      dashed_name: winlog-event-data-UserWorkstations
+      description: null
+      flat_name: winlog.event_data.UserWorkstations
+      ignore_above: 1024
+      level: extended
+      name: event_data.UserWorkstations
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Version:
+      dashed_name: winlog-event-data-Version
+      description: null
+      flat_name: winlog.event_data.Version
+      ignore_above: 1024
+      level: extended
+      name: event_data.Version
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.Workstation:
+      dashed_name: winlog-event-data-Workstation
+      description: null
+      flat_name: winlog.event_data.Workstation
+      ignore_above: 1024
+      level: extended
+      name: event_data.Workstation
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.WorkstationName:
+      dashed_name: winlog-event-data-WorkstationName
+      description: null
+      flat_name: winlog.event_data.WorkstationName
+      ignore_above: 1024
+      level: extended
+      name: event_data.WorkstationName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.param1:
+      dashed_name: winlog-event-data-param1
+      description: null
+      flat_name: winlog.event_data.param1
+      ignore_above: 1024
+      level: extended
+      name: event_data.param1
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.param2:
+      dashed_name: winlog-event-data-param2
+      description: null
+      flat_name: winlog.event_data.param2
+      ignore_above: 1024
+      level: extended
+      name: event_data.param2
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.param3:
+      dashed_name: winlog-event-data-param3
+      description: null
+      flat_name: winlog.event_data.param3
+      ignore_above: 1024
+      level: extended
+      name: event_data.param3
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.param4:
+      dashed_name: winlog-event-data-param4
+      description: null
+      flat_name: winlog.event_data.param4
+      ignore_above: 1024
+      level: extended
+      name: event_data.param4
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.param5:
+      dashed_name: winlog-event-data-param5
+      description: null
+      flat_name: winlog.event_data.param5
+      ignore_above: 1024
+      level: extended
+      name: event_data.param5
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.param6:
+      dashed_name: winlog-event-data-param6
+      description: null
+      flat_name: winlog.event_data.param6
+      ignore_above: 1024
+      level: extended
+      name: event_data.param6
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.param7:
+      dashed_name: winlog-event-data-param7
+      description: null
+      flat_name: winlog.event_data.param7
+      ignore_above: 1024
+      level: extended
+      name: event_data.param7
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_data.param8:
+      dashed_name: winlog-event-data-param8
+      description: null
+      flat_name: winlog.event_data.param8
+      ignore_above: 1024
+      level: extended
+      name: event_data.param8
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.event_id:
+      dashed_name: winlog-event-id
+      description: The event identifier. The value is specific to the source of the
+        event.
+      flat_name: winlog.event_id
+      ignore_above: 1024
+      level: extended
+      name: event_id
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.keywords:
+      dashed_name: winlog-keywords
+      description: The keywords are used to classify an event.
+      flat_name: winlog.keywords
+      ignore_above: 1024
+      level: extended
+      name: keywords
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.level:
+      dashed_name: winlog-level
+      description: The event severity.  Levels are Critical, Error, Warning and Information,
+        Verbose
+      flat_name: winlog.level
+      ignore_above: 1024
+      level: extended
+      name: level
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.opcode:
+      dashed_name: winlog-opcode
+      description: The opcode defined in the event. Task and opcode are typically
+        used to identify the location in the application from where the event was
+        logged.
+      flat_name: winlog.opcode
+      ignore_above: 1024
+      level: extended
+      name: opcode
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.outcome:
+      dashed_name: winlog-outcome
+      description: Success or Failure of the event.
+      flat_name: winlog.outcome
+      ignore_above: 1024
+      level: extended
+      name: outcome
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.process.pid:
+      dashed_name: winlog-process-pid
+      description: The process_id of the Client Server Runtime Process.
+      flat_name: winlog.process.pid
+      level: extended
+      name: process.pid
+      normalize: []
+      short: ''
+      type: long
+    winlog.process.thread.id:
+      dashed_name: winlog-process-thread-id
+      description: null
+      flat_name: winlog.process.thread.id
+      level: extended
+      name: process.thread.id
+      normalize: []
+      short: ''
+      type: long
+    winlog.provider_guid:
+      dashed_name: winlog-provider-guid
+      description: A globally unique identifier that identifies the provider that
+        logged the event.
+      flat_name: winlog.provider_guid
+      ignore_above: 1024
+      level: extended
+      name: provider_guid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.provider_name:
+      dashed_name: winlog-provider-name
+      description: The source of the event log record (the application or service
+        that logged the record).
+      flat_name: winlog.provider_name
+      ignore_above: 1024
+      level: extended
+      name: provider_name
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.record_id:
+      dashed_name: winlog-record-id
+      description: The record ID of the event log record. The first record written
+        to an event log is record number 1, and other records are numbered sequentially.
+        If the record number reaches the maximum value (2^32^ for the Event Logging
+        API and 2^64^ for the Windows Event Log API), the next record number will
+        be 0.
+      flat_name: winlog.record_id
+      ignore_above: 1024
+      level: extended
+      name: record_id
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.related_activity_id:
+      dashed_name: winlog-related-activity-id
+      description: A globally unique identifier that identifies the activity to which
+        control was transferred to. The related events would then have this identifier
+        as their `activity_id` identifier.
+      flat_name: winlog.related_activity_id
+      ignore_above: 1024
+      level: extended
+      name: related_activity_id
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.task:
+      dashed_name: winlog-task
+      description: The task defined in the event. Task and opcode are typically used
+        to identify the location in the application from where the event was logged.
+        The category used by the Event Logging API (on pre Windows Vista operating
+        systems) is written to this field.
+      flat_name: winlog.task
+      ignore_above: 1024
+      level: extended
+      name: task
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.time_created:
+      dashed_name: winlog-time-created
+      description: Time event was created
+      flat_name: winlog.time_created
+      level: extended
+      name: time_created
+      normalize: []
+      short: ''
+      type: date
+    winlog.trustAttribute:
+      dashed_name: winlog-trustAttribute
+      description: null
+      flat_name: winlog.trustAttribute
+      ignore_above: 1024
+      level: extended
+      name: trustAttribute
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.trustDirection:
+      dashed_name: winlog-trustDirection
+      description: null
+      flat_name: winlog.trustDirection
+      ignore_above: 1024
+      level: extended
+      name: trustDirection
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.trustType:
+      dashed_name: winlog-trustType
+      description: null
+      flat_name: winlog.trustType
+      ignore_above: 1024
+      level: extended
+      name: trustType
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user.domain:
+      dashed_name: winlog-user-domain
+      description: The domain that the account associated with this event is a member
+        of.
+      flat_name: winlog.user.domain
+      ignore_above: 1024
+      level: extended
+      name: user.domain
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user.identifier:
+      dashed_name: winlog-user-identifier
+      description: 'The Windows security identifier (SID) of the account associated
+        with this event.
+
+        If Winlogbeat cannot resolve the SID to a name, then the `user.name`, `user.domain`,
+        and `user.type` fields will be omitted from the event. If you discover Winlogbeat
+        not resolving SIDs, review the log for clues as to what the problem may be.'
+      example: S-1-5-21-3541430928-2051711210-1391384369-1001
+      flat_name: winlog.user.identifier
+      ignore_above: 1024
+      level: extended
+      name: user.identifier
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user.name:
+      dashed_name: winlog-user-name
+      description: Name of the user associated with this event.
+      flat_name: winlog.user.name
+      ignore_above: 1024
+      level: extended
+      name: user.name
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user.type:
+      dashed_name: winlog-user-type
+      description: The type of account associated with this event.
+      flat_name: winlog.user.type
+      ignore_above: 1024
+      level: extended
+      name: user.type
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user_data:
+      dashed_name: winlog-user-data
+      description: The event specific data. This field is mutually exclusive with
+        `event_data`.
+      flat_name: winlog.user_data
+      level: extended
+      name: user_data
+      normalize: []
+      object_type: keyword
+      short: ''
+      type: object
+    winlog.user_data.BackupPath:
+      dashed_name: winlog-user-data-BackupPath
+      description: null
+      flat_name: winlog.user_data.BackupPath
+      ignore_above: 1024
+      level: extended
+      name: user_data.BackupPath
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user_data.Channel:
+      dashed_name: winlog-user-data-Channel
+      description: null
+      flat_name: winlog.user_data.Channel
+      ignore_above: 1024
+      level: extended
+      name: user_data.Channel
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user_data.SubjectDomainName:
+      dashed_name: winlog-user-data-SubjectDomainName
+      description: null
+      flat_name: winlog.user_data.SubjectDomainName
+      ignore_above: 1024
+      level: extended
+      name: user_data.SubjectDomainName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user_data.SubjectLogonId:
+      dashed_name: winlog-user-data-SubjectLogonId
+      description: null
+      flat_name: winlog.user_data.SubjectLogonId
+      ignore_above: 1024
+      level: extended
+      name: user_data.SubjectLogonId
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user_data.SubjectUserName:
+      dashed_name: winlog-user-data-SubjectUserName
+      description: null
+      flat_name: winlog.user_data.SubjectUserName
+      ignore_above: 1024
+      level: extended
+      name: user_data.SubjectUserName
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user_data.SubjectUserSid:
+      dashed_name: winlog-user-data-SubjectUserSid
+      description: null
+      flat_name: winlog.user_data.SubjectUserSid
+      ignore_above: 1024
+      level: extended
+      name: user_data.SubjectUserSid
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.user_data.xml_name:
+      dashed_name: winlog-user-data-xml-name
+      description: null
+      flat_name: winlog.user_data.xml_name
+      ignore_above: 1024
+      level: extended
+      name: user_data.xml_name
+      normalize: []
+      short: ''
+      type: keyword
+    winlog.version:
+      dashed_name: winlog-version
+      description: The version number of the event's definition.
+      flat_name: winlog.version
+      level: extended
+      name: version
+      normalize: []
+      short: ''
+      type: long
+  group: 2
+  name: winlog
+  prefix: winlog.
+  short: winlog
+  title: Windows Event Logs
+  type: group
 x509:
   description: 'This implements the common core fields for x509 certificates. This
     information is likely logged with TLS sessions, digital signatures found in executable

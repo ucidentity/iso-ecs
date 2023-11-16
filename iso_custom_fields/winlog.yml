@@ -1,0 +1,1325 @@
+- name: winlog
+  type: group
+  title: Windows Event Logs
+  short: winlog
+  description: Windows Event Logs
+  group: 2
+  fields:
+
+    - name: api
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The event log API type used to read the record. The possible values are "wineventlog" for the Windows Event Log API or "eventlogging" for the Event Logging API.
+
+        The Event Logging API was designed for Windows Server 2003 or Windows 2000 operating systems. In Windows Vista, the event logging infrastructure was redesigned. On Windows Vista or later operating systems, the Windows Event Log API is used. Winlogbeat automatically detects which API to use for reading event logs.
+
+    - name: activity_id
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        A globally unique identifier that identifies the current activity. The events that are published with this identifier are part of the same activity.
+
+    - name: computer_name
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The name of the computer that generated the record. When using Windows event forwarding, this name can differ from `agent.hostname`.
+
+    - name: level
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The event severity.  Levels are Critical, Error, Warning and Information, Verbose
+
+    - name: outcome
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        Success or Failure of the event.
+
+    - name: time_created
+      level: extended
+      short: ''
+      type: date
+      description: >
+        Time event was created
+
+    - name: trustAttribute
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: trustDirection
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: trustType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+
+    - name: computerObject.domain
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: computerObject.id
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: computerObject.name
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+
+    - name: event_data.AccessGranted
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AccessMask
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AccessMaskDescription
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AccessRemoved
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AccountDomain
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AccountExpires
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AccountName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AllowedToDelegateTo
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AuditPolicyChanges
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AuditPolicyChangesDescription
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AuditSourceName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.AuthenticationPackageName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Binary
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.BitlockerUserInputTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.BootMode
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.BootType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.BuildVersion
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.CallerProcessId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.CallerProcessName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Category
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.CategoryId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ClientAddress
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ClientInfo
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ClientName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.CommandLine
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Company
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ComputerAccountChange
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Configuration
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.CorruptionActionState
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.CrashOnAuditFailValue
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.CreationUtcTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Description
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Details
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DeviceName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DeviceNameLength
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DeviceTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DeviceVersionMajor
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DeviceVersionMinor
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DisplayName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DnsHostName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DomainBehaviorVersion
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DomainName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DomainPolicyChanged
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DomainSid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DriveName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DriverName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DriverNameLength
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Dummy
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.DwordVal
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.EnabledPrivilegeList
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.EntryCount
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.EventSourceId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.EventType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ExtraInfo
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.FailureName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.FailureNameLength
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.FailureReason
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.FileVersion
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.FinalStatus
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Group
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.GroupTypeChange
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.HandleId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.HomeDirectory
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.HomePath
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.IdleImplementation
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.IdleStateCount
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ImpersonationLevel
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.IntegrityLevel
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.IpAddress
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.IpPort
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.KerberosPolicyChange
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.KeyLength
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LastBootGood
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LastShutdownGood
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LmPackageName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LogonGuid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LogonHours
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LogonId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LogonID
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LogonProcessName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.LogonType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MachineAccountQuota
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MajorVersion
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MandatoryLabel
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MaximumPerformancePercent
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MemberName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MemberSid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MinimumPerformancePercent
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MinimumThrottlePercent
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MinorVersion
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.MixedDomainMode
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewProcessId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewProcessName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewSchemeGuid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewSd
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewSdDacl0
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewSdDacl1
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewSdDacl2
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewSdSacl0
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewSdSacl1
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewSdSacl2
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewTargetUserName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewUACList
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NewUacValue
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.NominalFrequency
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Number
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ObjectName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ObjectServer
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ObjectType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OemInformation
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldSchemeGuid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldSd
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldSdDacl0
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldSdDacl1
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldSdDacl2
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldSdSacl0
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldSdSacl1
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldSdSacl2
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldTargetUserName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OldUacValue
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.OriginalFileName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PackageName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PasswordLastSet
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PasswordHistoryLength
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Path
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ParentProcessName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PerformanceImplementation
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PreviousCreationUtcTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PreAuthType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PreviousTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PrimaryGroupId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PrivilegeList
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ProcessId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ProcessName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ProcessPath
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ProcessPid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Product
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ProfilePath
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PuaCount
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.PuaPolicyId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.QfeVersion
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Reason
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SamAccountName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SchemaVersion
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ScriptPath
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Session
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SidHistory
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ScriptBlockText
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Service
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ServiceAccount
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ServiceFileName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ServiceName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ServicePrincipalNames
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ServiceSid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ServiceStartType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ServiceType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ServiceVersion
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SessionName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ShutdownActionType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ShutdownEventCode
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.ShutdownReason
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SidFilteringEnabled
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Signature
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SignatureStatus
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Signed
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.StartTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.State
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Status
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.StatusDescription
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.StopTime
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubCategory
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubCategoryGuid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubcategoryGuid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubCategoryId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubcategoryId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubjectDomainName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubjectLogonId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubjectUserName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubjectUserSid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.SubStatus
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TSId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TargetDomainName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TargetInfo
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TargetLogonGuid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TargetLogonId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TargetServerName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TargetSid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TargetUserName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TargetUserSid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TdoAttributes
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TdoDirection
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TdoType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TerminalSessionId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TicketEncryptionType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TicketEncryptionTypeDescription
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TicketOptions
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TicketOptionsDescription
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TokenElevationType
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.TransmittedServices
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.UserAccountControl
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.UserParameters
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.UserPrincipalName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.UserSid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.UserWorkstations
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Version
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.Workstation
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.WorkstationName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.param1
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.param2
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.param3
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.param4
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.param5
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.param6
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.param7
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: event_data.param8
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+
+    - name: event_id
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The event identifier. The value is specific to the source of the event.
+
+    - name: keywords
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The keywords are used to classify an event.
+
+    - name: channel
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The name of the channel from which this record was read. This value is one of the names from the `event_logs` collection in the configuration.
+
+    - name: record_id
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The record ID of the event log record. The first record written to an event log is record number 1, and other records are numbered sequentially. If the record number reaches the maximum value (2^32^ for the Event Logging API and 2^64^ for the Windows Event Log API), the next record number will be 0.
+
+    - name: related_activity_id
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        A globally unique identifier that identifies the activity to which control was transferred to. The related events would then have this identifier as their `activity_id` identifier.
+
+    - name: opcode
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The opcode defined in the event. Task and opcode are typically used to identify the location in the application from where the event was logged.
+
+    - name: provider_guid
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        A globally unique identifier that identifies the provider that logged the event.
+
+    - name: process.pid
+      level: extended
+      short: ''
+      type: long
+      description: >
+        The process_id of the Client Server Runtime Process.
+
+    - name: provider_name
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The source of the event log record (the application or service that logged the record).
+
+    - name: task
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The task defined in the event. Task and opcode are typically used to identify the location in the application from where the event was logged. The category used by the Event Logging API (on pre Windows Vista operating systems) is written to this field.
+
+    - name: process.thread.id
+      description: 
+      level: extended
+      short: ''
+      type: long
+    - name: user_data
+      level: extended
+      short: ''
+      type: object
+      object_type: keyword
+      description: >
+        The event specific data. This field is mutually exclusive with `event_data`.
+
+    - name: user_data.BackupPath
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: user_data.Channel
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: user_data.SubjectDomainName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: user_data.SubjectLogonId
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: user_data.SubjectUserName
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: user_data.SubjectUserSid
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+    - name: user_data.xml_name
+      description: 
+      level: extended
+      short: ''
+      type: keyword
+
+    - name: user.identifier
+      level: extended
+      short: ''
+      type: keyword
+      example: S-1-5-21-3541430928-2051711210-1391384369-1001
+      description: >
+        The Windows security identifier (SID) of the account associated with this event.
+
+        If Winlogbeat cannot resolve the SID to a name, then the `user.name`, `user.domain`, and `user.type` fields will be omitted from the event. If you discover Winlogbeat not resolving SIDs, review the log for clues as to what the problem may be.
+
+    - name: user.name
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        Name of the user associated with this event.
+
+    - name: user.domain
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The domain that the account associated with this event is a member of.
+
+    - name: user.type
+      level: extended
+      short: ''
+      type: keyword
+      description: >
+        The type of account associated with this event.
+
+    - name: version
+      level: extended
+      short: ''
+      type: long
+      description: The version number of the event's definition.
