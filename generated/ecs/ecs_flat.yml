@@ -11590,6 +11590,56 @@ packet.data.text:
   norms: false
   short: Printable part of the packet payload as text
   type: text
+portal.device.id:
+  dashed_name: portal-device-id
+  description: device id
+  flat_name: portal.device.id
+  ignore_above: 1024
+  level: extended
+  name: device.id
+  normalize: []
+  short: device id
+  type: keyword
+portal.device.mac:
+  dashed_name: portal-device-mac
+  description: device mac address
+  flat_name: portal.device.mac
+  ignore_above: 1024
+  level: extended
+  name: device.mac
+  normalize: []
+  short: device mac address
+  type: keyword
+portal.device.role:
+  dashed_name: portal-device-role
+  description: device roel
+  flat_name: portal.device.role
+  ignore_above: 1024
+  level: extended
+  name: device.role
+  normalize: []
+  short: device roel
+  type: keyword
+portal.device.status:
+  dashed_name: portal-device-status
+  description: device status
+  flat_name: portal.device.status
+  ignore_above: 1024
+  level: extended
+  name: device.status
+  normalize: []
+  short: device status
+  type: keyword
+portal.session_id:
+  dashed_name: portal-session-id
+  description: portal session id
+  flat_name: portal.session_id
+  ignore_above: 1024
+  level: extended
+  name: session_id
+  normalize: []
+  short: portal session id
+  type: keyword
 prisma.alert.policy.labels:
   dashed_name: prisma-alert-policy-labels
   description: Labels for policy that generated the alert

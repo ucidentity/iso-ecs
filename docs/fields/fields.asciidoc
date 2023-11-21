@@ -118,6 +118,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-pe,PE Header>> | These fields contain Windows Portable Executable (PE) metadata.
 
+| <<ecs-portal,portal>> | portal
+
 | <<ecs-prisma,Prisma Alerts>> | Prisma Alerts
 
 | <<ecs-process,Process>> | These fields contain information about a process.

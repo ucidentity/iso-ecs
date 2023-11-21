@@ -29,6 +29,8 @@ fields:
     fields: "*"
   packet:
     fields: "*"
+  portal:
+    fields: "*"
   prisma:
     fields: "*"
   journald:

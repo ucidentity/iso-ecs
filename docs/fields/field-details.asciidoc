@@ -14581,6 +14581,103 @@ The `pe` fields are expected to be nested at:
 
 
 Note also that the `pe` fields are not expected to be used directly at the root of the events.
+[[ecs-portal]]
+=== portal Fields
+
+Fields for logs from portal app
+
+[discrete]
+==== portal Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-portal-device-id]]
+<<field-portal-device-id, portal.device.id>>
+
+a| device id
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-device-mac]]
+<<field-portal-device-mac, portal.device.mac>>
+
+a| device mac address
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-device-role]]
+<<field-portal-device-role, portal.device.role>>
+
+a| device roel
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-device-status]]
+<<field-portal-device-status, portal.device.status>>
+
+a| device status
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-session-id]]
+<<field-portal-session-id, portal.session_id>>
+
+a| portal session id
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-prisma]]
 === Prisma Alerts Fields
 

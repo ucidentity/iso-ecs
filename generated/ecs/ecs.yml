@@ -18330,6 +18330,90 @@ pe:
       top_level: false
     root: false
     title: PE Header
+portal:
+  field_details:
+    dashed_name: portal
+    description: Fields for logs from portal app
+    flat_name: portal
+    name: portal
+    node_name: portal
+    short: portal
+    type: group
+  fields:
+    device:
+      field_details:
+        dashed_name: portal-device
+        flat_name: portal.device
+        intermediate: true
+        name: device
+        node_name: device
+        type: object
+      fields:
+        id:
+          field_details:
+            dashed_name: portal-device-id
+            description: device id
+            flat_name: portal.device.id
+            ignore_above: 1024
+            level: extended
+            name: device.id
+            node_name: id
+            normalize: []
+            short: device id
+            type: keyword
+        mac:
+          field_details:
+            dashed_name: portal-device-mac
+            description: device mac address
+            flat_name: portal.device.mac
+            ignore_above: 1024
+            level: extended
+            name: device.mac
+            node_name: mac
+            normalize: []
+            short: device mac address
+            type: keyword
+        role:
+          field_details:
+            dashed_name: portal-device-role
+            description: device roel
+            flat_name: portal.device.role
+            ignore_above: 1024
+            level: extended
+            name: device.role
+            node_name: role
+            normalize: []
+            short: device roel
+            type: keyword
+        status:
+          field_details:
+            dashed_name: portal-device-status
+            description: device status
+            flat_name: portal.device.status
+            ignore_above: 1024
+            level: extended
+            name: device.status
+            node_name: status
+            normalize: []
+            short: device status
+            type: keyword
+    session_id:
+      field_details:
+        dashed_name: portal-session-id
+        description: portal session id
+        flat_name: portal.session_id
+        ignore_above: 1024
+        level: extended
+        name: session_id
+        node_name: session_id
+        normalize: []
+        short: portal session id
+        type: keyword
+  schema_details:
+    group: 2
+    prefix: portal.
+    root: false
+    title: portal
 prisma:
   field_details:
     dashed_name: prisma

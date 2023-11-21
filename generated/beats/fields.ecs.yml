@@ -8092,6 +8092,43 @@
       format: string
       description: PE Section List virtual size. This is always the same as `physical_size`.
       default_field: false
+  - name: portal
+    title: portal
+    group: 2
+    description: Fields for logs from portal app
+    type: group
+    default_field: true
+    fields:
+    - name: device.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: device id
+      default_field: false
+    - name: device.mac
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: device mac address
+      default_field: false
+    - name: device.role
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: device roel
+      default_field: false
+    - name: device.status
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: device status
+      default_field: false
+    - name: session_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: portal session id
+      default_field: false
   - name: prisma
     title: Prisma Alerts
     group: 2

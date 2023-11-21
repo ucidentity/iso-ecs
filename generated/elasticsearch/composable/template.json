@@ -18,6 +18,7 @@
     "ecs_8.7.0_malware",
     "ecs_8.7.0_nat_allocation",
     "ecs_8.7.0_packet",
+    "ecs_8.7.0_portal",
     "ecs_8.7.0_prisma",
     "ecs_8.7.0_journald",
     "ecs_8.7.0_redcap",
