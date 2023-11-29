@@ -18,10 +18,15 @@
       type: keyword
       description: device mac address
 
-    - name: device.role
+    - name: device.role.name
       level: extended
       type: keyword
-      description: device roel
+      description: device role name
+
+    - name: device.role.id
+      level: extended
+      type: keyword
+      description: device role id
 
     - name: device.status
       level: extended
@@ -32,3 +37,28 @@
       level: extended
       type: keyword
       description: portal session id
+
+    - name: update.after.device_name
+      level: extended
+      type: keyword
+      description: New device name
+
+    - name: update.after.role
+      level: extended
+      type: keyword
+      description: new device role
+
+    - name: update.before.device_name
+      level: extended
+      type: keyword
+      description: Old device name
+
+    - name: update.before.role
+      level: extended
+      type: keyword
+      description: old device role
+
+    - name: update.changed
+      level: extended
+      type: keyword
+      description: What fields have change  

@@ -14628,10 +14628,26 @@ type: keyword
 // ===============================================================
 
 |
-[[field-portal-device-role]]
-<<field-portal-device-role, portal.device.role>>
+[[field-portal-device-role-id]]
+<<field-portal-device-role-id, portal.device.role.id>>
 
-a| device roel
+a| device role id
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-device-role-name]]
+<<field-portal-device-role-name, portal.device.role.name>>
+
+a| device role name
 
 type: keyword
 
@@ -14664,6 +14680,86 @@ type: keyword
 <<field-portal-session-id, portal.session_id>>
 
 a| portal session id
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-update-after-device-name]]
+<<field-portal-update-after-device-name, portal.update.after.device_name>>
+
+a| New device name
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-update-after-role]]
+<<field-portal-update-after-role, portal.update.after.role>>
+
+a| new device role
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-update-before-device-name]]
+<<field-portal-update-before-device-name, portal.update.before.device_name>>
+
+a| Old device name
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-update-before-role]]
+<<field-portal-update-before-role, portal.update.before.role>>
+
+a| old device role
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-portal-update-changed]]
+<<field-portal-update-changed, portal.update.changed>>
+
+a| What fields have change
 
 type: keyword
 

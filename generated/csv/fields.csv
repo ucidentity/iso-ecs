@@ -978,9 +978,15 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,packet,packet.data.text,text,extended,,,Printable part of the packet payload as text
 8.7.0,true,portal,portal.device.id,keyword,extended,,,device id
 8.7.0,true,portal,portal.device.mac,keyword,extended,,,device mac address
-8.7.0,true,portal,portal.device.role,keyword,extended,,,device roel
+8.7.0,true,portal,portal.device.role.id,keyword,extended,,,device role id
+8.7.0,true,portal,portal.device.role.name,keyword,extended,,,device role name
 8.7.0,true,portal,portal.device.status,keyword,extended,,,device status
 8.7.0,true,portal,portal.session_id,keyword,extended,,,portal session id
+8.7.0,true,portal,portal.update.after.device_name,keyword,extended,,,New device name
+8.7.0,true,portal,portal.update.after.role,keyword,extended,,,new device role
+8.7.0,true,portal,portal.update.before.device_name,keyword,extended,,,Old device name
+8.7.0,true,portal,portal.update.before.role,keyword,extended,,,old device role
+8.7.0,true,portal,portal.update.changed,keyword,extended,,,What fields have change
 8.7.0,true,prisma,prisma.alert.policy.labels,keyword,extended,,,Labels for policy that generated the alert
 8.7.0,true,prisma,prisma.alert.policy.type,keyword,extended,,,policy type that generated the alert
 8.7.0,true,prisma,prisma.alert.status,keyword,extended,,,current status of the alert

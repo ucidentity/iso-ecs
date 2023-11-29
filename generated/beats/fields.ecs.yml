@@ -8111,11 +8111,17 @@
       ignore_above: 1024
       description: device mac address
       default_field: false
-    - name: device.role
+    - name: device.role.id
       level: extended
       type: keyword
       ignore_above: 1024
-      description: device roel
+      description: device role id
+      default_field: false
+    - name: device.role.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: device role name
       default_field: false
     - name: device.status
       level: extended
@@ -8128,6 +8134,36 @@
       type: keyword
       ignore_above: 1024
       description: portal session id
+      default_field: false
+    - name: update.after.device_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: New device name
+      default_field: false
+    - name: update.after.role
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: new device role
+      default_field: false
+    - name: update.before.device_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Old device name
+      default_field: false
+    - name: update.before.role
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: old device role
+      default_field: false
+    - name: update.changed
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: What fields have change
       default_field: false
   - name: prisma
     title: Prisma Alerts

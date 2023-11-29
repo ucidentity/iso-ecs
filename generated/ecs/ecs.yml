@@ -18376,15 +18376,36 @@ portal:
         role:
           field_details:
             dashed_name: portal-device-role
-            description: device roel
             flat_name: portal.device.role
-            ignore_above: 1024
-            level: extended
+            intermediate: true
             name: device.role
             node_name: role
-            normalize: []
-            short: device roel
-            type: keyword
+            type: object
+          fields:
+            id:
+              field_details:
+                dashed_name: portal-device-role-id
+                description: device role id
+                flat_name: portal.device.role.id
+                ignore_above: 1024
+                level: extended
+                name: device.role.id
+                node_name: id
+                normalize: []
+                short: device role id
+                type: keyword
+            name:
+              field_details:
+                dashed_name: portal-device-role-name
+                description: device role name
+                flat_name: portal.device.role.name
+                ignore_above: 1024
+                level: extended
+                name: device.role.name
+                node_name: name
+                normalize: []
+                short: device role name
+                type: keyword
         status:
           field_details:
             dashed_name: portal-device-status
@@ -18409,6 +18430,93 @@ portal:
         normalize: []
         short: portal session id
         type: keyword
+    update:
+      field_details:
+        dashed_name: portal-update
+        flat_name: portal.update
+        intermediate: true
+        name: update
+        node_name: update
+        type: object
+      fields:
+        after:
+          field_details:
+            dashed_name: portal-update-after
+            flat_name: portal.update.after
+            intermediate: true
+            name: update.after
+            node_name: after
+            type: object
+          fields:
+            device_name:
+              field_details:
+                dashed_name: portal-update-after-device-name
+                description: New device name
+                flat_name: portal.update.after.device_name
+                ignore_above: 1024
+                level: extended
+                name: update.after.device_name
+                node_name: device_name
+                normalize: []
+                short: New device name
+                type: keyword
+            role:
+              field_details:
+                dashed_name: portal-update-after-role
+                description: new device role
+                flat_name: portal.update.after.role
+                ignore_above: 1024
+                level: extended
+                name: update.after.role
+                node_name: role
+                normalize: []
+                short: new device role
+                type: keyword
+        before:
+          field_details:
+            dashed_name: portal-update-before
+            flat_name: portal.update.before
+            intermediate: true
+            name: update.before
+            node_name: before
+            type: object
+          fields:
+            device_name:
+              field_details:
+                dashed_name: portal-update-before-device-name
+                description: Old device name
+                flat_name: portal.update.before.device_name
+                ignore_above: 1024
+                level: extended
+                name: update.before.device_name
+                node_name: device_name
+                normalize: []
+                short: Old device name
+                type: keyword
+            role:
+              field_details:
+                dashed_name: portal-update-before-role
+                description: old device role
+                flat_name: portal.update.before.role
+                ignore_above: 1024
+                level: extended
+                name: update.before.role
+                node_name: role
+                normalize: []
+                short: old device role
+                type: keyword
+        changed:
+          field_details:
+            dashed_name: portal-update-changed
+            description: What fields have change
+            flat_name: portal.update.changed
+            ignore_above: 1024
+            level: extended
+            name: update.changed
+            node_name: changed
+            normalize: []
+            short: What fields have change
+            type: keyword
   schema_details:
     group: 2
     prefix: portal.
