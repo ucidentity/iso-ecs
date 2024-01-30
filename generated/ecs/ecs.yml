@@ -43113,6 +43113,27 @@ winlog:
         normalize: []
         short: ''
         type: keyword
+    logon:
+      field_details:
+        dashed_name: winlog-logon
+        flat_name: winlog.logon
+        intermediate: true
+        name: logon
+        node_name: logon
+        type: object
+      fields:
+        type:
+          field_details:
+            dashed_name: winlog-logon-type
+            description: logon type
+            flat_name: winlog.logon.type
+            ignore_above: 1024
+            level: extended
+            name: logon.type
+            node_name: type
+            normalize: []
+            short: ''
+            type: keyword
     opcode:
       field_details:
         dashed_name: winlog-opcode

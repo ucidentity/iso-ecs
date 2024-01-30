@@ -1188,6 +1188,12 @@
       type: keyword
       description: >
         The name of the channel from which this record was read. This value is one of the names from the `event_logs` collection in the configuration.
+    
+    - name: logon.type
+      level: extended
+      short: ''
+      type: keyword
+      description: logon type
 
     - name: record_id
       level: extended

@@ -25971,6 +25971,22 @@ type: keyword
 // ===============================================================
 
 |
+[[field-winlog-logon-type]]
+<<field-winlog-logon-type, winlog.logon.type>>
+
+a| logon type
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-winlog-opcode]]
 <<field-winlog-opcode, winlog.opcode>>
 

@@ -32852,6 +32852,16 @@ winlog:
       normalize: []
       short: ''
       type: keyword
+    winlog.logon.type:
+      dashed_name: winlog-logon-type
+      description: logon type
+      flat_name: winlog.logon.type
+      ignore_above: 1024
+      level: extended
+      name: logon.type
+      normalize: []
+      short: ''
+      type: keyword
     winlog.opcode:
       dashed_name: winlog-opcode
       description: The opcode defined in the event. Task and opcode are typically

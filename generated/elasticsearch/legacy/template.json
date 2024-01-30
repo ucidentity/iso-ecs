@@ -11371,6 +11371,14 @@
             "ignore_above": 1024,
             "type": "keyword"
           },
+          "logon": {
+            "properties": {
+              "type": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
           "opcode": {
             "ignore_above": 1024,
             "type": "keyword"

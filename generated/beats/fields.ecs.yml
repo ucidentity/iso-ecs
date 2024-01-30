@@ -19253,6 +19253,12 @@
       description: The event severity.  Levels are Critical, Error, Warning and Information,
         Verbose
       default_field: false
+    - name: logon.type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: logon type
+      default_field: false
     - name: opcode
       level: extended
       type: keyword

@@ -2516,6 +2516,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,winlog,winlog.event_id,keyword,extended,,,
 8.7.0,true,winlog,winlog.keywords,keyword,extended,,,
 8.7.0,true,winlog,winlog.level,keyword,extended,,,
+8.7.0,true,winlog,winlog.logon.type,keyword,extended,,,
 8.7.0,true,winlog,winlog.opcode,keyword,extended,,,
 8.7.0,true,winlog,winlog.outcome,keyword,extended,,,
 8.7.0,true,winlog,winlog.process.pid,long,extended,,,
