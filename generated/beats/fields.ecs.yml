@@ -2582,6 +2582,11 @@
       type: long
       description: Packets sent from the destination to the source.
       example: 12
+    - name: pl
+      level: extended
+      type: integer
+      description: Destination UCB Protection Level
+      default_field: false
     - name: port
       level: core
       type: long
@@ -12431,6 +12436,11 @@
       type: long
       description: Packets sent from the source to the destination.
       example: 12
+    - name: pl
+      level: extended
+      type: integer
+      description: Destination UCB Protection Level
+      default_field: false
     - name: port
       level: core
       type: long

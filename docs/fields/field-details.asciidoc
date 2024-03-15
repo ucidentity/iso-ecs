@@ -5221,6 +5221,22 @@ example: `12`
 // ===============================================================
 
 |
+[[field-destination-pl]]
+<<field-destination-pl, destination.pl>>
+
+a| Destination UCB Protection Level
+
+type: integer
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
 [[field-destination-port]]
 <<field-destination-port, destination.port>>
 
@@ -17431,6 +17447,22 @@ type: long
 example: `12`
 
 | core
+
+// ===============================================================
+
+|
+[[field-source-pl]]
+<<field-source-pl, source.pl>>
+
+a| Destination UCB Protection Level
+
+type: integer
+
+
+
+
+
+| extended
 
 // ===============================================================
 

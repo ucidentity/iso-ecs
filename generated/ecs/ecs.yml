@@ -5907,6 +5907,17 @@ destination:
         normalize: []
         short: Packets sent from the destination to the source.
         type: long
+    pl:
+      field_details:
+        dashed_name: destination-pl
+        description: Destination UCB Protection Level
+        flat_name: destination.pl
+        level: extended
+        name: pl
+        node_name: pl
+        normalize: []
+        short: Destination UCB Protection Level
+        type: integer
     port:
       field_details:
         dashed_name: destination-port
@@ -28053,6 +28064,17 @@ source:
         normalize: []
         short: Packets sent from the source to the destination.
         type: long
+    pl:
+      field_details:
+        dashed_name: source-pl
+        description: Destination UCB Protection Level
+        flat_name: source.pl
+        level: extended
+        name: pl
+        node_name: pl
+        normalize: []
+        short: Destination UCB Protection Level
+        type: integer
     port:
       field_details:
         dashed_name: source-port

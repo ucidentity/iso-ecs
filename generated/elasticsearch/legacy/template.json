@@ -1722,6 +1722,9 @@
           "packets": {
             "type": "long"
           },
+          "pl": {
+            "type": "integer"
+          },
           "port": {
             "type": "long"
           },
@@ -7118,6 +7121,9 @@
           },
           "packets": {
             "type": "long"
+          },
+          "pl": {
+            "type": "integer"
           },
           "port": {
             "type": "long"

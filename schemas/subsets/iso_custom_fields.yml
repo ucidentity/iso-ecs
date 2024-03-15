@@ -15,6 +15,9 @@ fields:
     fields: "*"
   cisco_duo:
     fields: "*"
+  destination:
+    fields:
+      pl: {}
   grouper:
     fields: "*"
   hashicorp_vault: 
@@ -39,6 +42,9 @@ fields:
     fields: "*"
   shibboleth:
     fields: "*"
+  source:
+    fields:
+      pl: {}
   suricata:
     fields: "*"
   system:
