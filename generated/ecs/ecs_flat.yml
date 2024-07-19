@@ -7819,6 +7819,194 @@ file.x509.version_number:
   original_fieldset: x509
   short: Version of x509 format.
   type: keyword
+fireeye.hx.acquisition.requested:
+  dashed_name: fireeye-hx-acquisition-requested
+  description: fireeye hx field
+  flat_name: fireeye.hx.acquisition.requested
+  level: extended
+  name: hx.acquisition.requested
+  normalize: []
+  short: fireeye hx field
+  type: date
+fireeye.hx.agent.acquisition.script:
+  dashed_name: fireeye-hx-agent-acquisition-script
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.acquisition.script
+  ignore_above: 1024
+  level: extended
+  name: hx.agent.acquisition.script
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.agent.acquisition.size:
+  dashed_name: fireeye-hx-agent-acquisition-size
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.acquisition.size
+  level: extended
+  name: hx.agent.acquisition.size
+  normalize: []
+  short: fireeye hx field
+  type: long
+fireeye.hx.agent.alert.correlation_id:
+  dashed_name: fireeye-hx-agent-alert-correlation-id
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.alert.correlation_id
+  ignore_above: 1024
+  level: extended
+  name: hx.agent.alert.correlation_id
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.agent.containment.action:
+  dashed_name: fireeye-hx-agent-containment-action
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.containment.action
+  ignore_above: 1024
+  level: extended
+  name: hx.agent.containment.action
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.agent.id:
+  dashed_name: fireeye-hx-agent-id
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.id
+  ignore_above: 1024
+  level: extended
+  name: hx.agent.id
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.agent.last_audit:
+  dashed_name: fireeye-hx-agent-last-audit
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.last_audit
+  level: extended
+  name: hx.agent.last_audit
+  normalize: []
+  short: fireeye hx field
+  type: date
+fireeye.hx.agent.malware.engine:
+  dashed_name: fireeye-hx-agent-malware-engine
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.malware.engine
+  ignore_above: 1024
+  level: extended
+  name: hx.agent.malware.engine
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.agent.malware.scan.duration:
+  dashed_name: fireeye-hx-agent-malware-scan-duration
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.malware.scan.duration
+  level: extended
+  name: hx.agent.malware.scan.duration
+  normalize: []
+  short: fireeye hx field
+  type: long
+fireeye.hx.agent.malware.scan.objects.actioned:
+  dashed_name: fireeye-hx-agent-malware-scan-objects-actioned
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.malware.scan.objects.actioned
+  level: extended
+  name: hx.agent.malware.scan.objects.actioned
+  normalize: []
+  short: fireeye hx field
+  type: long
+fireeye.hx.agent.malware.scan.objects.infected:
+  dashed_name: fireeye-hx-agent-malware-scan-objects-infected
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.malware.scan.objects.infected
+  level: extended
+  name: hx.agent.malware.scan.objects.infected
+  normalize: []
+  short: fireeye hx field
+  type: long
+fireeye.hx.agent.malware.scan.objects.scanned:
+  dashed_name: fireeye-hx-agent-malware-scan-objects-scanned
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.malware.scan.objects.scanned
+  level: extended
+  name: hx.agent.malware.scan.objects.scanned
+  normalize: []
+  short: fireeye hx field
+  type: long
+fireeye.hx.agent.malware.scan.type:
+  dashed_name: fireeye-hx-agent-malware-scan-type
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.malware.scan.type
+  ignore_above: 1024
+  level: extended
+  name: hx.agent.malware.scan.type
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.agent.version:
+  dashed_name: fireeye-hx-agent-version
+  description: fireeye hx field
+  flat_name: fireeye.hx.agent.version
+  ignore_above: 1024
+  level: extended
+  name: hx.agent.version
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.alert.correlation_id:
+  dashed_name: fireeye-hx-alert-correlation-id
+  description: fireeye hx field
+  flat_name: fireeye.hx.alert.correlation_id
+  ignore_above: 1024
+  level: extended
+  name: hx.alert.correlation_id
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.alert.ioc:
+  dashed_name: fireeye-hx-alert-ioc
+  description: fireeye hx field
+  flat_name: fireeye.hx.alert.ioc
+  ignore_above: 1024
+  level: extended
+  multi_fields:
+  - flat_name: fireeye.hx.alert.ioc.text
+    name: text
+    norms: false
+    type: text
+  name: hx.alert.ioc
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.alert.type:
+  dashed_name: fireeye-hx-alert-type
+  description: fireeye hx field
+  flat_name: fireeye.hx.alert.type
+  ignore_above: 1024
+  level: extended
+  name: hx.alert.type
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.poilicy_changes.keyword:
+  dashed_name: fireeye-hx-poilicy-changes-keyword
+  description: fireeye hx field
+  flat_name: fireeye.hx.poilicy_changes.keyword
+  ignore_above: 1024
+  level: extended
+  name: hx.poilicy_changes.keyword
+  normalize: []
+  short: fireeye hx field
+  type: keyword
+fireeye.hx.security_content_version:
+  dashed_name: fireeye-hx-security-content-version
+  description: fireeye hx field
+  flat_name: fireeye.hx.security_content_version
+  ignore_above: 1024
+  level: extended
+  name: hx.security_content_version
+  normalize: []
+  short: fireeye hx field
+  type: keyword
 group.domain:
   dashed_name: group-domain
   description: 'Name of the directory the group is a member of.

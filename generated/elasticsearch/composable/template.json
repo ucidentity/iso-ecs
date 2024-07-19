@@ -12,6 +12,7 @@
     "ecs_8.7.0_cas",
     "ecs_8.7.0_cisco_duo",
     "ecs_8.7.0_destination",
+    "ecs_8.7.0_fireeye",
     "ecs_8.7.0_grouper",
     "ecs_8.7.0_hashicorp_vault",
     "ecs_8.7.0_ldap",

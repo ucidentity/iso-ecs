@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-fireeye.html",
+    "ecs_version": "8.7.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "fireeye": {
+          "properties": {
+            "hx": {
+              "properties": {
+                "acquisition": {
+                  "properties": {
+                    "requested": {
+                      "type": "date"
+                    }
+                  }
+                },
+                "agent": {
+                  "properties": {
+                    "acquisition": {
+                      "properties": {
+                        "script": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "size": {
+                          "type": "long"
+                        }
+                      }
+                    },
+                    "alert": {
+                      "properties": {
+                        "correlation_id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "containment": {
+                      "properties": {
+                        "action": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "last_audit": {
+                      "type": "date"
+                    },
+                    "malware": {
+                      "properties": {
+                        "engine": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "scan": {
+                          "properties": {
+                            "duration": {
+                              "type": "long"
+                            },
+                            "objects": {
+                              "properties": {
+                                "actioned": {
+                                  "type": "long"
+                                },
+                                "infected": {
+                                  "type": "long"
+                                },
+                                "scanned": {
+                                  "type": "long"
+                                }
+                              }
+                            },
+                            "type": {
+                              "ignore_above": 1024,
+                              "type": "keyword"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "version": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "alert": {
+                  "properties": {
+                    "correlation_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "ioc": {
+                      "fields": {
+                        "text": {
+                          "norms": false,
+                          "type": "text"
+                        }
+                      },
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "poilicy_changes": {
+                  "properties": {
+                    "keyword": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "security_content_version": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

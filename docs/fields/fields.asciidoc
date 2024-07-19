@@ -72,6 +72,8 @@ For a single page representation of all fields, please see the
 
 | <<ecs-file,File>> | Fields describing files.
 
+| <<ecs-fireeye,fireeye>> | fireeye
+
 | <<ecs-geo,Geo>> | Fields describing a location.
 
 | <<ecs-group,Group>> | User's group relevant to the event.

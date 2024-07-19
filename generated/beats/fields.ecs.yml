@@ -5148,6 +5148,124 @@
       description: Version of x509 format.
       example: 3
       default_field: false
+  - name: fireeye
+    title: fireeye
+    group: 2
+    description: Fields for fireeye logs
+    type: group
+    default_field: true
+    fields:
+    - name: hx.acquisition.requested
+      level: extended
+      type: date
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.acquisition.script
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.acquisition.size
+      level: extended
+      type: long
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.alert.correlation_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.containment.action
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.last_audit
+      level: extended
+      type: date
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.malware.engine
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.malware.scan.duration
+      level: extended
+      type: long
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.malware.scan.objects.actioned
+      level: extended
+      type: long
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.malware.scan.objects.infected
+      level: extended
+      type: long
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.malware.scan.objects.scanned
+      level: extended
+      type: long
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.malware.scan.type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.agent.version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.alert.correlation_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.alert.ioc
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: text
+        norms: false
+      description: fireeye hx field
+      default_field: false
+    - name: hx.alert.type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.poilicy_changes.keyword
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
+    - name: hx.security_content_version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: fireeye hx field
+      default_field: false
   - name: geo
     title: Geo
     group: 2

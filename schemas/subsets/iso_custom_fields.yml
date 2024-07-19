@@ -18,6 +18,8 @@ fields:
   destination:
     fields:
       pl: {}
+  fireeye:
+    fields: "*"
   grouper:
     fields: "*"
   hashicorp_vault: 

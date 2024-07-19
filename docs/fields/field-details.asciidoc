@@ -8270,6 +8270,333 @@ These fields contain Mac OS Mach Object file format (Mach-O) metadata.
 |=====
 
 
+[[ecs-fireeye]]
+=== fireeye Fields
+
+Fields for fireeye logs
+
+[discrete]
+==== fireeye Field Details
+
+[options="header"]
+|=====
+| Field  | Description | Level
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-acquisition-requested]]
+<<field-fireeye-hx-acquisition-requested, fireeye.hx.acquisition.requested>>
+
+a| fireeye hx field
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-acquisition-script]]
+<<field-fireeye-hx-agent-acquisition-script, fireeye.hx.agent.acquisition.script>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-acquisition-size]]
+<<field-fireeye-hx-agent-acquisition-size, fireeye.hx.agent.acquisition.size>>
+
+a| fireeye hx field
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-alert-correlation-id]]
+<<field-fireeye-hx-agent-alert-correlation-id, fireeye.hx.agent.alert.correlation_id>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-containment-action]]
+<<field-fireeye-hx-agent-containment-action, fireeye.hx.agent.containment.action>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-id]]
+<<field-fireeye-hx-agent-id, fireeye.hx.agent.id>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-last-audit]]
+<<field-fireeye-hx-agent-last-audit, fireeye.hx.agent.last_audit>>
+
+a| fireeye hx field
+
+type: date
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-malware-engine]]
+<<field-fireeye-hx-agent-malware-engine, fireeye.hx.agent.malware.engine>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-malware-scan-duration]]
+<<field-fireeye-hx-agent-malware-scan-duration, fireeye.hx.agent.malware.scan.duration>>
+
+a| fireeye hx field
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-malware-scan-objects-actioned]]
+<<field-fireeye-hx-agent-malware-scan-objects-actioned, fireeye.hx.agent.malware.scan.objects.actioned>>
+
+a| fireeye hx field
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-malware-scan-objects-infected]]
+<<field-fireeye-hx-agent-malware-scan-objects-infected, fireeye.hx.agent.malware.scan.objects.infected>>
+
+a| fireeye hx field
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-malware-scan-objects-scanned]]
+<<field-fireeye-hx-agent-malware-scan-objects-scanned, fireeye.hx.agent.malware.scan.objects.scanned>>
+
+a| fireeye hx field
+
+type: long
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-malware-scan-type]]
+<<field-fireeye-hx-agent-malware-scan-type, fireeye.hx.agent.malware.scan.type>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-agent-version]]
+<<field-fireeye-hx-agent-version, fireeye.hx.agent.version>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-alert-correlation-id]]
+<<field-fireeye-hx-alert-correlation-id, fireeye.hx.alert.correlation_id>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-alert-ioc]]
+<<field-fireeye-hx-alert-ioc, fireeye.hx.alert.ioc>>
+
+a| fireeye hx field
+
+type: keyword
+
+Multi-fields:
+
+* fireeye.hx.alert.ioc.text (type: text)
+
+
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-alert-type]]
+<<field-fireeye-hx-alert-type, fireeye.hx.alert.type>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-poilicy-changes-keyword]]
+<<field-fireeye-hx-poilicy-changes-keyword, fireeye.hx.poilicy_changes.keyword>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|
+[[field-fireeye-hx-security-content-version]]
+<<field-fireeye-hx-security-content-version, fireeye.hx.security_content_version>>
+
+a| fireeye hx field
+
+type: keyword
+
+
+
+
+
+| extended
+
+// ===============================================================
+
+|=====
+
+
 [[ecs-geo]]
 === Geo Fields
 

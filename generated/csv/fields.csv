@@ -637,6 +637,26 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.7.0,true,file,file.x509.subject.organizational_unit,keyword,extended,array,,List of organizational units (OU) of subject.
 8.7.0,true,file,file.x509.subject.state_or_province,keyword,extended,array,California,"List of state or province names (ST, S, or P)"
 8.7.0,true,file,file.x509.version_number,keyword,extended,,3,Version of x509 format.
+8.7.0,true,fireeye,fireeye.hx.acquisition.requested,date,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.acquisition.script,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.acquisition.size,long,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.alert.correlation_id,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.containment.action,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.id,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.last_audit,date,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.malware.engine,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.malware.scan.duration,long,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.malware.scan.objects.actioned,long,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.malware.scan.objects.infected,long,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.malware.scan.objects.scanned,long,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.malware.scan.type,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.agent.version,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.alert.correlation_id,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.alert.ioc,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.alert.ioc.text,text,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.alert.type,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.poilicy_changes.keyword,keyword,extended,,,fireeye hx field
+8.7.0,true,fireeye,fireeye.hx.security_content_version,keyword,extended,,,fireeye hx field
 8.7.0,true,group,group.domain,keyword,extended,,,Name of the directory the group is a member of.
 8.7.0,true,group,group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
 8.7.0,true,group,group.name,keyword,extended,,,Name of the group.

@@ -20,3 +20,4 @@ experimental/generated/ecs/subset
 *.patch
 
 .python-version
+.mise.toml
