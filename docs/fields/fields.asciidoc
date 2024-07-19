@@ -24,7 +24,21 @@ For a single page representation of all fields, please see the
 
 | <<ecs-agent,Agent>> | Fields about the monitoring agent.
 
+| <<ecs-arcsight,Arcsight>> | Fields for working with Arcsight.
+
 | <<ecs-as,Autonomous System>> | Fields describing an Autonomous System (Internet routing prefix).
+
+| <<ecs-auditd,auditd>> | auditd
+
+| <<ecs-aws,aws>> | Fields for logs from aws
+
+| <<ecs-beyondtrust,beyondtrust>> | Fields for logs from beyondtrust
+
+| <<ecs-bpr,Berkeley People Registry>> | Fields for the Berkeley People Registry Application
+
+| <<ecs-cas,Berkeley CAS>> | Fields for the Berkeley's CAS logs
+
+| <<ecs-cisco_duo,cisco_duo>> | Fields for Cisco Duo logs
 
 | <<ecs-client,Client>> | Fields about the client side of a network connection, used with server.
 
@@ -58,11 +72,17 @@ For a single page representation of all fields, please see the
 
 | <<ecs-file,File>> | Fields describing files.
 
+| <<ecs-fireeye,fireeye>> | fireeye
+
 | <<ecs-geo,Geo>> | Fields describing a location.
 
 | <<ecs-group,Group>> | User's group relevant to the event.
 
+| <<ecs-grouper,grouper>> | Grouper group management
+
 | <<ecs-hash,Hash>> | Hashes, usually file hashes.
+
+| <<ecs-hashicorp_vault,Hashicrop Vault Audit Logs>> | Hashicrop Vault Audit Logs
 
 | <<ecs-host,Host>> | Fields describing the relevant computing instance.
 
@@ -70,9 +90,19 @@ For a single page representation of all fields, please see the
 
 | <<ecs-interface,Interface>> | Fields to describe observer interface information.
 
+| <<ecs-journald,journald>> | journald
+
+| <<ecs-ldap,LDAP>> | Lightweight Directory Access Protocol
+
 | <<ecs-log,Log>> | Details about the event's logging mechanism.
 
+| <<ecs-logstash,Logstash>> | Logstash Logs
+
 | <<ecs-macho,Mach-O Header>> | These fields contain Mac OS Mach Object file format (Mach-O) metadata.
+
+| <<ecs-malware,malware>> | Detected Malware Fields
+
+| <<ecs-nat_allocation,nat_allocation>> | nat_allocation
 
 | <<ecs-network,Network>> | Fields describing the communication path over which the event happened.
 
@@ -86,9 +116,17 @@ For a single page representation of all fields, please see the
 
 | <<ecs-package,Package>> | These fields contain information about an installed software package.
 
+| <<ecs-packet,Packet data>> | Packet payload from IDS alerts
+
 | <<ecs-pe,PE Header>> | These fields contain Windows Portable Executable (PE) metadata.
 
+| <<ecs-portal,portal>> | portal
+
+| <<ecs-prisma,Prisma Alerts>> | Prisma Alerts
+
 | <<ecs-process,Process>> | These fields contain information about a process.
+
+| <<ecs-redcap,redcap>> | redcap
 
 | <<ecs-registry,Registry>> | Fields related to Windows Registry operations.
 
@@ -102,9 +140,19 @@ For a single page representation of all fields, please see the
 
 | <<ecs-service,Service>> | Fields describing the service for or from which the data was collected.
 
+| <<ecs-shibboleth,Shibboleth>> | Fields for shibboleth logs
+
 | <<ecs-source,Source>> | Fields about the source side of a network connection, used with destination.
 
+| <<ecs-suricata,suricata>> | Fields for logs from suricata
+
+| <<ecs-system,System fields, often from syslog>> | Fields for system logs, like sshd, sudo
+
+| <<ecs-systemd,systemd>> | systemd
+
 | <<ecs-threat,Threat>> | Fields to classify events and alerts according to a threat taxonomy.
+
+| <<ecs-ticket,Kerberos tickets>> | Fields for Kerberos tickets
 
 | <<ecs-tls,TLS>> | Fields describing a TLS connection.
 
@@ -112,7 +160,7 @@ For a single page representation of all fields, please see the
 
 | <<ecs-url,URL>> | Fields that let you store URLs in various forms.
 
-| <<ecs-user,User>> | Fields to describe the user relevant to the event.
+| <<ecs-user,user fields>> | Fields to describe the user relevant to the event.
 
 | <<ecs-user_agent,User agent>> | Fields to describe a browser user_agent string.
 
@@ -121,6 +169,8 @@ For a single page representation of all fields, please see the
 | <<ecs-volume,Volume>> | Fields related to storage volume details.
 
 | <<ecs-vulnerability,Vulnerability>> | Fields to describe the vulnerability relevant to an event.
+
+| <<ecs-winlog,Windows Event Logs>> | winlog
 
 | <<ecs-x509,x509 Certificate>> | These fields contain x509 certificate metadata.
 

@@ -43,6 +43,9 @@
             "path": {
               "type": "wildcard"
             },
+            "pl": {
+              "type": "integer"
+            },
             "port": {
               "type": "long"
             },

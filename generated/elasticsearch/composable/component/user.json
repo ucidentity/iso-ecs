@@ -8,6 +8,30 @@
       "properties": {
         "user": {
           "properties": {
+            "audit": {
+              "properties": {
+                "group": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
             "changes": {
               "properties": {
                 "domain": {
@@ -132,6 +156,30 @@
               "ignore_above": 1024,
               "type": "keyword"
             },
+            "filesystem": {
+              "properties": {
+                "group": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
             "full_name": {
               "fields": {
                 "text": {
@@ -174,6 +222,30 @@
               "ignore_above": 1024,
               "type": "keyword"
             },
+            "owner": {
+              "properties": {
+                "group": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
             "risk": {
               "properties": {
                 "calculated_level": {
@@ -201,6 +273,30 @@
             "roles": {
               "ignore_above": 1024,
               "type": "keyword"
+            },
+            "saved": {
+              "properties": {
+                "group": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
             },
             "target": {
               "properties": {

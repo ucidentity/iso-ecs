@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-ticket.html",
+    "ecs_version": "8.12.0-dev"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "ticket": {
+          "properties": {
+            "st": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "tgt": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}

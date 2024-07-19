@@ -1,110 +1,86 @@
 {
   "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-event.html",
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-bpr.html",
     "ecs_version": "8.12.0-dev"
   },
   "template": {
     "mappings": {
       "properties": {
-        "event": {
+        "bpr": {
           "properties": {
-            "action": {
+            "calnet_id": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "agent_id_status": {
+            "description": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "application": {
+            "for_uid": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "category": {
+            "for_username": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "code": {
+            "found_and_deleted": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "created": {
-              "type": "date"
-            },
-            "dataset": {
+            "identifier": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "duration": {
-              "type": "long"
-            },
-            "end": {
-              "type": "date"
-            },
-            "hash": {
+            "identifier_type": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "id": {
+            "logged_in_uid": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "ingested": {
-              "type": "date"
-            },
-            "kind": {
+            "logged_in_username": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "module": {
+            "new_calnet_id": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "original": {
-              "doc_values": false,
-              "index": false,
-              "type": "keyword"
-            },
-            "outcome": {
+            "new_email_address": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "provider": {
+            "new_recovery_email_address": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "reason": {
+            "old_calnet_id": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "reference": {
+            "old_recovery_email_address": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "risk_score": {
-              "type": "float"
-            },
-            "risk_score_norm": {
-              "type": "float"
-            },
-            "sequence": {
-              "type": "long"
-            },
-            "severity": {
-              "type": "long"
-            },
-            "start": {
-              "type": "date"
-            },
-            "timezone": {
+            "recovery_email_address": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "type": {
+            "registration_source": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "url": {
+            "send_upstream_message": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "send_user_message": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "track_status_type": {
               "ignore_above": 1024,
               "type": "keyword"
             }

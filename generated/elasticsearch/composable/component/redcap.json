@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-redcap.html",
+    "ecs_version": "8.12.0-dev"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "redcap": {
+          "properties": {
+            "action": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "log_view_id": {
+              "type": "unsigned_long"
+            },
+            "miscellaneous": {
+              "norms": false,
+              "type": "text"
+            },
+            "page": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "project_id": {
+              "type": "unsigned_long"
+            },
+            "session_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "user": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}

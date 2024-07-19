@@ -1,42 +1,30 @@
 {
   "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-agent.html",
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-grouper.html",
     "ecs_version": "8.12.0-dev"
   },
   "template": {
     "mappings": {
       "properties": {
-        "agent": {
+        "grouper": {
           "properties": {
-            "build": {
-              "properties": {
-                "original": {
-                  "ignore_above": 1024,
-                  "type": "keyword"
-                }
-              }
-            },
-            "ephemeral_id": {
+            "group": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "hostname": {
+            "list": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "id": {
+            "priv": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "name": {
+            "stem": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "type": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            },
-            "version": {
+            "subject": {
               "ignore_above": 1024,
               "type": "keyword"
             }

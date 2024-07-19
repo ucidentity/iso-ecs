@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-system.html",
+    "ecs_version": "8.12.0-dev"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "system": {
+          "properties": {
+            "auth": {
+              "properties": {
+                "ssh": {
+                  "properties": {
+                    "dropped_ip": {
+                      "type": "ip"
+                    },
+                    "event": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "method": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "signature": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "sudo": {
+                  "properties": {
+                    "command": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "error": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "pwd": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "tty": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "user": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -61,6 +61,14 @@
             "labels": {
               "type": "object"
             },
+            "log": {
+              "properties": {
+                "tag": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
             "memory": {
               "properties": {
                 "usage": {

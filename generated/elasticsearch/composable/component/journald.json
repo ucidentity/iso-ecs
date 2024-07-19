@@ -1,0 +1,176 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-journald.html",
+    "ecs_version": "8.12.0-dev"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "journald": {
+          "properties": {
+            "audit": {
+              "properties": {
+                "login_uid": {
+                  "type": "long"
+                },
+                "session": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "code": {
+              "properties": {
+                "file": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "func": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "line": {
+                  "type": "long"
+                }
+              }
+            },
+            "coredump": {
+              "properties": {
+                "unit": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "user_unit": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "custom": {
+              "type": "flattened"
+            },
+            "gid": {
+              "type": "long"
+            },
+            "host": {
+              "properties": {
+                "boot_id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "kernel": {
+              "properties": {
+                "device": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "device_name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "device_node_path": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "device_symlinks": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "subsystem": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "object": {
+              "properties": {
+                "audit": {
+                  "properties": {
+                    "login_uid": {
+                      "type": "long"
+                    },
+                    "session": {
+                      "type": "long"
+                    }
+                  }
+                },
+                "gid": {
+                  "type": "long"
+                },
+                "pid": {
+                  "type": "long"
+                },
+                "process": {
+                  "properties": {
+                    "command_line": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "executable": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "systemd": {
+                  "properties": {
+                    "owner_uid": {
+                      "type": "long"
+                    },
+                    "session": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "unit": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "user_unit": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "uid": {
+                  "type": "long"
+                }
+              }
+            },
+            "pid": {
+              "type": "long"
+            },
+            "process": {
+              "properties": {
+                "capabilities": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "command_line": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "executable": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "uid": {
+              "type": "long"
+            }
+          }
+        }
+      }
+    }
+  }
+}

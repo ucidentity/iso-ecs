@@ -1,42 +1,48 @@
 {
   "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-agent.html",
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-systemd.html",
     "ecs_version": "8.12.0-dev"
   },
   "template": {
     "mappings": {
       "properties": {
-        "agent": {
+        "systemd": {
           "properties": {
-            "build": {
-              "properties": {
-                "original": {
-                  "ignore_above": 1024,
-                  "type": "keyword"
-                }
-              }
-            },
-            "ephemeral_id": {
+            "cgroup": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "hostname": {
+            "custom": {
+              "type": "flattened"
+            },
+            "invocation_id": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "id": {
+            "owner_uid": {
+              "type": "long"
+            },
+            "session": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "name": {
+            "slice": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "type": {
+            "transport": {
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "version": {
+            "unit": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "user_slice": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "user_unit": {
               "ignore_above": 1024,
               "type": "keyword"
             }

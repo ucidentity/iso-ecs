@@ -1,0 +1,146 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-aws.html",
+    "ecs_version": "8.12.0-dev"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "aws": {
+          "properties": {
+            "cloudwatch": {
+              "properties": {
+                "log": {
+                  "properties": {
+                    "group": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "message_type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "stream": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "subscription_filters": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                }
+              }
+            },
+            "lambda": {
+              "properties": {
+                "action": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "duration": {
+                  "properties": {
+                    "billed": {
+                      "type": "double"
+                    },
+                    "init": {
+                      "type": "double"
+                    },
+                    "run": {
+                      "type": "double"
+                    }
+                  }
+                },
+                "memory": {
+                  "properties": {
+                    "size": {
+                      "type": "unsigned_long"
+                    },
+                    "used": {
+                      "type": "unsigned_long"
+                    }
+                  }
+                },
+                "requestid": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "version": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "s3": {
+              "properties": {
+                "bucket": {
+                  "properties": {
+                    "arn": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "object": {
+                  "properties": {
+                    "key": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                }
+              }
+            },
+            "waf": {
+              "properties": {
+                "arn": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "non_terminating_matching_rules": {
+                  "type": "nested"
+                },
+                "rate_based_rule_list": {
+                  "type": "nested"
+                },
+                "request": {
+                  "properties": {
+                    "headers": {
+                      "type": "flattened"
+                    }
+                  }
+                },
+                "rule_group_list": {
+                  "type": "nested"
+                },
+                "source": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "terminating_rule_match_details": {
+                  "type": "nested"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-packet.html",
+    "ecs_version": "8.12.0-dev"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "packet": {
+          "properties": {
+            "data": {
+              "properties": {
+                "base64": {
+                  "norms": false,
+                  "type": "text"
+                },
+                "hex": {
+                  "norms": false,
+                  "type": "text"
+                },
+                "tcpdump": {
+                  "norms": false,
+                  "type": "text"
+                },
+                "text": {
+                  "norms": false,
+                  "type": "text"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

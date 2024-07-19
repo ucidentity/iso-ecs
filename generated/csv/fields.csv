@@ -5,10 +5,233 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,base,tags,keyword,core,array,"[""production"", ""env2""]",List of keywords used to tag each event.
 8.12.0-dev,true,agent,agent.build.original,keyword,core,,"metricbeat version 7.6.0 (amd64), libbeat 7.6.0 [6a23e8f8f30f5001ba344e4e54d8d9cb82cb107c built 2020-02-05 23:10:10 +0000 UTC]",Extended build information for the agent.
 8.12.0-dev,true,agent,agent.ephemeral_id,keyword,extended,,8a4f500f,Ephemeral identifier of this agent.
+8.12.0-dev,true,agent,agent.hostname,keyword,extended,,,Agent's hostname.
 8.12.0-dev,true,agent,agent.id,keyword,core,,8a4f500d,Unique identifier of this agent.
 8.12.0-dev,true,agent,agent.name,keyword,core,,foo,Custom name of the agent.
 8.12.0-dev,true,agent,agent.type,keyword,core,,filebeat,Type of the agent.
 8.12.0-dev,true,agent,agent.version,keyword,core,,6.0.0-rc2,Version of the agent.
+8.12.0-dev,true,arcsight,arcsight.category.behavior,keyword,extended,,,Behavior category
+8.12.0-dev,true,arcsight,arcsight.category.device.group,keyword,extended,,,Event's device group
+8.12.0-dev,true,arcsight,arcsight.category.device.type,keyword,extended,,,Event's device type
+8.12.0-dev,true,arcsight,arcsight.category.object,keyword,extended,,,Event's object category
+8.12.0-dev,true,arcsight,arcsight.category.outcome,keyword,extended,,,Event's outcome
+8.12.0-dev,true,arcsight,arcsight.category.significance,keyword,extended,,,Event's significance
+8.12.0-dev,true,arcsight,arcsight.category.technique,keyword,extended,,,Event's technique
+8.12.0-dev,true,arcsight,arcsight.classid,keyword,extended,,,Event's Classification ID
+8.12.0-dev,true,auditd,auditd.log.a0,keyword,extended,,,The first argument to the system call
+8.12.0-dev,true,auditd,auditd.log.addr,ip,extended,,,ip
+8.12.0-dev,true,auditd,auditd.log.audit_failure,keyword,extended,,,audit_failure
+8.12.0-dev,true,auditd,auditd.log.cipher,keyword,extended,,,cipher
+8.12.0-dev,true,auditd,auditd.log.data,keyword,extended,,,data
+8.12.0-dev,true,auditd,auditd.log.default-context,keyword,extended,,,default-context
+8.12.0-dev,true,auditd,auditd.log.dev,keyword,extended,,,dev
+8.12.0-dev,true,auditd,auditd.log.direction,keyword,extended,,,direction
+8.12.0-dev,true,auditd,auditd.log.dst_prefixlen,long,extended,,,dst_prefixlen
+8.12.0-dev,true,auditd,auditd.log.entries,long,extended,,,entries
+8.12.0-dev,true,auditd,auditd.log.family,keyword,extended,,,family
+8.12.0-dev,true,auditd,auditd.log.fe,keyword,extended,,,fe
+8.12.0-dev,true,auditd,auditd.log.fi,keyword,extended,,,fi
+8.12.0-dev,true,auditd,auditd.log.format,keyword,extended,,,format
+8.12.0-dev,true,auditd,auditd.log.fp,keyword,extended,,,fp
+8.12.0-dev,true,auditd,auditd.log.fver,keyword,extended,,,fver
+8.12.0-dev,true,auditd,auditd.log.gpg_res,keyword,extended,,,gpg_res
+8.12.0-dev,true,auditd,auditd.log.hostname,keyword,extended,,,hostname
+8.12.0-dev,true,auditd,auditd.log.id,keyword,extended,,,id
+8.12.0-dev,true,auditd,auditd.log.img-ctx,keyword,extended,,,img-ctx
+8.12.0-dev,true,auditd,auditd.log.inode,keyword,extended,,,inode
+8.12.0-dev,true,auditd,auditd.log.ip,keyword,extended,,,instruction pointer
+8.12.0-dev,true,auditd,auditd.log.item,keyword,extended,,,index of item
+8.12.0-dev,true,auditd,auditd.log.items,keyword,extended,,,The number of items in an event.
+8.12.0-dev,true,auditd,auditd.log.kernel,keyword,extended,,,kernel
+8.12.0-dev,true,auditd,auditd.log.key_enforce,boolean,extended,,,key_enforce
+8.12.0-dev,true,auditd,auditd.log.kind,keyword,extended,,,kind
+8.12.0-dev,true,auditd,auditd.log.ksize,long,extended,,,ksize
+8.12.0-dev,true,auditd,auditd.log.laddr,ip,extended,,,laddr
+8.12.0-dev,true,auditd,auditd.log.list,keyword,extended,,,list
+8.12.0-dev,true,auditd,auditd.log.lport,long,extended,,,lport
+8.12.0-dev,true,auditd,auditd.log.major,keyword,extended,,,major
+8.12.0-dev,true,auditd,auditd.log.minor,keyword,extended,,,minor
+8.12.0-dev,true,auditd,auditd.log.mode,keyword,extended,,,mode
+8.12.0-dev,true,auditd,auditd.log.model,keyword,extended,,,model
+8.12.0-dev,true,auditd,auditd.log.name,keyword,extended,,,name
+8.12.0-dev,true,auditd,auditd.log.new-level,keyword,extended,,,new-level
+8.12.0-dev,true,auditd,auditd.log.new_auid,keyword,extended,,,new audit id
+8.12.0-dev,true,auditd,auditd.log.new_pe,keyword,extended,,,new_pe
+8.12.0-dev,true,auditd,auditd.log.new_pi,keyword,extended,,,new_pi
+8.12.0-dev,true,auditd,auditd.log.new_pp,keyword,extended,,,new_pp
+8.12.0-dev,true,auditd,auditd.log.new_ses,keyword,extended,,,For login events this is the new session ID. It can be used to tie a user to future events by session ID.
+8.12.0-dev,true,auditd,auditd.log.node,keyword,extended,,,node
+8.12.0-dev,true,auditd,auditd.log.obj,keyword,extended,,,obj
+8.12.0-dev,true,auditd,auditd.log.objtype,keyword,extended,,,objtype
+8.12.0-dev,true,auditd,auditd.log.old,keyword,extended,,,old
+8.12.0-dev,true,auditd,auditd.log.old-level,keyword,extended,,,old-level
+8.12.0-dev,true,auditd,auditd.log.old_auid,keyword,extended,,,For login events this is the old audit ID used for the user prior to this login.
+8.12.0-dev,true,auditd,auditd.log.old_pe,keyword,extended,,,old_pe
+8.12.0-dev,true,auditd,auditd.log.old_pi,keyword,extended,,,old_pi
+8.12.0-dev,true,auditd,auditd.log.old_pp,keyword,extended,,,old_pp
+8.12.0-dev,true,auditd,auditd.log.old_ses,keyword,extended,,,For login events this is the old session ID used for the user prior to this login.
+8.12.0-dev,true,auditd,auditd.log.op,keyword,extended,,,op
+8.12.0-dev,true,auditd,auditd.log.pfs,keyword,extended,,,pfs
+8.12.0-dev,true,auditd,auditd.log.proctitle,keyword,extended,,,proctitle
+8.12.0-dev,true,auditd,auditd.log.rdev,keyword,extended,,,rdev
+8.12.0-dev,true,auditd,auditd.log.reason,keyword,extended,,,reason
+8.12.0-dev,true,auditd,auditd.log.record_type,keyword,extended,,,record_type
+8.12.0-dev,true,auditd,auditd.log.reset,keyword,extended,,,reset
+8.12.0-dev,true,auditd,auditd.log.root_dir,keyword,extended,,,root_dir
+8.12.0-dev,true,auditd,auditd.log.rport,long,extended,,,rport
+8.12.0-dev,true,auditd,auditd.log.saddr,keyword,extended,,,saddr
+8.12.0-dev,true,auditd,auditd.log.selected-context,keyword,extended,,,selected-context
+8.12.0-dev,true,auditd,auditd.log.sequence,long,extended,,,The audit event sequence number.
+8.12.0-dev,true,auditd,auditd.log.ses,keyword,extended,,,ses
+8.12.0-dev,true,auditd,auditd.log.spid,keyword,extended,,,spid
+8.12.0-dev,true,auditd,auditd.log.src_prefixlen,long,extended,,,src_prefixlen
+8.12.0-dev,true,auditd,auditd.log.subj,keyword,extended,,,subj
+8.12.0-dev,true,auditd,auditd.log.success,boolean,extended,,,success
+8.12.0-dev,true,auditd,auditd.log.sw,keyword,extended,,,sw
+8.12.0-dev,true,auditd,auditd.log.sw_type,keyword,extended,,,sw_type
+8.12.0-dev,true,auditd,auditd.log.syscall,keyword,extended,,,syscall
+8.12.0-dev,true,auditd,auditd.log.table,keyword,extended,,,table
+8.12.0-dev,true,auditd,auditd.log.tty,keyword,extended,,,tty
+8.12.0-dev,true,auditd,auditd.log.uid,keyword,extended,,,uid
+8.12.0-dev,true,auditd,auditd.log.unit,keyword,extended,,,unit
+8.12.0-dev,true,auditd,auditd.log.uuid,keyword,extended,,,uuid
+8.12.0-dev,true,auditd,auditd.log.ver,keyword,extended,,,ver
+8.12.0-dev,true,auditd,auditd.log.virt,keyword,extended,,,virt
+8.12.0-dev,true,auditd,auditd.log.vm,keyword,extended,,,vm
+8.12.0-dev,true,auditd,auditd.log.vm-ctx,keyword,extended,,,vm-ctx
+8.12.0-dev,true,aws,aws.cloudwatch.log.group,keyword,extended,,,The CloudWatch LogGroup
+8.12.0-dev,true,aws,aws.cloudwatch.log.message_type,keyword,extended,,,CloudWatch MessageType
+8.12.0-dev,true,aws,aws.cloudwatch.log.stream,keyword,extended,,,The CloudWatch LogStream
+8.12.0-dev,true,aws,aws.cloudwatch.log.subscription_filters,keyword,extended,,,The name of the Subscription Filter used to send CloudWatch Logs to Security
+8.12.0-dev,true,aws,aws.lambda.action,keyword,extended,,,"lambda action (START, REPORT, ...)"
+8.12.0-dev,true,aws,aws.lambda.duration.billed,double,extended,,,Billed duration (ms) for a lambda invocation
+8.12.0-dev,true,aws,aws.lambda.duration.init,double,extended,,,Init duration (ms) for a lambda invocation
+8.12.0-dev,true,aws,aws.lambda.duration.run,double,extended,,,running duration (ms) for a lambda invocation
+8.12.0-dev,true,aws,aws.lambda.memory.size,unsigned_long,extended,,,Size (MB) of memory allocated to a lambda invocation
+8.12.0-dev,true,aws,aws.lambda.memory.used,unsigned_long,extended,,,Actual amount (MB) of memory used by lambda invocation
+8.12.0-dev,true,aws,aws.lambda.requestid,keyword,extended,,,Lambda request id
+8.12.0-dev,true,aws,aws.lambda.version,keyword,extended,,,Lambda function version
+8.12.0-dev,true,aws,aws.s3.bucket.arn,keyword,extended,,,The ARN of the S3 Bucket
+8.12.0-dev,true,aws,aws.s3.bucket.name,keyword,extended,,,The S3 Bucket Name
+8.12.0-dev,true,aws,aws.s3.object.key,keyword,extended,,,The S3 Object Key
+8.12.0-dev,true,aws,aws.waf.arn,keyword,extended,,,AWS ARN of ACL
+8.12.0-dev,true,aws,aws.waf.id,keyword,extended,,,ID of ACL
+8.12.0-dev,true,aws,aws.waf.non_terminating_matching_rules,nested,extended,,,The list of non-terminating rules in the rule group that match the request
+8.12.0-dev,true,aws,aws.waf.rate_based_rule_list,nested,extended,,,The list of rate-based rules that acted on the request.
+8.12.0-dev,true,aws,aws.waf.request.headers,flattened,extended,,,List of request headers
+8.12.0-dev,true,aws,aws.waf.rule_group_list,nested,extended,,,The list of rule groups that acted on this request.
+8.12.0-dev,true,aws,aws.waf.source.id,keyword,extended,,,The source ID. This field shows the ID of the associated resource.
+8.12.0-dev,true,aws,aws.waf.source.name,keyword,extended,,,The source of the request
+8.12.0-dev,true,aws,aws.waf.terminating_rule_match_details,nested,extended,,,Detailed information about the terminating rule that matched the request
+8.12.0-dev,true,beyondtrust,beyondtrust.api,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.auth_method,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.beyondtrust.old_permissions.jump_item_role.teams.id,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.end_time,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.end_timestamp,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.event,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.group_by,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.new_account.disabled,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.new_account.email.address,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_account.created,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_account.disabled,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_account.email.locale,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_account.expiration,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_account.failed_logins,long,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_account.will_expire,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_display_number,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_id,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_license_pool.id,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_license_pool.name,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_login_code.enabled,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_login_schedule.enabled,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_login_schedule.force_logout,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_login_schedule.timezone,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_permissions.jump_item_role.default.id,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_permissions.jump_item_role.default.name,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_permissions.jump_item_role.teams.name,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_provider.id,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_provider.name,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_two_factor_auth.required,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.old_username,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.only_completed,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.outcome,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.reason,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.row_count,long,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.row_start,long,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.segment.id,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.segment.total,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.site,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.site_id,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.site_name,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.start_time,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.start_timestamp,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.status,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.target,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.when,long,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.who,keyword,extended,,,
+8.12.0-dev,true,beyondtrust,beyondtrust.who_ip,keyword,extended,,,
+8.12.0-dev,true,bpr,bpr.calnet_id,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.description,keyword,extended,,,description
+8.12.0-dev,true,bpr,bpr.for_uid,keyword,extended,,,for_uid
+8.12.0-dev,true,bpr,bpr.for_username,keyword,extended,,,for_username
+8.12.0-dev,true,bpr,bpr.found_and_deleted,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.identifier,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.identifier_type,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.logged_in_uid,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.logged_in_username,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.new_calnet_id,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.new_email_address,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.new_recovery_email_address,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.old_calnet_id,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.old_recovery_email_address,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.recovery_email_address,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.registration_source,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.send_upstream_message,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.send_user_message,keyword,extended,,,Calnet ID
+8.12.0-dev,true,bpr,bpr.track_status_type,keyword,extended,,,Calnet ID
+8.12.0-dev,true,cas,cas.application,keyword,extended,,,Application requesting CAS authentication
+8.12.0-dev,true,cas,cas.id,keyword,extended,,,Applicaion's CAS ID
+8.12.0-dev,true,cas,cas.provider,keyword,extended,,,Application's CAS provider
+8.12.0-dev,true,cisco_duo,cisco_duo.admin.action,keyword,extended,,,The type of change that was performed
+8.12.0-dev,true,cisco_duo,cisco_duo.admin.action_performed_on,keyword,extended,,,The object that was acted on.
+8.12.0-dev,true,cisco_duo,cisco_duo.admin.user.name,keyword,extended,,,The full name of the administrator who performed the action in the Duo Admin Panel.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.flash_version,keyword,extended,,,"The Flash plugin version used, if present."
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.hostname,keyword,extended,,,"The hostname, if present."
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.ip,ip,extended,,,The access device's IP address.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.is_encryption_enabled,keyword,extended,,,Reports the disk encryption state as detected by the Duo Device Health app.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.is_firewall_enabled,keyword,extended,,,Reports the firewall state as detected by the Duo Device Health app.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.is_password_set,keyword,extended,,,Reports the system password state as detected by the Duo Device Health app
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.java_version,keyword,extended,,,The Java plugin version used.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.location.city,keyword,extended,,,The city name of the access device using geoip location.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.location.country,keyword,extended,,,The country of the access device using geoip location.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.location.state,keyword,extended,,,The state name of the access device using geoip location.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.access_device.security_agents,keyword,extended,,,Reports the security agents present on the endpoint as detected by the Duo Device Health app.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.alias,keyword,extended,,,The username alias used to log in.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.application.key,keyword,extended,,,The application's integration_key.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.application.name,keyword,extended,,,The application's name.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.as.number,long,extended,,,auth_device AS Number
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.as.organization.name,keyword,extended,,,Organization name.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.geo.city_name,keyword,extended,,,City name.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.geo.continent_name,keyword,extended,,,Name of the continent.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.geo.country_iso_code,keyword,extended,,,Country ISO code.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.geo.country_name,keyword,extended,,,Country name.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.geo.location,geo_point,core,,,Longitude and latitude.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.geo.region_iso_code,keyword,extended,,,Region ISO code.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.geo.region_name,keyword,extended,,,Region name.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.ip,ip,extended,,,The IP address of the authentication device.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.location.city,keyword,extended,,,The city name of the authentication device using geoip location.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.location.country,keyword,extended,,,The country of the authentication device using geoip location.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.location.state,keyword,extended,,,The state name of the authentication device using geoip location.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.auth_device.name,keyword,extended,,,The name of the authentication device.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.email,keyword,extended,,,"The email address of the user, if known to Duo, otherwise none."
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.event_type,keyword,extended,,,The type of activity logged.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.factor,keyword,extended,,,The authentication factor.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.geo_mismatch,boolean,extended,,,True when auth_device.geo.state != access_device.geo.state. indicates a potential security issue.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.ood_software,keyword,extended,,,"If authentication was denied due to out-of-date software, shows the name of the software."
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.reason,keyword,extended,,,Provide the reason for the authentication attempt result.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.result,keyword,extended,,,The result of the authentication attempt.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.trusted_endpoint_status,keyword,extended,,,Status of Trusted Endpoint.
+8.12.0-dev,true,cisco_duo,cisco_duo.auth.txid,keyword,extended,,,The transaction ID of the event.
 8.12.0-dev,true,client,client.address,keyword,extended,,,Client network address.
 8.12.0-dev,true,client,client.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
 8.12.0-dev,true,client,client.as.organization.name,keyword,extended,,Google LLC,Organization name.
@@ -49,12 +272,14 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,client,client.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 8.12.0-dev,true,cloud,cloud.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.12.0-dev,true,cloud,cloud.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.12.0-dev,true,cloud,cloud.account.pl,integer,extended,,,Cloud Account Protection Level
 8.12.0-dev,true,cloud,cloud.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.12.0-dev,true,cloud,cloud.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.12.0-dev,true,cloud,cloud.instance.name,keyword,extended,,,Instance name of the host machine.
 8.12.0-dev,true,cloud,cloud.machine.type,keyword,extended,,t2.medium,Machine type of the host machine.
 8.12.0-dev,true,cloud,cloud.origin.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.12.0-dev,true,cloud,cloud.origin.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.12.0-dev,true,cloud,cloud.origin.account.pl,integer,extended,,,Cloud Account Protection Level
 8.12.0-dev,true,cloud,cloud.origin.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.12.0-dev,true,cloud,cloud.origin.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.12.0-dev,true,cloud,cloud.origin.instance.name,keyword,extended,,,Instance name of the host machine.
@@ -71,6 +296,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,cloud,cloud.service.name,keyword,extended,,lambda,The cloud service name.
 8.12.0-dev,true,cloud,cloud.target.account.id,keyword,extended,,666777888999,The cloud account or organization id.
 8.12.0-dev,true,cloud,cloud.target.account.name,keyword,extended,,elastic-dev,The cloud account name.
+8.12.0-dev,true,cloud,cloud.target.account.pl,integer,extended,,,Cloud Account Protection Level
 8.12.0-dev,true,cloud,cloud.target.availability_zone,keyword,extended,,us-east-1c,"Availability zone in which this host, resource, or service is located."
 8.12.0-dev,true,cloud,cloud.target.instance.id,keyword,extended,,i-1234567890abcdef0,Instance ID of the host machine.
 8.12.0-dev,true,cloud,cloud.target.instance.name,keyword,extended,,,Instance name of the host machine.
@@ -88,6 +314,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,container,container.image.name,keyword,extended,,,Name of the image the container was built on.
 8.12.0-dev,true,container,container.image.tag,keyword,extended,array,,Container image tags.
 8.12.0-dev,true,container,container.labels,object,extended,,,Image labels.
+8.12.0-dev,true,container,container.log.tag,keyword,extended,,,User defined tag of a container. Originates from the Docker journald logging driver.
 8.12.0-dev,true,container,container.memory.usage,scaled_float,extended,,,"Percent memory used, between 0 and 1."
 8.12.0-dev,true,container,container.name,keyword,extended,,,Container name.
 8.12.0-dev,true,container,container.network.egress.bytes,long,extended,,,The number of bytes sent on all network interfaces.
@@ -103,6 +330,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,destination,destination.as.organization.name.text,match_only_text,extended,,Google LLC,Organization name.
 8.12.0-dev,true,destination,destination.bytes,long,core,,184,Bytes sent from the destination to the source.
 8.12.0-dev,true,destination,destination.domain,keyword,core,,foo.example.com,The domain name of the destination.
+8.12.0-dev,true,destination,destination.domain.text,text,core,,foo.example.com,The domain name of the destination.
 8.12.0-dev,true,destination,destination.geo.city_name,keyword,core,,Montreal,City name.
 8.12.0-dev,true,destination,destination.geo.continent_code,keyword,core,,NA,Continent code.
 8.12.0-dev,true,destination,destination.geo.continent_name,keyword,core,,North America,Name of the continent.
@@ -119,6 +347,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,destination,destination.nat.ip,ip,extended,,,Destination NAT ip
 8.12.0-dev,true,destination,destination.nat.port,long,extended,,,Destination NAT Port
 8.12.0-dev,true,destination,destination.packets,long,core,,12,Packets sent from the destination to the source.
+8.12.0-dev,true,destination,destination.pl,integer,extended,,,Destination UCB Protection Level
 8.12.0-dev,true,destination,destination.port,long,core,,,Port of the destination.
 8.12.0-dev,true,destination,destination.registered_domain,keyword,extended,,example.com,"The highest registered destination domain, stripped of the subdomain."
 8.12.0-dev,true,destination,destination.subdomain,keyword,extended,,east,The subdomain of the domain.
@@ -234,6 +463,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,error,error.type,keyword,extended,,java.lang.NullPointerException,"The type of the error, for example the class name of the exception."
 8.12.0-dev,true,event,event.action,keyword,core,,user-password-change,The action captured by the event.
 8.12.0-dev,true,event,event.agent_id_status,keyword,extended,,verified,Validation status of the event's agent.id field.
+8.12.0-dev,true,event,event.application,keyword,extended,,,The application generating the event
 8.12.0-dev,true,event,event.category,keyword,core,array,authentication,Event category. The second categorization field in the hierarchy.
 8.12.0-dev,true,event,event.code,keyword,extended,,4648,Identification code for this event.
 8.12.0-dev,true,event,event.created,date,core,,2016-05-23T08:05:34.857Z,Time when the event was first read by an agent or by your pipeline.
@@ -351,6 +581,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,file,file.mode,keyword,extended,,0640,Mode of the file in octal representation.
 8.12.0-dev,true,file,file.mtime,date,extended,,,Last time the file content was modified.
 8.12.0-dev,true,file,file.name,keyword,extended,,example.png,"Name of the file including the extension, without the directory."
+8.12.0-dev,true,file,file.offset,long,extended,,,The file offset
 8.12.0-dev,true,file,file.owner,keyword,extended,,alice,File owner's username.
 8.12.0-dev,true,file,file.path,keyword,extended,,/home/alice/example.png,"Full path to the file, including the file name."
 8.12.0-dev,true,file,file.path.text,match_only_text,extended,,/home/alice/example.png,"Full path to the file, including the file name."
@@ -406,15 +637,107 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,file,file.x509.subject.organizational_unit,keyword,extended,array,,List of organizational units (OU) of subject.
 8.12.0-dev,true,file,file.x509.subject.state_or_province,keyword,extended,array,California,"List of state or province names (ST, S, or P)"
 8.12.0-dev,true,file,file.x509.version_number,keyword,extended,,3,Version of x509 format.
+8.12.0-dev,true,fireeye,fireeye.hx.acquisition.requested,date,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.acquisition.script,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.acquisition.size,long,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.alert.correlation_id,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.containment.action,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.id,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.last_audit,date,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.malware.engine,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.malware.scan.duration,long,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.malware.scan.objects.actioned,long,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.malware.scan.objects.infected,long,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.malware.scan.objects.scanned,long,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.malware.scan.type,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.agent.version,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.alert.correlation_id,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.alert.ioc,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.alert.ioc.text,text,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.alert.type,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.poilicy_changes.keyword,keyword,extended,,,fireeye hx field
+8.12.0-dev,true,fireeye,fireeye.hx.security_content_version,keyword,extended,,,fireeye hx field
 8.12.0-dev,true,group,group.domain,keyword,extended,,,Name of the directory the group is a member of.
 8.12.0-dev,true,group,group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
 8.12.0-dev,true,group,group.name,keyword,extended,,,Name of the group.
+8.12.0-dev,true,grouper,grouper.group,keyword,extended,,,group
+8.12.0-dev,true,grouper,grouper.list,keyword,extended,,,group list
+8.12.0-dev,true,grouper,grouper.priv,keyword,extended,,,privleges
+8.12.0-dev,true,grouper,grouper.stem,keyword,extended,,,stem
+8.12.0-dev,true,grouper,grouper.subject,keyword,extended,,,subject
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.accessor,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.client_token,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.display_name,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.entity_id,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.external_namespace_policies,flattened,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.identity_policies,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.metadata,flattened,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.no_default_policy,boolean,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.policies,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.allowed,boolean,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.name,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.namespace_id,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.policy_results.granting_policies.type,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.remaining_uses,long,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.token_issue_time,date,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.token_policies,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.token_ttl,long,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.auth.token_type,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.entity_created,boolean,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.error,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.client_certificate_serial_number,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.client_id,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.client_token,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.client_token_accessor,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.data,flattened,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.headers,flattened,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.id,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.mount_accessor,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.mount_type,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.namespace.id,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.namespace.path,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.operation,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.path,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.path.text,text,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.policy_override,boolean,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.remote_address,ip,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.remote_port,long,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.replication_cluster,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.request.wrap_ttl,long,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.accessor,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.client_token,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.display_name,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.entity_id,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.external_namespace_policies,flattened,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.identity_policies,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.metadata,flattened,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.no_default_policy,boolean,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.num_uses,long,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.policies,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.token_issue_time,date,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.token_policies,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.token_ttl,long,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.auth.token_type,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.data,flattened,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.headers,flattened,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.mount_accessor,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.mount_type,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.redirect,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.warnings,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.wrap_info.accessor,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.wrap_info.creation_path,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.wrap_info.creation_time,date,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.wrap_info.token,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.wrap_info.ttl,long,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.response.wrap_info.wrapped_accessor,keyword,extended,,,
+8.12.0-dev,true,hashicorp_vault,hashicorp_vault.audit.type,keyword,extended,,,
 8.12.0-dev,true,host,host.architecture,keyword,core,,x86_64,Operating system architecture.
 8.12.0-dev,true,host,host.boot.id,keyword,extended,,88a1f0ed-5ae5-41ee-af6b-41921c311872,Linux boot uuid taken from /proc/sys/kernel/random/boot_id
 8.12.0-dev,true,host,host.cpu.usage,scaled_float,extended,,,"Percent CPU used, between 0 and 1."
 8.12.0-dev,true,host,host.disk.read.bytes,long,extended,,,The number of bytes read by all disks.
 8.12.0-dev,true,host,host.disk.write.bytes,long,extended,,,The number of bytes written on all disks.
 8.12.0-dev,true,host,host.domain,keyword,extended,,CONTOSO,Name of the directory the group is a member of.
+8.12.0-dev,true,host,host.environment,keyword,extended,,,Host's environment.
 8.12.0-dev,true,host,host.geo.city_name,keyword,core,,Montreal,City name.
 8.12.0-dev,true,host,host.geo.continent_code,keyword,core,,NA,Continent code.
 8.12.0-dev,true,host,host.geo.continent_name,keyword,core,,North America,Name of the continent.
@@ -468,6 +791,90 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,http,http.response.mime_type,keyword,extended,,image/gif,Mime type of the body of the response.
 8.12.0-dev,true,http,http.response.status_code,long,extended,,404,HTTP response status code.
 8.12.0-dev,true,http,http.version,keyword,extended,,1.1,HTTP version.
+8.12.0-dev,true,journald,journald.audit.login_uid,long,extended,,,
+8.12.0-dev,true,journald,journald.audit.session,keyword,extended,,,
+8.12.0-dev,true,journald,journald.code.file,keyword,extended,,,
+8.12.0-dev,true,journald,journald.code.func,keyword,extended,,,
+8.12.0-dev,true,journald,journald.code.line,long,extended,,,
+8.12.0-dev,true,journald,journald.coredump.unit,keyword,extended,,,
+8.12.0-dev,true,journald,journald.coredump.user_unit,keyword,extended,,,
+8.12.0-dev,true,journald,journald.custom,flattened,extended,,,
+8.12.0-dev,true,journald,journald.gid,long,extended,,,
+8.12.0-dev,true,journald,journald.host.boot_id,keyword,extended,,,
+8.12.0-dev,true,journald,journald.kernel.device,keyword,extended,,,
+8.12.0-dev,true,journald,journald.kernel.device_name,keyword,extended,,,
+8.12.0-dev,true,journald,journald.kernel.device_node_path,keyword,extended,,,
+8.12.0-dev,true,journald,journald.kernel.device_symlinks,keyword,extended,,,
+8.12.0-dev,true,journald,journald.kernel.subsystem,keyword,extended,,,
+8.12.0-dev,true,journald,journald.object.audit.login_uid,long,extended,,,
+8.12.0-dev,true,journald,journald.object.audit.session,long,extended,,,
+8.12.0-dev,true,journald,journald.object.gid,long,extended,,,
+8.12.0-dev,true,journald,journald.object.pid,long,extended,,,
+8.12.0-dev,true,journald,journald.object.process.command_line,keyword,extended,,,
+8.12.0-dev,true,journald,journald.object.process.executable,keyword,extended,,,
+8.12.0-dev,true,journald,journald.object.process.name,keyword,extended,,,
+8.12.0-dev,true,journald,journald.object.systemd.owner_uid,long,extended,,,
+8.12.0-dev,true,journald,journald.object.systemd.session,keyword,extended,,,
+8.12.0-dev,true,journald,journald.object.systemd.unit,keyword,extended,,,
+8.12.0-dev,true,journald,journald.object.systemd.user_unit,keyword,extended,,,
+8.12.0-dev,true,journald,journald.object.uid,long,extended,,,
+8.12.0-dev,true,journald,journald.pid,long,extended,,,
+8.12.0-dev,true,journald,journald.process.capabilities,keyword,extended,,,
+8.12.0-dev,true,journald,journald.process.command_line,keyword,extended,,,
+8.12.0-dev,true,journald,journald.process.executable,keyword,extended,,,
+8.12.0-dev,true,journald,journald.process.name,keyword,extended,,,
+8.12.0-dev,true,journald,journald.uid,long,extended,,,
+8.12.0-dev,true,ldap,ldap.attributes,keyword,extended,,,LDAP properties
+8.12.0-dev,true,ldap,ldap.base,keyword,extended,,,LDAP Search Base
+8.12.0-dev,true,ldap,ldap.category,keyword,extended,,,LDAP DN
+8.12.0-dev,true,ldap,ldap.filter,keyword,extended,,,LDAP search filter
+8.12.0-dev,true,ldap,ldap.indexed_search,boolean,extended,,,If the search is indexed
+8.12.0-dev,true,ldap,ldap.message,keyword,extended,,,LDAP message
+8.12.0-dev,true,ldap,ldap.oid,keyword,extended,,,LDAP OID
+8.12.0-dev,true,ldap,ldap.operation,keyword,extended,,,LDAP operation
+8.12.0-dev,true,ldap,ldap.replication.message.category,keyword,extended,,,Message category from server's operational logs
+8.12.0-dev,true,ldap,ldap.replication.message.id,long,extended,,,Message ID from server's operational logs
+8.12.0-dev,true,ldap,ldap.replication.message.severity,keyword,extended,,,Message severity from server's operational logs
+8.12.0-dev,true,ldap,ldap.request.attrs,keyword,extended,,,LDAP attributes requested by client
+8.12.0-dev,true,ldap,ldap.request.authType,keyword,extended,,,"LDAP auth type (e.g. simple, anonymous)"
+8.12.0-dev,true,ldap,ldap.request.connection_id,long,extended,,,Unique connection ID per server/request/day
+8.12.0-dev,true,ldap,ldap.request.controls,keyword,extended,,,OID of the extended request from the client
+8.12.0-dev,true,ldap,ldap.request.delete_old_rdn,keyword,extended,,,Controls retention of old RDN for a modify DN operation (rename)
+8.12.0-dev,true,ldap,ldap.request.dn,keyword,extended,,,Bind DN
+8.12.0-dev,true,ldap,ldap.request.filter,keyword,extended,,,LDAP search filter
+8.12.0-dev,true,ldap,ldap.request.id_to_abandon,long,extended,,,Message ID of the request to abandon from a specific client session
+8.12.0-dev,true,ldap,ldap.request.message,keyword,extended,,,Localized request message
+8.12.0-dev,true,ldap,ldap.request.msg_id,long,extended,,,Unique message ID per client session
+8.12.0-dev,true,ldap,ldap.request.name,keyword,extended,,,Name that corresponds to the request.oid
+8.12.0-dev,true,ldap,ldap.request.new_rdn,keyword,extended,,,New value of the RDN for a modify DN operation (rename)
+8.12.0-dev,true,ldap,ldap.request.new_sup,keyword,extended,,,New value of the parent for a modify DN operation (move)
+8.12.0-dev,true,ldap,ldap.request.oid,keyword,extended,,,Request control OID
+8.12.0-dev,true,ldap,ldap.request.op_type,keyword,extended,,,Replication operation (sync)
+8.12.0-dev,true,ldap,ldap.request.operation,keyword,extended,,,LDAP operation requested by client
+8.12.0-dev,true,ldap,ldap.request.run_as,keyword,extended,,,Authorization ID
+8.12.0-dev,true,ldap,ldap.request.scope,keyword,extended,,,Search scope (e.g. sub)
+8.12.0-dev,true,ldap,ldap.request.version,keyword,extended,,,Version 2 or 3
+8.12.0-dev,true,ldap,ldap.request_controls,keyword,extended,,,LDAP request controls
+8.12.0-dev,true,ldap,ldap.response.controls,keyword,extended,,,OID of the extended response from the server
+8.12.0-dev,true,ldap,ldap.response.detail,keyword,extended,,,Additional response details
+8.12.0-dev,true,ldap,ldap.response.elapsed_time_ms,long,extended,,,Total elapsed time for the operation in milliseconds
+8.12.0-dev,true,ldap,ldap.response.failure_reason,keyword,extended,,,Human-readable failure reason
+8.12.0-dev,true,ldap,ldap.response.masked_message,keyword,extended,,,"Real, masked result message"
+8.12.0-dev,true,ldap,ldap.response.masked_result,keyword,extended,,,"Real, masked result code"
+8.12.0-dev,true,ldap,ldap.response.nentries,long,extended,,,Number of entries returned
+8.12.0-dev,true,ldap,ldap.response.reason,keyword,extended,,,Reason for disconnect
+8.12.0-dev,true,ldap,ldap.response.status_code,keyword,extended,,,either successful or failed
+8.12.0-dev,true,ldap,ldap.result.code,long,extended,,,LDAP result code
+8.12.0-dev,true,ldap,ldap.result.count,long,extended,,,Count of records returned by LDAP query
+8.12.0-dev,true,ldap,ldap.scope,keyword,extended,,,LDAP query scope
+8.12.0-dev,true,ldap,ldap.secure_bind,boolean,extended,,,Indicates a BIND operation uses a security strength factor (e.g. SSL/TLS)
+8.12.0-dev,true,ldap,ldap.server.message.category,keyword,extended,,,Message category from server's operational logs
+8.12.0-dev,true,ldap,ldap.server.message.id,long,extended,,,Message ID from server's operational logs
+8.12.0-dev,true,ldap,ldap.server.message.severity,keyword,extended,,,Message severity from server's operational logs
+8.12.0-dev,true,ldap,ldap.transaction_id,keyword,extended,,,Unique ID for the transaction
+8.12.0-dev,true,ldap,ldap.type,keyword,extended,,,LDAP query type
+8.12.0-dev,true,ldap,ldap.user_id,keyword,extended,,,User who requested the operation
+8.12.0-dev,true,ldap,ldap.version,keyword,extended,,,LDAP version
 8.12.0-dev,true,log,log.file.path,keyword,extended,,/var/log/fun-times.log,Full path to the log file this event came from.
 8.12.0-dev,true,log,log.level,keyword,core,,error,Log level of the log event.
 8.12.0-dev,true,log,log.logger,keyword,core,,org.elasticsearch.bootstrap.Bootstrap,Name of the logger.
@@ -486,6 +893,17 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,log,log.syslog.severity.name,keyword,extended,,Error,Syslog text-based severity of the event.
 8.12.0-dev,true,log,log.syslog.structured_data,flattened,extended,,,Structured data expressed in RFC 5424 messages.
 8.12.0-dev,true,log,log.syslog.version,keyword,extended,,1,Syslog protocol version.
+8.12.0-dev,true,logstash,logstash.log.module,keyword,extended,,,The module or class where the event originate.
+8.12.0-dev,true,logstash,logstash.log.pipeline_action_id,keyword,extended,,,ID of specific aciton within a pipeline that generated the log
+8.12.0-dev,true,logstash,logstash.log.pipeline_id,keyword,extended,,,ID of logstash pipeline that generated the log
+8.12.0-dev,true,malware,malware.malicious,boolean,extended,,,Whether the malware is malicious
+8.12.0-dev,true,malware,malware.name,keyword,extended,,,Name of malware
+8.12.0-dev,true,nat_allocation,nat_allocation.blocks.max,unsigned_long,extended,,,Max number of NAT pool blocks
+8.12.0-dev,true,nat_allocation,nat_allocation.blocks.used,unsigned_long,extended,,,Current number of NAT pool blocks used
+8.12.0-dev,true,nat_allocation,nat_allocation.pool,keyword,extended,,,Nat allocation pool
+8.12.0-dev,true,nat_allocation,nat_allocation.port.high,unsigned_long,extended,,,High port in allocated block
+8.12.0-dev,true,nat_allocation,nat_allocation.port.low,unsigned_long,extended,,,Low port in allocated block
+8.12.0-dev,true,nat_allocation,nat_allocation.session_id,keyword,extended,,,session id
 8.12.0-dev,true,network,network.application,keyword,extended,,aim,Application level protocol name.
 8.12.0-dev,true,network,network.bytes,long,core,,368,Total bytes transferred in both directions.
 8.12.0-dev,true,network,network.community_id,keyword,extended,,1:hO+sN4H+MG5MY/8hIrXPqc4ZQz0=,A hash of source and destination IPs and ports.
@@ -545,6 +963,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,observer,observer.type,keyword,core,,firewall,The type of the observer the data is coming from.
 8.12.0-dev,true,observer,observer.vendor,keyword,core,,Symantec,Vendor name of the observer.
 8.12.0-dev,true,observer,observer.version,keyword,core,,,Observer version.
+8.12.0-dev,true,observer,observer.vsys,keyword,extended,,,VSYS geneating firewall log
 8.12.0-dev,true,orchestrator,orchestrator.api_version,keyword,extended,,v1beta1,API version being used to carry out the action
 8.12.0-dev,true,orchestrator,orchestrator.cluster.id,keyword,extended,,,Unique ID of the cluster.
 8.12.0-dev,true,orchestrator,orchestrator.cluster.name,keyword,extended,,,Name of the cluster.
@@ -576,6 +995,27 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,package,package.size,long,extended,,62231,Package size in bytes.
 8.12.0-dev,true,package,package.type,keyword,extended,,rpm,Package type
 8.12.0-dev,true,package,package.version,keyword,extended,,1.12.9,Package version
+8.12.0-dev,true,packet,packet.data.base64,text,extended,,,packet payload encoded as base64
+8.12.0-dev,true,packet,packet.data.hex,text,extended,,,packet payload encoded as hex
+8.12.0-dev,true,packet,packet.data.tcpdump,text,extended,,,packet payload displayed in a tcpdump format
+8.12.0-dev,true,packet,packet.data.text,text,extended,,,Printable part of the packet payload as text
+8.12.0-dev,true,portal,portal.device.id,keyword,extended,,,device id
+8.12.0-dev,true,portal,portal.device.mac,keyword,extended,,,device mac address
+8.12.0-dev,true,portal,portal.device.role.id,keyword,extended,,,device role id
+8.12.0-dev,true,portal,portal.device.role.name,keyword,extended,,,device role name
+8.12.0-dev,true,portal,portal.device.status,keyword,extended,,,device status
+8.12.0-dev,true,portal,portal.session_id,keyword,extended,,,portal session id
+8.12.0-dev,true,portal,portal.update.after.device_name,keyword,extended,,,New device name
+8.12.0-dev,true,portal,portal.update.after.role,keyword,extended,,,new device role
+8.12.0-dev,true,portal,portal.update.before.device_name,keyword,extended,,,Old device name
+8.12.0-dev,true,portal,portal.update.before.role,keyword,extended,,,old device role
+8.12.0-dev,true,portal,portal.update.changed,keyword,extended,,,What fields have change
+8.12.0-dev,true,prisma,prisma.alert.policy.labels,keyword,extended,,,Labels for policy that generated the alert
+8.12.0-dev,true,prisma,prisma.alert.policy.type,keyword,extended,,,policy type that generated the alert
+8.12.0-dev,true,prisma,prisma.alert.status,keyword,extended,,,current status of the alert
+8.12.0-dev,true,prisma,prisma.compliance,flattened,extended,,,Key Value metadata detailing what compliance standards contain the alert
+8.12.0-dev,true,prisma,prisma.resource,flattened,extended,,,Detailed information about the resource that generated the alert
+8.12.0-dev,true,prisma,prisma.tags,flattened,extended,,,Tags from prisma
 8.12.0-dev,true,process,process.args,keyword,extended,array,"[""/usr/bin/ssh"", ""-l"", ""user"", ""10.0.0.16""]",Array of process arguments.
 8.12.0-dev,true,process,process.args_count,long,extended,,4,Length of the process.args array.
 8.12.0-dev,true,process,process.code_signature.digest_algorithm,keyword,extended,,sha256,Hashing algorithm used to sign the process.
@@ -1000,6 +1440,13 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,process,process.vpid,long,core,,4242,Virtual process id.
 8.12.0-dev,true,process,process.working_directory,keyword,extended,,/home/alice,The working directory of the process.
 8.12.0-dev,true,process,process.working_directory.text,match_only_text,extended,,/home/alice,The working directory of the process.
+8.12.0-dev,true,redcap,redcap.action,keyword,extended,,,action
+8.12.0-dev,true,redcap,redcap.log_view_id,unsigned_long,extended,,,log_view_id
+8.12.0-dev,true,redcap,redcap.miscellaneous,text,extended,,,extra information for the log entry
+8.12.0-dev,true,redcap,redcap.page,keyword,extended,,,redcat webpage
+8.12.0-dev,true,redcap,redcap.project_id,unsigned_long,extended,,,project id
+8.12.0-dev,true,redcap,redcap.session_id,keyword,extended,,,session id
+8.12.0-dev,true,redcap,redcap.user,keyword,extended,,,user
 8.12.0-dev,true,registry,registry.data.bytes,keyword,extended,,ZQBuAC0AVQBTAAAAZQBuAAAAAAA=,Original bytes written with base64 encoding.
 8.12.0-dev,true,registry,registry.data.strings,wildcard,core,array,"[""C:\rta\red_ttp\bin\myapp.exe""]",List of strings representing what was written to the registry.
 8.12.0-dev,true,registry,registry.data.type,keyword,core,,REG_SZ,Standard registry type for encoding contents
@@ -1007,9 +1454,14 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,registry,registry.key,keyword,core,,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe,Hive-relative path of keys.
 8.12.0-dev,true,registry,registry.path,keyword,core,,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger,"Full path, including hive, key and value"
 8.12.0-dev,true,registry,registry.value,keyword,core,,Debugger,Name of the value written.
+8.12.0-dev,true,related,related.email,keyword,extended,array,,All the email identifiers seen on your event.
+8.12.0-dev,true,related,related.email.text,text,extended,,,All the email identifiers seen on your event.
 8.12.0-dev,true,related,related.hash,keyword,extended,array,,All the hashes seen on your event.
-8.12.0-dev,true,related,related.hosts,keyword,extended,array,,All the host identifiers seen on your event.
+8.12.0-dev,true,related,related.hosts,keyword,extended,"array, array",,All the host identifiers seen on your event.
+8.12.0-dev,true,related,related.hosts.text,text,extended,,,All the host identifiers seen on your event.
 8.12.0-dev,true,related,related.ip,ip,extended,array,,All of the IPs seen on your event.
+8.12.0-dev,true,related,related.pl,integer,extended,array,,All the PL levels seen in your event
+8.12.0-dev,true,related,related.port,long,extended,array,,All the network ports seen in your event
 8.12.0-dev,true,related,related.user,keyword,extended,array,,All the user names or other user identifiers seen on the event.
 8.12.0-dev,true,rule,rule.author,keyword,extended,array,"[""Star-Lord""]",Rule author
 8.12.0-dev,true,rule,rule.category,keyword,extended,,Attempted Information Leak,Rule category
@@ -1092,12 +1544,23 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,service,service.target.version,keyword,core,,3.2.4,Version of the service.
 8.12.0-dev,true,service,service.type,keyword,core,,elasticsearch,The type of the service.
 8.12.0-dev,true,service,service.version,keyword,core,,3.2.4,Version of the service.
+8.12.0-dev,true,shibboleth,shibboleth.asserting.id,keyword,extended,,,The asserting ID
+8.12.0-dev,true,shibboleth,shibboleth.asserting.party,keyword,extended,,,The asserting party
+8.12.0-dev,true,shibboleth,shibboleth.attributes,keyword,extended,,,attributes
+8.12.0-dev,true,shibboleth,shibboleth.authentication,keyword,extended,,,authentication
+8.12.0-dev,true,shibboleth,shibboleth.binding.id,keyword,extended,,,response binding
+8.12.0-dev,true,shibboleth,shibboleth.profile,keyword,extended,,,profile
+8.12.0-dev,true,shibboleth,shibboleth.relying.party,keyword,extended,,,relying party
+8.12.0-dev,true,shibboleth,shibboleth.request.binding,keyword,extended,,,request binding
+8.12.0-dev,true,shibboleth,shibboleth.request.id,keyword,extended,,,request id
+8.12.0-dev,true,shibboleth,shibboleth.response.binding,keyword,extended,,,response binding
 8.12.0-dev,true,source,source.address,keyword,extended,,,Source network address.
 8.12.0-dev,true,source,source.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
 8.12.0-dev,true,source,source.as.organization.name,keyword,extended,,Google LLC,Organization name.
 8.12.0-dev,true,source,source.as.organization.name.text,match_only_text,extended,,Google LLC,Organization name.
 8.12.0-dev,true,source,source.bytes,long,core,,184,Bytes sent from the source to the destination.
 8.12.0-dev,true,source,source.domain,keyword,core,,foo.example.com,The domain name of the source.
+8.12.0-dev,true,source,source.domain.text,text,core,,foo.example.com,The domain name of the source.
 8.12.0-dev,true,source,source.geo.city_name,keyword,core,,Montreal,City name.
 8.12.0-dev,true,source,source.geo.continent_code,keyword,core,,NA,Continent code.
 8.12.0-dev,true,source,source.geo.continent_name,keyword,core,,North America,Name of the continent.
@@ -1114,6 +1577,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,source,source.nat.ip,ip,extended,,,Source NAT ip
 8.12.0-dev,true,source,source.nat.port,long,extended,,,Source NAT port
 8.12.0-dev,true,source,source.packets,long,core,,12,Packets sent from the source to the destination.
+8.12.0-dev,true,source,source.pl,integer,extended,,,Destination UCB Protection Level
 8.12.0-dev,true,source,source.port,long,core,,,Port of the source.
 8.12.0-dev,true,source,source.registered_domain,keyword,extended,,example.com,"The highest registered source domain, stripped of the subdomain."
 8.12.0-dev,true,source,source.subdomain,keyword,extended,,east,The subdomain of the domain.
@@ -1131,6 +1595,100 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,source,source.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
 8.12.0-dev,true,source,source.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 8.12.0-dev,true,span,span.id,keyword,extended,,3ff9a8981b7ccd5a,Unique identifier of the span within the scope of its trace.
+8.12.0-dev,true,suricata,suricata.eve.alert.affected_product,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.attack_target,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.category,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.created_at,date,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.cve,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.deployment,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.former_category,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.gid,long,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.impact_flag,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.malware_family,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.performance_impact,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.policy,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.rev,long,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.service,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.signature,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.signature_id,long,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.signature_severity,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.tag,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.alert.updated_at,date,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.app_proto_tc,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.app_proto_ts,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.content_range.raw,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.content_range.size,long,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.dns.query.id,long,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.dns.query.rrname,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.dns.query.rrtype,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.dns.query.tx_id,long,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.dns.query.type,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.email.from,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.email.status,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.email.to,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.event_type,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.flow_id,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.flowbits,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.host,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http.content_range.end,long,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http.protocol,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http.redirect,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http.xff,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http_content_type,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http_request_body,text,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http_request_body_printable,text,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http_response_body,text,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.http_response_body_printable,text,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.in_iface,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.packet_info.linktype,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.payload,text,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.payload_printable,text,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smb.client_dialects,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smb.command,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smb.dialect,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smb.id,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smb.server_guid,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smb.session_id,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smb.tree_id,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smtp.helo,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smtp.mail_from,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.smtp.rcpt_to,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.ssh.server.proto_version,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.ssh.server.software_version,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.stream,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.fingerprint,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.issuerdn,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.ja3.hash,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.ja3.string,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.ja3s.hash,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.ja3s.string,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.notafter,date,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.notbefore,date,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.serial,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.session_resumed,boolean,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.sni,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.subject,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tls.version,keyword,extended,,,
+8.12.0-dev,true,suricata,suricata.eve.tx_id,long,extended,,,
+8.12.0-dev,true,system,system.auth.ssh.dropped_ip,ip,extended,,,The client IP from SSH connections that are open and immediately dropped.
+8.12.0-dev,true,system,system.auth.ssh.event,keyword,extended,,,"The SSH event as found in the logs (Accepted, Invalid, Failed, etc.)"
+8.12.0-dev,true,system,system.auth.ssh.method,keyword,extended,,,"The SSH authentication method. Can be one of ""password"" or ""publickey""."
+8.12.0-dev,true,system,system.auth.ssh.signature,keyword,extended,,,The signature of the client public key.
+8.12.0-dev,true,system,system.auth.sudo.command,keyword,extended,,,The command executed via sudo.
+8.12.0-dev,true,system,system.auth.sudo.error,keyword,extended,,,The error message in case the sudo command failed.
+8.12.0-dev,true,system,system.auth.sudo.pwd,keyword,extended,,,The current directory where the sudo command is executed.
+8.12.0-dev,true,system,system.auth.sudo.tty,keyword,extended,,,The TTY where the sudo command is executed.
+8.12.0-dev,true,system,system.auth.sudo.user,keyword,extended,,,The target user to which the sudo command is switching.
+8.12.0-dev,true,systemd,systemd.cgroup,keyword,extended,,,
+8.12.0-dev,true,systemd,systemd.custom,flattened,extended,,,
+8.12.0-dev,true,systemd,systemd.invocation_id,keyword,extended,,,
+8.12.0-dev,true,systemd,systemd.owner_uid,long,extended,,,
+8.12.0-dev,true,systemd,systemd.session,keyword,extended,,,
+8.12.0-dev,true,systemd,systemd.slice,keyword,extended,,,
+8.12.0-dev,true,systemd,systemd.transport,keyword,extended,,,
+8.12.0-dev,true,systemd,systemd.unit,keyword,extended,,,
+8.12.0-dev,true,systemd,systemd.user_slice,keyword,extended,,,
+8.12.0-dev,true,systemd,systemd.user_unit,keyword,extended,,,
 8.12.0-dev,true,threat,threat.enrichments,nested,extended,array,,List of objects containing indicators enriching the event.
 8.12.0-dev,true,threat,threat.enrichments.indicator,object,extended,,,Object containing indicators enriching the event.
 8.12.0-dev,true,threat,threat.enrichments.indicator.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
@@ -1209,6 +1767,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,threat,threat.enrichments.indicator.file.mode,keyword,extended,,0640,Mode of the file in octal representation.
 8.12.0-dev,true,threat,threat.enrichments.indicator.file.mtime,date,extended,,,Last time the file content was modified.
 8.12.0-dev,true,threat,threat.enrichments.indicator.file.name,keyword,extended,,example.png,"Name of the file including the extension, without the directory."
+8.12.0-dev,true,threat,threat.enrichments.indicator.file.offset,long,extended,,,The file offset
 8.12.0-dev,true,threat,threat.enrichments.indicator.file.owner,keyword,extended,,alice,File owner's username.
 8.12.0-dev,true,threat,threat.enrichments.indicator.file.path,keyword,extended,,/home/alice/example.png,"Full path to the file, including the file name."
 8.12.0-dev,true,threat,threat.enrichments.indicator.file.path.text,match_only_text,extended,,/home/alice/example.png,"Full path to the file, including the file name."
@@ -1304,6 +1863,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,threat,threat.enrichments.indicator.url.original.text,match_only_text,extended,,https://www.elastic.co:443/search?q=elasticsearch#top or /search?q=elasticsearch,Unmodified original url as seen in the event source.
 8.12.0-dev,true,threat,threat.enrichments.indicator.url.password,keyword,extended,,,Password of the request.
 8.12.0-dev,true,threat,threat.enrichments.indicator.url.path,wildcard,extended,,,"Path of the request, such as ""/search""."
+8.12.0-dev,true,threat,threat.enrichments.indicator.url.pl,integer,extended,,,Protect Level of URL
 8.12.0-dev,true,threat,threat.enrichments.indicator.url.port,long,extended,,443,"Port of the request, such as 443."
 8.12.0-dev,true,threat,threat.enrichments.indicator.url.query,keyword,extended,,,Query string of the request.
 8.12.0-dev,true,threat,threat.enrichments.indicator.url.registered_domain,keyword,extended,,example.com,"The highest registered url domain, stripped of the subdomain."
@@ -1426,6 +1986,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,threat,threat.indicator.file.mode,keyword,extended,,0640,Mode of the file in octal representation.
 8.12.0-dev,true,threat,threat.indicator.file.mtime,date,extended,,,Last time the file content was modified.
 8.12.0-dev,true,threat,threat.indicator.file.name,keyword,extended,,example.png,"Name of the file including the extension, without the directory."
+8.12.0-dev,true,threat,threat.indicator.file.offset,long,extended,,,The file offset
 8.12.0-dev,true,threat,threat.indicator.file.owner,keyword,extended,,alice,File owner's username.
 8.12.0-dev,true,threat,threat.indicator.file.path,keyword,extended,,/home/alice/example.png,"Full path to the file, including the file name."
 8.12.0-dev,true,threat,threat.indicator.file.path.text,match_only_text,extended,,/home/alice/example.png,"Full path to the file, including the file name."
@@ -1522,6 +2083,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,threat,threat.indicator.url.original.text,match_only_text,extended,,https://www.elastic.co:443/search?q=elasticsearch#top or /search?q=elasticsearch,Unmodified original url as seen in the event source.
 8.12.0-dev,true,threat,threat.indicator.url.password,keyword,extended,,,Password of the request.
 8.12.0-dev,true,threat,threat.indicator.url.path,wildcard,extended,,,"Path of the request, such as ""/search""."
+8.12.0-dev,true,threat,threat.indicator.url.pl,integer,extended,,,Protect Level of URL
 8.12.0-dev,true,threat,threat.indicator.url.port,long,extended,,443,"Port of the request, such as 443."
 8.12.0-dev,true,threat,threat.indicator.url.query,keyword,extended,,,Query string of the request.
 8.12.0-dev,true,threat,threat.indicator.url.registered_domain,keyword,extended,,example.com,"The highest registered url domain, stripped of the subdomain."
@@ -1570,6 +2132,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,threat,threat.technique.subtechnique.name,keyword,extended,array,PowerShell,Threat subtechnique name.
 8.12.0-dev,true,threat,threat.technique.subtechnique.name.text,match_only_text,extended,,PowerShell,Threat subtechnique name.
 8.12.0-dev,true,threat,threat.technique.subtechnique.reference,keyword,extended,array,https://attack.mitre.org/techniques/T1059/001/,Threat subtechnique URL reference.
+8.12.0-dev,true,ticket,ticket.st,keyword,extended,,,Service Ticket
+8.12.0-dev,true,ticket,ticket.tgt,keyword,extended,,,Ticket Granting Ticket
 8.12.0-dev,true,tls,tls.cipher,keyword,extended,,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,String indicating the cipher used during the current connection.
 8.12.0-dev,true,tls,tls.client.certificate,keyword,extended,,MII...,PEM-encoded stand-alone certificate offered by the client.
 8.12.0-dev,true,tls,tls.client.certificate_chain,keyword,extended,array,"[""MII..."", ""MII...""]",Array of PEM-encoded certificates that make up the certificate chain offered by the client.
@@ -1658,6 +2222,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,url,url.original.text,match_only_text,extended,,https://www.elastic.co:443/search?q=elasticsearch#top or /search?q=elasticsearch,Unmodified original url as seen in the event source.
 8.12.0-dev,true,url,url.password,keyword,extended,,,Password of the request.
 8.12.0-dev,true,url,url.path,wildcard,extended,,,"Path of the request, such as ""/search""."
+8.12.0-dev,true,url,url.pl,integer,extended,,,Protect Level of URL
 8.12.0-dev,true,url,url.port,long,extended,,443,"Port of the request, such as 443."
 8.12.0-dev,true,url,url.query,keyword,extended,,,Query string of the request.
 8.12.0-dev,true,url,url.registered_domain,keyword,extended,,example.com,"The highest registered url domain, stripped of the subdomain."
@@ -1665,6 +2230,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,url,url.subdomain,keyword,extended,,east,The subdomain of the domain.
 8.12.0-dev,true,url,url.top_level_domain,keyword,extended,,co.uk,"The effective top level domain (com, org, net, co.uk)."
 8.12.0-dev,true,url,url.username,keyword,extended,,,Username of the request.
+8.12.0-dev,true,user,user.audit.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.12.0-dev,true,user,user.audit.group.name,keyword,extended,,,Name of the group.
+8.12.0-dev,true,user,user.audit.id,keyword,extended,,,One or multiple unique identifiers of the user.
+8.12.0-dev,true,user,user.audit.name,keyword,extended,,,Short name or login of the user.
 8.12.0-dev,true,user,user.changes.domain,keyword,extended,,,Name of the directory the user is a member of.
 8.12.0-dev,true,user,user.changes.email,keyword,extended,,,User email address.
 8.12.0-dev,true,user,user.changes.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
@@ -1691,6 +2260,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,user,user.effective.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
 8.12.0-dev,true,user,user.effective.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
 8.12.0-dev,true,user,user.email,keyword,extended,,,User email address.
+8.12.0-dev,true,user,user.filesystem.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.12.0-dev,true,user,user.filesystem.group.name,keyword,extended,,,Name of the group.
+8.12.0-dev,true,user,user.filesystem.id,keyword,extended,,,One or multiple unique identifiers of the user.
+8.12.0-dev,true,user,user.filesystem.name,keyword,extended,,,Short name or login of the user.
 8.12.0-dev,true,user,user.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
 8.12.0-dev,true,user,user.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
 8.12.0-dev,true,user,user.group.domain,keyword,extended,,,Name of the directory the group is a member of.
@@ -1700,6 +2273,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
 8.12.0-dev,true,user,user.name,keyword,core,,a.einstein,Short name or login of the user.
 8.12.0-dev,true,user,user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.12.0-dev,true,user,user.owner.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.12.0-dev,true,user,user.owner.group.name,keyword,extended,,,Name of the group.
+8.12.0-dev,true,user,user.owner.id,keyword,extended,,,One or multiple unique identifiers of the user.
+8.12.0-dev,true,user,user.owner.name,keyword,extended,,,Short name or login of the user.
 8.12.0-dev,true,user,user.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
 8.12.0-dev,true,user,user.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
 8.12.0-dev,true,user,user.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
@@ -1707,6 +2284,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,user,user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
 8.12.0-dev,true,user,user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
 8.12.0-dev,true,user,user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.12.0-dev,true,user,user.saved.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.12.0-dev,true,user,user.saved.group.name,keyword,extended,,,Name of the group.
+8.12.0-dev,true,user,user.saved.id,keyword,extended,,,One or multiple unique identifiers of the user.
+8.12.0-dev,true,user,user.saved.name,keyword,extended,,,Short name or login of the user.
 8.12.0-dev,true,user,user.target.domain,keyword,extended,,,Name of the directory the user is a member of.
 8.12.0-dev,true,user,user.target.email,keyword,extended,,,User email address.
 8.12.0-dev,true,user,user.target.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
@@ -1763,3 +2344,257 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.12.0-dev,true,vulnerability,vulnerability.score.temporal,float,extended,,,Vulnerability Temporal score.
 8.12.0-dev,true,vulnerability,vulnerability.score.version,keyword,extended,,2.0,CVSS version.
 8.12.0-dev,true,vulnerability,vulnerability.severity,keyword,extended,,Critical,Severity of the vulnerability.
+8.12.0-dev,true,winlog,winlog.activity_id,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.api,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.channel,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.computerObject.domain,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.computerObject.id,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.computerObject.name,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.computer_name,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AccessGranted,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AccessMask,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AccessMaskDescription,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AccessRemoved,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AccountDomain,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AccountExpires,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AccountName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AllowedToDelegateTo,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AuditPolicyChanges,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AuditPolicyChangesDescription,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AuditSourceName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.AuthenticationPackageName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Binary,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.BitlockerUserInputTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.BootMode,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.BootType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.BuildVersion,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.CallerProcessId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.CallerProcessName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Category,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.CategoryId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ClientAddress,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ClientInfo,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ClientName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.CommandLine,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Company,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ComputerAccountChange,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Configuration,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.CorruptionActionState,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.CrashOnAuditFailValue,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.CreationUtcTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Description,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Details,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DeviceName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DeviceNameLength,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DeviceTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DeviceVersionMajor,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DeviceVersionMinor,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DisplayName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DnsHostName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DomainBehaviorVersion,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DomainName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DomainPolicyChanged,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DomainSid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DriveName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DriverName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DriverNameLength,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Dummy,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.DwordVal,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.EnabledPrivilegeList,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.EntryCount,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.EventSourceId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.EventType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ExtraInfo,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.FailureName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.FailureNameLength,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.FailureReason,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.FileVersion,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.FinalStatus,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Group,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.GroupTypeChange,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.HandleId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.HomeDirectory,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.HomePath,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.IdleImplementation,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.IdleStateCount,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ImpersonationLevel,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.IntegrityLevel,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.IpAddress,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.IpPort,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.KerberosPolicyChange,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.KeyLength,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LastBootGood,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LastShutdownGood,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LmPackageName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LogonGuid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LogonHours,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LogonID,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LogonId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LogonProcessName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.LogonType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MachineAccountQuota,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MajorVersion,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MandatoryLabel,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MaximumPerformancePercent,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MemberName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MemberSid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MinimumPerformancePercent,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MinimumThrottlePercent,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MinorVersion,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.MixedDomainMode,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewProcessId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewProcessName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewSchemeGuid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewSd,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewSdDacl0,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewSdDacl1,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewSdDacl2,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewSdSacl0,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewSdSacl1,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewSdSacl2,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewTargetUserName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewUACList,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NewUacValue,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.NominalFrequency,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Number,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ObjectName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ObjectServer,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ObjectType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OemInformation,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldSchemeGuid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldSd,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldSdDacl0,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldSdDacl1,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldSdDacl2,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldSdSacl0,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldSdSacl1,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldSdSacl2,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldTargetUserName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OldUacValue,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.OriginalFileName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PackageName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ParentProcessName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PasswordHistoryLength,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PasswordLastSet,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Path,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PerformanceImplementation,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PreAuthType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PreviousCreationUtcTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PreviousTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PrimaryGroupId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PrivilegeList,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ProcessId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ProcessName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ProcessPath,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ProcessPid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Product,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ProfilePath,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PuaCount,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.PuaPolicyId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.QfeVersion,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Reason,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SamAccountName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SchemaVersion,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ScriptBlockText,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ScriptPath,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Service,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ServiceAccount,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ServiceFileName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ServiceName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ServicePrincipalNames,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ServiceSid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ServiceStartType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ServiceType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ServiceVersion,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Session,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SessionName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ShutdownActionType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ShutdownEventCode,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.ShutdownReason,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SidFilteringEnabled,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SidHistory,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Signature,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SignatureStatus,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Signed,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.StartTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.State,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Status,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.StatusDescription,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.StopTime,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubCategory,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubCategoryGuid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubCategoryId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubStatus,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubcategoryGuid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubcategoryId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubjectDomainName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubjectLogonId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubjectUserName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.SubjectUserSid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TSId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TargetDomainName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TargetInfo,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TargetLogonGuid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TargetLogonId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TargetServerName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TargetSid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TargetUserName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TargetUserSid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TdoAttributes,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TdoDirection,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TdoType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TerminalSessionId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TicketEncryptionType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TicketEncryptionTypeDescription,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TicketOptions,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TicketOptionsDescription,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TokenElevationType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.TransmittedServices,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.UserAccountControl,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.UserParameters,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.UserPrincipalName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.UserSid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.UserWorkstations,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Version,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.Workstation,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.WorkstationName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.param1,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.param2,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.param3,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.param4,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.param5,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.param6,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.param7,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_data.param8,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.event_id,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.keywords,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.level,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.logon.type,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.opcode,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.outcome,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.process.pid,long,extended,,,
+8.12.0-dev,true,winlog,winlog.process.thread.id,long,extended,,,
+8.12.0-dev,true,winlog,winlog.provider_guid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.provider_name,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.record_id,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.related_activity_id,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.task,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.time_created,date,extended,,,
+8.12.0-dev,true,winlog,winlog.trustAttribute,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.trustDirection,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.trustType,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user.domain,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user.identifier,keyword,extended,,S-1-5-21-3541430928-2051711210-1391384369-1001,
+8.12.0-dev,true,winlog,winlog.user.name,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user.type,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user_data,object,extended,,,
+8.12.0-dev,true,winlog,winlog.user_data.BackupPath,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user_data.Channel,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user_data.SubjectDomainName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user_data.SubjectLogonId,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user_data.SubjectUserName,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user_data.SubjectUserSid,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.user_data.xml_name,keyword,extended,,,
+8.12.0-dev,true,winlog,winlog.version,long,extended,,,

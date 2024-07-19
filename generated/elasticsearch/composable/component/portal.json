@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-portal.html",
+    "ecs_version": "8.12.0-dev"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "portal": {
+          "properties": {
+            "device": {
+              "properties": {
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "mac": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "role": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "status": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "session_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "update": {
+              "properties": {
+                "after": {
+                  "properties": {
+                    "device_name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "role": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "before": {
+                  "properties": {
+                    "device_name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "role": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "changed": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
