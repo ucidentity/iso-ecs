@@ -1,0 +1,243 @@
+
+- name: beyondtrust
+  title: beyondtrust
+  group: 2
+  description: |
+    Fields for logs from beyondtrust
+  type: group
+  fields:
+
+    - name: api
+      level: extended
+      type: keyword
+      description: |
+
+    - name: auth_method
+      level: extended
+      type: keyword
+      description: |
+
+    - name: end_time
+      level: extended
+      type: keyword
+      description: |
+
+    - name: end_timestamp
+      level: extended
+      type: keyword
+      description: |
+
+    - name: event
+      level: extended
+      type: keyword
+      description: |
+
+    - name: group_by 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: new_account.disabled
+      level: extended
+      type: keyword
+      description: |
+
+    - name: new_account.email.address 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_account.created
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_account.disabled
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_account.email.locale
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_account.expiration 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_account.failed_logins 
+      level: extended
+      type: long
+      description: |
+
+    - name: old_account.will_expire
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_display_number
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_id 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_license_pool.id 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_license_pool.name
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_login_code.enabled 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_login_schedule.enabled 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_login_schedule.force_logout 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_login_schedule.timezone
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_permissions.jump_item_role.default.id
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_permissions.jump_item_role.default.name
+      level: extended
+      type: keyword
+      description: |
+
+    - name: beyondtrust.old_permissions.jump_item_role.teams.id
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_permissions.jump_item_role.teams.name
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_provider.id
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_provider.name
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_two_factor_auth.required
+      level: extended
+      type: keyword
+      description: |
+
+    - name: old_username
+      level: extended
+      type: keyword
+      description: |
+
+    - name: only_completed
+      level: extended
+      type: keyword
+      description: |
+
+    - name: reason
+      level: extended
+      type: keyword
+      description: |
+
+    - name: row_count
+      level: extended
+      type: long
+      description: |
+
+    - name: row_start 
+      level: extended
+      type: long
+      description: |
+
+    - name: segment.id 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: segment.total
+      level: extended
+      type: keyword
+      description: |
+
+    - name: site
+      level: extended
+      type: keyword
+      description: |
+
+    - name: site_id
+      level: extended
+      type: keyword
+      description: |
+
+    - name: site_name
+      level: extended
+      type: keyword
+      description: |
+
+    - name: start_time
+      level: extended
+      type: keyword
+      description: |
+
+    - name: start_timestamp 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: status
+      level: extended
+      type: keyword
+      description: |
+
+    - name: target
+      level: extended
+      type: keyword
+      description: |
+
+    - name: when
+      level: extended
+      type: long
+      description: |
+
+    - name: who 
+      level: extended
+      type: keyword
+      description: |
+
+    - name: who_ip
+      level: extended
+      type: keyword
+      description: |
+
+    - name: outcome 
+      level: extended
+      type: keyword
+      description: |

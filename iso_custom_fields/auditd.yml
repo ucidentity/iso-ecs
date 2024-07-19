@@ -1,0 +1,344 @@
+---
+- name: auditd
+  title: auditd
+  group: 2
+  short: auditd
+  description: Linux Auditd
+  type: group
+  fields:
+
+    - name: log.old_auid
+      type: keyword
+      level: extended
+      description: |
+        For login events this is the old audit ID used for the user prior to this login.
+    - name: log.new_auid
+      type: keyword
+      level: extended
+      short: new audit id
+      description: |
+        For login events this is the new audit ID. The audit ID can be used to trace future events to the user even if their identity changes (like becoming root).
+    - name: log.old_ses
+      type: keyword
+      level: extended
+      description: |
+        For login events this is the old session ID used for the user prior to this login.
+    - name: log.new_ses
+      type: keyword
+      level: extended
+      description: |
+        For login events this is the new session ID. It can be used to tie a user to future events by session ID.
+    - name: log.sequence
+      type: long
+      level: extended
+      description: |
+        The audit event sequence number.
+    - name: log.items
+      type: keyword
+      level: extended
+      description: |
+        The number of items in an event.
+    - name: log.item
+      type: keyword
+      level: extended
+      short: index of item 
+      description: |
+        The item field indicates which item out of the total number of items. This number is zero-based; a value of 0 means it is the first item.
+    - name: log.tty
+      type: keyword
+      level: extended
+      description: tty 
+    - name: log.a0
+      type: keyword
+      level: extended
+      description: |
+        The first argument to the system call 
+    - name: log.addr
+      description: addr
+      type: ip
+      level: extended
+      description: ip
+    - name: log.rport
+      description: rport
+      type: long
+      level: extended
+    - name: log.laddr
+      description: laddr
+      type: ip
+      level: extended
+    - name: log.lport
+      description: lport
+      type: long
+      level: extended
+    - name: log.entries
+      description: entries
+      type: long
+      level: extended
+    - name: log.audit_failure
+      description: audit_failure
+      type: keyword
+      level: extended
+    - name: log.cipher
+      description: cipher
+      type: keyword
+      level: extended
+    - name: log.data
+      description: data
+      type: keyword
+      level: extended
+    - name: log.dev
+      description: dev
+      type: keyword
+      level: extended
+    - name: log.fe
+      description: fe
+      type: keyword
+      level: extended
+    - name: log.fi
+      description: fi
+      type: keyword
+      level: extended
+    - name: log.fp
+      description: fp
+      type: keyword
+      level: extended
+    - name: log.format
+      description: format
+      type: keyword
+      level: extended
+    - name: log.default-context
+      description: default-context
+      type: keyword
+      level: extended
+    - name: log.direction
+      description: direction
+      type: keyword
+      level: extended
+    - name: log.dst_prefixlen
+      description: dst_prefixlen
+      type: long
+      level: extended
+    - name: log.family
+      description: family
+      type: keyword
+      level: extended
+    - name: log.fver
+      description: fver
+      type: keyword
+      level: extended
+    - name: log.gpg_res
+      description: gpg_res
+      type: keyword
+      level: extended
+    - name: log.hostname
+      description: hostname
+      type: keyword
+      level: extended
+    - name: log.id
+      description: id
+      type: keyword
+      level: extended
+    - name: log.ip
+      description: instruction pointer
+      type: keyword
+      level: extended
+    - name: log.inode
+      description: inode
+      type: keyword
+      level: extended
+    - name: log.kernel
+      description: kernel
+      type: keyword
+      level: extended
+    - name: log.key_enforce
+      description: key_enforce
+      type: boolean
+      level: extended
+    - name: log.img-ctx
+      description: img-ctx
+      type: keyword
+      level: extended
+    - name: log.kind
+      description: kind
+      type: keyword
+      level: extended
+    - name: log.ksize
+      description: ksize
+      type: long
+      level: extended
+    - name: log.list
+      description: list
+      type: keyword
+      level: extended
+    - name: log.major
+      description: major
+      type: keyword
+      level: extended
+    - name: log.minor
+      description: minor
+      type: keyword
+      level: extended
+    - name: log.mode
+      description: mode
+      type: keyword
+      level: extended
+    - name: log.model
+      description: model
+      type: keyword
+      level: extended
+    - name: log.name
+      description: name
+      type: keyword
+      level: extended
+    - name: log.new-level
+      description: new-level
+      type: keyword
+      level: extended
+    - name: log.new_pe
+      description: new_pe
+      type: keyword
+      level: extended
+    - name: log.new_pi
+      description: new_pi
+      type: keyword
+      level: extended
+    - name: log.new_pp
+      description: new_pp
+      type: keyword
+      level: extended
+    - name: log.old-level
+      description: old-level
+      type: keyword
+      level: extended
+    - name: log.old_pe
+      description: old_pe
+      type: keyword
+      level: extended
+    - name: log.old_pi
+      description: old_pi
+      type: keyword
+      level: extended
+    - name: log.old_pp
+      description: old_pp
+      type: keyword
+      level: extended
+    - name: log.node
+      description: node
+      type: keyword
+      level: extended
+    - name: log.obj
+      description: obj
+      type: keyword
+      level: extended
+    - name: log.objtype
+      description: objtype
+      type: keyword
+      level: extended
+    - name: log.old
+      description: old
+      type: keyword
+      level: extended
+    - name: log.op
+      description: op
+      type: keyword
+      level: extended
+    - name: log.pfs
+      description: pfs
+      type: keyword
+      level: extended
+    - name: log.proctitle
+      description: proctitle
+      type: keyword
+      level: extended
+    - name: log.rdev
+      description: rdev
+      type: keyword
+      level: extended
+    - name: log.reason
+      description: reason
+      type: keyword
+      level: extended
+    - name: log.root_dir
+      description: root_dir
+      type: keyword
+      level: extended
+    - name: log.saddr
+      description: saddr
+      type: keyword
+      level: extended
+    - name: log.selected-context
+      description: selected-context
+      type: keyword
+      level: extended
+    - name: log.ses
+      description: ses
+      type: keyword
+      level: extended
+    - name: log.spid
+      description: spid
+      type: keyword
+      level: extended
+    - name: log.src_prefixlen
+      description: src_prefixlen
+      type: long
+      level: extended
+    - name: log.subj
+      description: subj
+      type: keyword
+      level: extended
+    - name: log.success
+      description: success
+      type: boolean
+      level: extended
+    - name: log.sw
+      description: sw
+      type: keyword
+      level: extended
+    - name: log.sw_type
+      description: sw_type
+      type: keyword
+      level: extended
+    - name: log.syscall
+      description: syscall
+      type: keyword
+      level: extended
+    - name: log.table
+      description: table
+      type: keyword
+      level: extended
+    - name: log.unit
+      description: unit
+      type: keyword
+      level: extended
+    - name: log.uuid
+      description: uuid
+      type: keyword
+      level: extended
+    - name: log.ver
+      description: ver
+      type: keyword
+      level: extended
+    - name: log.virt
+      description: virt
+      type: keyword
+      level: extended
+    - name: log.vm
+      description: vm
+      type: keyword
+      level: extended
+    - name: log.vm-ctx
+      description: vm-ctx
+      type: keyword
+      level: extended
+    - name: log.uid
+      description: uid
+      type: keyword
+      level: extended
+    - name: log.record_type
+      description: record_type
+      type: keyword
+      level: extended
+    - name: log.reset
+      description: reset
+      type: keyword
+      level: extended

@@ -1,0 +1,64 @@
+---
+- name: portal
+  title: portal
+  group: 2
+  short: portal
+  description: |
+    Fields for logs from portal app
+  type: group
+  fields:
+
+    - name: device.id
+      level: extended
+      type: keyword
+      description: device id
+
+    - name: device.mac
+      level: extended
+      type: keyword
+      description: device mac address
+
+    - name: device.role.name
+      level: extended
+      type: keyword
+      description: device role name
+
+    - name: device.role.id
+      level: extended
+      type: keyword
+      description: device role id
+
+    - name: device.status
+      level: extended
+      type: keyword
+      description: device status
+
+    - name: session_id
+      level: extended
+      type: keyword
+      description: portal session id
+
+    - name: update.after.device_name
+      level: extended
+      type: keyword
+      description: New device name
+
+    - name: update.after.role
+      level: extended
+      type: keyword
+      description: new device role
+
+    - name: update.before.device_name
+      level: extended
+      type: keyword
+      description: Old device name
+
+    - name: update.before.role
+      level: extended
+      type: keyword
+      description: old device role
+
+    - name: update.changed
+      level: extended
+      type: keyword
+      description: What fields have change  

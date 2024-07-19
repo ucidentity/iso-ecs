@@ -1,0 +1,164 @@
+
+- name: aws
+  title: aws
+  group: 2
+  description: |
+    Fields for logs from aws
+  type: group
+  fields:
+
+# Cloudwatch fields
+    - name: cloudwatch.log.group
+      level: extended
+      type: keyword
+      description: |
+        The CloudWatch LogGroup
+
+    - name: cloudwatch.log.message_type
+      level: extended
+      type: keyword
+      description: |
+        CloudWatch MessageType
+
+    - name: cloudwatch.log.stream
+      level: extended
+      type: keyword
+      description: |
+        The CloudWatch LogStream
+
+    - name: cloudwatch.log.subscription_filters
+      level: extended
+      type: keyword
+      description: |
+        The name of the Subscription Filter used to send CloudWatch Logs to Security
+
+# Lambda function invocation log fields
+
+    - name: lambda.action
+      level: extended
+      type: keyword
+      description: |
+        lambda action (START, REPORT, ...)
+
+    - name: lambda.duration.billed
+      level: extended
+      type: double
+      description: |
+        Billed duration (ms) for a lambda invocation
+
+    - name: lambda.duration.init
+      level: extended
+      type: double
+      description: |
+        Init duration (ms) for a lambda invocation
+
+    - name: lambda.duration.run
+      level: extended
+      type: double
+      description: |
+        running duration (ms) for a lambda invocation
+
+    - name: lambda.memory.size
+      level: extended
+      type: unsigned_long
+      description: |
+        Size (MB) of memory allocated to a lambda invocation
+
+    - name: lambda.memory.used
+      level: extended
+      type: unsigned_long
+      description: |
+        Actual amount (MB) of memory used by lambda invocation
+
+    - name: lambda.requestid
+      level: extended
+      type: keyword
+      description: |
+        Lambda request id
+
+    - name: lambda.version
+      level: extended
+      type: keyword
+      description: |
+        Lambda function version
+
+
+
+
+# S3 bucket fields
+    - name: s3.bucket.arn
+      level: extended
+      type: keyword
+      description: |
+        The ARN of the S3 Bucket
+
+    - name: s3.bucket.name
+      level: extended
+      type: keyword
+      description: |
+        The S3 Bucket Name
+
+    - name: s3.object.key
+      level: extended
+      type: keyword
+      description: |
+        The S3 Object Key
+
+
+# waf fields
+    - name: waf.arn
+      level: extended
+      type: keyword
+      description: |
+        AWS ARN of ACL
+
+    - name: waf.id
+      level: extended
+      type: keyword
+      description: |
+        ID of ACL
+
+    - name: waf.non_terminating_matching_rules
+      level: extended
+      type: nested
+      short: The list of non-terminating rules in the rule group that match the request
+      description: |
+        The list of non-terminating rules in the rule group that match the request. These are always COUNT rules (non-terminating rules that match)
+
+    - name: waf.rate_based_rule_list
+      level: extended
+      type: nested
+      description: |
+        The list of rate-based rules that acted on the request.
+
+    - name: waf.request.headers
+      level: extended
+      type: flattened
+      description: |
+        List of request headers
+
+    - name: waf.rule_group_list
+      level: extended
+      type: nested
+      description: |
+        The list of rule groups that acted on this request.
+
+    - name: waf.source.id
+      level: extended
+      type: keyword
+      description: |
+        The source ID. This field shows the ID of the associated resource.
+
+    - name: waf.source.name
+      level: extended
+      type: keyword
+      short: The source of the request 
+      description: |
+        The source of the request. Possible values: CF for Amazon CloudFront, APIGW for Amazon API Gateway, ALB for Application Load Balancer, and APPSYNC for AWS AppSync.
+
+    - name: waf.terminating_rule_match_details
+      level: extended
+      type: nested
+      short: Detailed information about the terminating rule that matched the request
+      description: |
+        Detailed information about the terminating rule that matched the request. A terminating rule has an action that ends the inspection process against a web request. Possible actions for a terminating rule are ALLOW and BLOCK. This is only populated for SQL injection and cross-site scripting (XSS) match rule statements. As with all rule statements that inspect for more than one thing, AWS WAF applies the action on the first match and stops inspecting the web request. A web request with a terminating action could contain other threats, in addition to the one reported in the log.

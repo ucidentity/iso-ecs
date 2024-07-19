@@ -8,6 +8,7 @@ PYTHON           := build/ve/bin/python
 SUBSETS_DIR      := schemas/subsets/
 EXP_SUBSETS_DIR  := experimental/schemas/subsets/
 VERSION          := $(shell cat version)
+INCLUDE 				 := iso_custom_fields
 
 #
 # Targets (sorted alphabetically)

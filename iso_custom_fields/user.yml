@@ -1,0 +1,98 @@
+---
+
+- name: user
+  type: group
+  group: 2
+  title: user fields
+  description: user fields
+  fields:
+
+    - name: terminal
+      type: keyword
+      level: extended
+      description: |
+        Terminal or tty device on which the user is performing the observed activity.
+
+    - name: audit.id
+      type: keyword
+      level: extended
+      description: |
+        One or multiple unique identifiers of the user.
+    - name: audit.name
+      type: keyword
+      level: extended
+      description: |
+        Short name or login of the user.
+    - name: audit.group.id
+      type: keyword
+      level: extended
+      description: |
+        Unique identifier for the group on the system/platform.
+    - name: audit.group.name
+      type: keyword
+      level: extended
+      description: |
+        Name of the group.
+
+    - name: filesystem.id
+      type: keyword
+      level: extended
+      description: |
+        One or multiple unique identifiers of the user.
+    - name: filesystem.name
+      type: keyword
+      level: extended
+      description: |
+        Short name or login of the user.
+    - name: filesystem.group.id
+      type: keyword
+      level: extended
+      description: |
+        Unique identifier for the group on the system/platform.
+    - name: filesystem.group.name
+      type: keyword
+      level: extended
+      description: |
+        Name of the group.
+
+    - name: owner.id
+      type: keyword
+      level: extended
+      description: |
+        One or multiple unique identifiers of the user.
+    - name: owner.name
+      type: keyword
+      level: extended
+      description: |
+        Short name or login of the user.
+    - name: owner.group.id
+      type: keyword
+      level: extended
+      description: |
+        Unique identifier for the group on the system/platform.
+    - name: owner.group.name
+      type: keyword
+      level: extended
+      description: |
+        Name of the group.
+
+    - name: saved.id
+      type: keyword
+      level: extended
+      description: |
+        One or multiple unique identifiers of the user.
+    - name: saved.name
+      type: keyword
+      level: extended
+      description: |
+        Short name or login of the user.
+    - name: saved.group.id
+      type: keyword
+      level: extended
+      description: |
+        Unique identifier for the group on the system/platform.
+    - name: saved.group.name
+      type: keyword
+      level: extended
+      description: |
+        Name of the group.

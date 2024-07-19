@@ -1,0 +1,59 @@
+- name: systemd
+  type: group
+  title: systemd
+  short: systemd
+  description: systemd
+  group: 2
+  fields:
+  - name: cgroup
+    type: keyword
+    description: The control group path in the systemd hierarchy.
+    level: extended
+    short: ''
+  - name: invocation_id
+    type: keyword
+    description: The invocation ID for the runtime cycle of the unit the message was
+      generated in, as available to processes of the unit in $INVOCATION_ID.
+    level: extended
+    short: ''
+  - name: owner_uid
+    type: long
+    description: The owner UID of the systemd user unit or systemd session (if any)
+      of the process the journal entry originates from.
+    level: extended
+    short: ''
+  - name: session
+    type: keyword
+    description: The systemd session ID (if any).
+    level: extended
+    short: ''
+  - name: slice
+    type: keyword
+    description: The systemd slice unit name.
+    level: extended
+    short: ''
+  - name: transport
+    type: keyword
+    description: How the entry was received by the journal service.
+    level: extended
+    short: ''
+  - name: unit
+    type: keyword
+    description: The systemd unit name.
+    level: extended
+    short: ''
+  - name: user_slice
+    type: keyword
+    description: The systemd user slice name.
+    level: extended
+    short: ''
+  - name: user_unit
+    type: keyword
+    description: The unit name in the systemd user manager (if any).
+    level: extended
+    short: ''
+  - name: custom
+    type: flattened
+    description: Structured fields added to the log message by the caller.
+    level: extended
+    short: ''

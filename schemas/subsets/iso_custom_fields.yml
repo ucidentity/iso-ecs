@@ -1,0 +1,70 @@
+---
+name: iso_custom_fields
+fields:
+  arcsight:
+    fields: "*"
+  aws:
+    fields: "*"
+  auditd:
+    fields: "*"
+  beyondtrust:
+    fields: "*"
+  bpr:
+    fields: "*"
+  cas:
+    fields: "*"
+  cisco_duo:
+    fields: "*"
+  destination:
+    fields:
+      pl: {}
+  fireeye:
+    fields: "*"
+  grouper:
+    fields: "*"
+  hashicorp_vault: 
+    fields: "*"
+  ldap:
+    fields: "*"
+  logstash:
+    fields: "*"
+  malware:
+    fields: "*"
+  nat_allocation:
+    fields: "*"
+  packet:
+    fields: "*"
+  portal:
+    fields: "*"
+  prisma:
+    fields: "*"
+  journald:
+    fields: "*"
+  redcap:
+    fields: "*"
+  shibboleth:
+    fields: "*"
+  source:
+    fields:
+      pl: {}
+  suricata:
+    fields: "*"
+  system:
+    fields: "*"
+  systemd:
+    fields: "*"
+  ticket:
+    fields: "*"
+  user:
+    terminal: "*"
+    fields: 
+      saved:
+        fields: "*"
+      audit:
+        fields: "*"
+      filesystem:
+        fields: "*"
+      owner:
+        fields: "*"
+  winlog:
+    fields: "*"
